@@ -961,11 +961,15 @@
 			КонецЕсли;
 		КонецЦикла;
 	КонецЕсли;
+	Если глОтладка = Истина Тогда
+		AHK = ирПлатформа.ПолучитьCOMОбъектИзМакета("AutoHotkey","AutoHotkey.Script.UNICODE");
+	Иначе
 	Попытка
 		AHK = Новый COMОбъект("AutoHotkey.Script");
 	Исключение
 	КонецПопытки;
-	
+	КонецЕсли;
+
 	Если AHK = Неопределено Тогда
 		ирПлатформа = ирКэш.Получить();
 		AHK = ирПлатформа.ПолучитьCOMОбъектИзМакета("AutoHotkey","AutoHotkey.Script.UNICODE");
@@ -1150,8 +1154,8 @@
 	|		Gui,G%index%: Color, %ACCENT_COLOR%
 	|
 	|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
-	|		Gui,G%index%: Font, s12
-	|		Gui,G%index%: Add, Text, , % this.strText
+	|		Gui,G%index%: Font, s10
+	|		Gui,G%index%: Add, Text, W1000 H200 , % this.strText
 	|
 	|		win_y := this.y
 	|		Gui,G%index%: Show, y%win_y% x%WINDOW_X%  w%WINDOW_WIDTH% h%WINDOW_HEIGHT% hide ; показываем окно в выбранных координатах и размерах
@@ -1175,8 +1179,6 @@
 	|		if (checkX<0 or checkX2<0 or checkY<0 or checkY2<0) {
 	|			return 0		
 	|		} else {
-	|			expr := (checkX<0 or checkX2<0)
-	|				ToolTip checkX=%checkX% checkX2=%checkX2% checkY=%checkY% 	(checkX<0  or checkX2<0)=%expr%
 	|			return 1 
 	|		}		
 	|	}
