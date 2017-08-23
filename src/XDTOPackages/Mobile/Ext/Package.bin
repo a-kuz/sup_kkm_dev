@@ -1,0 +1,228 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://mad.softbalance.ru">
+	<objectType name="GoodsList">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Goods" type="d3p1:Goods" upperBound="-1" localName="Goods"/>
+	</objectType>
+	<objectType name="Goods">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+		<property name="Родитель" type="xs:integer" form="Attribute" localName="ParentCode"/>
+		<property name="Порядок" type="xs:string" form="Attribute" localName="Sort"/>
+		<property name="вКорне" type="xs:integer" form="Attribute" localName="InRoot"/>
+		<property name="ЭтоГруппа" type="xs:integer" form="Attribute" localName="IsGroup"/>
+		<property name="ЭтоГруппаЕдиниц" type="xs:integer" form="Attribute" localName="IsUnitsGroup"/>
+		<property name="ЕдиницаИзмерения" type="xs:string" form="Attribute" localName="Unit"/>
+		<property name="КратностьКоличества" type="xs:decimal" form="Attribute" localName="Multiplicity"/>
+		<property name="ЗапросКоличества" type="xs:integer" form="Attribute" localName="RequiredCount"/>
+		<property name="ОтдельнойСтрокой" type="xs:integer" form="Attribute" localName="SeparatePos"/>
+		<property name="Выход" type="xs:string" form="Attribute" localName="Weight"/>
+		<property name="Цена" type="xs:decimal" form="Attribute" localName="Price"/>
+		<property name="ДопИнформация" type="xs:string" form="Element" localName="Description"/>
+		<property name="Пиктограмма" type="xs:string" form="Attribute" localName="Preview"/>
+		<property name="ПиктограммаБольшая" type="xs:string" form="Attribute" localName="PreviewBig"/>
+		<property name="Изображение" type="xs:string" form="Attribute" localName="Image"/>
+		<property name="ИзображениеБольшое" type="xs:string" form="Attribute" localName="ImageBig"/>
+		<property name="Доставка" type="xs:integer" form="Attribute" localName="Delivery"/>
+		<property name="ГруппаСпецифик" type="xs:string" form="Attribute" localName="SpecGroup"/>
+		<property name="МинУдельныйВес" type="xs:integer" form="Attribute" localName="GravityMin"/>
+		<property name="МаксУдельныйВес" type="xs:integer" form="Attribute" localName="GravityMax"/>
+		<property name="ЕстьВПродаже" type="xs:integer" form="Attribute" localName="Active"/>
+		<property name="вСтопЛисте" type="xs:integer" form="Attribute" localName="StopList"/>
+		<property name="Остаток" type="xs:decimal" form="Attribute" localName="Rest"/>
+	</objectType>
+	<objectType name="SpecificityList">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Specificity" type="d3p1:Specificity" upperBound="-1" localName="Specificity"/>
+	</objectType>
+	<objectType name="Specificity">
+		<property name="Код" type="xs:string" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+		<property name="Родитель" type="xs:string" nillable="true" form="Attribute" localName="ParentCode"/>
+		<property name="ЭтоГруппа" type="xs:integer" form="Attribute" localName="IsGroup"/>
+		<property name="УдельныйВес" type="xs:integer" form="Attribute" localName="Gravity"/>
+		<property name="ОднаИзГруппы" type="xs:integer" form="Attribute" localName="OneGroup"/>
+		<property name="РазрешитьПовторение" type="xs:integer" form="Attribute" localName="Repeat"/>
+		<property name="Общая" type="xs:integer" form="Attribute" localName="Common"/>
+		<property name="ЕстьВПродаже" type="xs:integer" form="Attribute" localName="Active"/>
+	</objectType>
+	<objectType name="RestaurantKeysList">
+		<property name="КлючРесторана" type="xs:integer" upperBound="-1" localName="RestaurantKey"/>
+	</objectType>
+	<objectType name="Menu">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="GoodsList" type="d3p1:GoodsList" localName="GoodsList"/>
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="RestaurantKeysList" type="d3p1:RestaurantKeysList" localName="RestaurantKeys"/>
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="SpecificityList" type="d3p1:SpecificityList" localName="SpecificityList"/>
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="MenuTypeList" type="d3p1:MenuTypeList" localName="MenuTypeList"/>
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Recomendations" type="d3p1:Recomendations" localName="Recomendations"/>
+	</objectType>
+	<objectType name="Orders">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Order" type="d3p1:Order" upperBound="-1" localName="Order"/>
+	</objectType>
+	<objectType name="Order">
+		<property name="КлючРесторана" type="xs:integer" form="Attribute" localName="RestKey"/>
+		<property name="ИдСервера" type="xs:integer" form="Attribute" localName="ServerId"/>
+		<property name="Номер" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Дата" type="xs:dateTime" form="Attribute" localName="Date"/>
+		<property name="СтатусЗаказа" type="xs:integer" form="Attribute" localName="Status"/>
+		<property name="ЕстьПресчет" type="xs:integer" form="Attribute" localName="IsCheck"/>
+		<property name="КодОфицианта" type="xs:string" nillable="true" default="" form="Attribute" localName="WaiterPin"/>
+		<property name="Официант" type="xs:string" form="Attribute" localName="Waiter"/>
+		<property name="КодМеста" type="xs:string" nillable="true" default="1" form="Attribute" localName="TableCode"/>
+		<property name="НаименованиеМеста" type="xs:string" nillable="true" default="" form="Attribute" localName="Table"/>
+		<property name="Доставка" type="xs:integer" form="Attribute" localName="Delivery"/>
+		<property name="Клиент" type="xs:string" nillable="true" form="Attribute" localName="Client"/>
+		<property name="Скидки" type="xs:string" nillable="true" form="Attribute" localName="Discounts"/>
+		<property name="Комментарий" type="xs:string" nillable="true" form="Attribute" localName="Comment"/>
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="OrderedItems" type="d3p1:OrderedItems" upperBound="-1" nillable="true" localName="OrderedItems"/>
+	</objectType>
+	<objectType name="OrderedItems">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="OrderedItem" type="d3p1:OrderedItem" upperBound="-1" nillable="true" localName="OrderedItem"/>
+	</objectType>
+	<objectType name="OrderedItem">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Количество" type="xs:decimal" form="Attribute" localName="Count"/>
+		<property name="Цена" type="xs:decimal" nillable="true" default="0" form="Attribute" localName="Price"/>
+		<property name="Сумма" type="xs:decimal" nillable="true" default="0" form="Attribute" localName="Total"/>
+		<property name="Статус" type="xs:integer" nillable="true" default="0" form="Attribute" localName="Status"/>
+		<property name="Порядок" type="xs:integer" form="Attribute" localName="Sort"/>
+		<property name="ИдСтроки" type="xs:string" form="Attribute" localName="Id"/>
+		<property name="Специфики" type="xs:string" nillable="true" default="" form="Attribute" localName="Specificities"/>
+		<property name="Источник" type="xs:integer" nillable="true" default="0" form="Attribute" localName="Source"/>
+	</objectType>
+	<objectType name="News">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="NewsItem" type="d3p1:NewsItem" upperBound="-1" localName="NewsItems"/>
+	</objectType>
+	<objectType name="NewsItem">
+		<property name="Номер" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Дата" type="xs:dateTime" form="Attribute" localName="Date"/>
+		<property name="Заголовок" type="xs:string" form="Attribute" localName="Title"/>
+		<property name="Содержание" type="xs:string" form="Element" localName="Description"/>
+		<property name="Пиктограмма" type="xs:string" form="Attribute" localName="Preview"/>
+		<property name="ПиктограммаБольшая" type="xs:string" form="Attribute" localName="PreviewBig"/>
+		<property name="Изображение" type="xs:string" form="Attribute" localName="Image"/>
+		<property name="ИзображениеБольшое" type="xs:string" form="Attribute" localName="ImageBig"/>
+		<property name="WebСсылка" type="xs:string" form="Attribute" localName="Link"/>
+	</objectType>
+	<objectType name="Restaurants">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Restaurant" type="d3p1:Restaurant" upperBound="-1" form="Element" localName="Restaurant"/>
+	</objectType>
+	<objectType name="Restaurant">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+		<property name="Описание" type="xs:string" form="Element" localName="Description"/>
+		<property name="Адрес" type="xs:string" form="Attribute" localName="Address"/>
+		<property name="Кухни" type="xs:string" form="Element" localName="Cuisines"/>
+		<property name="Пиктограмма" type="xs:string" form="Attribute" localName="Preview"/>
+		<property name="ПиктограммаБольшая" type="xs:string" form="Attribute" localName="PreviewBig"/>
+		<property name="Изображение" type="xs:string" form="Attribute" localName="Image"/>
+		<property name="ИзображениеБольшое" type="xs:string" form="Attribute" localName="ImageBig"/>
+		<property name="Широта" type="xs:decimal" form="Attribute" localName="Latitude"/>
+		<property name="Долгота" type="xs:decimal" form="Attribute" localName="Longitude"/>
+		<property name="РежимДоставки" type="xs:integer" form="Attribute" localName="DeliveryMode"/>
+		<property name="FoursquareVENUE_ID" type="xs:string" form="Attribute" localName="FoursquareVENUE_ID"/>
+		<property name="Instagram_ID" type="xs:string" form="Attribute" localName="Instagram_ID"/>
+	</objectType>
+	<objectType name="Reviews">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Review" type="d3p1:Review" upperBound="-1" localName="Review"/>
+	</objectType>
+	<objectType name="Review">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Object_id"/>
+		<property name="КодСервера" type="xs:integer" form="Attribute" localName="Id"/>
+		<property name="Дата" type="xs:dateTime" form="Attribute" localName="Date"/>
+		<property name="ТипОбъекта" type="xs:integer" form="Attribute" localName="Object_type"/>
+		<property name="КодУстройства" type="xs:string" form="Attribute" localName="DeviceHash"/>
+		<property name="Критерий1" type="xs:integer" form="Attribute" localName="Criteria1"/>
+		<property name="Критерий2" type="xs:integer" form="Attribute" localName="Criteria2"/>
+		<property name="Критерий3" type="xs:integer" form="Attribute" localName="Criteria3"/>
+		<property name="Комментарий" type="xs:string" localName="Comment"/>
+	</objectType>
+	<objectType name="Favorites">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Favor" type="d3p1:Favor" upperBound="-1"/>
+	</objectType>
+	<objectType name="Favor">
+		<property name="КодОбъекта" type="xs:integer" form="Attribute" localName="Object_id"/>
+		<property name="КодСервера" type="xs:integer" form="Attribute" localName="Id"/>
+		<property name="Дата" type="xs:dateTime" form="Attribute" localName="Date"/>
+		<property name="ТипОбъекта" type="xs:integer" form="Attribute" localName="Object_type"/>
+		<property name="КодУстройства" type="xs:string" form="Attribute" localName="Devicehash"/>
+	</objectType>
+	<objectType name="Employees">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Employee" type="d3p1:Employee" upperBound="-1" localName="Employee"/>
+	</objectType>
+	<objectType name="Employee">
+		<property name="КлючРесторана" type="xs:integer" form="Attribute" localName="RestKey"/>
+		<property name="КодДоступа" type="xs:string" form="Attribute" localName="Pin"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+		<property name="НаборПрав" type="xs:integer" form="Attribute" localName="Permission"/>
+	</objectType>
+	<objectType name="Tables">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Table" type="d3p1:Table" upperBound="-1" localName="Table"/>
+	</objectType>
+	<objectType name="Table">
+		<property name="КлючРесторана" type="xs:integer" form="Attribute" localName="RestKey"/>
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+		<property name="Родитель" type="xs:integer" form="Attribute" localName="ParentCode"/>
+		<property name="ЭтоГруппа" type="xs:integer" form="Attribute" localName="IsGroup"/>
+		<property name="Порядок" type="xs:integer" form="Attribute" localName="Sort"/>
+		<property name="ЗапретНесколькихЗаказов" type="xs:integer" form="Attribute" localName="OneOrder"/>
+	</objectType>
+	<objectType name="WaiterCalls">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="WaiterCall" type="d3p1:WaiterCall" upperBound="-1" localName="WaiterCall"/>
+	</objectType>
+	<objectType name="WaiterCall">
+		<property name="НомерЗаказа" type="xs:string" form="Attribute" localName="OrderId"/>
+		<property name="КодМеста" type="xs:string" nillable="true" default="1" form="Attribute" localName="TableCode"/>
+		<property name="КодОфицианта" type="xs:string" nillable="true" default="" form="Attribute" localName="WaiterPin"/>
+		<property name="КодЗапроса" type="xs:integer" form="Attribute" localName="RequestCode"/>
+	</objectType>
+	<objectType name="Clients">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Client" type="d3p1:Client" upperBound="-1" localName="Client"/>
+	</objectType>
+	<objectType name="Client">
+		<property name="Описание" type="xs:string" form="Attribute" localName="Details"/>
+	</objectType>
+	<objectType name="MenuTypeList">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="MenuType" type="d3p1:MenuType" upperBound="-1" localName="MenuType"/>
+	</objectType>
+	<objectType name="MenuType">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+	</objectType>
+	<objectType name="Recomendations">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Recomendation" type="d3p1:Recomendation" upperBound="-1" localName="Recomendation"/>
+	</objectType>
+	<objectType name="Recomendation">
+		<property name="КодМеню" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="КодРекомендации" type="xs:integer" form="Attribute" localName="CodeRecomend"/>
+	</objectType>
+	<objectType name="GuestRequests">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="GuestRequest" type="d3p1:GuestRequest" upperBound="-1" localName="GuestRequest"/>
+	</objectType>
+	<objectType name="GuestRequest">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Родитель" type="xs:integer" form="Attribute" localName="ParentCode"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Text"/>
+	</objectType>
+	<objectType name="Discounts">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Discount" type="d3p1:Discount" upperBound="-1" localName="Discount"/>
+	</objectType>
+	<objectType name="Discount">
+		<property name="Код" type="xs:string" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+		<property name="Значение" type="xs:string" form="Attribute" localName="Value"/>
+	</objectType>
+	<objectType name="PaymentType">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+	</objectType>
+	<objectType name="PaymentTypes">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="PaymentType" type="d3p1:PaymentType" upperBound="-1" localName="PaymentType"/>
+	</objectType>
+	<objectType name="Permissions">
+		<property xmlns:d3p1="http://mad.softbalance.ru" name="Permission" type="d3p1:Permission" upperBound="-1" localName="Permission"/>
+	</objectType>
+	<objectType name="Permission">
+		<property name="Код" type="xs:integer" form="Attribute" localName="Code"/>
+		<property name="Наименование" type="xs:string" form="Attribute" localName="Name"/>
+		<property name="Значение" type="xs:string" form="Attribute" localName="Value"/>
+	</objectType>
+</package>

@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновная" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="49"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОбъектыТекст" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объекты текст</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объекты текст</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбъектыТекстРасширеннаяПодсказка" id="50"/>
+				</UsualGroup>
+				<UsualGroup name="ГруппаТекстОбъекты" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текст объекты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текст объекты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТекстОбъектыРасширеннаяПодсказка" id="64"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаРежим" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа режим</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа режим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаРежимРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Page name="ГруппаОбъекты" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объекты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объекты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбъектыРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="ТипОбъектовДляВыгрузки" id="81">
+							<DataPath>ТипОбъектовДляВыгрузки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТипОбъектовДляВыгрузкиКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ТипОбъектовДляВыгрузкиРасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<Table name="ПереносимыеОбъекты" id="7">
+							<Representation>List</Representation>
+							<Width>50</Width>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПереносимыеОбъекты</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПереносимыеОбъектыКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="ПереносимыеОбъектыКоманднаяПанель" id="9">
+								<ChildItems>
+									<Button name="ВыгрузкаДобавитьИзЗапроса" id="84">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Command.ДобавитьИзЗапроса</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Добавить запросом...</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ВыгрузкаДобавитьИзЗапросаРасширеннаяПодсказка" id="85"/>
+									</Button>
+									<Button name="ОбъектыОчистить" id="86">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Command.ОчиститьОбъекты</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Clear</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Удалить все</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ОбъектыОчиститьРасширеннаяПодсказка" id="87"/>
+									</Button>
+									<Button name="ФормаОбъектыВJSON" id="38">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<DefaultButton>true</DefaultButton>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Command.ОбъектыВJSON</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ФормаОбъектыВJSONРасширеннаяПодсказка" id="47"/>
+									</Button>
+									<Button name="ПереносимыеОбъектыИнструкция" id="90">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Инструкция</CommandName>
+										<ExtendedTooltip name="ПереносимыеОбъектыИнструкцияРасширеннаяПодсказка" id="91"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПереносимыеОбъектыРасширеннаяПодсказка" id="51"/>
+							<SearchStringAddition name="ПереносимыеОбъектыСтрокаПоиска" id="52">
+								<AdditionSource>
+									<Item>ПереносимыеОбъекты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереносимыеОбъектыСтрокаПоискаКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ПереносимыеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПереносимыеОбъектыСостояниеПросмотра" id="55">
+								<AdditionSource>
+									<Item>ПереносимыеОбъекты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереносимыеОбъектыСостояниеПросмотраКонтекстноеМеню" id="56"/>
+								<ExtendedTooltip name="ПереносимыеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПереносимыеОбъектыУправлениеПоиском" id="58">
+								<AdditionSource>
+									<Item>ПереносимыеОбъекты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереносимыеОбъектыУправлениеПоискомКонтекстноеМеню" id="59"/>
+								<ExtendedTooltip name="ПереносимыеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ПереносимыеОбъектыПередНачаломДобавления</Event>
+								<Event name="OnStartEdit">ПереносимыеОбъектыПриНачалеРедактирования</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПереносимыеОбъектыНомерСтроки" id="26">
+									<DataPath>Объект.ПереносимыеОбъекты.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереносимыеОбъектыНомерСтрокиКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПереносимыеОбъектыНомерСтрокиРасширеннаяПодсказка" id="61"/>
+								</LabelField>
+								<InputField name="ПереносимыеОбъектыТипОбъекта" id="40">
+									<DataPath>Объект.ПереносимыеОбъекты.ТипОбъекта</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<SkipOnInput>true</SkipOnInput>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Документы</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Документы</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Справочники</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Справочники</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>ПланыВидовХарактеристик</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПланыВидовХарактеристик</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>ПланыВидовРасчета</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПланыВидовРасчета</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>ПланыСчетов</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПланыСчетов</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПереносимыеОбъектыТипОбъектаКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ПереносимыеОбъектыТипОбъектаРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="ПереносимыеОбъектыСсылкаНаОбъект" id="29">
+									<DataPath>Объект.ПереносимыеОбъекты.СсылкаНаОбъект</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>ТипОбъекта</xr:Name>
+											<xr:DataPath xsi:type="xs:string">7:02023637-7868-4a5f-8576-835a76e0c9ba/1:5bdad865-f2c5-434b-8041-ba4aad3b6687</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="ПереносимыеОбъектыСсылкаНаОбъектКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ПереносимыеОбъектыСсылкаНаОбъектРасширеннаяПодсказка" id="63"/>
+									<Events>
+										<Event name="StartChoice">ПереносимыеОбъектыСсылкаНаОбъектНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТекст" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст JSON</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текст</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТекстРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<CommandBar name="ГруппаКнопки" id="71">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="72"/>
+							<ChildItems>
+								<Button name="ФормаJSONВОбъекты" id="36">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.JSONВОбъекты</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ФормаJSONВОбъектыРасширеннаяПодсказка" id="48"/>
+								</Button>
+								<Button name="СохранитьВФайл" id="75">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СохранитьВФайл</CommandName>
+									<ExtendedTooltip name="СохранитьВФайлРасширеннаяПодсказка" id="76"/>
+								</Button>
+								<Button name="ЗагрузитьИзФайла" id="73">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+									<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="74"/>
+								</Button>
+								<Button name="Инструкция" id="92">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Инструкция</CommandName>
+									<ExtendedTooltip name="ИнструкцияРасширеннаяПодсказка" id="93"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<InputField name="ТекстJSON" id="1">
+							<DataPath>Объект.ТекстJSON</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<MultiLine>true</MultiLine>
+							<ExtendedEdit>true</ExtendedEdit>
+							<ContextMenu name="ТекстJSONКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ТекстJSONРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаЗагрузкаJSON</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Columns>
+				<AdditionalColumns table="Объект.ПереносимыеОбъекты"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипыДанных" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:TypeDescription</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтраницаРазработки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страница разработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипОбъектовДляВыгрузки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объектов для выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:TypeDescription</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбъектыВJSON" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты -&gt; JSON</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты ВJSON</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбъектыВJSON</Action>
+		</Command>
+		<Command name="JSONВОбъекты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>JSON -&gt; Объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>JSONВОбъекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>JSONВОбъекты</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="СохранитьВФайл" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВФайл</Action>
+		</Command>
+		<Command name="ДобавитьИзЗапроса" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить из запроса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить из запроса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьИзЗапроса</Action>
+		</Command>
+		<Command name="ОчиститьОбъекты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить объекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьОбъекты</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Инструкция" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструкция</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструкция</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Help</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Инструкция</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

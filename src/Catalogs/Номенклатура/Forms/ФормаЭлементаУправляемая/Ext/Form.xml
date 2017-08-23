@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="КритерийОтбораШтрихкодыТовараОткрытьПоЗначению" id="48">
+				<Type>CommandBarButton</Type>
+				<CommandName>FilterCriterion.ШтрихкодыТовара.StandardCommand.OpenByValue</CommandName>
+				<DataPath>Объект.Ref</DataPath>
+				<ExtendedTooltip name="КритерийОтбораШтрихкодыТовараОткрытьПоЗначениюРасширеннаяПодсказка" id="49"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="Колонка2" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка 2</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Колонка2РасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<InputField name="Наименование" id="8">
+							<DataPath>Объект.Description</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="10"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Колонка3" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка 3</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Колонка3РасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="КодСУП" id="42">
+							<DataPath>Объект.КодСУП</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодСУПКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="КодСУПРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="ИдСУП" id="45">
+							<DataPath>Объект.ИдСУП</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИдСУПКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ИдСУПРасширеннаяПодсказка" id="47"/>
+						</InputField>
+						<InputField name="Код" id="5">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="7"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Колонка1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонка 1</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Колонка1РасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<InputField name="БазоваяЕдиницаИзмерения" id="11">
+					<DataPath>Объект.БазоваяЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БазоваяЕдиницаИзмеренияКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="БазоваяЕдиницаИзмеренияРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="Выход" id="17">
+					<DataPath>Объект.Выход</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВыходКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ВыходРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="СБ_СодержаниеЖиров" id="55">
+					<DataPath>Объект.СБ_СодержаниеЖиров</DataPath>
+					<ContextMenu name="СБ_СодержаниеЖировКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="СБ_СодержаниеЖировРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="СБ_СодержаниеБелков" id="52">
+					<DataPath>Объект.СБ_СодержаниеБелков</DataPath>
+					<ContextMenu name="СБ_СодержаниеБелковКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="СБ_СодержаниеБелковРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="СБ_СодержаниеУглеводов" id="61">
+					<DataPath>Объект.СБ_СодержаниеУглеводов</DataPath>
+					<ContextMenu name="СБ_СодержаниеУглеводовКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="СБ_СодержаниеУглеводовРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<InputField name="СБ_СодержаниеККАЛ" id="58">
+					<DataPath>Объект.СБ_СодержаниеККАЛ</DataPath>
+					<ContextMenu name="СБ_СодержаниеККАЛКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="СБ_СодержаниеККАЛРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<CheckBoxField name="СБ_СодержитГМО" id="64">
+					<DataPath>Объект.СБ_СодержитГМО</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СБ_СодержитГМОКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="СБ_СодержитГМОРасширеннаяПодсказка" id="66"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="50">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="Состав" id="36">
+					<DataPath>Объект.Состав</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="СоставКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="СоставРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

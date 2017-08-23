@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДС</dataPath>
+			<field>СуммаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипОплаты</dataPath>
+			<field>ТипОплаты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип оплаты</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВариантОплаты</dataPath>
+			<field>ВариантОплаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товар</dataPath>
+			<field>Товар</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодСУП</dataPath>
+			<field>КодСУП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код СУП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КассоваяСмена</dataPath>
+			<field>КассоваяСмена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ККМ</dataPath>
+			<field>ККМ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерККМ</dataPath>
+			<field>НомерККМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ККМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДСссылка</dataPath>
+			<field>СтавкаНДСссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка НДСссылка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипРасхода</dataPath>
+			<field>ТипРасхода</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип расхода</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаФакт</dataPath>
+			<field>СуммаФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРозн</dataPath>
+			<field>СуммаРозн</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма розн</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗаказДопИнф.Заказ КАК Заказ,
+	тчПротокол.ВариантОплаты КАК ВариантОплаты,
+	СУММА(тчПротокол.СуммаФакт * ВЫБОР
+			КОГДА докПротоколРасчетов.Заказ ССЫЛКА Документ.Заказ
+				ТОГДА 1
+			ИНАЧЕ -1
+		КОНЕЦ) КАК СуммаФакт,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(докПротоколРасчетов.ИтогСуммаФакт, 0) = 0
+			ТОГДА 1
+		ИНАЧЕ СУММА(тчПротокол.СуммаФакт) / докПротоколРасчетов.ИтогСуммаФакт
+	КОНЕЦ КАК Доля,
+	докПротоколРасчетов.ККМ.КодСУП КАК НомерККМ,
+	докПротоколРасчетов.ККМ КАК ККМ,
+	докПротоколРасчетов.КассоваяСмена КАК КассоваяСмена
+ПОМЕСТИТЬ тОплата
+ИЗ
+	Документ.ПротоколРасчетов КАК докПротоколРасчетов
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПротоколРасчетов.Протокол КАК тчПротокол
+		ПО (тчПротокол.Ссылка = докПротоколРасчетов.Ссылка)
+		ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаказДопИнф.Заказ КАК Заказ,
+			ЗаказДопИнф.Статус КАК Статус,
+			ЗаказДопИнф.ПротоколРасчетов КАК ПротоколРасчетов
+		ИЗ
+			РегистрСведений.ЗаказДопИнф КАК ЗаказДопИнф
+		ГДЕ
+			ЗаказДопИнф.Статус = &amp;Закрыт
+			И ЗаказДопИнф.ДатаЗакрытия МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+		
+		ОБЪЕДИНИТЬ ВСЕ
+		
+		ВЫБРАТЬ
+			ВозвратДопИнф.Возврат,
+			ВозвратДопИнф.Статус,
+			ВозвратДопИнф.ПротоколРасчетов
+		ИЗ
+			РегистрСведений.ВозвратДопИнф КАК ВозвратДопИнф
+		ГДЕ
+			ВозвратДопИнф.Статус = &amp;Закрыт) КАК ЗаказДопИнф
+		ПО докПротоколРасчетов.Ссылка = ЗаказДопИнф.ПротоколРасчетов
+ГДЕ
+	докПротоколРасчетов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	тчПротокол.ВариантОплаты,
+	ЗаказДопИнф.Заказ,
+	докПротоколРасчетов.ИтогСуммаФакт,
+	докПротоколРасчетов.ККМ.КодСУП,
+	докПротоколРасчетов.ККМ,
+	докПротоколРасчетов.КассоваяСмена
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	докЗаказ.Ссылка КАК Заказ,
+	ЗаказТовары.Товар КАК Товар,
+	СУММА(ЗаказТовары.Количество) КАК Количество,
+	СУММА(ЗаказТовары.Сумма) КАК Сумма,
+	СУММА(ЗаказТовары.СуммаРеализации) КАК СуммаРеализации,
+	ЗаказТовары.СтавкаНДС КАК СтавкаНДС,
+	СУММА(ЗаказТовары.СуммаНДС) КАК СуммаНДС,
+	ЗаказТовары.Товар.КодСУП КАК КодСУП,
+	ЗНАЧЕНИЕ(Перечисление.ТипыРасхода.Реализация) КАК ТипРасхода
+ПОМЕСТИТЬ тПродажи
+ИЗ
+	Документ.Заказ.Товары КАК ЗаказТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ЗаказДопИнф КАК ЗаказДопИнф
+		ПО ЗаказТовары.Ссылка = ЗаказДопИнф.Заказ
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Заказ КАК докЗаказ
+		ПО (докЗаказ.Ссылка = ЗаказТовары.Ссылка)
+ГДЕ
+	ЗаказДопИнф.Статус = &amp;Закрыт
+	И НЕ докЗаказ.ПометкаУдаления
+	И ЗаказТовары.Сумма + ЗаказТовары.СуммаРеализации + ЗаказТовары.Количество &gt; 0
+	И ЗаказДопИнф.ДатаЗакрытия МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	докЗаказ.Ссылка,
+	ЗаказТовары.Товар,
+	ЗаказТовары.СтавкаНДС,
+	ЗаказТовары.Товар.КодСУП
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	докВозврат.Ссылка,
+	ВозвратТовары.Товар,
+	СУММА(-ВозвратТовары.Количество),
+	СУММА(-ВозвратТовары.Сумма),
+	СУММА(-ВозвратТовары.Сумма),
+	ВозвратТовары.СтавкаНДС,
+	СУММА(-ВозвратТовары.СуммаНДС),
+	ВозвратТовары.Товар.КодСУП,
+	ЗНАЧЕНИЕ(Перечисление.ТипыРасхода.Возврат)
+ИЗ
+	Документ.Возврат.Товары КАК ВозвратТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ВозвратДопИнф КАК ВозвратДопИнф
+		ПО ВозвратТовары.Ссылка = ВозвратДопИнф.Возврат
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Возврат КАК докВозврат
+		ПО (докВозврат.Ссылка = ВозвратТовары.Ссылка)
+ГДЕ
+	ВозвратДопИнф.Статус = &amp;Закрыт
+	И НЕ докВозврат.ПометкаУдаления
+	И ВозвратТовары.Сумма + ВозвратТовары.Количество &gt; 0
+	И ВозвратДопИнф.ДатаЗакрытия МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	докВозврат.Ссылка,
+	ВозвратТовары.Товар,
+	ВозвратТовары.СтавкаНДС,
+	ВозвратТовары.Товар.КодСУП
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СУММА(тПродажи.Количество * ЕСТЬNULL(тОплата.Доля, 1)) КАК Количество,
+	ВЫРАЗИТЬ(СУММА(тПродажи.Сумма * ЕСТЬNULL(тОплата.Доля, 1)) КАК ЧИСЛО(15, 2)) КАК СуммаРозн,
+	ВЫРАЗИТЬ(СУММА(тПродажи.СуммаРеализации * ЕСТЬNULL(тОплата.Доля, 1)) КАК ЧИСЛО(15, 2)) КАК СуммаФакт,
+	ПРЕДСТАВЛЕНИЕ(тПродажи.СтавкаНДС) КАК СтавкаНДС,
+	ВЫРАЗИТЬ(СУММА(тПродажи.СуммаНДС * ЕСТЬNULL(тОплата.Доля, 1)) КАК ЧИСЛО(15, 2)) КАК СуммаНДС,
+	тПродажи.КодСУП КАК КодСУП,
+	ЕСТЬNULL(ПРЕДСТАВЛЕНИЕ(тОплата.ВариантОплаты), "") КАК ТипОплаты,
+	тОплата.НомерККМ КАК НомерККМ,
+	тПродажи.Заказ КАК Заказ,
+	тПродажи.Товар КАК Товар,
+	тПродажи.СтавкаНДС КАК СтавкаНДСссылка,
+	тОплата.ВариантОплаты КАК ВариантОплаты,
+	тПродажи.ТипРасхода КАК ТипРасхода,
+	тОплата.ККМ КАК ККМ,
+	тОплата.КассоваяСмена КАК КассоваяСмена
+ИЗ
+	тПродажи КАК тПродажи
+		ЛЕВОЕ СОЕДИНЕНИЕ тОплата КАК тОплата
+		ПО тПродажи.Заказ = тОплата.Заказ
+
+СГРУППИРОВАТЬ ПО
+	тПродажи.КодСУП,
+	тОплата.НомерККМ,
+	тПродажи.Товар,
+	тПродажи.СтавкаНДС,
+	тОплата.ВариантОплаты,
+	тПродажи.Заказ,
+	тПродажи.ТипРасхода,
+	тОплата.ККМ,
+	тОплата.КассоваяСмена</query>
+	</dataSet>
+	<totalField>
+		<dataPath>СуммаФакт</dataPath>
+		<expression>Сумма(СуммаФакт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаРозн</dataPath>
+		<expression>Сумма(СуммаРозн)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаНДС</dataPath>
+		<expression>Сумма(СуммаНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<parameter>
+		<name>Закрыт</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Закрыт</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СтатусыЗаказа</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаказа.Закрыт</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ККМ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Товар</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодСУП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипОплаты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Заказ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаРозн</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СуммаРозн</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаФакт</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СуммаФакт</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>СуммаНДС</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СуммаНДС</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:userSettingID>3c50f472-b339-41f2-beaf-57774b53732c</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:userSettingID>48a0f40e-9c89-488b-9426-6a567282bc6f</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>ca0aa6c9-6c66-4d6b-9656-bc6359775a8b</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>43a90b39-f166-4d5f-acfc-b4d22bd042c4</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">МакетОформленияКомпоновкиДанных</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:name>По типам расхода</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТипРасхода</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:userSettingID>6ffd05f3-522a-4893-bba6-f753103d3311</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По типам расхода</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:name>По типам оплаты</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТипОплаты</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:userSettingID>5aea14a9-7a4c-49ad-a0ab-29bcd8723658</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По типам оплаты</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НомерККМ</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>КодСУП</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Товар.Наименование</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:name>По заказам</dcsset:name>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Заказ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:userSettingID>2b774f23-a2c6-42e1-9759-c454b4716103</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По заказам</v8:content>
+								</v8:item>
+							</dcsset:userSettingPresentation>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

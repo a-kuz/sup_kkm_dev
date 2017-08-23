@@ -1,0 +1,865 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ФактическаяВыработка</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Год</dataPath>
+			<field>Год</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Год</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Строка(Год(Год)) + " год"</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>День</dataPath>
+			<field>День</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>День</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>День</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Квартал</dataPath>
+			<field>Квартал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Квартал</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Строка(Квартал(Квартал)) +  " квартал "+Строка(Год(Квартал))</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>День</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ='MMMM yyyy'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Неделя</dataPath>
+			<field>Неделя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Неделя</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Строка(Неделя(Неделя))+ " неделя "+Строка(Год(Неделя))</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоРеализации</dataPath>
+			<field>МестоРеализации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Место реализации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Смена</dataPath>
+			<field>Смена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнформационнаяБаза</dataPath>
+			<field>ИнформационнаяБаза</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная база</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДНИНЕДЕЛИ</dataPath>
+			<field>ДНИНЕДЕЛИ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дни недели</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Выбор КОГДА ЕСТЬNULL(День, НЕопределено) &lt;&gt; Неопределено ТОГДА ФормированиеОтчетов.ПолучитьИмяДняНедели(День) КОНЕЦ </presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=дддд</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Фирма</dataPath>
+			<field>Фирма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяНачалаФакт</dataPath>
+			<field>ВремяНачалаФакт</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=T</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяОкончанияФакт</dataPath>
+			<field>ВремяОкончанияФакт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяНачалаПлан</dataPath>
+			<field>ВремяНачалаПлан</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяОкончанияПлан</dataPath>
+			<field>ВремяОкончанияПлан</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Опоздание</dataPath>
+			<field>Опоздание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументУчетаВремени</dataPath>
+			<field>ДокументУчетаВремени</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УходРаньше</dataPath>
+			<field>УходРаньше</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноМинут</dataPath>
+			<field>ОтработаноМинут</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноСмен</dataPath>
+			<field>ОтработаноСмен</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	0 КАК Цифра
+ПОМЕСТИТЬ ВТ_ТаблицаЦифр
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	1
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	2
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	3
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	4
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	5
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	6
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	7
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	8
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	9
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(&amp;ДатаС, ДЕНЬ, ТаблицаЦифрЕдиницы.Цифра + ТаблицаЦифрДесятки.Цифра * 10) КАК ДатаКалендаря
+ПОМЕСТИТЬ ВТ_Календарь
+ИЗ
+	ВТ_ТаблицаЦифр КАК ТаблицаЦифрЕдиницы,
+	ВТ_ТаблицаЦифр КАК ТаблицаЦифрДесятки
+ГДЕ
+	ДОБАВИТЬКДАТЕ(&amp;ДатаС, ДЕНЬ, ТаблицаЦифрЕдиницы.Цифра + ТаблицаЦифрДесятки.Цифра * 10) &lt;= &amp;ДатаПо
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ТаблицаЦифр
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних.Период,
+	УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних.Фирма,
+	УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних.Сотрудник,
+	УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних.Должность,
+	УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних.ГрафикРаботы,
+	УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних.КоличествоСтавок,
+	"Срез последних" КАК ИсточникДанных
+ПОМЕСТИТЬ ВТ_Трудоустройство
+ИЗ
+	РегистрСведений.УР_ДанныеПоТрудоустройствуСотрудников.СрезПоследних(&amp;ДатаС, ) КАК УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних
+ГДЕ
+	УР_ДанныеПоТрудоустройствуСотрудниковСрезПоследних.КоличествоСтавок &gt; 0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	УР_ДанныеПоТрудоустройствуСотрудников.Период,
+	УР_ДанныеПоТрудоустройствуСотрудников.Фирма,
+	УР_ДанныеПоТрудоустройствуСотрудников.Сотрудник,
+	УР_ДанныеПоТрудоустройствуСотрудников.Должность,
+	УР_ДанныеПоТрудоустройствуСотрудников.ГрафикРаботы,
+	УР_ДанныеПоТрудоустройствуСотрудников.КоличествоСтавок,
+	"Изменение за период"
+ИЗ
+	РегистрСведений.УР_ДанныеПоТрудоустройствуСотрудников КАК УР_ДанныеПоТрудоустройствуСотрудников
+ГДЕ
+	УР_ДанныеПоТрудоустройствуСотрудников.Период &gt; &amp;ДатаС
+	И УР_ДанныеПоТрудоустройствуСотрудников.Период &lt;= &amp;ДатаПо
+	И (УР_ДанныеПоТрудоустройствуСотрудников.КоличествоСтавок &gt; 0
+			ИЛИ (УР_ДанныеПоТрудоустройствуСотрудников.Регистратор.ВидПриказа = ЗНАЧЕНИЕ(перечисление.УР_ВидыОперацийПриказОКадровомИзменении.Увольнение)
+				ИЛИ УР_ДанныеПоТрудоустройствуСотрудников.Регистратор.ВидПриказа = ЗНАЧЕНИЕ(перечисление.УР_ВидыОперацийПриказОКадровомИзменении.КадровоеПеремещение)))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВложенныйЗапрос.ДатаКалендаря КАК ДатаКалендаря,
+	Трудоустойство.ГрафикРаботы,
+	Трудоустойство.Период,
+	Трудоустойство.Сотрудник,
+	Трудоустойство.Должность,
+	Трудоустойство.Фирма,
+	Трудоустойство.КоличествоСтавок
+ПОМЕСТИТЬ ВТ_ТрудоустройствоПоДням
+ИЗ
+	(ВЫБРАТЬ
+		Т2.ДатаКалендаря КАК ДатаКалендаря,
+		МАКСИМУМ(Т1.Период) КАК Период,
+		Т1.Фирма КАК Фирма,
+		Т1.Сотрудник КАК Сотрудник,
+		Т1.Должность КАК Должность
+	ИЗ
+		ВТ_Календарь КАК Т2
+			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Трудоустройство КАК Т1
+			ПО Т2.ДатаКалендаря &gt;= Т1.Период
+	ГДЕ
+		Т2.ДатаКалендаря &gt;= &amp;ДатаС
+		И Т2.ДатаКалендаря &lt;= &amp;ДатаПо
+	
+	СГРУППИРОВАТЬ ПО
+		Т2.ДатаКалендаря,
+		Т1.Фирма,
+		Т1.Сотрудник,
+		Т1.Должность) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Трудоустройство КАК Трудоустойство
+		ПО ВложенныйЗапрос.Период = Трудоустойство.Период
+			И ВложенныйЗапрос.Фирма = Трудоустойство.Фирма
+			И ВложенныйЗапрос.Сотрудник = Трудоустойство.Сотрудник
+			И ВложенныйЗапрос.Должность = Трудоустойство.Должность
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Графики.Фирма,
+	ВТ_Графики.Сотрудник,
+	ВТ_Графики.Должность,
+	ВТ_Графики.ДатаКалендаря,
+	ЕСТЬNULL(ВТ_Графики.ГрафикРаботы, НЕОПРЕДЕЛЕНО) КАК ГрафикРаботы,
+	ЕСТЬNULL(УР_ГрафикиРаботы.Смена, ЗНАЧЕНИЕ(Справочник.УР_Смены.ПустаяСсылка)) КАК Смена,
+	ЕСТЬNULL(УР_ГрафикиРаботы.Длительность, 0) * ВТ_Графики.КоличествоСтавок КАК Длительность,
+	УР_ГрафикиРаботы.ВремяНачала,
+	УР_ГрафикиРаботы.ВремяОкончания
+ПОМЕСТИТЬ ВТ_ГрафикДеньДлительность
+ИЗ
+	ВТ_ТрудоустройствоПоДням КАК ВТ_Графики
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УР_ГрафикиРаботы КАК УР_ГрафикиРаботы
+		ПО ВТ_Графики.ДатаКалендаря = УР_ГрафикиРаботы.Дата
+			И ВТ_Графики.ГрафикРаботы = УР_ГрафикиРаботы.ГрафикРаботы
+ГДЕ
+	ВТ_Графики.КоличествоСтавок &lt;&gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ТрудоустройствоПоДням.Сотрудник КАК Сотрудник,
+	ВТ_ТрудоустройствоПоДням.Должность КАК Должность,
+	ВТ_ТрудоустройствоПоДням.ДатаКалендаря КАК ДатаКалендаря,
+	ЕСТЬNULL(ВТ_ГрафикДеньДлительность.ГрафикРаботы, НЕОПРЕДЕЛЕНО) КАК ГрафикРаботы,
+	ВТ_ТрудоустройствоПоДням.Фирма КАК Фирма,
+	ВТ_ГрафикДеньДлительность.Длительность КАК Длительность,
+	ЕСТЬNULL(ВТ_ГрафикДеньДлительность.Смена.ВидИспользованияРабочегоВремени, НЕОПРЕДЕЛЕНО) КАК ВидВремени,
+	ВТ_ГрафикДеньДлительность.ВремяНачала КАК ВремяНачалаПлан,
+	ВТ_ГрафикДеньДлительность.ВремяОкончания КАК ВремяОкончанияПлан
+ПОМЕСТИТЬ ПлановыеДанные
+ИЗ
+	ВТ_ТрудоустройствоПоДням КАК ВТ_ТрудоустройствоПоДням
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ГрафикДеньДлительность КАК ВТ_ГрафикДеньДлительность
+		ПО ВТ_ТрудоустройствоПоДням.ДатаКалендаря = ВТ_ГрафикДеньДлительность.ДатаКалендаря
+			И ВТ_ТрудоустройствоПоДням.Фирма = ВТ_ГрафикДеньДлительность.Фирма
+			И ВТ_ТрудоустройствоПоДням.Сотрудник = ВТ_ГрафикДеньДлительность.Сотрудник
+			И ВТ_ТрудоустройствоПоДням.Должность = ВТ_ГрафикДеньДлительность.Должность
+			И ВТ_ТрудоустройствоПоДням.ГрафикРаботы = ВТ_ГрафикДеньДлительность.ГрафикРаботы
+ГДЕ
+	ЕСТЬNULL(ВТ_ГрафикДеньДлительность.ГрафикРаботы, НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НАЧАЛОПЕРИОДА(ДетальныйУчетВремени.Ссылка.Смена.Дата, ДЕНЬ) КАК РабочийДень,
+	ДетальныйУчетВремени.Ссылка.Смена КАК Смена,
+	ДетальныйУчетВремени.Ссылка.Ссылка КАК ДокументУчетаВремени,
+	ДетальныйУчетВремени.Ссылка.Должность КАК Должность,
+	ДетальныйУчетВремени.Ссылка.Сотрудник КАК Сотрудник,
+	ДетальныйУчетВремени.Ссылка.МестоРеализации КАК МестоРеализации,
+	ДетальныйУчетВремени.Ссылка.Фирма КАК Фирма,
+	ДетальныйУчетВремени.Ссылка.Подразделение КАК Подразделение,
+	ДетальныйУчетВремени.Ссылка.Утвердил КАК Ответственный,
+	МИНИМУМ(ДетальныйУчетВремени.ВремяНачала) КАК ВремяНачалаФакт,
+	МАКСИМУМ(ДетальныйУчетВремени.ВремяОкончания) КАК ВремяОкончанияФакт,
+	КОЛИЧЕСТВО(НАЧАЛОПЕРИОДА(ДетальныйУчетВремени.Ссылка.Смена.Дата, ДЕНЬ)) КАК ОтработаноДней,
+	ДетальныйУчетВремени.ВидИспользованияРабочегоВремени,
+	ДетальныйУчетВремени.Ссылка.МестоРеализации.ИнформационнаяБаза КАК ИнформационнаяБаза,
+	СУММА(ЕСТЬNULL(РАЗНОСТЬДАТ(НАЧАЛОПЕРИОДА(ДетальныйУчетВремени.Длительность, ДЕНЬ), ДетальныйУчетВремени.Длительность, МИНУТА), 0)) КАК ОтработаноМинут
+ПОМЕСТИТЬ ФактическиеДанные
+ИЗ
+	Документ.ФактическаяВыработка.ДетальныйУчетВремени КАК ДетальныйУчетВремени
+ГДЕ
+	ДетальныйУчетВремени.Ссылка.ПометкаУдаления = ЛОЖЬ
+	И ВЫБОР
+			КОГДА &amp;ПараметрДата
+				ТОГДА ДетальныйУчетВремени.Ссылка.Смена.Дата МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+			ИНАЧЕ ДетальныйУчетВремени.Ссылка.Смена В (&amp;МассивСмен)
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	НАЧАЛОПЕРИОДА(ДетальныйУчетВремени.Ссылка.Смена.Дата, ДЕНЬ),
+	ДетальныйУчетВремени.Ссылка.Смена,
+	ДетальныйУчетВремени.Ссылка.Дата,
+	ДетальныйУчетВремени.Ссылка.Ссылка,
+	ДетальныйУчетВремени.Ссылка.Должность,
+	ДетальныйУчетВремени.Ссылка.Сотрудник,
+	ДетальныйУчетВремени.Ссылка.МестоРеализации,
+	ДетальныйУчетВремени.Ссылка.Фирма,
+	ДетальныйУчетВремени.Ссылка.Подразделение,
+	ДетальныйУчетВремени.Ссылка.Утвердил,
+	ДетальныйУчетВремени.ВидИспользованияРабочегоВремени,
+	ДетальныйУчетВремени.Ссылка.МестоРеализации.ИнформационнаяБаза
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ЕСТЬNULL(НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, ДЕНЬ), НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, ДЕНЬ)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(ПлановыеДанные.ДатаКалендаря, ДЕНЬ)
+	КОНЕЦ КАК День,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, НЕДЕЛЯ), НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, НЕДЕЛЯ)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(ПлановыеДанные.ДатаКалендаря, НЕДЕЛЯ)
+	КОНЕЦ КАК Неделя,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, МЕСЯЦ), НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, МЕСЯЦ)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(ПлановыеДанные.ДатаКалендаря, МЕСЯЦ)
+	КОНЕЦ КАК Месяц,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, КВАРТАЛ), НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, КВАРТАЛ)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(ПлановыеДанные.ДатаКалендаря, КВАРТАЛ)
+	КОНЕЦ КАК Квартал,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, ГОД), НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА НАЧАЛОПЕРИОДА(ФактическиеДанные.РабочийДень, ГОД)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(ПлановыеДанные.ДатаКалендаря, ГОД)
+	КОНЕЦ КАК Год,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ДЕНЬНЕДЕЛИ(ФактическиеДанные.РабочийДень), НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА ДЕНЬНЕДЕЛИ(ФактическиеДанные.РабочийДень)
+		ИНАЧЕ ДЕНЬНЕДЕЛИ(ПлановыеДанные.ДатаКалендаря)
+	КОНЕЦ КАК ДНИНЕДЕЛИ,
+	ФактическиеДанные.Смена,
+	ФактическиеДанные.ДокументУчетаВремени,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ФактическиеДанные.Должность, НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА ФактическиеДанные.Должность
+		ИНАЧЕ ПлановыеДанные.Должность
+	КОНЕЦ КАК Должность,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ФактическиеДанные.Сотрудник, НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА ФактическиеДанные.Сотрудник
+		ИНАЧЕ ПлановыеДанные.Сотрудник
+	КОНЕЦ КАК Сотрудник,
+	ФактическиеДанные.МестоРеализации,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ФактическиеДанные.Фирма, НЕОПРЕДЕЛЕНО) &lt;&gt; НЕОПРЕДЕЛЕНО
+			ТОГДА ФактическиеДанные.Фирма
+		ИНАЧЕ ПлановыеДанные.Фирма
+	КОНЕЦ КАК Фирма,
+	ФактическиеДанные.Подразделение,
+	ФактическиеДанные.Ответственный,
+	ФактическиеДанные.ВремяНачалаФакт,
+	ФактическиеДанные.ВремяОкончанияФакт,
+	ФактическиеДанные.ИнформационнаяБаза,
+	ЕСТЬNULL(ФактическиеДанные.ОтработаноМинут, 0) КАК ОтработаноМинут,
+	ЕСТЬNULL(ФактическиеДанные.ОтработаноДней, 0) КАК ОтработаноСмен,
+	ПлановыеДанные.ВремяНачалаПлан,
+	ПлановыеДанные.ВремяОкончанияПлан,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ФактическиеДанные.ВремяНачалаФакт,0) &gt; ЕСТЬNULL(ПлановыеДанные.ВремяНачалаПлан,0)
+			ТОГДА РАЗНОСТЬДАТ(ПлановыеДанные.ВремяНачалаПлан, ФактическиеДанные.ВремяНачалаФакт, МИНУТА)
+		ИНАЧЕ 0
+	КОНЕЦ КАК Опоздание,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ФактическиеДанные.ВремяОкончанияФакт,Неопределено) &lt; ЕСТЬNULL(ПлановыеДанные.ВремяОкончанияПлан, Неопределено)
+			ТОГДА РАЗНОСТЬДАТ(ФактическиеДанные.ВремяОкончанияФакт, ПлановыеДанные.ВремяОкончанияПлан, МИНУТА)
+		ИНАЧЕ 0
+	КОНЕЦ КАК УходРаньше
+ИЗ
+	ФактическиеДанные КАК ФактическиеДанные
+		ПОЛНОЕ СОЕДИНЕНИЕ ПлановыеДанные КАК ПлановыеДанные
+		ПО (ПлановыеДанные.ДатаКалендаря = ФактическиеДанные.РабочийДень)
+			И (ПлановыеДанные.Сотрудник = ФактическиеДанные.Сотрудник)</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>План</dataPath>
+		<expression>Строка(Формат(ВремяНачалаПлан, "ДЛФ=T")+"- "+Формат(ВремяОкончанияПлан, "ДЛФ=T"))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ОтработаноЧасовДляДиаграммы</dataPath>
+		<expression>ОтработаноМинут/60</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отработано часов для диаграммы</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>ВремяНачалаПлан</dataPath>
+		<expression>Минимум(ВремяНачалаПлан)</expression>
+		<group>День</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяОкончанияПлан</dataPath>
+		<expression>Максимум(ВремяОкончанияПлан)</expression>
+		<group>День</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяНачалаФакт</dataPath>
+		<expression>Минимум(ВремяНачалаФакт)</expression>
+		<group>День</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяОкончанияФакт</dataPath>
+		<expression>Максимум(ВремяОкончанияФакт)</expression>
+		<group>День</group>
+	</totalField>
+	<totalField>
+		<dataPath>УходРаньше</dataPath>
+		<expression>Максимум(УходРаньше)</expression>
+		<group>Сотрудник</group>
+		<group>Сотрудник Иерархия</group>
+	</totalField>
+	<totalField>
+		<dataPath>Опоздание</dataPath>
+		<expression>Максимум(Опоздание)</expression>
+		<group>Сотрудник</group>
+		<group>Сотрудник Иерархия</group>
+	</totalField>
+	<totalField>
+		<dataPath>План</dataPath>
+		<expression>Максимум(План)</expression>
+		<group>День</group>
+	</totalField>
+	<totalField>
+		<dataPath>ОтработаноЧасовДляДиаграммы</dataPath>
+		<expression>Сумма(ОтработаноЧасовДляДиаграммы)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтработаноМинут</dataPath>
+		<expression>Сумма(ОтработаноМинут)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтработаноСмен</dataPath>
+		<expression>Сумма(ОтработаноСмен)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаПо</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата по</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаС</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата С</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>МассивСмен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив смен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ОткрытиеСмены</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Документ.ОткрытиеСмены.ПустаяСсылка</value>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ПараметрДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Параметр дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПустаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пустая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ОтработаноМинут</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ОтработаноМинут</dcsat:name>
+			<dcsat:expression>Выбор когда ОтработаноМинут &lt;&gt; 0 Тогда ФормированиеОтчетов.ВремяСтрокойДляОтчета(ОтработаноМинут) Конец</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Опоздание</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Опоздание</dcsat:name>
+			<dcsat:expression>Выбор когда Опоздание &lt;&gt; 0 Тогда ФормированиеОтчетов.ВремяСтрокойДляОтчета(Опоздание) Конец</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">УходРаньше</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>УходРаньше</dcsat:name>
+			<dcsat:expression>Выбор когда УходРаньше &lt;&gt; 0 Тогда ФормированиеОтчетов.ВремяСтрокойДляОтчета(УходРаньше) Конец</dcsat:expression>
+		</parameter>
+	</template>
+	<fieldTemplate>
+		<field>ОтработаноМинут</field>
+		<template>Макет1</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>Опоздание</field>
+		<template>Макет2</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>УходРаньше</field>
+		<template>Макет3</template>
+	</fieldTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>План</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяНачалаФакт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяОкончанияФакт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтработаноМинут</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отработано часов</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтработаноСмен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Опоздание</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опоздание (час.)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УходРаньше</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уход раньше (час.)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Смена</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>День</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДНИНЕДЕЛИ</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Неделя</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Месяц</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Квартал</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Год</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Green</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал учета рабочего времени</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Должность</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>День</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

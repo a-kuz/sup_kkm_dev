@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="59">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="КодТТ" id="46">
+					<DataPath>Объект.КодТТ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодТТКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="КодТТРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="Префикс" id="7">
+					<DataPath>Объект.Префикс</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПрефиксКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="57">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НаименованиеЮридическогоЛица" id="49">
+			<DataPath>Объект.НаименованиеЮридическогоЛица</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование юр. лица</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеЮридическогоЛицаКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="НаименованиеЮридическогоЛицаРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="55">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<InputField name="ИНН" id="10">
+					<DataPath>Объект.ИНН</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИННКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="КПП" id="34">
+					<DataPath>Объект.КПП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КППКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="КППРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОГРН" id="13">
+			<DataPath>Объект.ОГРН</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОГРНКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОГРНРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="КодПоОКПО" id="16">
+			<DataPath>Объект.КодПоОКПО</DataPath>
+			<Visible>false</Visible>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.РабочееМесто">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Просмотр">true</xr:Value>
+				<xr:Value name="Role.ИнспекторПоКадрам">true</xr:Value>
+				<xr:Value name="Role.ирОтладкаПользователя">true</xr:Value>
+				<xr:Value name="Role.ирПользователь">true</xr:Value>
+				<xr:Value name="Role.ирПравоАдминистрирование">true</xr:Value>
+				<xr:Value name="Role.ирРазработчик">true</xr:Value>
+			</UserVisible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодПоОКПОКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КодПоОКПОРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ИФНС" id="19">
+			<DataPath>Объект.ИФНС</DataPath>
+			<Visible>false</Visible>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.РабочееМесто">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Просмотр">true</xr:Value>
+				<xr:Value name="Role.ИнспекторПоКадрам">true</xr:Value>
+				<xr:Value name="Role.ирОтладкаПользователя">true</xr:Value>
+				<xr:Value name="Role.ирПользователь">true</xr:Value>
+				<xr:Value name="Role.ирПравоАдминистрирование">true</xr:Value>
+				<xr:Value name="Role.ирРазработчик">true</xr:Value>
+			</UserVisible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИФНСКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИФНСРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ОКАТО" id="22">
+			<DataPath>Объект.ОКАТО</DataPath>
+			<Visible>false</Visible>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.РабочееМесто">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Просмотр">true</xr:Value>
+				<xr:Value name="Role.ИнспекторПоКадрам">true</xr:Value>
+				<xr:Value name="Role.ирОтладкаПользователя">true</xr:Value>
+				<xr:Value name="Role.ирПользователь">true</xr:Value>
+				<xr:Value name="Role.ирПравоАдминистрирование">true</xr:Value>
+				<xr:Value name="Role.ирРазработчик">true</xr:Value>
+			</UserVisible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОКАТОКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ОКАТОРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Сайт" id="25">
+			<DataPath>Объект.Сайт</DataPath>
+			<Visible>false</Visible>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.РабочееМесто">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Просмотр">true</xr:Value>
+				<xr:Value name="Role.ИнспекторПоКадрам">true</xr:Value>
+				<xr:Value name="Role.ирОтладкаПользователя">true</xr:Value>
+				<xr:Value name="Role.ирПользователь">true</xr:Value>
+				<xr:Value name="Role.ирПравоАдминистрирование">true</xr:Value>
+				<xr:Value name="Role.ирРазработчик">true</xr:Value>
+			</UserVisible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СайтКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="СайтРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ЭлектроннаяПочта" id="28">
+			<DataPath>Объект.ЭлектроннаяПочта</DataPath>
+			<Visible>false</Visible>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.РабочееМесто">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Просмотр">true</xr:Value>
+				<xr:Value name="Role.ИнспекторПоКадрам">true</xr:Value>
+				<xr:Value name="Role.ирОтладкаПользователя">true</xr:Value>
+				<xr:Value name="Role.ирПользователь">true</xr:Value>
+				<xr:Value name="Role.ирПравоАдминистрирование">true</xr:Value>
+				<xr:Value name="Role.ирРазработчик">true</xr:Value>
+			</UserVisible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЭлектроннаяПочтаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ЭлектроннаяПочтаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Комментарий" id="31">
+			<DataPath>Объект.Комментарий</DataPath>
+			<Visible>false</Visible>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.РабочееМесто">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Просмотр">true</xr:Value>
+				<xr:Value name="Role.ИнспекторПоКадрам">true</xr:Value>
+				<xr:Value name="Role.ирОтладкаПользователя">true</xr:Value>
+				<xr:Value name="Role.ирПользователь">true</xr:Value>
+				<xr:Value name="Role.ирПравоАдминистрирование">true</xr:Value>
+				<xr:Value name="Role.ирРазработчик">true</xr:Value>
+			</UserVisible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Адрес" id="37">
+			<DataPath>Объект.Адрес</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="АдресДляЕГАИС" id="52">
+			<DataPath>Объект.АдресДляЕГАИС</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресДляЕГАИСКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="АдресДляЕГАИСРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="ИнформационнаяБаза" id="40">
+			<DataPath>Объект.ИнформационнаяБаза</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИнформационнаяБазаКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ИнформационнаяБазаРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="МестоРеализации" id="43">
+			<DataPath>Объект.МестоРеализации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МестоРеализацииКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="МестоРеализацииРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Мерчант" id="61">
+			<DataPath>Объект.Мерчант</DataPath>
+			<SpinButton>true</SpinButton>
+			<ContextMenu name="МерчантКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="МерчантРасширеннаяПодсказка" id="63"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Фирмы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

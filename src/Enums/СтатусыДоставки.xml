@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="ca6c9c2b-f5e4-4864-94ea-ae7f72af783f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыДоставки" category="Ref">
+				<xr:TypeId>b0982563-db63-482e-aa70-d3aa250d6de3</xr:TypeId>
+				<xr:ValueId>6b5fb93a-30e5-464d-a7ce-2105a416dbfd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыДоставки" category="Manager">
+				<xr:TypeId>89417527-b61a-4ee9-931f-bcc030ce93e2</xr:TypeId>
+				<xr:ValueId>ab2cd3b5-a62a-4f9f-889e-a15d002ecd4f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыДоставки" category="List">
+				<xr:TypeId>fdecf9c1-9ed3-4e6a-beb0-87b07161624e</xr:TypeId>
+				<xr:ValueId>531f5494-e1ff-4663-8062-13b5bb6ba07f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусыДоставки</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы доставки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="b0135109-05b6-4a6d-bde6-ab77d1d6952e">
+				<Properties>
+					<Name>Открыт</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыт</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>в стадии формирования</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7f460811-c264-4c16-a42a-e1a70e3618cc">
+				<Properties>
+					<Name>Выгружен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>из call-центра</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d10fd529-068e-459c-bbcc-1cef2ffbf3c5">
+				<Properties>
+					<Name>Загружен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загружен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>сформирован заказ</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4c1dc129-6d04-44ba-9f2c-b75890d6e596">
+				<Properties>
+					<Name>Принят</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Принят</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>распечатаны марки</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="94f8736d-1642-45a9-8448-70edcd9738bf">
+				<Properties>
+					<Name>Отложен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отложен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>указано отложенное время доставки</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c17e46ae-cb5e-4e43-80f3-908f121ef4dd">
+				<Properties>
+					<Name>Подготовлен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подготовлен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>распечатаны марки, накладная, чек</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="df215d5f-f8b0-4ea1-8995-a672bc125d27">
+				<Properties>
+					<Name>Отправлен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправлен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>назначен курьер</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="338881a0-dacd-4021-b453-ebde36aa143e">
+				<Properties>
+					<Name>Отказ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>клиент отказался после принятия заказа</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce28e703-d314-4a95-9084-206fa18e44b3">
+				<Properties>
+					<Name>Доставлен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доставлен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

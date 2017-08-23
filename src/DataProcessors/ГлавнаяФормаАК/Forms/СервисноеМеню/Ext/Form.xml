@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<HorizontalAlign>Center</HorizontalAlign>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowTitle>false</ShowTitle>
+	<ShowCloseButton>false</ShowCloseButton>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Button name="ОткрытиеКассовойСмены" id="1">
+			<Type>UsualButton</Type>
+			<Width>60</Width>
+			<Height>2</Height>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<CommandName>Form.Command.ОткрытиеКассовойСмены</CommandName>
+			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<ExtendedTooltip name="ОткрытиеКассовойСменыРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Button name="ЗакрытиеКассовойСмены" id="3">
+			<Type>UsualButton</Type>
+			<Width>60</Width>
+			<Height>2</Height>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<CommandName>Form.Command.ЗакрытиеКассовойСмены</CommandName>
+			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<ExtendedTooltip name="ЗакрытиеКассовойСменыРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<Button name="ОтчетБезГашения" id="5">
+			<Type>UsualButton</Type>
+			<Width>60</Width>
+			<Height>2</Height>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<CommandName>Form.Command.ОтчетБезГашения</CommandName>
+			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<ExtendedTooltip name="ОтчетБезГашенияРасширеннаяПодсказка" id="6"/>
+		</Button>
+		<Button name="ЗакрытиеДняСбербанк" id="7">
+			<Type>UsualButton</Type>
+			<Width>60</Width>
+			<Height>2</Height>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<CommandName>Form.Command.ЗакрытиеДняСбербанк</CommandName>
+			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<ExtendedTooltip name="ЗакрытиеДняСбербанкРасширеннаяПодсказка" id="8"/>
+		</Button>
+		<Button name="ОтчетСбербанк" id="9">
+			<Type>UsualButton</Type>
+			<Width>60</Width>
+			<Height>2</Height>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<CommandName>Form.Command.ОтчетСбербанк</CommandName>
+			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<ExtendedTooltip name="ОтчетСбербанкРасширеннаяПодсказка" id="10"/>
+		</Button>
+		<Button name="ВыключитьКассу" id="13">
+			<Type>UsualButton</Type>
+			<Width>60</Width>
+			<Height>2</Height>
+			<CommandName>Form.Command.ВыключитьКассу</CommandName>
+			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+			<Picture>
+				<xr:Abs>Picture.png</xr:Abs>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="ВыключитьКассуРасширеннаяПодсказка" id="14"/>
+		</Button>
+		<Button name="Закрыть" id="11">
+			<Type>UsualButton</Type>
+			<Width>60</Width>
+			<Height>2</Height>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<CommandName>Form.StandardCommand.Close</CommandName>
+			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="12"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ГлавнаяФормаАК</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытиеКассовойСмены" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Открытие смены ККМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открытие кассовой смены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытиеКассовойСмены</Action>
+		</Command>
+		<Command name="ЗакрытиеКассовойСмены" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Закрытие смены ККМ (Z-отчет)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрытие кассовой смены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытиеКассовойСмены</Action>
+		</Command>
+		<Command name="ЗакрытиеДняСбербанк" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>4. Закрытие дня по Сбербанку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрытие дня сбербанк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытиеДняСбербанк</Action>
+		</Command>
+		<Command name="ОтчетСбербанк" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>5. Отчет по Сбербанку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сбербанк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетСбербанк</Action>
+		</Command>
+		<Command name="ОтчетБезГашения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Отчет без гашения (X-отчет)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет без гашения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетБезГашения</Action>
+		</Command>
+		<Command name="ВыключитьКассу" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выключить кассу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выключить кассу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыключитьКассу</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

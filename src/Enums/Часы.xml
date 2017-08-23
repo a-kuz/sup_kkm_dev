@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="dcd1c205-1774-40ba-8bc2-bb01d56ddc60">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.Часы" category="Ref">
+				<xr:TypeId>565e136c-febb-40b4-ab1c-f13640a17938</xr:TypeId>
+				<xr:ValueId>1bc6efa7-8a48-4a7a-8383-7990cd2016aa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.Часы" category="Manager">
+				<xr:TypeId>7fc0ab3f-bcb5-4be9-ac9a-745720d73c85</xr:TypeId>
+				<xr:ValueId>195129b5-086b-48ca-9c89-323190adaed7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.Часы" category="List">
+				<xr:TypeId>dbf2f110-0f8a-4a54-a6ea-9b7fb410fd78</xr:TypeId>
+				<xr:ValueId>31eef8b1-1cbc-46d2-9a89-5f328489dbf0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Часы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="e4ee7ee3-9c57-4b04-98a4-6b37139f4140">
+				<Properties>
+					<Name>ЧО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>00:00 - 00:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7d7d21a9-de56-4f50-a219-4d52d04dd296">
+				<Properties>
+					<Name>Ч1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>01:00 - 01:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="de7a7f03-fff9-4a9f-bff8-dfd36dd01112">
+				<Properties>
+					<Name>Ч2</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>02:00 - 02:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ba8465c4-de94-4fc0-b3bb-87ddf720b7e2">
+				<Properties>
+					<Name>Ч3</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>03:00 - 03:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c0763112-43fc-45a5-95d6-1eb953d81ba0">
+				<Properties>
+					<Name>Ч4</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>04:00 - 04:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7e2b0887-536b-4848-8e38-12dccc3f4c58">
+				<Properties>
+					<Name>Ч5</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>05:00 - 05:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7d4f1c3b-229c-4373-bd16-35464046d086">
+				<Properties>
+					<Name>Ч6</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>06:00 - 06:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d5d24958-1e15-4d33-a350-b75595422b15">
+				<Properties>
+					<Name>Ч7</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>07:00 - 07:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b2a2a3b1-2f2f-4ccc-b4b3-c9b59ef5dd2c">
+				<Properties>
+					<Name>Ч8</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>08:00 - 08:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9b0ff3a0-b890-40f5-ae74-75ab7f946bc8">
+				<Properties>
+					<Name>Ч9</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>09:00 - 09:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0807e39c-d96b-4fac-bec5-624e9a3fd64e">
+				<Properties>
+					<Name>Ч10</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>10:00 - 10:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c9fb4fa9-2345-46f9-ae06-fa7a76eb160b">
+				<Properties>
+					<Name>Ч11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>11:00 - 11:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="98b920fa-128e-4669-98a7-b7ea03e8834c">
+				<Properties>
+					<Name>Ч12</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>12:00 - 12:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5c617502-91f2-49d0-aa75-cfae10e39f0d">
+				<Properties>
+					<Name>Ч13</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>13:00 - 13:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="49c84ad6-6a9b-4504-b2ed-f6433b66f554">
+				<Properties>
+					<Name>Ч14</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>14:00 - 14:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b155b520-6cc1-4d74-8f56-9f2bcbeec0ee">
+				<Properties>
+					<Name>Ч15</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15:00 - 15:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2c7b47fc-c794-4de8-bc39-0b308e582c99">
+				<Properties>
+					<Name>Ч16</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>16:00 - 16:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="afc1be9e-04d8-42e3-90da-f4285fabdc5f">
+				<Properties>
+					<Name>Ч17</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>17:00 - 17:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="47904130-540f-48e9-91e6-98c9d088f121">
+				<Properties>
+					<Name>Ч18</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>18:00 - 18:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b8b2b751-e550-4cbc-aa21-36ccc8758fac">
+				<Properties>
+					<Name>Ч19</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>19:00 - 19:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bd471f18-a2a0-4f65-b8f2-682ff118d68f">
+				<Properties>
+					<Name>Ч20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>20:00 - 20:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6e13ebff-6922-40cd-beb4-de2111f44eab">
+				<Properties>
+					<Name>Ч21</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>21:00 - 21:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="363d5f85-adba-4ea9-86c6-f4223146abdc">
+				<Properties>
+					<Name>Ч22</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>22:00 - 22:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="36a48eab-336f-4716-b7e6-342d47c237f1">
+				<Properties>
+					<Name>Ч23</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>23:00 - 23:59</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Клиент</dataPath>
+			<field>Клиент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ВЫБОР КОГДА ЗначениеЗаполнено(Клиент) Тогда  Клиент ИНАЧЕ "&lt;Клиент не указан&gt;" Конец</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Смена</dataPath>
+			<field>Смена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Год</dataPath>
+			<field>Год</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Год</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Строка(Год(Год)) + " год"</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>День</dataPath>
+			<field>День</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>День</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Период</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Квартал</dataPath>
+			<field>Квартал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Квартал</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Строка(Квартал(Квартал)) +  " квартал "+Строка(Год(Квартал))</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Период</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ='MMMM yyyy'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Неделя</dataPath>
+			<field>Неделя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Неделя</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Строка(Неделя(Неделя))+ " неделя "+Строка(Год(Неделя))</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПервоеПосещение</dataPath>
+			<field>ПервоеПосещение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата первого посещения</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=D</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоследнееПосещение</dataPath>
+			<field>ПоследнееПосещение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата последнего посещения</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=D</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДНИНЕДЕЛИ</dataPath>
+			<field>ДНИНЕДЕЛИ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дни недели</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ФормированиеОтчетов.ПолучитьИмяДняНедели(Период)</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=дддд</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЦен</dataPath>
+			<field>ТипЦен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерКартыЛояльности</dataPath>
+			<field>НомерКартыЛояльности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер карты КеГеЛьБУМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товар</dataPath>
+			<field>Товар</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьЗаказыСОбедами</dataPath>
+			<field>ЕстьЗаказыСОбедами</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы содержат обеды НА ЗДОРОВЬЕ </v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидДня</dataPath>
+			<field>ВидДня</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасЗаказано</dataPath>
+			<field>ЧасЗаказано</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Час заказано</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаЗаказов</dataPath>
+			<field>СуммаЗаказов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма заказов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЗаказТовары.Ссылка КАК Заказ
+ПОМЕСТИТЬ ЗаказСОбедами
+ИЗ
+	Справочник.Товары КАК Группы
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Товары КАК Товары
+		ПО (Товары.Родитель = Группы.Ссылка)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Заказ.Товары КАК ЗаказТовары
+		ПО (ЗаказТовары.Товар = Товары.Ссылка)
+ГДЕ
+	Группы.Наименование ПОДОБНО "%на здоровье%"
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗаказТовары.Ссылка КАК Заказ,
+	ЗаказТовары.Ссылка.Смена,
+	ЗаказТовары.Ссылка.Клиент,
+	НАЧАЛОПЕРИОДА(ЗаказТовары.Ссылка.Дата, ДЕНЬ) КАК День,
+	НАЧАЛОПЕРИОДА(ЗаказТовары.Ссылка.Дата, НЕДЕЛЯ) КАК Неделя,
+	НАЧАЛОПЕРИОДА(ЗаказТовары.Ссылка.Дата, МЕСЯЦ) КАК Месяц,
+	НАЧАЛОПЕРИОДА(ЗаказТовары.Ссылка.Дата, КВАРТАЛ) КАК Квартал,
+	НАЧАЛОПЕРИОДА(ЗаказТовары.Ссылка.Дата, ГОД) КАК Год,
+	ДЕНЬНЕДЕЛИ(ЗаказТовары.Ссылка.Дата) КАК ДНИНЕДЕЛИ,
+	ЗаказТовары.Ссылка.Дата КАК ПервоеПосещение,
+	ЗаказТовары.Ссылка.Дата КАК ПоследнееПосещение,
+	ЗаказТовары.Ссылка.Дата КАК Период,
+	ЗаказТовары.ТипЦен,
+	ЗаказТовары.Ссылка.НомерКартыЛояльности,
+	ЗаказТовары.Товар,
+	ВЫБОР
+		КОГДА ЗаказСОбедами.Заказ ЕСТЬ NULL 
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК ЕстьЗаказыСОбедами,
+	УР_ПроизводственныйКалендарь.ВидДня,
+	ЧАС(ВремяПервогоЗаказаНаСтанции.ВремяЗаказано) КАК ЧасЗаказано,
+	ЗаказТовары.Сумма КАК СуммаЗаказов
+ИЗ
+	Документ.Заказ.Товары КАК ЗаказТовары
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗаказСОбедами КАК ЗаказСОбедами
+		ПО ЗаказТовары.Ссылка = ЗаказСОбедами.Заказ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УР_ПроизводственныйКалендарь КАК УР_ПроизводственныйКалендарь
+		ПО (НАЧАЛОПЕРИОДА(ЗаказТовары.Ссылка.Дата, ДЕНЬ) = УР_ПроизводственныйКалендарь.ДатаКалендаря)
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаказТоварыДопИнф.Заказ КАК Заказ,
+			МИНИМУМ(ЗаказТоварыДопИнф.ВремяЗаказано) КАК ВремяЗаказано
+		ИЗ
+			РегистрСведений.ЗаказТоварыДопИнф КАК ЗаказТоварыДопИнф
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаказТоварыДопИнф.Заказ) КАК ВремяПервогоЗаказаНаСтанции
+		ПО ЗаказТовары.Ссылка = ВремяПервогоЗаказаНаСтанции.Заказ
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Константа.ОсновноеМестоРеализации КАК ОсновноеМестоРеализации
+		ПО ЗаказТовары.Ссылка.МестоРеализации = ОсновноеМестоРеализации.Значение
+ГДЕ
+	ЗаказТовары.Ссылка.ПометкаУдаления = ЛОЖЬ
+	И ВЫБОР
+			КОГДА &amp;ПараметрДата
+				ТОГДА ЗаказТовары.Ссылка.Дата МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+			ИНАЧЕ ЗаказТовары.Ссылка.Смена В (&amp;МассивСмен)
+		КОНЕЦ
+	И ПОДСТРОКА(ЗаказТовары.Ссылка.НомерКартыЛояльности, 1, 5) &lt;&gt; "     "</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПосещений</dataPath>
+			<field>КоличествоПосещений</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество посещений</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Заказ.Ссылка,
+	КОЛИЧЕСТВО(Заказ.Ссылка) КАК КоличествоПосещений
+ИЗ
+	Документ.Заказ КАК Заказ
+ГДЕ
+	Заказ.Ссылка.ПометкаУдаления = ЛОЖЬ
+	И ВЫБОР
+			КОГДА &amp;ПараметрДата
+				ТОГДА Заказ.Ссылка.Дата МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+			ИНАЧЕ Заказ.Ссылка.Смена В (&amp;МассивСмен)
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	Заказ.Ссылка</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>Заказ</sourceExpression>
+		<destinationExpression>Ссылка</destinationExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>СПоследнегоПосещения</dataPath>
+		<expression>РазностьДат(Максимум(ПоследнееПосещение),&amp;ДатаПО,"День")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Прошло с последнего посещения, дней</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СреднийИнтервал</dataPath>
+		<expression>Выбор Когда Количество(Различные Заказ) = 1 Тогда 0 Иначе (РазностьДат(Минимум(ПервоеПосещение),Максимум(ПоследнееПосещение),"День"))/(Количество(Различные Заказ) -1) Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Средний интервал между посещениями, дней</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=5; ЧДЦ=2; ЧН=0</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПроцентОтклонения</dataPath>
+		<expression>Выбор Когда Выбор Когда Количество(Различные Заказ) = 1 Тогда 0 Иначе (РазностьДат(Минимум(ПервоеПосещение),Максимум(ПоследнееПосещение),"День"))/(Количество(Различные Заказ) -1) Конец=0 Тогда 0 Иначе РазностьДат(Максимум(ПоследнееПосещение),&amp;ДатаПО,"День")*100/(Выбор Когда Количество(Различные Заказ) = 1 Тогда 0 Иначе (РазностьДат(Минимум(ПервоеПосещение),Максимум(ПоследнееПосещение),"День"))/(Количество(Различные Заказ) -1) Конец) Конец </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Процент отклонения</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=5; ЧДЦ=2; ЧН=0</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЕстьЗаказыВВыходныеДни</dataPath>
+		<expression>выбор когда ВидДня&lt;&gt;Значение(Перечисление.УР_ВидыДнейПроизводственногоКалендаря.Рабочий) тогда 1 иначе 0 конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заказы в выходные дни </v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЕстьЗаказыДо12</dataPath>
+		<expression>выбор когда ЧасЗаказано&lt;12 тогда 1 иначе 0 конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заказы до 12:00</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЕстьЗаказыДо18</dataPath>
+		<expression>выбор когда ЧасЗаказано&gt;=12 и ЧасЗаказано&lt;18 тогда 1 иначе 0 конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заказы c 12:00 до 18:00</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЕстьЗаказыПосле18</dataPath>
+		<expression>выбор когда ЧасЗаказано&gt;=18 тогда 1 иначе 0 конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заказы после 18:00</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЕстьЗаказыДо18Будни</dataPath>
+		<expression>выбор когда ЧасЗаказано&gt;=12 и ЧасЗаказано&lt;18  и ВидДня=Значение(Перечисление.УР_ВидыДнейПроизводственногоКалендаря.Рабочий) тогда 1 иначе 0 конец </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заказы с 12:00 до 18:00, будни</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЕстьЗаказыПосле18Будни</dataPath>
+		<expression>выбор когда ЧасЗаказано&gt;=18    и ВидДня=Значение(Перечисление.УР_ВидыДнейПроизводственногоКалендаря.Рабочий) тогда 1 иначе 0 конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заказы после 18:00, будни</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СреднийЧек</dataPath>
+		<expression/>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Средний чек</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>ПервоеПосещение</dataPath>
+		<expression>Минимум(ПервоеПосещение)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоследнееПосещение</dataPath>
+		<expression>Максимум(ПоследнееПосещение)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СПоследнегоПосещения</dataPath>
+		<expression>СПоследнегоПосещения</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийИнтервал</dataPath>
+		<expression>СреднийИнтервал</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентОтклонения</dataPath>
+		<expression>ПроцентОтклонения</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПосещений</dataPath>
+		<expression>Сумма(КоличествоПосещений)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЕстьЗаказыСОбедами</dataPath>
+		<expression>Максимум(ЕстьЗаказыСОбедами)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЕстьЗаказыВВыходныеДни</dataPath>
+		<expression>Максимум(ЕстьЗаказыВВыходныеДни)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЕстьЗаказыДо12</dataPath>
+		<expression>Максимум(ЕстьЗаказыДо12)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЕстьЗаказыДо18</dataPath>
+		<expression>Максимум(ЕстьЗаказыДо18)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЕстьЗаказыПосле18</dataPath>
+		<expression>Максимум(ЕстьЗаказыПосле18)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЕстьЗаказыДо18Будни</dataPath>
+		<expression>Максимум(ЕстьЗаказыДо18Будни)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЕстьЗаказыПосле18Будни</dataPath>
+		<expression>Максимум(ЕстьЗаказыПосле18Будни)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийЧек</dataPath>
+		<expression>Сумма(СуммаЗАказов)/Количество(ссылка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаЗаказов</dataPath>
+		<expression>Сумма(СуммаЗаказов)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаПо</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата по</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаС</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата С</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>МассивСмен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив смен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ОткрытиеСмены</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Документ.ОткрытиеСмены.ПустаяСсылка</value>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ПараметрДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Параметр дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:userFields>
+				<dcsset:item xsi:type="dcsset:UserFieldExpression">
+					<dcsset:dataPath>ПользовательскиеПоля.Поле1</dcsset:dataPath>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время первого посещения</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:detailExpression>ПервоеПосещение</dcsset:detailExpression>
+					<dcsset:detailExpressionPresentation>[Дата первого посещения]</dcsset:detailExpressionPresentation>
+					<dcsset:totalExpression>ПервоеПосещение</dcsset:totalExpression>
+					<dcsset:totalExpressionPresentation>[Дата первого посещения]</dcsset:totalExpressionPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:UserFieldExpression">
+					<dcsset:dataPath>ПользовательскиеПоля.Поле2</dcsset:dataPath>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время последнего посещения</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:detailExpression>ПоследнееПосещение</dcsset:detailExpression>
+					<dcsset:detailExpressionPresentation>[Дата последнего посещения]</dcsset:detailExpressionPresentation>
+					<dcsset:totalExpression>ПоследнееПосещение</dcsset:totalExpression>
+					<dcsset:totalExpressionPresentation>[Дата последнего посещения]</dcsset:totalExpressionPresentation>
+				</dcsset:item>
+			</dcsset:userFields>
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерКартыЛояльности</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Первое посещение</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПервоеПосещение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПользовательскиеПоля.Поле1</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Последнее посещение</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПоследнееПосещение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПользовательскиеПоля.Поле2</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПосещений</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаЗаказов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднийЧек</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднийИнтервал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СПоследнегоПосещения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентОтклонения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьЗаказыСОбедами</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьЗаказыВВыходныеДни</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьЗаказыДо12</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьЗаказыДо18</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьЗаказыПосле18</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьЗаказыДо18Будни</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьЗаказыПосле18Будни</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ПроцентОтклонения</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>СреднийИнтервал</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>СПоследнегоПосещения</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>Клиент</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>День</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Смена</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Год</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Квартал</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Месяц</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Неделя</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДНИНЕДЕЛИ</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПользовательскиеПоля.Поле1</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПользовательскиеПоля.Поле2</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=ЧЧ:мм</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата первого посещения</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЕстьЗаказыДо18</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЕстьЗаказыВВыходныеДни</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЕстьЗаказыДо12</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЕстьЗаказыПосле18</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЕстьЗаказыСОбедами</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>КоличествоПосещений</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СПоследнегоПосещения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПроцентОтклонения</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СреднийИнтервал</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2; ЧРД=,; ЧРГ=' '; ЧГ=3,0; ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Green</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Давность посещений по картам КеГеЛьБУМ</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НомерКартыЛояльности</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

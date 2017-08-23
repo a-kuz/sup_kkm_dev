@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.4">
+	<Item id="daf73af6-fbc1-4b04-b5ac-d84a5c96ed6e">
+		<Name>Запуск</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Запуск</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="211ddfb6-2c19-4539-9e39-55c584699276">
+				<Name>ЗапускРМ</Name>
+				<Code xsi:type="xs:decimal">2</Code>
+				<Description>Запуск РМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="cf6bcc43-e33e-478c-8253-2756d6fed873">
+				<Name>ЗапускРежимТестирования</Name>
+				<Code xsi:type="xs:decimal">3</Code>
+				<Description>Запуск РМ в режиме тестирования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="3383d921-dfeb-4a61-b07f-553fc39a9d64">
+		<Name>ЗавершениеРаботы</Name>
+		<Code xsi:type="xs:decimal">10</Code>
+		<Description>Завершение работы</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="1e5d9eb6-1e3e-4758-8843-d97e0a8128d1">
+				<Name>ВыключениеСтанции</Name>
+				<Code xsi:type="xs:decimal">11</Code>
+				<Description>Выключение станции</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b5c9bc43-88c1-4146-a99f-e0ed7bc6ccf5">
+				<Name>ВыходОС</Name>
+				<Code xsi:type="xs:decimal">12</Code>
+				<Description>Выход в ОС</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="82447b17-dd82-448b-a3d8-68fdd8301c14">
+				<Name>ВыходРежимТестрования</Name>
+				<Code xsi:type="xs:decimal">13</Code>
+				<Description>Выход из режима тестрования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="25c8682c-7f4c-4d28-bf52-c5c3959bf855">
+		<Name>Авторизация</Name>
+		<Code xsi:type="xs:decimal">100</Code>
+		<Description>Авторизация</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="4f396efc-171a-4191-af7a-c227a7a6c756">
+				<Name>АвторизацияОК</Name>
+				<Code xsi:type="xs:decimal">101</Code>
+				<Description>ОК</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8ff9aad8-201e-491e-bb7d-ab37b797bb7a">
+				<Name>АвторизацияБлокировка</Name>
+				<Code xsi:type="xs:decimal">102</Code>
+				<Description>Блокировка</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2d7df160-08ed-411f-be96-50169a6234a6">
+				<Name>АвторизацияОшибка</Name>
+				<Code xsi:type="xs:decimal">103</Code>
+				<Description>Ошибка</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9120ea57-f988-40ac-bfdb-7a5bc7942a3d">
+				<Name>ИдентификацияПоКартеОшибка</Name>
+				<Code xsi:type="xs:decimal">110</Code>
+				<Description>Ошибка идентификации по карте</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="e13d3974-d369-4999-aa9b-28b04232de1a">
+		<Name>Заказ</Name>
+		<Code xsi:type="xs:decimal">200</Code>
+		<Description>Заказ</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="4cd3c617-6489-4b1c-8b7f-d449037dab14">
+				<Name>ЗаказНовый</Name>
+				<Code xsi:type="xs:decimal">201</Code>
+				<Description>Новый</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="48dcd5d5-021a-4a79-84a5-85232b2abd8c">
+				<Name>ЗаказДозаказ</Name>
+				<Code xsi:type="xs:decimal">202</Code>
+				<Description>Дозаказ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="77d7944e-7aca-4613-b2b2-1a9476091e6a">
+				<Name>ЗаказОтказОтЗаписи</Name>
+				<Code xsi:type="xs:decimal">203</Code>
+				<Description>Отказ от записи</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="64bd6d83-ddab-4fd6-8cb3-5d37a5563e81">
+				<Name>ЗаказЗапись</Name>
+				<Code xsi:type="xs:decimal">204</Code>
+				<Description>Запись документа</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0c47c8e1-7da5-4c52-a8ae-9ce5d919514a">
+				<Name>ЗаказВход</Name>
+				<Code xsi:type="xs:decimal">206</Code>
+				<Description>Повторное открытие</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="65f51107-4621-414a-8ba9-3de3bd566928">
+				<Name>ЗаказПечатьМарок</Name>
+				<Code xsi:type="xs:decimal">207</Code>
+				<Description>Печать марок</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7b8b9394-6097-428f-a0e4-db8fa7bcffb5">
+				<Name>ЗаказРучнаяСкидка</Name>
+				<Code xsi:type="xs:decimal">208</Code>
+				<Description>Ввод ручной скидки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ee3400b9-5324-422d-937f-337359a9c894">
+				<Name>ЗаказРучнаяСкидкаОтмена</Name>
+				<Code xsi:type="xs:decimal">209</Code>
+				<Description>Отмена ручной скидки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="efcd9739-46c3-484a-b2f1-58b6172587fe">
+				<Name>ЗаказВыборКлиента</Name>
+				<Code xsi:type="xs:decimal">210</Code>
+				<Description>Выбор клиента</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1f38bcc6-702e-4e0d-bde3-9bab5a38c2a0">
+				<Name>ЗаказОтменаКлиента</Name>
+				<Code xsi:type="xs:decimal">211</Code>
+				<Description>Отмена клиента</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="71602f00-439c-4acc-a074-7aa0105078aa">
+				<Name>ЗаказСменаПосадочногоМеста</Name>
+				<Code xsi:type="xs:decimal">212</Code>
+				<Description>Смена посадочного места</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c43602b0-47ee-4b9e-9105-76ae8bcf7bac">
+				<Name>ЗаказСменаОфицианта</Name>
+				<Code xsi:type="xs:decimal">213</Code>
+				<Description>Смена официанта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1428c23c-54fc-4ef3-a41e-41fae51a4489">
+				<Name>ЗаказКоличествоГостей</Name>
+				<Code xsi:type="xs:decimal">214</Code>
+				<Description>Ввод количества гостей</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="062d0abe-ef63-424d-a491-24defea6e55f">
+				<Name>ЗаказУдалениеНезаказаннойПозиции</Name>
+				<Code xsi:type="xs:decimal">215</Code>
+				<Description>Удаление еще незаказанной позиции</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8418a97f-d66f-47b8-a6a3-97b4fdc5abda">
+				<Name>ЗаказУдалениеЗаказаннойПозиции</Name>
+				<Code xsi:type="xs:decimal">216</Code>
+				<Description>Удаление заказанной позиции</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2a0f695a-9afa-4d2d-9794-1a5ad24a2c9a">
+				<Name>ЗаказДобавлениеПриРазделении</Name>
+				<Code xsi:type="xs:decimal">217</Code>
+				<Description>Добавление при разделении</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="901dd727-1ee0-49fb-8fbc-3864f35ee7e5">
+				<Name>ЗаказУдалениеПриРазделении</Name>
+				<Code xsi:type="xs:decimal">218</Code>
+				<Description>Удаление при разделении</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8842a49e-0390-40e8-91ae-b1e7a15da578">
+				<Name>ЗаказПечатьПредварительногоСчета</Name>
+				<Code xsi:type="xs:decimal">219</Code>
+				<Description>Печать предварительного счета</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7450d5d9-8fd9-426c-bdc8-13c6ec83f7b7">
+				<Name>ЗаказПовторнаяПечатьСчета</Name>
+				<Code xsi:type="xs:decimal">220</Code>
+				<Description>Повторная печать счета по оплаченному заказу</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="254a23ba-0ee2-4b5e-bed3-77cc57e79332">
+				<Name>ЗаказОтменаПредварительногоСчета</Name>
+				<Code xsi:type="xs:decimal">221</Code>
+				<Description>Отмена предварительного счета</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="737f5751-bab8-469d-af49-b1cc66c55031">
+				<Name>ЗаказВыход</Name>
+				<Code xsi:type="xs:decimal">222</Code>
+				<Description>Выход из заказа</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ebed4e5e-bdec-43f8-9853-86f5fde09008">
+				<Name>ЗаказУдалениеПустого</Name>
+				<Code xsi:type="xs:decimal">250</Code>
+				<Description>Удаление пустого заказа</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e4bce353-66ad-43fa-9da5-5b5164529e4d">
+				<Name>ЗаказУдалениеНеПустого</Name>
+				<Code xsi:type="xs:decimal">251</Code>
+				<Description>Удаление не пустого заказа</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2283e534-2aa0-44f5-8b90-1156dbb4bfa2">
+				<Name>ЗаказИзменениеКоличестваНезаказаннойПозиции</Name>
+				<Code xsi:type="xs:decimal">252</Code>
+				<Description>Изменение количества еще незаказанной позиции</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="31a5e1d9-e3cf-48ad-bf3f-5ff9ead10d08">
+				<Name>ЗаказПечатьQRкода</Name>
+				<Code xsi:type="xs:decimal">253</Code>
+				<Description>Печать QR-кода заказа</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="084ccc13-99ef-418d-8d71-b9cfe5b49dd7">
+				<Name>ЗаказВызовПейджера</Name>
+				<Code xsi:type="xs:decimal">270</Code>
+				<Description>Вызов пейджера</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="40962921-c3cb-4ea9-822f-1b4b64bd1ed6">
+				<Name>ЗаказПросроченаМаркаКВыдаче</Name>
+				<Code xsi:type="xs:decimal">271</Code>
+				<Description>Просрочена марка к выдаче</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="6879169c-5605-48e2-84d9-2edddb3ad760">
+		<Name>Оплата</Name>
+		<Code xsi:type="xs:decimal">300</Code>
+		<Description>Оплата</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="22346993-e32d-4da6-aa6e-87faa4fba23a">
+				<Name>ОплатаВыборККМ</Name>
+				<Code xsi:type="xs:decimal">301</Code>
+				<Description>Выбор ККМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8c150f62-7b5b-4393-b832-0596c85209fa">
+				<Name>ОплатаОшибкаЗаписи</Name>
+				<Code xsi:type="xs:decimal">302</Code>
+				<Description>Ошибка записи</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="56e12db7-f050-490c-80b3-2f3755121a6e">
+				<Name>ОплатаЗафиксирована</Name>
+				<Code xsi:type="xs:decimal">303</Code>
+				<Description>Заказ оплачен</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="64836ff0-a5c3-4723-bd6e-04026c2f8943">
+				<Name>ОплатаВнесенаПредоплата</Name>
+				<Code xsi:type="xs:decimal">304</Code>
+				<Description>Внесена предоплата</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1841f91c-0326-48f5-b3a6-174312f643e8">
+				<Name>ОплатаПечатьЧека</Name>
+				<Code xsi:type="xs:decimal">307</Code>
+				<Description>Печать чека</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="66e6cdd8-b8bd-48f3-9120-178a777b260b">
+				<Name>ОплатаВозврат</Name>
+				<Code xsi:type="xs:decimal">308</Code>
+				<Description>Возврат</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="dc507aff-f4ea-41c1-968c-7254069a32ab">
+		<Name>РежимАдминистратора</Name>
+		<Code xsi:type="xs:decimal">400</Code>
+		<Description>Режим администратора</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="523bac75-78b1-43c9-a9d0-65266704ef28">
+				<Name>РежимАдминаВход</Name>
+				<Code xsi:type="xs:decimal">401</Code>
+				<Description>Вход</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b9b82e14-0db4-489f-a9f9-22a9f1b49e33">
+				<Name>РежимАдминаВыход</Name>
+				<Code xsi:type="xs:decimal">402</Code>
+				<Description>Выход</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a9e435bd-a18e-46da-8aae-cdf8983e5d40">
+				<Name>РежимАдминаОтчетККМ</Name>
+				<Code xsi:type="xs:decimal">403</Code>
+				<Description>Отчет ККМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0154ffa6-e066-4903-b411-ff9b67667894">
+				<Name>РежимАдминаОткрытиеСмены</Name>
+				<Code xsi:type="xs:decimal">404</Code>
+				<Description>Открытие смены</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="25f8f3cb-af1a-4297-8a22-a533e448dee7">
+				<Name>РежимАдминаЗакрытиеСмены</Name>
+				<Code xsi:type="xs:decimal">405</Code>
+				<Description>Закрытие смены</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ffbaf8ac-b846-45b4-9597-10c982a0534c">
+				<Name>РежимАдминаПечатьОтчета</Name>
+				<Code xsi:type="xs:decimal">406</Code>
+				<Description>Печать отчета</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e5022194-3482-4faa-89d6-cce86b6be77d">
+				<Name>РежимАдминаСинхронизацияВремениККМ</Name>
+				<Code xsi:type="xs:decimal">407</Code>
+				<Description>Синхронизация времени ККМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="926f6d3f-a5d4-4e1c-9485-b32a1b2783fe">
+				<Name>РежимАдминаОтчетПлатежнойСистемы</Name>
+				<Code xsi:type="xs:decimal">408</Code>
+				<Description>Формирование отчета платежной системы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="023e8287-d6f2-43d5-a0cc-f748965beb32">
+		<Name>Бронь</Name>
+		<Code xsi:type="xs:decimal">500</Code>
+		<Description>Бронь</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="f4e0a181-b5c0-4b59-bc9d-93fadcb524e4">
+				<Name>БроньЗапись</Name>
+				<Code xsi:type="xs:decimal">501</Code>
+				<Description>Запись брони</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="89e5b877-6e20-477b-a32d-234dafa77720">
+				<Name>БроньУдаление</Name>
+				<Code xsi:type="xs:decimal">502</Code>
+				<Description>Удаление брони</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="e4577b73-cc43-4ec0-a90c-00d8a42431b9">
+		<Name>Клиенты</Name>
+		<Code xsi:type="xs:decimal">600</Code>
+		<Description>Клиенты</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="49845072-d32e-4333-9bd2-aad838a6e113">
+				<Name>КлиентыВводНового</Name>
+				<Code xsi:type="xs:decimal">601</Code>
+				<Description>Ввод нового</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="333d21c8-f818-4dbf-8298-c6e3f1d88a32">
+				<Name>КлиентыИзменение</Name>
+				<Code xsi:type="xs:decimal">602</Code>
+				<Description>Изменение данных</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6058a7a0-a79e-4354-8823-608bb1d19567">
+				<Name>КлиентыЗаменаКарты</Name>
+				<Code xsi:type="xs:decimal">610</Code>
+				<Description>Замена карты</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="93af7e21-f18a-4e53-998b-bd739b5dde0e">
+		<Name>Румба</Name>
+		<Code xsi:type="xs:decimal">700</Code>
+		<Description>Румба</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="74fa897b-1840-4dae-92a9-1543816cf2ee">
+				<Name>РумбаОшибкаПодключения</Name>
+				<Code xsi:type="xs:decimal">701</Code>
+				<Description>Ошибка подключения к базе</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="37321345-0cc6-4b9d-9961-8a321b89a565">
+				<Name>РумбаОшибкаОбмена</Name>
+				<Code xsi:type="xs:decimal">702</Code>
+				<Description>Ошибка обмена</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="304d7dda-5378-4858-b232-af5001eabe7c">
+				<Name>РумбаКартаНеНайдена</Name>
+				<Code xsi:type="xs:decimal">703</Code>
+				<Description>Карта не найдена</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="de112376-a80e-4822-8a03-f5db12d0bcce">
+		<Name>Заявка</Name>
+		<Code xsi:type="xs:decimal">800</Code>
+		<Description>Заявка</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="a557a3b3-1750-4a00-bcbe-a9d1fba673bc">
+				<Name>ЗаявкаНовая</Name>
+				<Code xsi:type="xs:decimal">801</Code>
+				<Description>Новая заявка</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="aab52871-78b5-44dc-b5cf-b521b2b1c7e9">
+				<Name>ЗаявкаДозаказ</Name>
+				<Code xsi:type="xs:decimal">802</Code>
+				<Description>Дозаказ в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0a0d599b-2619-4b39-8ed6-8b44b58da4ae">
+				<Name>ЗаявкаУдалениеЗаказаннойПозиции</Name>
+				<Code xsi:type="xs:decimal">803</Code>
+				<Description>Удаление заказанной позиции в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e691459d-f3da-48d6-be24-d38be3702b42">
+				<Name>ЗаявкаЗапись</Name>
+				<Code xsi:type="xs:decimal">804</Code>
+				<Description>Запись заявки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="89e36a91-f6b1-4b46-97c0-375a93c9ad0e">
+				<Name>ЗаявкаРучнаяСкидка</Name>
+				<Code xsi:type="xs:decimal">805</Code>
+				<Description>Ввод ручной скидки в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="83f69527-60e8-44a4-9f5c-5b1fe85fc02a">
+				<Name>ЗаявкаРучнаяСкидкаОтмена</Name>
+				<Code xsi:type="xs:decimal">806</Code>
+				<Description>Отмена ручной скидки в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="76ff5739-99b9-4fc4-9163-30d1a0525236">
+				<Name>ЗаявкаИзменениеКлиента</Name>
+				<Code xsi:type="xs:decimal">807</Code>
+				<Description>Изменение клиента в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="41bf68ab-cdf3-4394-94ef-513576996e1f">
+				<Name>ЗаявкаИзменениеКонтактныхДанных</Name>
+				<Code xsi:type="xs:decimal">808</Code>
+				<Description>Изменение контактных данных в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7873a787-88d7-4149-bcbf-c0b571b70438">
+				<Name>ЗаявкаИзменениеКоличестваГостей</Name>
+				<Code xsi:type="xs:decimal">809</Code>
+				<Description>Изменение количества гостей в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3c0a71b9-3452-4c71-af3a-5548a5c1f524">
+				<Name>ЗаявкаИзменениеКурьера</Name>
+				<Code xsi:type="xs:decimal">810</Code>
+				<Description>Изменение курьера в заявке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1630e1d0-de0d-4f65-84f1-983add549248">
+				<Name>ЗаявкаИзменениеМестаВыполнения</Name>
+				<Code xsi:type="xs:decimal">811</Code>
+				<Description>Изменение места выполнения заявки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="96a0ea2d-070a-4586-9062-b066fc066163">
+				<Name>ЗаявкаОтказОтЗаписи</Name>
+				<Code xsi:type="xs:decimal">812</Code>
+				<Description>Отказ от записи заявки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4dc59ff3-f4b3-4a5b-99db-82fb8a089579">
+				<Name>ЗаявкаОтметкаОДоставке</Name>
+				<Code xsi:type="xs:decimal">813</Code>
+				<Description>Заказ доставлен</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d71edec1-32c6-4f71-ba25-003022315c91">
+				<Name>ЗаявкаУдаление</Name>
+				<Code xsi:type="xs:decimal">814</Code>
+				<Description>Удаление заявки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8190de30-cdbd-4b91-8775-dd80918c21ff">
+		<Name>ТрактиръМобайл</Name>
+		<Code xsi:type="xs:decimal">900</Code>
+		<Description>Трактиръ-мобайл</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="54681acc-52b0-42e2-b8a9-0e3be486897c">
+				<Name>ТрактиръМобайлДозаказ</Name>
+				<Code xsi:type="xs:decimal">910</Code>
+				<Description>Дозаказ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="9869086b-4ef9-4f03-a6d2-b56602991e99">
+		<Name>Прочее</Name>
+		<Code xsi:type="xs:decimal">1000</Code>
+		<Description>Прочее</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="41b7de9a-3d67-4a86-998d-3e7061031d55">
+				<Name>ОшибкаЗаписи</Name>
+				<Code xsi:type="xs:decimal">1001</Code>
+				<Description>Ошибка записи</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

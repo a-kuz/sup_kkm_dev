@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="49">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<CheckBoxField name="Действует" id="40">
+					<DataPath>Объект.Действует</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активность</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ=Неактивен; БИ=Активен</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДействуетКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ДействуетРасширеннаяПодсказка" id="42"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="51">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<InputField name="СобытиеАктивации" id="43">
+					<DataPath>Объект.СобытиеАктивации</DataPath>
+					<ContextMenu name="СобытиеАктивацииКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="СобытиеАктивацииРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ВариантПовторнойАктивации" id="53">
+					<DataPath>Объект.ВариантПовторнойАктивации</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активировать диалог</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВариантПовторнойАктивацииКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ВариантПовторнойАктивацииРасширеннаяПодсказка" id="55"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ШаблонАктивности" id="46">
+			<DataPath>Объект.ШаблонАктивности</DataPath>
+			<ContextMenu name="ШаблонАктивностиКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ШаблонАктивностиРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="38">
+			<Group>Horizontal</Group>
+			<ChildItemsWidth>LeftWidest</ChildItemsWidth>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<Table name="СписокЭлементы" id="4">
+					<Representation>Tree</Representation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокЭлементы</DataPath>
+					<RowPictureDataPath>СписокЭлементы.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СписокЭлементыКонтекстноеМеню" id="5"/>
+					<AutoCommandBar name="СписокЭлементыКоманднаяПанель" id="6"/>
+					<ExtendedTooltip name="СписокЭлементыРасширеннаяПодсказка" id="7"/>
+					<SearchStringAddition name="СписокЭлементыСтрокаПоиска" id="8">
+						<AdditionSource>
+							<Item>СписокЭлементы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЭлементыСтрокаПоискаКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="СписокЭлементыСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокЭлементыСостояниеПросмотра" id="11">
+						<AdditionSource>
+							<Item>СписокЭлементы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЭлементыСостояниеПросмотраКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="СписокЭлементыСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокЭлементыУправлениеПоиском" id="14">
+						<AdditionSource>
+							<Item>СписокЭлементы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЭлементыУправлениеПоискомКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="СписокЭлементыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="СписокЭлементыНаименование" id="17">
+							<DataPath>СписокЭлементы.Description</DataPath>
+							<ContextMenu name="СписокЭлементыНаименованиеКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="СписокЭлементыНаименованиеРасширеннаяПодсказка" id="19"/>
+						</LabelField>
+						<LabelField name="СписокЭлементыВладелец" id="20">
+							<DataPath>СписокЭлементы.Owner</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="СписокЭлементыВладелецКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СписокЭлементыВладелецРасширеннаяПодсказка" id="22"/>
+						</LabelField>
+						<LabelField name="СписокЭлементыТипЭлементаДиалога" id="23">
+							<DataPath>СписокЭлементы.ТипЭлементаДиалога</DataPath>
+							<ContextMenu name="СписокЭлементыТипЭлементаДиалогаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="СписокЭлементыТипЭлементаДиалогаРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<LabelField name="СписокЭлементыСледующийЭлемент" id="26">
+							<DataPath>СписокЭлементы.СледующийЭлемент</DataPath>
+							<ContextMenu name="СписокЭлементыСледующийЭлементКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СписокЭлементыСледующийЭлементРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+						<LabelField name="СписокЭлементыНомерПП" id="29">
+							<DataPath>СписокЭлементы.НомерПП</DataPath>
+							<ContextMenu name="СписокЭлементыНомерППКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="СписокЭлементыНомерППРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<HTMLDocumentField name="HTML" id="35">
+					<DataPath>HTML</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="HTMLКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="HTMLРасширеннаяПодсказка" id="37"/>
+				</HTMLDocumentField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ШаблоныДиалогов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СписокЭлементы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элементы диалога</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ЭлементыДиалогов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Владелец</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>НомерПП</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="HTML" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

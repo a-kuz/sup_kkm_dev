@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ДатаЗапретаРедактирования" id="4">
+			<DataPath>НаборКонстант.ДатаЗапретаРедактирования</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаЗапретаРедактированияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаЗапретаРедактированияРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="КаталогЛокальныхНастроек" id="7">
+			<DataPath>НаборКонстант.КаталогЛокальныхНастроек</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КаталогЛокальныхНастроекКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КаталогЛокальныхНастроекРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ОсновноеМестоРеализации" id="28">
+			<DataPath>НаборКонстант.ОсновноеМестоРеализации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОсновноеМестоРеализацииКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ОсновноеМестоРеализацииРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ОсновнойВариантОплаты" id="37">
+			<DataPath>НаборКонстант.ОсновнойВариантОплаты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОсновнойВариантОплатыКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ОсновнойВариантОплатыРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ПредупреждатьОбОграниченииПродажи" id="49">
+			<DataPath>НаборКонстант.ПредупреждатьОбОграниченииПродажи</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПредупреждатьОбОграниченииПродажиКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ПредупреждатьОбОграниченииПродажиРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="ПутьДляЛогирования" id="52">
+			<DataPath>НаборКонстант.ПутьДляЛогирования</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь логирования (ККТ):</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПутьДляЛогированияКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="ПутьДляЛогированияРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="МаксимальныйПроцентПревышенияЦеныПриВозврате" id="55">
+			<DataPath>НаборКонстант.МаксимальныйПроцентПревышенияЦеныПриВозврате</DataPath>
+			<ContextMenu name="МаксимальныйПроцентПревышенияЦеныПриВозвратеКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="МаксимальныйПроцентПревышенияЦеныПриВозвратеРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<InputField name="МаксимальнаяСуммаВстрокеЧека" id="58">
+			<DataPath>НаборКонстант.МаксимальнаяСуммаВстрокеЧека</DataPath>
+			<ContextMenu name="МаксимальнаяСуммаВстрокеЧекаКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="МаксимальнаяСуммаВстрокеЧекаРасширеннаяПодсказка" id="60"/>
+		</InputField>
+		<InputField name="МаксимальноеКоличествоВстрокеЧека" id="61">
+			<DataPath>НаборКонстант.МаксимальноеКоличествоВстрокеЧека</DataPath>
+			<ContextMenu name="МаксимальноеКоличествоВстрокеЧекаКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="МаксимальноеКоличествоВстрокеЧекаРасширеннаяПодсказка" id="63"/>
+		</InputField>
+		<InputField name="МаксимальноеКоличествоПДФвЧеке" id="64">
+			<DataPath>НаборКонстант.МаксимальноеКоличествоПДФвЧеке</DataPath>
+			<ContextMenu name="МаксимальноеКоличествоПДФвЧекеКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="МаксимальноеКоличествоПДФвЧекеРасширеннаяПодсказка" id="66"/>
+		</InputField>
+		<InputField name="НомерВерсии" id="67">
+			<DataPath>НаборКонстант.НомерВерсии</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="НомерВерсииКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="НомерВерсииРасширеннаяПодсказка" id="69"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ОсновнаяСтавкаНДС.Ref</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

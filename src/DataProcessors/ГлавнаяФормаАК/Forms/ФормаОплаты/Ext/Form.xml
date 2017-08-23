@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<HorizontalAlign>Center</HorizontalAlign>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowTitle>false</ShowTitle>
+	<ShowCloseButton>false</ShowCloseButton>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Page name="Страница_5_1" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница 5 1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница 5 1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<ExtendedTooltip name="Страница_5_1РасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<UsualGroup name="ШапкаСтраницы_5_1" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка страницы 5 1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка страницы 5 1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ШапкаСтраницы_5_1РасширеннаяПодсказка" id="2"/>
+							<ChildItems>
+								<PictureDecoration name="ЛогоККГурмэ" id="3">
+									<Width>19</Width>
+									<Height>2</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Лого ККГурмэ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<PictureSize>Stretch</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ЛогоККГурмэКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ЛогоККГурмэРасширеннаяПодсказка" id="5"/>
+								</PictureDecoration>
+								<LabelDecoration name="СтрокаСостояния" id="45">
+									<Visible>false</Visible>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxHeight>1</MaxHeight>
+									<VerticalStretch>false</VerticalStretch>
+									<Font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;colorstyle 0:84b52463-c7ca-4dea-8b97-42fbf6c6ce93&gt;Шаг 3 из 4: Оплата заказа&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ContextMenu name="СтрокаСостоянияКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="СтрокаСостоянияРасширеннаяПодсказка" id="47"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаСтрокаСостояния" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа строка состояния</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа строка состояния</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<HorizontalSpacing>None</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСтрокаСостоянияРасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<LabelDecoration name="СС_1" id="55">
+											<Width>5</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:FormBackColor</TextColor>
+											<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> 1</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<BackColor>web:DarkSeaGreen</BackColor>
+											<ContextMenu name="СС_1КонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="СС_1РасширеннаяПодсказка" id="57"/>
+										</LabelDecoration>
+										<LabelDecoration name="СС_1ш" id="58">
+											<Width>11</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>15</MaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:FormBackColor</TextColor>
+											<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбор способа
+оплаты</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>web:DarkSeaGreen</BackColor>
+											<ContextMenu name="СС_1шКонтекстноеМеню" id="59"/>
+											<ExtendedTooltip name="СС_1шРасширеннаяПодсказка" id="60"/>
+										</LabelDecoration>
+										<LabelDecoration name="СС_2" id="61">
+											<Width>5</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:FormBackColor</TextColor>
+											<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> 2</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<BackColor>web:DarkSeaGreen</BackColor>
+											<ContextMenu name="СС_2КонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="СС_2РасширеннаяПодсказка" id="63"/>
+										</LabelDecoration>
+										<LabelDecoration name="СС_2ш" id="64">
+											<Width>11</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>15</MaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:FormBackColor</TextColor>
+											<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбор способа
+получения чека</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>web:DarkSeaGreen</BackColor>
+											<ContextMenu name="СС_2шКонтекстноеМеню" id="65"/>
+											<ExtendedTooltip name="СС_2шРасширеннаяПодсказка" id="66"/>
+										</LabelDecoration>
+										<LabelDecoration name="СС_3" id="67">
+											<Width>5</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:FormBackColor</TextColor>
+											<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> 3</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<BackColor>style:ЦветТемы</BackColor>
+											<ContextMenu name="СС_3КонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="СС_3РасширеннаяПодсказка" id="69"/>
+										</LabelDecoration>
+										<LabelDecoration name="СС_3ш" id="70">
+											<Width>11</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>15</MaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:FormBackColor</TextColor>
+											<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Оплата
+заказа</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>style:ЦветТемы</BackColor>
+											<ContextMenu name="СС_3шКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="СС_3шРасширеннаяПодсказка" id="72"/>
+										</LabelDecoration>
+										<LabelDecoration name="СС_4" id="73">
+											<Width>5</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:НеактивныйЭлемент</TextColor>
+											<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> 4</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<BackColor>web:HoneyDew</BackColor>
+											<ContextMenu name="СС_4КонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="СС_4РасширеннаяПодсказка" id="75"/>
+										</LabelDecoration>
+										<LabelDecoration name="СС_4ш" id="76">
+											<Width>11</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>15</MaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:НеактивныйЭлемент</TextColor>
+											<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершение
+заказа</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>web:HoneyDew</BackColor>
+											<ContextMenu name="СС_4шКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="СС_4шРасширеннаяПодсказка" id="78"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="Назад" id="9">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Enabled>false</Enabled>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.Назад</CommandName>
+									<TextColor>style:ЦветТемы</TextColor>
+									<BackColor>style:FormBackColor</BackColor>
+									<BorderColor>style:ЦветТемы</BorderColor>
+									<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="10"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelField name="НадписьКартаЛОЛ" id="32">
+							<DataPath>НадписьКартаЛОЛ</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<TextColor>style:АппБар</TextColor>
+							<Font faceName="Segoe UI" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ContextMenu name="НадписьКартаЛОЛКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="НадписьКартаЛОЛРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+						<UsualGroup name="Группа1" id="51">
+							<EnableContentChange>true</EnableContentChange>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="52"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьИнструкции" id="40">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:ЦветТемы</TextColor>
+									<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пожалуйста, следуйте инструкциям на терминале оплаты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьИнструкцииКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="НадписьИнструкцииРасширеннаяПодсказка" id="42"/>
+								</LabelDecoration>
+								<PictureDecoration name="Декорация3" id="48">
+									<HorizontalStretch>false</HorizontalStretch>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Picture>
+										<xr:Ref>CommonPicture.ЗеленаяСтрелкаВПравоДлинная</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="50"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСтрокиМР" id="35">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа строки МР</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа строки МР</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтрокиМРРасширеннаяПодсказка" id="36"/>
+						</UsualGroup>
+						<LabelField name="НадписьСостояниеОплаты" id="37">
+							<DataPath>НадписьСостояниеОплаты</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ожидается оплата</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<VerticalStretch>true</VerticalStretch>
+							<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
+							<ContextMenu name="НадписьСостояниеОплатыКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="НадписьСостояниеОплатыРасширеннаяПодсказка" id="39"/>
+						</LabelField>
+						<Button name="Далее" id="43">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<Width>40</Width>
+							<Height>3</Height>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<CommandName>Form.Command.Далее</CommandName>
+							<TextColor>style:FormBackColor</TextColor>
+							<BackColor>style:ЦветТемы</BackColor>
+							<BorderColor>style:ЦветТемы</BorderColor>
+							<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="ДалееРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Страница_5_2" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница 5 2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница 5 2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<ExtendedTooltip name="Страница_5_2РасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<PictureDecoration name="ЛогоККГурмэ1" id="17">
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ЛогоККГурмэ1КонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ЛогоККГурмэ1РасширеннаяПодсказка" id="19"/>
+						</PictureDecoration>
+						<LabelDecoration name="Декорация2" id="20">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>5</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>style:ЦветТемы</TextColor>
+							<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ВНИМАНИЕ!
+Ваш заказ оплачен не полностью</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="22"/>
+						</LabelDecoration>
+						<UsualGroup name="СтрокаКнопок_5_2" id="23">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка кнопок 5 2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка кнопок 5 2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<Group>Horizontal</Group>
+							<HorizontalSpacing>None</HorizontalSpacing>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СтрокаКнопок_5_2РасширеннаяПодсказка" id="24"/>
+							<ChildItems>
+								<Button name="Выход" id="25">
+									<Type>UsualButton</Type>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.Выход</CommandName>
+									<TextColor>style:ЦветТемы</TextColor>
+									<BackColor>style:FormBackColor</BackColor>
+									<BorderColor>style:ЦветТемы</BorderColor>
+									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="ВыходРасширеннаяПодсказка" id="26"/>
+								</Button>
+								<Button name="ПродолжитьОплату" id="27">
+									<Type>UsualButton</Type>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ПродолжитьОплату</CommandName>
+									<TextColor>style:FormBackColor</TextColor>
+									<BackColor>style:ЦветТемы</BackColor>
+									<BorderColor>style:ЦветТемы</BorderColor>
+									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="ПродолжитьОплатуРасширеннаяПодсказка" id="28"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ГлавнаяФормаАК</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТипЧекаЛояльность" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип чека лояльность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Email" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерТелефона" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер телефона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СпособПолученияЧека" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ получения чека</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВариантОплаты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант оплаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НадписьКартаЛОЛ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись карта ЛОЛ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МестаРеализации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Места реализации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МестоРеализации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место реализации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестаРеализации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КОплате" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К оплате</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Оплачен" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оплачен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Фискализирован" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фискализирован</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ККМ" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ККМ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТорговоеОборудование</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Фирма" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фирма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Фирмы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НадписьСостояниеОплаты" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись состояние оплаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаказСсылка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.Заказ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="флОплатаВПроцессе" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фл оплата в процессе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерКартыЛояльности" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер карты лояльности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>22</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РабочееМесто" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.РабочиеМеста</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеЛояльности" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные лояльности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Назад" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Назад</Action>
+		</Command>
+		<Command name="ПродолжитьОплату" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРОДОЛЖИТЬ ОПЛАТУ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить оплату</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьОплату</Action>
+		</Command>
+		<Command name="Выход" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОПЛАТИТЬ ПОЗЖЕ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выход</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выход</Action>
+		</Command>
+		<Command name="Далее" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ДАЛЕЕ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Далее</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТипЧекаЛояльность">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Email">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="НомерТелефона">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СпособПолученияЧека">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ВариантОплаты">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="НадписьКартаЛОЛ">
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="МестаРеализации">
+			<Type/>
+		</Parameter>
+		<Parameter name="ЗаказСсылка">
+			<Type>
+				<v8:Type>cfg:DocumentRef.Заказ</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="НомерКартыЛояльности">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>22</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="РабочееМесто">
+			<Type>
+				<v8:Type>cfg:CatalogRef.РабочиеМеста</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ДанныеЛояльности">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

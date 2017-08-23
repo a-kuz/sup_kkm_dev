@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.4">
+	<Item id="65d1295d-2b46-490f-b5dd-645faee35a17">
+		<Name>Общие</Name>
+		<Code>001</Code>
+		<Description>Административные</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="d28d229f-2b28-4c84-b786-5938ebf2d20d">
+				<Name>ОтчетыККМ</Name>
+				<Code>002</Code>
+				<Description>Кассовые отчеты</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="018c188c-94e8-419c-9e08-ed1754af8c37">
+				<Name>ПрочиеОтчеты</Name>
+				<Code>003</Code>
+				<Description>Прочие отчеты</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="20bcc3d3-d3c9-409f-8d63-b3722fa3d376">
+				<Name>ОткрытиеСмены</Name>
+				<Code>004</Code>
+				<Description>Открытие смены</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1fc29369-76ac-482a-a24c-cb2e37fc6abf">
+				<Name>ЗакрытиеСмены</Name>
+				<Code>005</Code>
+				<Description>Закрытие смены</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bfb86aa0-98a8-4d93-9b09-7211219fe949">
+				<Name>ИгнорЗапретЗакрытияСмены</Name>
+				<Code>006</Code>
+				<Description>Игнорировать запрет закрытия смены при открытых заказах</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e84b2f4b-30f5-4ae1-9343-dcf320b6678c">
+				<Name>ИгнорЗапретВводаПаролей</Name>
+				<Code>007</Code>
+				<Description>Игнорировать запрет ручного ввода паролей</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="51f7d8f7-1157-4563-a85e-19c507da8b5e">
+				<Name>СинхрВремяККМ</Name>
+				<Code>008</Code>
+				<Description>Синхронизация времени ККМ</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="280032a4-5b9f-4a83-b1a6-3ac12ebda2b7">
+				<Name>ОтчетыПС</Name>
+				<Code>009</Code>
+				<Description>Отчеты банковской платежной системы</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ce736cb5-6895-4355-a636-9ea2f667405e">
+				<Name>ОбновлениеМеню</Name>
+				<Code>010</Code>
+				<Description>Обновление меню</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b58970a6-8b85-42f4-884a-7eddfbb2ef5a">
+				<Name>СтопЛист</Name>
+				<Code>011</Code>
+				<Description>Стоп-лист</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7aebfde3-6225-4b97-a24a-84e31459232f">
+				<Name>УправлениеКоммутаторомВкл</Name>
+				<Code>012</Code>
+				<Description>Управление коммутатором, ВКЛючить принудительно</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="659e1285-52fa-4e56-a99a-8345c2be2cea">
+				<Name>УправлениеКоммутаторомВыкл</Name>
+				<Code>013</Code>
+				<Description>Управление коммутатором, ВЫКЛючить принудительно</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2a382555-38d2-4942-9e28-2a2d92e728c6">
+				<Name>ВнешняяОбработка</Name>
+				<Code>090</Code>
+				<Description>Выполнение внешней обработки</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="450740f0-3c43-4410-b2cb-eae32ea3e247">
+				<Name>ВыходОС</Name>
+				<Code>100</Code>
+				<Description>Выход в ОС</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c37d6bfa-dc94-4241-9d33-c3e2549a0f0c">
+				<Name>ОтменаЗакрытияСмены</Name>
+				<Code>901</Code>
+				<Description>Отмена закрытия смены</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="862ee63b-d20c-4a96-85a8-bfbd44d131fc">
+				<Name>СлужебныеОперацииОткрытиеСмены</Name>
+				<Code>902</Code>
+				<Description>Служебные операции &gt; Открытие смены</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="abbb48b5-84d3-49a1-a949-4ed53f0f19fc">
+		<Name>Заказы</Name>
+		<Code>002</Code>
+		<Description>Прием заказов</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="aabcc009-3add-492d-8329-4d84173d94eb">
+				<Name>ВводНовыхЗаказов</Name>
+				<Code>001</Code>
+				<Description>Ввод новых заказов</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d22bfbd2-9abd-4a19-a4f5-7b3091736769">
+				<Name>ДоступОткрытыеЗаказы</Name>
+				<Code>002</Code>
+				<Description>Доступ к открытым заказам</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4409fc75-4939-428d-9ad7-e5ec2df61db4">
+				<Name>Дозаказ</Name>
+				<Code>003</Code>
+				<Description>Добавление позиций в заказ</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0fff81f4-1baa-4d23-8c52-b6044c5b43ef">
+				<Name>УдалениеПозиций</Name>
+				<Code>004</Code>
+				<Description>Удаление позиций в заказе</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="05e1d27e-00ff-4e7c-b49e-318a9414745b">
+				<Name>ВыборМеню</Name>
+				<Code>005</Code>
+				<Description>Продажа по другому меню</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fb1be5da-8c12-4350-8811-0584be44d508">
+				<Name>ВыборКлиента</Name>
+				<Code>006</Code>
+				<Description>Выбор клиента</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b6b58f30-288e-448c-92c2-c241b6a77b0f">
+				<Name>ИзменениеКолваГостей</Name>
+				<Code>007</Code>
+				<Description>Изменение количества гостей</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f09c5495-43b1-4883-b07a-f74e3c072fd1">
+				<Name>ИзменениеМеста</Name>
+				<Code>008</Code>
+				<Description>Изменение посадочного места</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9b6fedf3-95f8-4755-907e-d80cb2c53234">
+				<Name>ИзменениеАвтора</Name>
+				<Code>009</Code>
+				<Description>Изменение официанта</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ca2adf55-8d30-4e3f-a16a-951e51aadc82">
+				<Name>ВводРучнойСкидки</Name>
+				<Code>010</Code>
+				<Description>Ввод ручной скидки</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e233b7e2-4011-41ce-8bee-b8c37ec56782">
+				<Name>ОтменаРучнойСкидки</Name>
+				<Code>011</Code>
+				<Description>Отмена ручной скидки</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="61e542c0-5cbd-4cd1-ad8f-b42a8daecf5a">
+				<Name>ПечатьПресчета</Name>
+				<Code>012</Code>
+				<Description>Печать предварительного счета</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="dc803a8c-b4b9-4898-b414-413121cd3beb">
+				<Name>ОтменаПресчета</Name>
+				<Code>013</Code>
+				<Description>Отмена предварительного счета</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f132e2cd-b488-4006-8a7f-ffe6706cd8d7">
+				<Name>ОтменаАвтоблокировкиВЗаказе</Name>
+				<Code>017</Code>
+				<Description>Отмена автоблокировки в заказе</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="598b50d9-f8c4-4064-8da5-5abcdb9ba408">
+				<Name>УдалениеОткрытыхЗаказов</Name>
+				<Code>018</Code>
+				<Description>Удаление открытых заказов</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e6e60734-b689-4b10-90ee-5d3f42bfe521">
+				<Name>РазделениеЗаказа</Name>
+				<Code>019</Code>
+				<Description>Разделение заказа</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="56cab327-a5c9-472d-a374-e0633a06b711">
+				<Name>ИзмВремениТарифа</Name>
+				<Code>020</Code>
+				<Description>Изменение тарифицируемого интервала</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a8671d9e-e3dd-4769-8779-441105ade790">
+				<Name>СообщениеНаКухнюШаблон</Name>
+				<Code>021</Code>
+				<Description>Сообщение на кухню по заказанной позиции по шаблону</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b68b7553-1fc9-4de6-bbd8-e64cc2879f4b">
+				<Name>СообщениеНаКухнюПроизвольное</Name>
+				<Code>022</Code>
+				<Description>Сообщение на кухню по заказанной позиции произвольное</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0825bfa8-00c8-408d-a8d8-500af48534e5">
+				<Name>ПечатьQRкодаЗаказа</Name>
+				<Code>023</Code>
+				<Description>Печать QR-кода для идентификации заказа</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="93bdc283-4a17-40e4-97e9-c52843c96ded">
+				<Name>СдачаПейджеровИзЗаказа</Name>
+				<Code>500</Code>
+				<Description>Сдача пейджеров из формы заказа</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="205387cf-5f3e-4224-abc0-7f69068ff74e">
+				<Name>ВыдачаТоваровИзЗаказа</Name>
+				<Code>501</Code>
+				<Description>Выдача товаров из формы заказа</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="de5cd775-cb9d-4691-9404-bb25b5062ed0">
+		<Name>ЗакрытыеЗаказы</Name>
+		<Code>003</Code>
+		<Description>Закрытые заказы</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="252766d8-f5aa-4752-bdd4-f3c4a32461cb">
+				<Name>ЖурналЗакрытых</Name>
+				<Code>001</Code>
+				<Description>Доступ к закрытым заказам</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="89d78b8a-9811-4af1-9a1d-d6a04c892c82">
+				<Name>ЖурналНедоЗакрытых</Name>
+				<Code>002</Code>
+				<Description>Доступ к недозакрытым заказам</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5e4e59f2-f6e5-4fa4-a1ec-50b8ac69f36f">
+				<Name>ВозвратПоЗаказу</Name>
+				<Code>003</Code>
+				<Description>Возврат по заказу</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="96829476-b07f-4592-9588-d2d4a7163ab6">
+		<Name>Оплата</Name>
+		<Code>004</Code>
+		<Description>Оплата</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="6d086818-4b87-4343-ba74-6986a5454b9d">
+				<Name>ВариантыОплаты</Name>
+				<Code>001</Code>
+				<Description>Варианты оплаты</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="5d7b961f-d6db-4797-a6a9-0afe52050ad5">
+				<Name>ВыборККМ</Name>
+				<Code>002</Code>
+				<Description>Выбор ККМ</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="cf995aa2-7f95-416d-8fb9-b4a68181b4cb">
+				<Name>ПодтверждениеНеплательщика</Name>
+				<Code>003</Code>
+				<Description>Подтверждение варианта оплаты с уровнем доступа "Регистрация сотрудника"</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b4ad4e3a-bf4b-4772-a772-f28dce4b88e4">
+				<Name>ВводНачислений</Name>
+				<Code>004</Code>
+				<Description>Ввод начислений/удержаний по клиентам</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="96a27ad6-1365-4e31-879b-d35b90cab980">
+		<Name>Бронирование</Name>
+		<Code>005</Code>
+		<Description>Бронирование</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="abaf4301-c79f-423b-8ec4-9a1102a75f3a">
+				<Name>РежимБрони</Name>
+				<Code>001</Code>
+				<Description>Режим бронирования</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="084813e9-d32a-4432-9eb5-21abbf651b8a">
+				<Name>ГрафикБрони</Name>
+				<Code>002</Code>
+				<Description>График бронирования</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b4362649-376a-4c16-a2bd-3774593e6c40">
+				<Name>ЖурналБрони</Name>
+				<Code>003</Code>
+				<Description>Журнал бронирования</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="46472985-cd6a-4541-aa9a-3969fb566479">
+				<Name>ЗаказПоБрони</Name>
+				<Code>004</Code>
+				<Description>Ввод заказов на основании брони</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bdd63852-c7c9-4baa-9aab-faaf8fd5156d">
+				<Name>УдалениеБроней</Name>
+				<Code>005</Code>
+				<Description>Удаление броней</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="bcbecf2a-76f1-40f6-83e5-908c52de4c07">
+		<Name>Клиенты</Name>
+		<Code>006</Code>
+		<Description>Клиенты</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="e0cfe4f7-a8ea-4a8f-82d1-6206425fbedd">
+				<Name>ВводКлиента</Name>
+				<Code>001</Code>
+				<Description>Ввод новых клиентов</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="04cbe3c6-d069-4927-b233-7d06bf9884a2">
+				<Name>КарточкаКлиента</Name>
+				<Code>002</Code>
+				<Description>Просмотр данных клиента</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6794dd63-8934-43ec-ac38-f8e8777cf248">
+				<Name>ИзменениеКлиента</Name>
+				<Code>003</Code>
+				<Description>Изменение данных клиента</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b01ebd6b-09ea-40f1-8d81-3522954c8ea0">
+				<Name>НазначениеКлиентуГлубиныКредита</Name>
+				<Code>005</Code>
+				<Description>Назначение клиенту глубины кредита</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="48163825-78f7-451f-8a9a-6baff6044139">
+				<Name>ДоступныеСкидки</Name>
+				<Code>007</Code>
+				<Description>Доступные для назначения скидки/бонусы</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="e7fa9496-aa38-4e4b-982e-61d5ab616571">
+				<Name>ЗаменаКартыКеГеЛьБУМ</Name>
+				<Code>100</Code>
+				<Description>Замена карты КеГеЛьБУМ</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="535b534f-62ab-4d05-99cf-49df1d877d44">
+		<Name>Абонементы</Name>
+		<Code>021</Code>
+		<Description>Абонементы</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="9709173f-902d-4196-bddf-64b8c81a239a">
+				<Name>БлокировкаАбонементов</Name>
+				<Code>001</Code>
+				<Description>Блокировка</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bf89b94c-6c67-401e-8589-33d5ab9fefc9">
+				<Name>ЗаморозкаАбонементов</Name>
+				<Code>002</Code>
+				<Description>Заморозка</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="1584dfe4-3146-4f37-96a3-2a2ceb8fcc0f">
+		<Name>Доставка</Name>
+		<Code>022</Code>
+		<Description>Доставка</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="09908f36-dfaa-4223-9ba8-93a0f28c536b">
+				<Name>ДоставкаВводНовыхЗаказов</Name>
+				<Code>002</Code>
+				<Description>Ввод новых заказов</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9a3c8956-aed1-42c2-bfcf-9d1492749de1">
+				<Name>ДоставкаДоступОткрытыеЗаказы</Name>
+				<Code>004</Code>
+				<Description>Доступ к заказам на доставку</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="27e31c1f-4a85-4ae8-b4ab-84afd0b6dde6">
+				<Name>ДоставкаУдалениеОткрытыхЗаказов</Name>
+				<Code>010</Code>
+				<Description>Отмена заказов</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="601149d5-56ef-478b-8c4f-362947b41e41">
+				<Name>ДоставкаДозаказ</Name>
+				<Code>020</Code>
+				<Description>Добавление позиций в заказ</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="d5f728da-fc13-41c0-95fc-972bd437fd2b">
+				<Name>ДоставкаУдалениеПозиций</Name>
+				<Code>030</Code>
+				<Description>Удаление позиций в заказе</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="7137bd31-9ceb-4b5a-b823-d4b8dc12ac66">
+				<Name>ДоставкаВыборКлиента</Name>
+				<Code>040</Code>
+				<Description>Выбор клиента</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="a44ba655-bbc4-4c57-8cfe-0059b1603b37">
+				<Name>ДоставкаИзменениеКолваГостей</Name>
+				<Code>050</Code>
+				<Description>Изменение количества гостей</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="94459afd-3baa-4783-8e7c-2083ba9de3a9">
+				<Name>ДоставкаВводРучнойСкидки</Name>
+				<Code>060</Code>
+				<Description>Ввод ручной скидки</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="033007f8-b8a2-4414-bbf6-149a79c145e5">
+				<Name>ДоставкаОтменаРучнойСкидки</Name>
+				<Code>070</Code>
+				<Description>Отмена ручной скидки</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="e7b103da-4010-43bf-8b86-8c003c4cabeb">
+				<Name>ДоставкаПечатьПресчета</Name>
+				<Code>073</Code>
+				<Description>Печать предварительного счета</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="c79cf4ab-8c7c-4ca1-9e79-8489b31ac00f">
+				<Name>ДоставкаОтменаПресчета</Name>
+				<Code>074</Code>
+				<Description>Отмена предварительного счета</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="cf14f8b4-6e3f-4249-a919-c7a02885e6c7">
+				<Name>ДоставкаИзменениеКурьера</Name>
+				<Code>080</Code>
+				<Description>Изменение курьера</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="5ba8ee94-166b-4481-a4a8-36a3f977dd14">
+				<Name>ДоставкаПодготовлено</Name>
+				<Code>086</Code>
+				<Description>Отметка о подготовке</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="f5027eb9-bbe4-408f-9b90-3ed14e20b329">
+				<Name>ДоставкаОтправлено</Name>
+				<Code>088</Code>
+				<Description>Отметка об отправке</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="c12deb5b-3d70-4c68-910b-9da878a5b3a4">
+				<Name>ДоставкаДоставлено</Name>
+				<Code>090</Code>
+				<Description>Отметка о доставке</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="0bea2c82-b3e4-4cd8-b003-164d30b400fa">
+				<Name>ДоставкаДоступЗакрытыеЗаявки</Name>
+				<Code>100</Code>
+				<Description>Доступ к закрытым заявкам</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="98e324ab-9591-46e3-9d4b-8c2b2df5b15d">
+		<Name>УчетРабочегоВремени</Name>
+		<Code>023</Code>
+		<Description>Учет рабочего времени</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="c0171f92-d8aa-49f2-acb8-334159d61ede">
+				<Name>ОтметитьПриход</Name>
+				<Code>001</Code>
+				<Description>Отмечать время выхода на работу</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c2a63e16-d4cc-4e1a-91ff-1fd24cab0052">
+				<Name>ОтметитьУход</Name>
+				<Code>002</Code>
+				<Description>Отмечать время ухода с работы</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6e6af226-7ce9-4700-b354-2aefa9820cd7">
+				<Name>ФактическаяВыработка</Name>
+				<Code>003</Code>
+				<Description>Утверждение фактической выработки сотрудников</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="e028d4d4-6bd1-43ca-934c-e2ded4beb463">
+		<Name>КолЦентр</Name>
+		<Code>024</Code>
+		<Description>Колл-центр</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="1c48eeb2-29c4-4b6a-b5c4-93354d67231f">
+				<Name>КолЦентрВводНовыхЗаявок</Name>
+				<Code>002</Code>
+				<Description>Прием заявок</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0385dcd0-ea4d-49ea-a1a7-8b7a4c4a839d">
+				<Name>КолЦентрДоступОткрытыеЗаявки</Name>
+				<Code>003</Code>
+				<Description>Доступ к открытым заявкам</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="77acf7ba-9429-4f07-82dc-f01f4aab44d0">
+				<Name>КолЦентрОтменаЗаявок</Name>
+				<Code>004</Code>
+				<Description>Отмена заявок</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="60092d66-951d-4dd6-964f-b7a4ea78f9f3">
+				<Name>КолЦентрДозаказ</Name>
+				<Code>005</Code>
+				<Description>Добавление позиций в заявку</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="a5bd53f4-81dc-4a84-a67b-f3691f52123d">
+				<Name>КолЦентрУдалениеПозиций</Name>
+				<Code>006</Code>
+				<Description>Удаление позиций в заявке</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="256e57b0-e75f-4786-9b0e-6f1c0ec868d3">
+				<Name>КолЦентрИзменениеКлиента</Name>
+				<Code>007</Code>
+				<Description>Изменение клиента</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="d207426b-e45c-4560-993d-67e912e689eb">
+				<Name>КолЦентрИзменениеКонтактныхДанных</Name>
+				<Code>008</Code>
+				<Description>Изменение контактных данных клиента</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="9f72a839-385d-4052-92a9-79233af34f03">
+				<Name>КолЦентрИзменениеКоличестваГостей</Name>
+				<Code>009</Code>
+				<Description>Изменение количества гостей</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="7bd3a244-9fa7-4160-8238-04be34d74638">
+				<Name>КолЦентрВводРучнойСкидки</Name>
+				<Code>010</Code>
+				<Description>Ввод ручной скидки</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="ca7fc5db-f490-4362-b706-58d77b3264c6">
+				<Name>КолЦентрОтменаРучнойСкидки</Name>
+				<Code>011</Code>
+				<Description>Отмена ручной скидки</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="5019b967-52a6-4d4e-83f4-c73ca77c57b8">
+				<Name>КолЦентрИзменениеКурьера</Name>
+				<Code>012</Code>
+				<Description>Изменение курьера</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="2634375b-dd64-4172-8f22-cb6dcba72091">
+				<Name>КолЦентрИзменениеМестаПроизводства</Name>
+				<Code>013</Code>
+				<Description>Выбор места производства</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="d39bfea8-6f6c-45bf-b584-e1c7a4e95920">
+				<Name>КолЦентрДоставлено</Name>
+				<Code>014</Code>
+				<Description>Отметка о доставке</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="35d3ff8a-c113-4b6b-85da-59ac62319a85">
+				<Name>КолЦентрВыборМеню</Name>
+				<Code>015</Code>
+				<Description>Продажа по другому меню</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c691a7be-2995-4d21-9f8a-89f28f68a445">
+				<Name>КолЦентрДоступИнтернетЗаявки</Name>
+				<Code>016</Code>
+				<Description>Работа с интернет заявками</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b0697ca4-3881-4462-ab82-5e5462f964db">
+				<Name>КолЦентрДоступЗакрытыеЗаявки</Name>
+				<Code>017</Code>
+				<Description>Доступ к закрытым заявкам</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ТипыПравДоступаВЗаказе</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

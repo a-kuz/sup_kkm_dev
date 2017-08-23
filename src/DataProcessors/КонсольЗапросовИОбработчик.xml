@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<DataProcessor uuid="2cdd61c9-1568-4efb-a759-4b5a2d11f3cc">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонсольЗапросовИОбработчик" category="Object">
+				<xr:TypeId>ccf68419-e63d-4b9d-8382-e8167b27ee21</xr:TypeId>
+				<xr:ValueId>1c213a2d-f789-4be9-bfa1-6c6540e187eb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонсольЗапросовИОбработчик" category="Manager">
+				<xr:TypeId>3e48ff91-9f4a-43fc-8ed4-246751592b41</xr:TypeId>
+				<xr:ValueId>5f3d22ea-99ed-49ee-ae71-2c5bece8c8aa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонсольЗапросовИОбработчик</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросник 2.1</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.КонсольЗапросовИОбработчик.Form.ФормаУпр</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="35100a86-d63f-4ab2-aaf7-876c178ddb24">
+				<Properties>
+					<Name>ПоказатьУправлениеВерсиями</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показать управление версиями</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="fa4dd419-a8f1-413c-9422-4459d32867c5">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.КонсольЗапросовИОбработчик.РезультатЗапроса" category="TabularSection">
+						<xr:TypeId>4d9e34f8-0cc4-4119-879a-5034115e0f89</xr:TypeId>
+						<xr:ValueId>e952226f-968e-4ba5-88c5-a59578528888</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.КонсольЗапросовИОбработчик.РезультатЗапроса" category="TabularSectionRow">
+						<xr:TypeId>abbed35f-c3db-48fe-be46-6b507dc0fab8</xr:TypeId>
+						<xr:ValueId>186d5c0c-4c69-4105-9aec-5cf36b59e274</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>РезультатЗапроса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат запроса</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber">
+							<xr:LinkByType/>
+							<xr:FillChecking>DontCheck</xr:FillChecking>
+							<xr:MultiLine>false</xr:MultiLine>
+							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:MaxValue xsi:nil="true"/>
+							<xr:ToolTip/>
+							<xr:ExtendedEdit>false</xr:ExtendedEdit>
+							<xr:Format/>
+							<xr:ChoiceForm/>
+							<xr:QuickChoice>Auto</xr:QuickChoice>
+							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+							<xr:EditFormat/>
+							<xr:PasswordMode>false</xr:PasswordMode>
+							<xr:MarkNegatives>false</xr:MarkNegatives>
+							<xr:MinValue xsi:nil="true"/>
+							<xr:Synonym/>
+							<xr:Comment/>
+							<xr:FullTextSearch>Use</xr:FullTextSearch>
+							<xr:ChoiceParameterLinks/>
+							<xr:FillValue xsi:nil="true"/>
+							<xr:Mask/>
+							<xr:ChoiceParameters/>
+						</xr:StandardAttribute>
+					</StandardAttributes>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+			<Form>ФормаУпр</Form>
+			<Form>ПараметрыЗапросаУпр</Form>
+			<Form>ПараметрМоментВремениГраницаУпр</Form>
+			<Form>СписокЗначенийУпр</Form>
+			<Form>ФормаВыбораВТУпр</Form>
+			<Form>ПоследниеФайлыЗапросов</Form>
+			<Form>ВыборСтрокиДереваЗапросовУпр</Form>
+			<Form>ФормаТаблицыЗначенийУпр</Form>
+			<Form>ФормаВыборкиУпр</Form>
+			<Form>ВыполнениеАлгоритмаУпр</Form>
+			<Form>ВерсииЗапросаУпр</Form>
+			<Form>РезультатУпр</Form>
+			<Form>ФормаОтладкиВМодулеУпр</Form>
+			<Form>ИсторияВерсий</Form>
+			<Form>НастройкаТехнологическогоЖурнала</Form>
+			<Form>ВариантыЗапросаДляБуфераУпр</Form>
+			<Form>ВыборТипаУпр</Form>
+			<Template>Справка</Template>
+			<Template>ОтладкаЗапросаИзМодуля</Template>
+			<Template>ВерсииУпр</Template>
+			<Template>КонфигФайловойВерсии</Template>
+			<Template>КонфигКлиентСервернойВерсии</Template>
+			<Template>ВнешняяКомпонента</Template>
+			<Template>CMR</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

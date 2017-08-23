@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<UseForFoldersAndItems>Folders</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="ОднаИзГруппы" id="10">
+			<DataPath>Объект.ОднаИзГруппы</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОднаИзГруппыКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ОднаИзГруппыРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<CheckBoxField name="РазрешитьПовторение" id="13">
+			<DataPath>Объект.РазрешитьПовторение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РазрешитьПовторениеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="РазрешитьПовторениеРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="ГруппаПечати" id="16">
+			<DataPath>Объект.ГруппаПечати</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ГруппаПечатиКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ГруппаПечатиРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Номенклатура" id="19">
+			<DataPath>Объект.Номенклатура</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<CheckBoxField name="ЕстьВПродаже" id="22">
+			<DataPath>Объект.ЕстьВПродаже</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЕстьВПродажеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ЕстьВПродажеРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВыбиратьПоГруппам" id="25">
+			<DataPath>Объект.ВыбиратьПоГруппам</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыбиратьПоГруппамКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ВыбиратьПоГруппамРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<InputField name="МинУдельныйВес" id="28">
+			<DataPath>Объект.МинУдельныйВес</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МинУдельныйВесКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="МинУдельныйВесРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="МаксУдельныйВес" id="31">
+			<DataPath>Объект.МаксУдельныйВес</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МаксУдельныйВесКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="МаксУдельныйВесРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<CheckBoxField name="ЗапретитьПропускВГруппе" id="34">
+			<DataPath>Объект.ЗапретитьПропускВГруппе</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретитьПропускВГруппеКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ЗапретитьПропускВГруппеРасширеннаяПодсказка" id="36"/>
+		</CheckBoxField>
+		<InputField name="Порядок" id="37">
+			<DataPath>Объект.Порядок</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПорядокКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="39"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Специфики</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

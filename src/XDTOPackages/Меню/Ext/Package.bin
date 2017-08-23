@@ -1,0 +1,26 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://traktir-online.ru">
+	<objectType name="Goods">
+		<property name="Код" type="xs:integer" localName="Code"/>
+		<property name="Наименование" type="xs:string" localName="Name"/>
+		<property name="Родитель" type="xs:integer" localName="Parent"/>
+		<property name="Порядок" type="xs:integer" localName="Order"/>
+		<property name="КратностьКоличества" type="xs:decimal" localName="MultiplicityQuantities"/>
+		<property name="Изображение" type="xs:string" localName="Image"/>
+		<property name="ДопИноформация" type="xs:string" localName="Info"/>
+		<property name="ГруппаСпецифик" type="xs:string" localName="SpecificityCode"/>
+		<property name="МинУдельныйВес" type="xs:integer" localName="MinWeight"/>
+		<property name="МаксУдельныйВес" type="xs:integer" localName="MaxWeight"/>
+		<property name="ЭтоГруппа" type="xs:boolean" localName="ThisGroup"/>
+		<property name="Цена" type="xs:decimal" localName="Price"/>
+	</objectType>
+	<objectType name="Specificity">
+		<property name="ПолныйКод" type="xs:string" localName="Code"/>
+		<property name="Наименование" type="xs:string" localName="Name"/>
+		<property name="Родитель" type="xs:string" localName="Parent"/>
+		<property name="УдельныйВес" type="xs:integer" localName="Gravity"/>
+		<property name="ОднаИзГруппы" type="xs:boolean" localName="OneGroup"/>
+		<property name="РазрешитьПовторение" type="xs:boolean" localName="Repeat"/>
+		<property name="ВыбиратьПоГруппам" type="xs:boolean" localName="SelectGroups"/>
+		<property name="ЭтоГруппа" type="xs:boolean" localName="ThisGroup"/>
+	</objectType>
+</package>

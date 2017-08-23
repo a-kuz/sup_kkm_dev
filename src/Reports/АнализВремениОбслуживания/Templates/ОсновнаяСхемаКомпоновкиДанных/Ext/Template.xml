@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяВыдачи</dataPath>
+			<field>ВремяВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время выдачи</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=T</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяГотовности</dataPath>
+			<field>ВремяГотовности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время готовности</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=T</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяПодачи</dataPath>
+			<field>ВремяПодачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время подачи</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ФормированиеОтчетов.СекундыВоВремя(ВремяПодачи)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяПриготовления</dataPath>
+			<field>ВремяПриготовления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время приготовления</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ФормированиеОтчетов.СекундыВоВремя(ВремяПриготовления)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаПечати</dataPath>
+			<field>ГруппаПечати</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа печати</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>"Заказ №" + Строка(Заказ.Номер) + Выбор Когда Товар &lt;&gt; Неопределено Тогда "/" +  Строка(Товар) Иначе Выбор Когда Подача &lt;&gt;Значение(Документ.Подача.ПустаяСсылка) Тогда  "/ Подача №" +Строка(Подача.Номер) Иначе " " Конец Конец</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подача</dataPath>
+			<field>Подача</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подача</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолноеВремяОбслуживания</dataPath>
+			<field>ПолноеВремяОбслуживания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное время обслуживания</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ФормированиеОтчетов.СекундыВоВремя(ПолноеВремяОбслуживания)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемЗаказа</dataPath>
+			<field>ПриемЗаказа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прием заказа</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=T</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМесто</dataPath>
+			<field>РабочееМесто</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товар</dataPath>
+			<field>Товар</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товар</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Категория</dataPath>
+			<field>Категория</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвторГотово</dataPath>
+			<field>АвторГотово</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвторЗаказано</dataPath>
+			<field>АвторЗаказано</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗаказТоварыДопИнф.Заказ.Дата КАК Дата,
+	ЗаказТоварыДопИнф.Заказ КАК Заказ,
+	ЗаказТоварыДопИнф.ВремяЗаказано КАК ПриемЗаказа,
+	ЗаказТоварыДопИнф.ВремяГотово КАК ВремяГотовности,
+	ЗаказТоварыДопИнф.ВремяВыдано КАК ВремяВыдачи,
+	ЗаказТоварыДопИнф.ГруппаПечати КАК ГруппаПечати,
+	ЗаказТоварыДопИнф.Подача КАК Подача,	
+	ЗаказТоварыДопИнф.Товар КАК Товар,
+	ЗаказТоварыДопИнф.РабочееМесто КАК РабочееМесто,
+	ЗаказТоварыДопИнф.АвторЗаказано КАК АвторЗаказано,
+	ЗаказТоварыДопИнф.АвторГотово КАК АвторГотово,
+	ВЫБОР
+		КОГДА ЗаказТоварыДопИнф.ВремяГотово = ДАТАВРЕМЯ(1, 1, 1) ИЛИ ЗаказТоварыДопИнф.ВремяЗаказано = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		ИНАЧЕ РАЗНОСТЬДАТ(ЗаказТоварыДопИнф.ВремяЗаказано, ЗаказТоварыДопИнф.ВремяГотово, СЕКУНДА)
+	КОНЕЦ КАК ВремяПриготовления,
+	ВЫБОР
+		КОГДА ЗаказТоварыДопИнф.ВремяВыдано = ДАТАВРЕМЯ(1, 1, 1) ИЛИ ЗаказТоварыДопИнф.ВремяГотово = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		ИНАЧЕ РАЗНОСТЬДАТ(ЗаказТоварыДопИнф.ВремяГотово, ЗаказТоварыДопИнф.ВремяВыдано, СЕКУНДА)
+	КОНЕЦ КАК ВремяПодачи,
+	ВЫБОР
+		КОГДА ЗаказТоварыДопИнф.ВремяВыдано = ДАТАВРЕМЯ(1, 1, 1) ИЛИ ЗаказТоварыДопИнф.ВремяЗаказано = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		ИНАЧЕ РАЗНОСТЬДАТ(ЗаказТоварыДопИнф.ВремяЗаказано, ЗаказТоварыДопИнф.ВремяВыдано, СЕКУНДА)
+	КОНЕЦ КАК ПолноеВремяОбслуживания,
+	ЗаказТоварыДопИнф.Товар.Категория КАК Категория
+ИЗ
+	РегистрСведений.ЗаказТоварыДопИнф КАК ЗаказТоварыДопИнф
+ГДЕ
+	ЗаказТоварыДопИнф.Количество &gt; 0
+	И ВЫБОР
+			КОГДА &amp;ПараметрДата
+				ТОГДА ЗаказТоварыДопИнф.ВремяДозаказ МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+			ИНАЧЕ ЗаказТоварыДопИнф.Заказ.Смена В (&amp;МассивСмен)
+		КОНЕЦ</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяПодачи1</dataPath>
+			<field>ВремяПодачи1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время подачи</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ФормированиеОтчетов.СекундыВоВремя(ВремяПодачи1)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяПриготовления1</dataPath>
+			<field>ВремяПриготовления1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время приготовления</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ФормированиеОтчетов.СекундыВоВремя(ВремяПриготовления1)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>итог</dataPath>
+			<field>итог</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолноеВремяОбслуживания1</dataPath>
+			<field>ПолноеВремяОбслуживания1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное время обслуживания</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ФормированиеОтчетов.СекундыВоВремя(ПолноеВремяОбслуживания1)</presentationExpression>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗаказТоварыДопИнф.Заказ.Дата КАК Дата,
+	ЗаказТоварыДопИнф.Заказ КАК Заказ,
+	ЗаказТоварыДопИнф.ВремяЗаказано КАК ПриемЗаказа,
+	ЗаказТоварыДопИнф.ВремяГотово КАК ВремяГотовности,
+	ЗаказТоварыДопИнф.ВремяВыдано КАК ВремяВыдачи,
+	ЗаказТоварыДопИнф.ГруппаПечати КАК ГруппаПечати,
+	ЗаказТоварыДопИнф.Подача КАК Подача,	
+	ЗаказТоварыДопИнф.Товар КАК Товар,
+	ЗаказТоварыДопИнф.РабочееМесто КАК РабочееМесто,
+	ЗаказТоварыДопИнф.АвторЗаказано КАК АвторЗаказано,
+	ЗаказТоварыДопИнф.АвторГотово КАК АвторГотово,
+	ВЫБОР
+		КОГДА ЗаказТоварыДопИнф.ВремяГотово = ДАТАВРЕМЯ(1, 1, 1) ИЛИ ЗаказТоварыДопИнф.ВремяЗаказано = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		ИНАЧЕ РАЗНОСТЬДАТ(ЗаказТоварыДопИнф.ВремяЗаказано, ЗаказТоварыДопИнф.ВремяГотово, СЕКУНДА)
+	КОНЕЦ КАК ВремяПриготовления,
+	ВЫБОР
+		КОГДА ЗаказТоварыДопИнф.ВремяВыдано = ДАТАВРЕМЯ(1, 1, 1) ИЛИ ЗаказТоварыДопИнф.ВремяГотово = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		ИНАЧЕ РАЗНОСТЬДАТ(ЗаказТоварыДопИнф.ВремяГотово, ЗаказТоварыДопИнф.ВремяВыдано, СЕКУНДА)
+	КОНЕЦ КАК ВремяПодачи,
+	ВЫБОР
+		КОГДА ЗаказТоварыДопИнф.ВремяВыдано = ДАТАВРЕМЯ(1, 1, 1) ИЛИ ЗаказТоварыДопИнф.ВремяЗаказано = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		ИНАЧЕ РАЗНОСТЬДАТ(ЗаказТоварыДопИнф.ВремяЗаказано, ЗаказТоварыДопИнф.ВремяВыдано, СЕКУНДА)
+	КОНЕЦ КАК ПолноеВремяОбслуживания
+
+ПОМЕСТИТЬ Таб
+
+ИЗ
+	РегистрСведений.ЗаказТоварыДопИнф КАК ЗаказТоварыДопИнф
+ГДЕ
+	ЗаказТоварыДопИнф.Количество &gt; 0
+	И ВЫБОР
+			КОГДА &amp;ПараметрДата
+				ТОГДА ЗаказТоварыДопИнф.ВремяДозаказ МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+			ИНАЧЕ ЗаказТоварыДопИнф.Заказ.Смена В (&amp;МассивСмен)
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СРЕДНЕЕ(таб.ВремяПриготовления) КАК ВремяПриготовления1,
+	СРЕДНЕЕ(таб.ВремяПодачи) КАК ВремяПодачи1,
+	СРЕДНЕЕ(таб.ПолноеВремяОбслуживания) КАК ПолноеВремяОбслуживания1,
+	"Среднее время операции" КАК итог
+ИЗ
+	Таб КАК таб
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(таб.ВремяПриготовления),
+	МАКСИМУМ(таб.ВремяПодачи),
+	МАКСИМУМ(таб.ПолноеВремяОбслуживания),
+	"Максимальное время операции"
+ИЗ
+	Таб КАК таб
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МИНИМУМ(Таб.ВремяПриготовления),
+	МИНИМУМ(Таб.ВремяПодачи),
+	МИНИМУМ(Таб.ПолноеВремяОбслуживания),
+	"Минимальное время операции"
+ИЗ
+	Таб КАК Таб
+	
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МИНИМУМ(Таб.ВремяПриготовления),
+	МИНИМУМ(Таб.ВремяПодачи),
+	МИНИМУМ(Таб.ПолноеВремяОбслуживания),
+	"Среднее стандартное отклонение"
+ИЗ
+	Таб КАК Таб	</query>
+	</dataSet>
+	<parameter>
+		<name>ДатаПо</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата по</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаС</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата С</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>МассивСмен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив смен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ОткрытиеСмены</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Документ.ОткрытиеСмены.ПустаяСсылка</value>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ПараметрДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Параметр дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>итог</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяПриготовления1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяПодачи1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПолноеВремяОбслуживания1</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Дата</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Green</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>SystemFields.SerialNumber</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Дата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заказ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПриемЗаказа</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВремяГотовности</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВремяВыдачи</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВремяПриготовления</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВремяПодачи</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПолноеВремяОбслуживания</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>итог</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВремяПриготовления1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВремяПодачи1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПолноеВремяОбслуживания1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

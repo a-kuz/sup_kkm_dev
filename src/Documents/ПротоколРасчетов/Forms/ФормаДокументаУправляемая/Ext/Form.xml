@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<ScalingMode>Normal</ScalingMode>
+	<CommandSet>
+		<ExcludedCommand>UndoPosting</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Post</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>PostAndClose</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ОбщаяКомандаирРедактироватьОбъект" id="125">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ирРедактироватьОбъект</CommandName>
+				<DataPath>Объект.Ref</DataPath>
+				<ExtendedTooltip name="ОбщаяКомандаирРедактироватьОбъектРасширеннаяПодсказка" id="126"/>
+			</Button>
+			<Button name="ФормаРегистрНакопленияДенежныеОперацииОткрытьПоРегистратору" id="127">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>AccumulationRegister.ДенежныеОперации.StandardCommand.OpenByRecorder</CommandName>
+				<DataPath>Объект.RegisterRecords.ДенежныеОперации.Filter.Recorder.Value</DataPath>
+				<Picture>
+					<xr:Ref>StdPicture.AccumulationRegister</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаРегистрНакопленияДенежныеОперацииОткрытьПоРегистраторуРасширеннаяПодсказка" id="128"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Заказ" id="13">
+			<DataPath>Объект.Заказ</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основание</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ЗаказКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="Группа3" id="102">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="103"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="107">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="108"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="100">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="101"/>
+							<ChildItems>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Дата" id="4">
+									<DataPath>Объект.Date</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>от</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="РабочееМесто" id="143">
+							<DataPath>Объект.РабочееМесто</DataPath>
+							<DropListButton>false</DropListButton>
+							<ContextMenu name="РабочееМестоКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="РабочееМестоРасширеннаяПодсказка" id="145"/>
+						</InputField>
+						<InputField name="МестоРеализации" id="16">
+							<DataPath>Объект.МестоРеализации</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="МестоРеализацииКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="МестоРеализацииРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="Фирма" id="129">
+							<DataPath>Объект.Фирма</DataPath>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ФирмаКонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="ФирмаРасширеннаяПодсказка" id="131"/>
+						</InputField>
+						<InputField name="Смена" id="10">
+							<DataPath>Объект.Смена</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="СменаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СменаРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="ККМ" id="22">
+							<DataPath>Объект.ККМ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ККМКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ККМРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="98">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<InputField name="ИтогСуммаФакт" id="28">
+									<DataPath>Объект.ИтогСуммаФакт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ContextMenu name="ИтогСуммаФактКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ИтогСуммаФактРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="СуммаБонусов" id="34">
+									<DataPath>Объект.СуммаБонусов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>13</Width>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ContextMenu name="СуммаБонусовКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="СуммаБонусовРасширеннаяПодсказка" id="36"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа5" id="112">
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="113"/>
+							<ChildItems>
+								<CheckBoxField name="Фискализирован" id="109">
+									<DataPath>Объект.Фискализирован</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ФискализированКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ФискализированРасширеннаяПодсказка" id="111"/>
+								</CheckBoxField>
+								<CheckBoxField name="ДобавленыЗаписиВexcise" id="46">
+									<DataPath>Объект.ДобавленыЗаписиВexcise</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДобавленыЗаписиВexciseКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ДобавленыЗаписиВexciseРасширеннаяПодсказка" id="48"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа8" id="118">
+							<Width>21</Width>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="119"/>
+							<ChildItems>
+								<InputField name="ИдентификаторЗапросаЕГАИС" id="37">
+									<DataPath>Объект.ИдентификаторЗапросаЕГАИС</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИдентификаторЗапросаЕГАИСКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ИдентификаторЗапросаЕГАИСРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="ПодписьЕГАИС" id="40">
+									<DataPath>Объект.ПодписьЕГАИС</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодписьЕГАИСКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ПодписьЕГАИСРасширеннаяПодсказка" id="42"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа7" id="116">
+							<Width>16</Width>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="117"/>
+							<ChildItems>
+								<InputField name="ИдентификаторЗапросаЕГАИС_Отмена" id="43">
+									<DataPath>Объект.ИдентификаторЗапросаЕГАИС_Отмена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ИдентификаторЗапросаЕГАИС_ОтменаКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ИдентификаторЗапросаЕГАИС_ОтменаРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<CheckBoxField name="НеУдалосьОтправитьОтменуВегаис" id="58">
+									<DataPath>Объект.НеУдалосьОтправитьОтменуВегаис</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеУдалосьОтправитьОтменуВегаисКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="НеУдалосьОтправитьОтменуВегаисРасширеннаяПодсказка" id="60"/>
+								</CheckBoxField>
+								<InputField name="ОтветМодуляЕГАИС_Отмена" id="55">
+									<DataPath>Объект.ОтветМодуляЕГАИС_Отмена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ОтветМодуляЕГАИС_ОтменаКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ОтветМодуляЕГАИС_ОтменаРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ОтветМодуляЕГАИС" id="52">
+									<DataPath>Объект.ОтветМодуляЕГАИС</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ОтветМодуляЕГАИСКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ОтветМодуляЕГАИСРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<CheckBoxField name="ТранзакцияПлатежнойСистемыОтменена" id="122">
+									<DataPath>Объект.ТранзакцияПлатежнойСистемыОтменена</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТранзакцияПлатежнойСистемыОтмененаКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ТранзакцияПлатежнойСистемыОтмененаРасширеннаяПодсказка" id="124"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="Протокол" id="64">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Протокол</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПротоколКонтекстноеМеню" id="65"/>
+							<AutoCommandBar name="ПротоколКоманднаяПанель" id="66"/>
+							<ExtendedTooltip name="ПротоколРасширеннаяПодсказка" id="67"/>
+							<SearchStringAddition name="ПротоколСтрокаПоиска" id="68">
+								<AdditionSource>
+									<Item>Протокол</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПротоколСтрокаПоискаКонтекстноеМеню" id="69"/>
+								<ExtendedTooltip name="ПротоколСтрокаПоискаРасширеннаяПодсказка" id="70"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПротоколСостояниеПросмотра" id="71">
+								<AdditionSource>
+									<Item>Протокол</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПротоколСостояниеПросмотраКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="ПротоколСостояниеПросмотраРасширеннаяПодсказка" id="73"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПротоколУправлениеПоиском" id="74">
+								<AdditionSource>
+									<Item>Протокол</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПротоколУправлениеПоискомКонтекстноеМеню" id="75"/>
+								<ExtendedTooltip name="ПротоколУправлениеПоискомРасширеннаяПодсказка" id="76"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПротоколВариантОплаты" id="86">
+									<DataPath>Объект.Протокол.ВариантОплаты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПротоколВариантОплатыКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ПротоколВариантОплатыРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="ПротоколСумма" id="83">
+									<DataPath>Объект.Протокол.Сумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПротоколСуммаКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ПротоколСуммаРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ПротоколСуммаФакт" id="92">
+									<DataPath>Объект.Протокол.СуммаФакт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПротоколСуммаФактКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ПротоколСуммаФактРасширеннаяПодсказка" id="94"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<InputField name="Автор" id="7">
+							<DataPath>Объект.Автор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="АвторКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа9" id="120">
+					<Group>Horizontal</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="121"/>
+					<ChildItems>
+						<UsualGroup name="Группа6" id="114">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<InputField name="Слип" id="104">
+									<DataPath>Объект.Слип</DataPath>
+									<ContextMenu name="СлипКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="СлипРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="идТранзакцииПлатежнойСистемы" id="61">
+									<DataPath>Объект.идТранзакцииПлатежнойСистемы</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<ContextMenu name="идТранзакцииПлатежнойСистемыКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="идТранзакцииПлатежнойСистемыРасширеннаяПодсказка" id="63"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ОтветФН" id="49">
+							<DataPath>Объект.ОтветФН</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>23</Width>
+							<ContextMenu name="ОтветФНКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ОтветФНРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<UsualGroup name="Группа10" id="135">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="136"/>
+							<ChildItems>
+								<InputField name="ПодвалЧека" id="132">
+									<DataPath>Объект.ПодвалЧека</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ПодвалЧекаКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ПодвалЧекаРасширеннаяПодсказка" id="134"/>
+								</InputField>
+								<InputField name="ТипЧекаЛояльность" id="137">
+									<DataPath>Объект.ТипЧекаЛояльность</DataPath>
+									<ContextMenu name="ТипЧекаЛояльностьКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ТипЧекаЛояльностьРасширеннаяПодсказка" id="139"/>
+								</InputField>
+								<InputField name="ИдентификаторЛояльности" id="140">
+									<DataPath>Объект.ИдентификаторЛояльности</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ContextMenu name="ИдентификаторЛояльностиКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ИдентификаторЛояльностиРасширеннаяПодсказка" id="142"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПротоколРасчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

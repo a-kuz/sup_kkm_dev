@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ФИО" id="10">
+			<DataPath>Объект.ФИО</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ФИОКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="КодДоступа" id="13">
+			<DataPath>Объект.КодДоступа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодДоступаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КодДоступаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="Бригадир" id="16">
+			<DataPath>Объект.Бригадир</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="БригадирКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="БригадирРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<InputField name="Клиент" id="19">
+			<DataPath>Объект.Клиент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ОсновнойПланЗала" id="22">
+			<DataPath>Объект.ОсновнойПланЗала</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОсновнойПланЗалаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ОсновнойПланЗалаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ОсновноеМеню" id="25">
+			<DataPath>Объект.ОсновноеМеню</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОсновноеМенюКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ОсновноеМенюРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Бригада" id="28">
+			<DataPath>Объект.Бригада</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БригадаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="БригадаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<CheckBoxField name="Курьер" id="31">
+			<DataPath>Объект.Курьер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КурьерКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="КурьерРасширеннаяПодсказка" id="33"/>
+		</CheckBoxField>
+		<InputField name="Пейджер" id="34">
+			<DataPath>Объект.Пейджер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПейджерКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ПейджерРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ЦветОповещенияГотовности" id="37">
+			<DataPath>Объект.ЦветОповещенияГотовности</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЦветОповещенияГотовностиКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ЦветОповещенияГотовностиРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ГрафикРаботыСотрудника" id="40">
+			<DataPath>Объект.ГрафикРаботыСотрудника</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ГрафикРаботыСотрудникаКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ГрафикРаботыСотрудникаРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="Должность" id="43">
+			<DataPath>Объект.Должность</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДолжностьКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Подразделение" id="46">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="ТабельныйНомер" id="49">
+			<DataPath>Объект.ТабельныйНомер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТабельныйНомерКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ТабельныйНомерРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<Pages name="Страницы" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<Page name="ГруппаСоставБригады" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состав бригады</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСоставБригадыРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Table name="СоставБригады" id="56">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СоставБригады</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СоставБригадыКонтекстноеМеню" id="57"/>
+							<AutoCommandBar name="СоставБригадыКоманднаяПанель" id="58"/>
+							<ExtendedTooltip name="СоставБригадыРасширеннаяПодсказка" id="59"/>
+							<SearchStringAddition name="СоставБригадыСтрокаПоиска" id="60">
+								<AdditionSource>
+									<Item>СоставБригады</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставБригадыСтрокаПоискаКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="СоставБригадыСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СоставБригадыСостояниеПросмотра" id="63">
+								<AdditionSource>
+									<Item>СоставБригады</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставБригадыСостояниеПросмотраКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="СоставБригадыСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СоставБригадыУправлениеПоиском" id="66">
+								<AdditionSource>
+									<Item>СоставБригады</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставБригадыУправлениеПоискомКонтекстноеМеню" id="67"/>
+								<ExtendedTooltip name="СоставБригадыУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СоставБригадыНомерСтроки" id="69">
+									<DataPath>Объект.СоставБригады.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СоставБригадыНомерСтрокиКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СоставБригадыНомерСтрокиРасширеннаяПодсказка" id="71"/>
+								</LabelField>
+								<InputField name="СоставБригадыСотрудник" id="72">
+									<DataPath>Объект.СоставБригады.Сотрудник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СоставБригадыСотрудникКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="СоставБригадыСотрудникРасширеннаяПодсказка" id="74"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПраваДоступа" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Права доступа</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПраваДоступаРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<Table name="ПраваДоступа" id="77">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПраваДоступа</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПраваДоступаКонтекстноеМеню" id="78"/>
+							<AutoCommandBar name="ПраваДоступаКоманднаяПанель" id="79"/>
+							<ExtendedTooltip name="ПраваДоступаРасширеннаяПодсказка" id="80"/>
+							<SearchStringAddition name="ПраваДоступаСтрокаПоиска" id="81">
+								<AdditionSource>
+									<Item>ПраваДоступа</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПраваДоступаСтрокаПоискаКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ПраваДоступаСтрокаПоискаРасширеннаяПодсказка" id="83"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПраваДоступаСостояниеПросмотра" id="84">
+								<AdditionSource>
+									<Item>ПраваДоступа</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПраваДоступаСостояниеПросмотраКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ПраваДоступаСостояниеПросмотраРасширеннаяПодсказка" id="86"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПраваДоступаУправлениеПоиском" id="87">
+								<AdditionSource>
+									<Item>ПраваДоступа</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПраваДоступаУправлениеПоискомКонтекстноеМеню" id="88"/>
+								<ExtendedTooltip name="ПраваДоступаУправлениеПоискомРасширеннаяПодсказка" id="89"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПраваДоступаНомерСтроки" id="90">
+									<DataPath>Объект.ПраваДоступа.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПраваДоступаНомерСтрокиКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ПраваДоступаНомерСтрокиРасширеннаяПодсказка" id="92"/>
+								</LabelField>
+								<InputField name="ПраваДоступаМестоРеализации" id="93">
+									<DataPath>Объект.ПраваДоступа.МестоРеализации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПраваДоступаМестоРеализацииКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ПраваДоступаМестоРеализацииРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<InputField name="ПраваДоступаНаборПрав" id="96">
+									<DataPath>Объект.ПраваДоступа.НаборПрав</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПраваДоступаНаборПравКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ПраваДоступаНаборПравРасширеннаяПодсказка" id="98"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сотрудники</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

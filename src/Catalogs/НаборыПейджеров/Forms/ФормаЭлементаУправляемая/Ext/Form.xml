@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="57">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<Table name="Педжеры" id="4">
+					<Representation>Tree</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Педжеры</DataPath>
+					<RowPictureDataPath>Педжеры.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ПеджерыКонтекстноеМеню" id="5"/>
+					<AutoCommandBar name="ПеджерыКоманднаяПанель" id="6"/>
+					<ExtendedTooltip name="ПеджерыРасширеннаяПодсказка" id="7"/>
+					<SearchStringAddition name="ПеджерыСтрокаПоиска" id="8">
+						<AdditionSource>
+							<Item>Педжеры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПеджерыСтрокаПоискаКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="ПеджерыСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПеджерыСостояниеПросмотра" id="11">
+						<AdditionSource>
+							<Item>Педжеры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПеджерыСостояниеПросмотраКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="ПеджерыСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПеджерыУправлениеПоиском" id="14">
+						<AdditionSource>
+							<Item>Педжеры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПеджерыУправлениеПоискомКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="ПеджерыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ПеджерыНаименование" id="17">
+							<DataPath>Педжеры.Description</DataPath>
+							<ContextMenu name="ПеджерыНаименованиеКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ПеджерыНаименованиеРасширеннаяПодсказка" id="19"/>
+						</LabelField>
+						<LabelField name="ПеджерыКод" id="20">
+							<DataPath>Педжеры.Code</DataPath>
+							<ContextMenu name="ПеджерыКодКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ПеджерыКодРасширеннаяПодсказка" id="22"/>
+						</LabelField>
+						<CheckBoxField name="ПеджерыНеИспользуется" id="23">
+							<DataPath>Педжеры.НеИспользуется</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПеджерыНеИспользуетсяКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ПеджерыНеИспользуетсяРасширеннаяПодсказка" id="25"/>
+						</CheckBoxField>
+						<LabelField name="ПеджерыСтанция" id="26">
+							<DataPath>Педжеры.Станция</DataPath>
+							<ContextMenu name="ПеджерыСтанцияКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПеджерыСтанцияРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+						<LabelField name="ПеджерыНаборПейджеров" id="29">
+							<DataPath>Педжеры.НаборПейджеров</DataPath>
+							<ContextMenu name="ПеджерыНаборПейджеровКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ПеджерыНаборПейджеровРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="Станции" id="32">
+					<Representation>Tree</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>Станции</DataPath>
+					<RowPictureDataPath>Станции.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СтанцииКонтекстноеМеню" id="33"/>
+					<AutoCommandBar name="СтанцииКоманднаяПанель" id="34"/>
+					<ExtendedTooltip name="СтанцииРасширеннаяПодсказка" id="35"/>
+					<SearchStringAddition name="СтанцииСтрокаПоиска" id="36">
+						<AdditionSource>
+							<Item>Станции</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СтанцииСтрокаПоискаКонтекстноеМеню" id="37"/>
+						<ExtendedTooltip name="СтанцииСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СтанцииСостояниеПросмотра" id="39">
+						<AdditionSource>
+							<Item>Станции</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СтанцииСостояниеПросмотраКонтекстноеМеню" id="40"/>
+						<ExtendedTooltip name="СтанцииСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СтанцииУправлениеПоиском" id="42">
+						<AdditionSource>
+							<Item>Станции</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СтанцииУправлениеПоискомКонтекстноеМеню" id="43"/>
+						<ExtendedTooltip name="СтанцииУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="СтанцииНаименование" id="45">
+							<DataPath>Станции.Description</DataPath>
+							<ContextMenu name="СтанцииНаименованиеКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="СтанцииНаименованиеРасширеннаяПодсказка" id="47"/>
+						</LabelField>
+						<LabelField name="СтанцииКод" id="48">
+							<DataPath>Станции.Code</DataPath>
+							<ContextMenu name="СтанцииКодКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="СтанцииКодРасширеннаяПодсказка" id="50"/>
+						</LabelField>
+						<CheckBoxField name="СтанцииПоказыватьВесьЗаказ" id="51">
+							<DataPath>Станции.ПоказыватьВесьЗаказ</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СтанцииПоказыватьВесьЗаказКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="СтанцииПоказыватьВесьЗаказРасширеннаяПодсказка" id="53"/>
+						</CheckBoxField>
+						<LabelField name="СтанцииНаборПейджеров" id="54">
+							<DataPath>Станции.НаборПейджеров</DataPath>
+							<ContextMenu name="СтанцииНаборПейджеровКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="СтанцииНаборПейджеровРасширеннаяПодсказка" id="56"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НаборыПейджеров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Педжеры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Педжеры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Пейджеры</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">НаборПейджеров</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Станции" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Станции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Станции</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">НаборПейджеров</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

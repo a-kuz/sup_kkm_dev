@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="1effd9e8-a384-400d-a4c4-58f3c882333e">
+		<Properties>
+			<Name>СтанцияОплаты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Станция оплаты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОткрытиЗакрытиеСменыКасса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДенежныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбновлениеТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаЛояльности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоискТовара</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Оплата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводПДФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СкрытьМенюИПанели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСокнами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводЧисла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыборИзСписка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГлавнаяФорма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводДаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтерфейсРМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Алкоголь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Шрифты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.SQL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЕГАИС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЛояльностьКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Лояльность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ксТрактир</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.Основной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗагрузкаСправочникаСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Style.СтанцияОплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветНативногоЗаколовкаОкна</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.Тень</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.АппБар</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.НеактивнаяКнопка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.НеактивныйЭлемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.Акцент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.Шрифт1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.Шрифт2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПротоколРасчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОткрытиеСмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗакрытиеСмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДополнительныеСвойства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗначенияПараметровОграниченийПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДенежныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РежимАдминистратора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Возврат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Касса_Внесение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Касса_Изъятие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Касса_ОткрытиеСмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВопросПредупреждение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодборТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Обслуживание_ФР_Атол1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОтчетыККМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаказДопИнф</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТекущиеСмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Цены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеПредставленийТаблицВсубд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОткрытиеЗакрытиеСмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЛогоКуулКлевер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнформационныеБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Фирмы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТорговоеОборудование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПочка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТорговоеОборудование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВыполнениеРегламентныхЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущийПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущаяИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриЗаписиДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриЗаписиСправочников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбновлениеСтруктурыБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработатьСпулЛояльности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаКонстант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ШрифтFontAwesomeOtf</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ШрифтFontAwesome</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ДрайверАтол</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.БезКартинки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветРамкиВыделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаксимальныйПроцентПревышенияЦеныПриВозврате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаксимальнаяСуммаВстрокеЧека</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаксимальноеКоличествоВстрокеЧека</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ХешСтруктурыБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьДляЛогирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПредупреждатьОбОграниченииПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыШаблоновШК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Регионы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПараметрыОграниченийПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыКонтроляПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Станции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныШК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ХранилищеДополнительнойИнформации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Товары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РабочиеМеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаборыПравДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МестаРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КаталогиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Касса_ЗакрытиеСмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЭмуляторСканера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегистрацияКассиров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Авторизация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ПраваДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВыбранныеТовары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаказТоварыДопИнф</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВозвратДопИнф</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ШтрихКодыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПраваДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПараметрыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МенюЛояльности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыМенюЛояльности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДействияЭлементовМеню</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДляЗакладокМеню</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеСерверамиПриложений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИдентификаторКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НомерВерсии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаксимальноеКоличествоПДФвЧеке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоРасходу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоВыручке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СПУЛЛояльности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетыФО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.СУПтт.Table.dbo_Спр_Товары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоставГруппИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДоступностьКаталоговТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДействующиеРасписания</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
