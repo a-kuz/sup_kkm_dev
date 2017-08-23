@@ -50,7 +50,7 @@
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Document.ПротоколРасчетов.Form.ФормаДокументаУправляемая</DefaultObjectForm>
-			<DefaultListForm/>
+			<DefaultListForm>Document.ПротоколРасчетов.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -1328,6 +1328,7 @@
 			</Attribute>
 			<Form>ФормаДокумента</Form>
 			<Form>ФормаДокументаУправляемая</Form>
+			<Form>ФормаСписка</Form>
 			<TabularSection uuid="c66f64c7-48bf-4470-bc0a-5d1e681953d5">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ПротоколРасчетов.Протокол" category="TabularSection">

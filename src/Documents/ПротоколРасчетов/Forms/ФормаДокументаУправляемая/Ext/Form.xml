@@ -123,6 +123,16 @@
 							<ContextMenu name="ККМКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="ККМРасширеннаяПодсказка" id="24"/>
 						</InputField>
+						<InputField name="НомерСмены" id="149">
+							<DataPath>Объект.НомерСмены</DataPath>
+							<ContextMenu name="НомерСменыКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="НомерСменыРасширеннаяПодсказка" id="151"/>
+						</InputField>
+						<InputField name="НомерЧека" id="146">
+							<DataPath>Объект.НомерЧека</DataPath>
+							<ContextMenu name="НомерЧекаКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="НомерЧекаРасширеннаяПодсказка" id="148"/>
+						</InputField>
 						<UsualGroup name="Группа1" id="98">
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
