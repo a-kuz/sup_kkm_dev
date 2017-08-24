@@ -1129,8 +1129,8 @@
 	|Global marginX := 10
 	|Global marginY := 15
 	|
-	|Global WINDOW_WIDTH := 250
-	|Global WINDOW_HEIGHT := 100	
+	|Global WINDOW_WIDTH := 300
+	|Global WINDOW_HEIGHT := 150	
 	|Global WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))
 	|Global animateEffect := AW_BLEND or AW_HOR_POSITIVE
 	|
@@ -1161,11 +1161,12 @@
 	|		index := this.index
 	|		Gui,G%index%:+AlwaysOnTop -Caption +ToolWindow +LastFound -border
 	|		
-	|		Gui,G%index%: Font, s16,Segoe UI
+	|		Gui,G%index%: Font, s14,Segoe UI
+	|		
 	|		Gui,G%index%: Color, %ACCENT_COLOR%
 	|
 	|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
-	|		Gui,G%index%: Font, s10
+	|		Gui,G%index%: Font, s9
 	|		Gui,G%index%: Add, Text, W1000 H200 , % this.strText
 	|
 	|		win_y := this.y
