@@ -1032,13 +1032,14 @@
 	|ExitApp");
 КонецПроцедуры
 
-Процедура ПоказатьПлашку(Заголовок, Текст, НомерПлашки = 0) Экспорт
+Процедура ПоказатьПлашку(Заголовок = "(:-)", Текст = "", НомерПлашки = 0) Экспорт
 	Текст = СтрЗаменить(Текст, Символы.ПС, "`n");
 	Текст = СтрЗаменить(Текст, ";", "");
+	Текст = СтрЗаменить(Текст, """", """""");
 	
 	Если НомерПлашки = 0 Тогда
 		ТекНомерПлашки=ТекНомерПлашки+1;
-		НомерПлашки = ТекНомерПлашки%3+1;
+		НомерПлашки = ТекНомерПлашки%4+1;
 	КонецЕсли;
 	
 	Скрипт = "
@@ -1130,7 +1131,7 @@
 	|Global marginY := 15
 	|
 	|Global WINDOW_WIDTH := 300
-	|Global WINDOW_HEIGHT := 150	
+	|Global WINDOW_HEIGHT := 180	
 	|Global WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))
 	|Global animateEffect := AW_BLEND or AW_HOR_POSITIVE
 	|
@@ -1214,6 +1215,10 @@
 	|		WinSet, Transparent, % this.trans, % ""ahk_id "" + this.hwnd
 	|		if (this.trans>0) {
 	|			this.hide(-50)
+	|		} else {
+	|		index := this.index
+	|		Gui,G%index%:Destroy 
+	|			
 	|		}
 	|
 	|	}
@@ -1245,7 +1250,7 @@
 	|";
 	
 	Если AHK_Balloon = Неопределено Тогда
-		AHK_Balloon = AHK(Ложь, "Balloon");
+		AHK_Balloon = AHK(Истина, "Balloon");
 		AHK_Balloon.ahkTextDll(Скрипт);
 	КонецЕсли;
 	AHK_Balloon.ahkExec(
