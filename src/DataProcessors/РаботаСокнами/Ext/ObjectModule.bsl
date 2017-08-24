@@ -2,7 +2,6 @@
 Перем AutohotkeyDll;
 Перем AutohotkeyDll_БлокировкаВвода;
 Перем AutohotkeyDll_Переназначение;
-Перем AutohotkeyDll_Динамик;
 Перем AHK_Balloon;
 Перем AHK_СкрытьМенюИПанели;
 Перем Враппер Экспорт;
@@ -463,28 +462,13 @@
 
 // Воспроизводит звук
 Функция PlayWav(ЗвукОповещения=Неопределено) Экспорт
-	//Если AutohotkeyDll_Динамик = Неопределено Тогда
-	//	AutohotkeyDll_Динамик = AHK(Истина, "PlayWav");
-	//	Скрипт = "
-	//	|#NoTrayIcon
-	//	|#persistent
-	//	|Beep() 
-	//	|{
-	//	|	SoundBeep, 400, 100
-	//	|	SoundBeep
-	//	|	return
-	//	|}
-	//	|
-	//	|~vk4f::Beep()";
-	//	AutohotkeyDll_Динамик.ahkTextDll(Скрипт);		
-	//КонецЕсли;
-	//AutohotkeyDll_Динамик.ahkFunction("Beep");	
 	Сигнал();
 КонецФункции
 
 // Выводит всплывающее окно с сообщением
 // Напишем на autohotkey
 Процедура ShowMessageEx(ШиринаОкна, ЦветФона, ТекстСообщения, Событие, Данные, ИдСообщения) Экспорт 
+	ПоказатьПлашку("", ТекстСообщения);
 КонецПроцедуры  
 
 // Закрывает экранную клавиатуру
@@ -1253,7 +1237,7 @@
 		AHK_Balloon = AHK(Истина, "Balloon");
 		AHK_Balloon.ahkTextDll(Скрипт);
 	КонецЕсли;
-	AHK_Balloon.ahkExec(
+	AHK_Balloon.addScript(
 	СтрШаблон(
 	"curIndex := %1
 	|curCaption := ""%2""
@@ -1261,10 +1245,7 @@
 	|
 	|ShowMessage()",
 	НомерПлашки, Заголовок, Текст)
-	);
-	
-	
-
+	, 2); 
 КонецПроцедуры
 
 
