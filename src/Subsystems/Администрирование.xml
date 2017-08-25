@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="a55d25ca-67fc-487d-91d7-82ae0269b44b">
+		<Properties>
+			<Name>Администрирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>StdPicture.ReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаЗагрузкаJSON</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаСправочниковНаТТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаказыПоКассирам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДанныеЛояльностиПоЗаказу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияВыдачиПейджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДействующиеРасписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоставГруппИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДоступностьКаталоговТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НомерЧекаНФР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СПУЛЛояльности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВыбранныеТовары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВозвратДопИнф</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗначенияПараметровОграниченийПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДополнительныеСвойства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВыданныеПейджеры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОткрытыеЗаказыПоКартам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ШтрихКодыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Цены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ФактическийУчетРабочегоВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТекущиеСмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПраваДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПараметрыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаказДопИнф</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаказТоварыДопИнф</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВариантыОплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнформационныеБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирАлгоритмы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирКомандаРедактироватьОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирОбъектыДляОтладки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КартыДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КаталогиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МестаРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаборыПравДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Расписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РабочиеМеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Станции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТорговоеОборудование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Фирмы</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
