@@ -171,6 +171,7 @@
 			<BasedOn/>
 			<InputByString>
 				<xr:Field>Document.Заказ.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.Заказ.Attribute.НомерКартыЛояльности</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
@@ -193,7 +194,7 @@
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
-			<FullTextSearch>DontUse</FullTextSearch>
+			<FullTextSearch>Use</FullTextSearch>
 			<ObjectPresentation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -996,7 +997,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Карта доступа</v8:content>
+							<v8:content>Бэйдж гостя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

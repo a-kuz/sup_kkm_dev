@@ -37,7 +37,7 @@
 			<LimitLevelCount>false</LimitLevelCount>
 			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>13</CodeLength>
@@ -56,10 +56,13 @@
 			<InputByString>
 				<xr:Field>Catalog.КартыДоступа.StandardAttribute.Description</xr:Field>
 				<xr:Field>Catalog.КартыДоступа.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.КартыДоступа.Attribute.Идентификатор</xr:Field>
+				<xr:Field>Catalog.КартыДоступа.Attribute.Идентификатор1</xr:Field>
+				<xr:Field>Catalog.КартыДоступа.Attribute.Идентификатор2</xr:Field>
 			</InputByString>
-			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
-			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
-			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>Use</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Background</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.КартыДоступа.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm>Catalog.КартыДоступа.Form.ФормаГруппы</DefaultFolderForm>
 			<DefaultListForm>Catalog.КартыДоступа.Form.ФормаСписка</DefaultListForm>
@@ -67,14 +70,14 @@
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
-			<AuxiliaryListForm/>
+			<AuxiliaryListForm>Catalog.КартыДоступа.Form.ФормаСпискаУправляемая</AuxiliaryListForm>
 			<AuxiliaryChoiceForm/>
 			<AuxiliaryFolderChoiceForm/>
-			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<BasedOn/>
 			<DataLockFields/>
 			<DataLockControlMode>Automatic</DataLockControlMode>
-			<FullTextSearch>DontUse</FullTextSearch>
+			<FullTextSearch>Use</FullTextSearch>
 			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
@@ -457,7 +460,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор1</v8:content>
+							<v8:content>QR</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -491,7 +494,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
 					<Indexing>Index</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
+					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
 			<Attribute uuid="95f11d14-8401-4da1-ac3f-d4a4db6a74c8">
@@ -500,7 +503,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор2</v8:content>
+							<v8:content>Короткий номер</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -534,7 +537,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
 					<Indexing>Index</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
+					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
 			<Attribute uuid="177b3139-9de1-47a1-9bbc-76a13733a54b">
@@ -543,7 +546,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Информационная база</v8:content>
+							<v8:content>ТТ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -580,6 +583,7 @@
 			<Form>ФормаГруппы</Form>
 			<Form>ФормаЭлемента</Form>
 			<Form>Автозаполнение</Form>
+			<Form>ФормаСпискаУправляемая</Form>
 			<Template>ксИзменения</Template>
 			<Template>Конверт</Template>
 		</ChildObjects>
