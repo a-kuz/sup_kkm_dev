@@ -16,6 +16,12 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<Button name="тестМенюОпераций" id="12">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.тестМенюОпераций</CommandName>
+			<ExtendedTooltip name="тестМенюОперацийРасширеннаяПодсказка" id="13"/>
+		</Button>
 		<PictureDecoration name="ЛогоККГурмэ" id="9">
 			<Title formatted="false">
 				<v8:item>
@@ -168,7 +174,7 @@
 					<v8:content>Тест меню операций</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>Ctrl+F12</Shortcut>
+			<Shortcut>Shift+F2</Shortcut>
 			<Action>тестМенюОпераций</Action>
 		</Command>
 	</Commands>
