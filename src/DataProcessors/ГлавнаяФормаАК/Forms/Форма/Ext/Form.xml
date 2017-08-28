@@ -860,6 +860,18 @@ by credit card</v8:content>
 				</Page>
 			</ChildItems>
 		</Pages>
+		<Button name="тестНомерКартыЗаказа" id="546">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.тестНомерКартыЗаказа</CommandName>
+			<ExtendedTooltip name="тестНомерКартыЗаказаРасширеннаяПодсказка" id="547"/>
+		</Button>
+		<Button name="тестМенюОпераций" id="544">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.тестМенюОпераций</CommandName>
+			<ExtendedTooltip name="тестМенюОперацийРасширеннаяПодсказка" id="545"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -2084,7 +2096,7 @@ by credit card</v8:content>
 					<v8:content>Тест меню операций</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>Alt+Shift+1</Shortcut>
+			<Shortcut>Shift+F2</Shortcut>
 			<Action>тестМенюОпераций</Action>
 		</Command>
 		<Command name="тестНомерКартыЗаказа" id="6">
@@ -2100,7 +2112,7 @@ by credit card</v8:content>
 					<v8:content>Тест номер карты заказа</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>Alt+Shift+2</Shortcut>
+			<Shortcut>Shift+F3</Shortcut>
 			<Action>тестНомерКартыЗаказа</Action>
 		</Command>
 	</Commands>
