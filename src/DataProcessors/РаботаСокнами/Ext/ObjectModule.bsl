@@ -1027,80 +1027,7 @@
 	
 	Скрипт = "
 	|#NoTrayIcon
-	|; #SingleInstance Force
 	|
-	|Global msg
-	|Global mouse_x, mouse_y, ext, time, hHookMouse, Ptr
-	|Global oMsg := { 0x200: ""WM_MOUSEMOVE""
-	|				, 0x201: ""WM_LBUTTONDOWN"", 0x202: ""WM_LBUTTONUP""
-	|				, 0x204: ""WM_RBUTTONDOWN"", 0x205: ""WM_RBUTTONUP""
-	|				, 0x207: ""WM_MBUTTONDOWN"", 0x208: ""WM_MBUTTONUP""
-	|				, 0x20B: ""WM_XBUTTONDOWN"", 0x20C: ""WM_XBUTTONUP""
-	|				, 0x20A: ""WM_MOUSEWHEEL"" , 0x20E: ""WM_MOUSEHWHEEL"" }
-	|				
-	|Global oMouseData := { 0: ""0"", 1: ""XBUTTON1"", 2: ""XBUTTON2""
-	|					  , 120: ""WHEEL_DELTA forward"", -120: ""WHEEL_DELTA backward"" }
-	|				
-	|
-	|Class LowLevelMouse {
-	|
-	|	
-	|	__New() {
-	|	
-	|		hHookMouse := DllCall(""SetWindowsHookEx""
-	|	   , Int, WH_MOUSE_LL := 14
-	|	   , Int, RegisterCallback(""LowLevelMouseProc"", ""Fast"")
-	|	   , Ptr, DllCall(""GetModuleHandle"", UInt, 0, Ptr)
-	|	   , UInt, 0, Ptr)
-	|	}
-	|	
-	|	__Delete() {
-	|		DllCall(""UnhookWindowsHookEx"", Ptr, hHookMouse)
-	|	}
-	|	
-	|	SetCallback(func) {
-	|			this.callback := func
-	|	}
-	|	
-	|	CallCallbacks() {
-	|		this.callback.call(mouse_x, mouse_y)
-	|	}
-	|
-	|}
-	| 
-	|LowLevelMouseProc(nCode, wParam, lParam)
-	|{
-	|   
-	|      static oMsg := { 0x200: ""WM_MOUSEMOVE""
-	|                , 0x201: ""WM_LBUTTONDOWN"", 0x202: ""WM_LBUTTONUP""
-	|                , 0x204: ""WM_RBUTTONDOWN"", 0x205: ""WM_RBUTTONUP""
-	|                , 0x207: ""WM_MBUTTONDOWN"", 0x208: ""WM_MBUTTONUP""
-	|                , 0x20B: ""WM_XBUTTONDOWN"", 0x20C: ""WM_XBUTTONUP""
-	|                , 0x20A: ""WM_MOUSEWHEEL"" , 0x20E: ""WM_MOUSEHWHEEL"" }
-	|                
-	|      , oMouseData := { 0: ""0"", 1: ""XBUTTON1"", 2: ""XBUTTON2""
-	|                      , 120: ""WHEEL_DELTA forward"", -120: ""WHEEL_DELTA backward"" }
-	|
-	|   msg := wParam
-	|   mouse_x := NumGet(lParam + 0, ""Int"")
-	|   mouse_y := NumGet(lParam + 4, ""Int"")
-	|   ext     := NumGet(lParam + 10, ""Short"")
-	|   time    := NumGet(lParam + 16, ""UInt"")
-	|   
-	|   SetTimer, EventHandling, -10
-	|   Return DllCall(""CallNextHookEx"", Ptr, 0, Int, nCode, UInt, wParam, UInt, lParam)
-	|
-	|EventHandling:
-	|	
-	|   LL.CallCallbacks()
-	|   Return
-	|}
-	|
-	|
-	|
-	|
-	|
-	|Global LL := new LowLevelMouse()
 	|Global THEME_COLOR := 0x068A3F
 	|Global ACCENT_COLOR := 0xFF6E3F
 	|
@@ -1147,11 +1074,16 @@
 	|		
 	|		Gui,G%index%: Font, s14,Segoe UI
 	|		
-	|		Gui,G%index%: Color, %ACCENT_COLOR%
+	|		if (mod(index,2)==1) {
+	|			Gui,G%index%: Color, %ACCENT_COLOR%
+	|		} else {
+	|			Gui,G%index%: Color, %THEME_COLOR%
+	|		}
 	|
 	|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
 	|		Gui,G%index%: Font, s9
-	|		Gui,G%index%: Add, Text, W1000 H200 , % this.strText
+	|		Width := WINDOW_WIDTH - 40
+	|		Gui,G%index%: Add, Text, W%Width% H200 , % this.strText
 	|
 	|		win_y := this.y
 	|		Gui,G%index%: Show, y%win_y% x%WINDOW_X%  w%WINDOW_WIDTH% h%WINDOW_HEIGHT% hide ; показываем окно в выбранных координатах и размерах
@@ -1162,29 +1094,10 @@
 	|		WinSet, ExStyle, % ""+"" WS_EX_LAYERED | WS_EX_TRANSPARENT   ; добавляем прозрачность для кликов мыши
 	|		WinSet, Transparent, % this.trans
 	|		
-	|		LL.SetCallback(ObjBindMethod(this, ""mouseProc"",x,y))
 	|		this.hide(-2500)
 	|		
 	|	}
-	|	
-	|	pointInRect(pX, pY, rX, rY, rW, rH) {
-	|		checkX := (pX-rX)*1.0		; must be > 0
-	|		checkX2 :=((rX+rW)-pX)*1.0 	; must be > 0
-	|		checkY := (pY-rY)*1.0 		; must be > 0
-	|		checkY2 :=((rY+rW)-pY) *1.0	; must be > 0
-	|		if (checkX<0 or checkX2<0 or checkY<0 or checkY2<0) {
-	|			return 0		
-	|		} else {
-	|			return 1 
-	|		}		
-	|	}
-	|	
-	|	mouseProc(x,y) {
-	|	if this.pointInRect(mouse_x, mouse_y, WINDOW_X, this.y, WINDOW_WIDTH, WINDOW_HEIGHT) {
-	|		this.StopHiding()
-	|	}
 	|		
-	|	}
 	|	
 	|	hide(after_ms=0) {
 	|		callback := ObjBindMethod(this, ""TransDecFunc"")
@@ -1192,6 +1105,16 @@
 	|	}
 	|	
 	|	TransDecFunc() {
+	|		MouseGetPos,X,Y,hwnd
+	|		if (hwnd == this.hwnd) {
+	|			this.stepTrans := 0
+	|			this.dTrans := 1
+	|			this.trans := 255
+	|			WinSet, Transparent, % this.trans, % ""ahk_id "" + this.hwnd
+	|			SetTimer,,Off
+	|			this.hide(-3500)
+	|			return
+	|		}
 	|		this.stepTrans := this.stepTrans + 1
 	|		this.dTrans := this.dTrans + (255.0/this.trans)**(1/1.1)
 	|		this.trans := this.trans - this.dTrans
@@ -1199,27 +1122,13 @@
 	|		if (this.trans>0) {
 	|			this.hide(-50)
 	|		} else {
-	|		index := this.index
-	|		Gui,G%index%:Destroy 
+	|			index := this.index
+	|			Gui,G%index%:Destroy 
 	|			
 	|		}
 	|
 	|	}
 	|	
-	|	StopHiding() {
-	|		callback1 := ObjBindMethod(this, ""TransDecFunc"")
-	|		SetTimer,% callback1, Off
-	|		
-	|		this.stepTrans := 1
-	|		this.dTrans := 1
-	|		this.trans := 500
-	|		WinSet, Transparent, % 255, ""ahk_id "" + this.hwnd
-	|		
-	|		
-	|		callback2 := ObjBindMethod(this, ""hide"")		
-	|		SetTimer,% callback2, off
-	|		
-	|	}
 	|	
 	|}
 	|
