@@ -2071,5 +2071,37 @@ by credit card</v8:content>
 			</ToolTip>
 			<Action>ОтказатьсяОтОплаты</Action>
 		</Command>
+		<Command name="тестМенюОпераций" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест меню операций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест меню операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+Shift+1</Shortcut>
+			<Action>тестМенюОпераций</Action>
+		</Command>
+		<Command name="тестНомерКартыЗаказа" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест номер карты заказа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест номер карты заказа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+Shift+2</Shortcut>
+			<Action>тестНомерКартыЗаказа</Action>
+		</Command>
 	</Commands>
 </Form>
