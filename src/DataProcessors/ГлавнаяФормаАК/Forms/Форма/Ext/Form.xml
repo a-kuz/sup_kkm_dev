@@ -177,21 +177,6 @@ by credit card</v8:content>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИконкиРасширеннаяПодсказка" id="537"/>
 							<ChildItems>
-								<PictureDecoration name="ПэйПасс" id="538">
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Пэй пасс</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTipRepresentation>None</ToolTipRepresentation>
-									<Picture>
-										<xr:Abs>Picture.png</xr:Abs>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</Picture>
-									<ContextMenu name="ПэйПассКонтекстноеМеню" id="539"/>
-									<ExtendedTooltip name="ПэйПассРасширеннаяПодсказка" id="540"/>
-								</PictureDecoration>
 								<PictureDecoration name="НеРубли" id="541">
 									<Title formatted="false">
 										<v8:item>
@@ -206,6 +191,21 @@ by credit card</v8:content>
 									</Picture>
 									<ContextMenu name="НеРублиКонтекстноеМеню" id="542"/>
 									<ExtendedTooltip name="НеРублиРасширеннаяПодсказка" id="543"/>
+								</PictureDecoration>
+								<PictureDecoration name="ПэйПасс" id="538">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пэй пасс</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ПэйПассКонтекстноеМеню" id="539"/>
+									<ExtendedTooltip name="ПэйПассРасширеннаяПодсказка" id="540"/>
 								</PictureDecoration>
 							</ChildItems>
 						</UsualGroup>
