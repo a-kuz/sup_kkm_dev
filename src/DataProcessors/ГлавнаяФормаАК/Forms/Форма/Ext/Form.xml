@@ -860,18 +860,6 @@ by credit card</v8:content>
 				</Page>
 			</ChildItems>
 		</Pages>
-		<Button name="тестНомерКартыЗаказа" id="546">
-			<Type>UsualButton</Type>
-			<Visible>false</Visible>
-			<CommandName>Form.Command.тестНомерКартыЗаказа</CommandName>
-			<ExtendedTooltip name="тестНомерКартыЗаказаРасширеннаяПодсказка" id="547"/>
-		</Button>
-		<Button name="тестМенюОпераций" id="544">
-			<Type>UsualButton</Type>
-			<Visible>false</Visible>
-			<CommandName>Form.Command.тестМенюОпераций</CommandName>
-			<ExtendedTooltip name="тестМенюОперацийРасширеннаяПодсказка" id="545"/>
-		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -2082,38 +2070,6 @@ by credit card</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОтказатьсяОтОплаты</Action>
-		</Command>
-		<Command name="тестМенюОпераций" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Тест меню операций</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Тест меню операций</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Shortcut>Shift+F2</Shortcut>
-			<Action>тестМенюОпераций</Action>
-		</Command>
-		<Command name="тестНомерКартыЗаказа" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Тест номер карты заказа</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Тест номер карты заказа</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Shortcut>Shift+F3</Shortcut>
-			<Action>тестНомерКартыЗаказа</Action>
 		</Command>
 	</Commands>
 </Form>
