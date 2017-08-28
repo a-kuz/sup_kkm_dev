@@ -96,6 +96,7 @@
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Hyperlink>true</Hyperlink>
 									<PictureSize>Proportionally</PictureSize>
 									<Picture>
 										<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
@@ -103,6 +104,9 @@
 									</Picture>
 									<ContextMenu name="ЛогоККГурмэКонтекстноеМеню" id="436"/>
 									<ExtendedTooltip name="ЛогоККГурмэРасширеннаяПодсказка" id="437"/>
+									<Events>
+										<Event name="Click">ЛогоККГурмэНажатие</Event>
+									</Events>
 								</PictureDecoration>
 								<Button name="ВыборЯзыка" id="441">
 									<Type>UsualButton</Type>
