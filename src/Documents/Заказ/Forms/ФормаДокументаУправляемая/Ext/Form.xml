@@ -497,6 +497,9 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="Группа3" id="353">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="354"/>
+				</Page>
 				<Page name="ГруппаДополнительно" id="175">
 					<Title>
 						<v8:item>
@@ -706,6 +709,15 @@
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="Реквизит1" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
