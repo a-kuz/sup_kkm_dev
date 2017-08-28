@@ -33,6 +33,9 @@
 			</Picture>
 			<ContextMenu name="ЛогоККГурмэКонтекстноеМеню" id="10"/>
 			<ExtendedTooltip name="ЛогоККГурмэРасширеннаяПодсказка" id="11"/>
+			<Events>
+				<Event name="Click">ЛогоККГурмэНажатие</Event>
+			</Events>
 		</PictureDecoration>
 		<InputField name="ТекстОшибки1" id="1">
 			<DataPath>ТекстОшибки1</DataPath>
