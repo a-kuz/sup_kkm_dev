@@ -526,7 +526,7 @@
 											<ExtendedTooltip name="ТаблицаТоварыКоличествоРасширеннаяПодсказка" id="42"/>
 										</InputField>
 										<InputField name="ТаблицаТоварыЦена" id="107">
-											<DataPath>ТаблицаТовары.Цена</DataPath>
+											<DataPath>ТаблицаТовары.ЦенаРеализации</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<TitleBackColor>style:FormBackColor</TitleBackColor>
 											<TitleFont faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
@@ -1043,7 +1043,7 @@
 						<v8:Type>cfg:CatalogRef.МестаРеализации</v8:Type>
 					</Type>
 				</Column>
-				<Column name="Цена" id="4">
+				<Column name="ЦенаРеализации" id="4">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
