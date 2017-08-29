@@ -1038,12 +1038,12 @@
 	|Global AW_SLIDE = 0x00040000
 	|
 	|Global marginX := 10
-	|Global marginY := 15
+	|Global marginY := 25
 	|
 	|Global WINDOW_WIDTH := 300
 	|Global WINDOW_HEIGHT := 180	
 	|Global WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))
-	|Global animateEffect := AW_BLEND or AW_HOR_POSITIVE
+	|Global animateEffect := AW_BLEND|AW_HOR_POSITIVE
 	|
 	|class MessageWindow {
 	|	
