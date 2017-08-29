@@ -295,6 +295,18 @@
 									<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="60"/>
 									<ExtendedTooltip name="ТоварыНомерСтрокиРасширеннаяПодсказка" id="61"/>
 								</LabelField>
+								<LabelField name="ТоварыДокументОплатыНомерЧека" id="358">
+									<DataPath>Объект.Товары.ДокументОплаты.НомерЧека</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыДокументОплатыНомерЧекаКонтекстноеМеню" id="359"/>
+									<ExtendedTooltip name="ТоварыДокументОплатыНомерЧекаРасширеннаяПодсказка" id="360"/>
+								</LabelField>
+								<LabelField name="ТоварыДокументОплатыНомерСмены" id="361">
+									<DataPath>Объект.Товары.ДокументОплаты.НомерСмены</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыДокументОплатыНомерСменыКонтекстноеМеню" id="362"/>
+									<ExtendedTooltip name="ТоварыДокументОплатыНомерСменыРасширеннаяПодсказка" id="363"/>
+								</LabelField>
 								<InputField name="ТоварыТовар" id="65">
 									<DataPath>Объект.Товары.Товар</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -390,6 +402,12 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыСтавкаНДСКонтекстноеМеню" id="105"/>
 									<ExtendedTooltip name="ТоварыСтавкаНДСРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="ТоварыДокументОплаты" id="355">
+									<DataPath>Объект.Товары.ДокументОплаты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыДокументОплатыКонтекстноеМеню" id="356"/>
+									<ExtendedTooltip name="ТоварыДокументОплатыРасширеннаяПодсказка" id="357"/>
 								</InputField>
 								<InputField name="ТоварыСуммаНДС" id="107">
 									<DataPath>Объект.Товары.СуммаНДС</DataPath>
