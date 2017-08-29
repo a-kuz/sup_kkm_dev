@@ -1015,7 +1015,7 @@
 	|ExitApp");
 КонецПроцедуры
 
-Процедура ПоказатьПлашку(Заголовок = "(:-)", Текст = "", НомерПлашки = 0) Экспорт
+Процедура ПоказатьПлашку(Заголовок = "(:-)", Текст = "", НомерПлашки = 0, Таймаут = 2500) Экспорт
 	Текст = СтрЗаменить(Текст, Символы.ПС, "`n");
 	Текст = СтрЗаменить(Текст, ";", "");
 	Текст = СтрЗаменить(Текст, """", """""");
@@ -1052,15 +1052,23 @@
 	|	stepTrans := 0
 	|	hwnd := 0
 	|	
-	|	__New(pIndex, pCaption, pText) {
+	|	__New(pIndex, pCaption, pText,pTimeout) {
 	|		this.trans 		:= 255
 	|		this.dTrans		:= 1
 	|		this.stepTrans	:= 0	
+	|		this.timeout 	:= pTimeout
 	|		
 	|		
 	|		; ширина и высота окна, можно изменить на 1
 	|		this.index := pIndex
-	|		this.y := (pIndex-1)*(WINDOW_HEIGHT+marginY)+marginY*2
+	|		if (pindex <= 4) {
+	|			this.y := (pIndex-1)*(WINDOW_HEIGHT+marginY)+marginY*2
+	|			this.x := WINDOW_X
+	|		} else {
+	|			this.x := (A_ScreenWidth/2)-(WINDOW_WIDTH/2)
+	|			this.y := A_screenHeight - WINDOW_HEIGHT - 20
+	|		}
+	|		
 	|		this.strCaption := pCaption
 	|		this.strText := pText
 	|		this.TransDec:= ObjBindMethod(this, ""TransDecFunc"")
@@ -1081,12 +1089,20 @@
 	|		}
 	|
 	|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
-	|		Gui,G%index%: Font, s9
 	|		Width := WINDOW_WIDTH - 40
-	|		Gui,G%index%: Add, Text, W%Width% H200 , % this.strText
+	|		if (this.index <= 4) {
+	|			Gui,G%index%: Font, s9
+	|			Gui,G%index%: Add, Text, W%Width% H200 , % this.strText
+	|		} else {
+	|			Gui,G%index%: Font, s20
+	|			Gui,G%index%: Add, Text, CXY W%Width% H200 , % this.strText
+	|		}
+	|		
+	|		
 	|
 	|		win_y := this.y
-	|		Gui,G%index%: Show, y%win_y% x%WINDOW_X%  w%WINDOW_WIDTH% h%WINDOW_HEIGHT% hide ; показываем окно в выбранных координатах и размерах
+	|		win_x := this.x
+	|		Gui,G%index%: Show, y%win_y% x%win_x%  w%WINDOW_WIDTH% h%WINDOW_HEIGHT% hide ; показываем окно в выбранных координатах и размерах
 	|		hwnd := WinExist()
 	|		this.hwnd := WinExist()
 	|		DllCall(""AnimateWindow"", Ptr, hwnd, UInt, 300, UInt, animateEffect)   ; выдвигаем/задвигаем окно-слайдер
@@ -1094,7 +1110,9 @@
 	|		WinSet, ExStyle, % ""+"" WS_EX_LAYERED | WS_EX_TRANSPARENT   ; добавляем прозрачность для кликов мыши
 	|		WinSet, Transparent, % this.trans
 	|		
-	|		this.hide(-2500)
+	|		if (this.timeout) {
+	|		this.hide(this.timeout)
+	|		}
 	|		
 	|	}
 	|		
@@ -1112,7 +1130,7 @@
 	|			this.trans := 255
 	|			WinSet, Transparent, % this.trans, % ""ahk_id "" + this.hwnd
 	|			SetTimer,,Off
-	|			this.hide(-3500)
+	|			this.hide(-this.timeout)
 	|			return
 	|		}
 	|		this.stepTrans := this.stepTrans + 1
@@ -1132,14 +1150,19 @@
 	|	
 	|}
 	|
-	|Global curCaption, curText, curIndex
+	|Global curCaption, curText, curIndex, curTimeout
 	|
 	|ShowMessage() {
-	|	w2 := new MessageWindow(curIndex,curCaption, curText)
+	|	w2 := new MessageWindow(curIndex,curCaption, curText, curTimeout)
 	|	w2.show()
 	|}
 	|
-	|";
+	|
+	|
+	|DeleteMessage() {
+	|	Gui,G%curIndex%:Destroy 
+	|}";
+
 	
 	Если AHK_Balloon = Неопределено Тогда
 		AHK_Balloon = AHK(Истина, "Balloon");
@@ -1150,11 +1173,24 @@
 	"curIndex := %1
 	|curCaption := ""%2""
 	|curText := ""%3""
+	|curTimeout := ""%4""
 	|
 	|ShowMessage()",
-	НомерПлашки, Заголовок, Текст)
+	НомерПлашки, Заголовок, Текст, Таймаут)
+	, 2); 
+
+КонецПроцедуры
+
+Процедура УдалитьПлашку(НомерПлашки) Экспорт
+	AHK_Balloon.addScript(
+	СтрШаблон(
+	"curIndex := %1
+	|
+	|DeleteMessage()",
+	НомерПлашки)
 	, 2); 
 КонецПроцедуры
+
 
 
 Функция Деструктор() Экспорт
