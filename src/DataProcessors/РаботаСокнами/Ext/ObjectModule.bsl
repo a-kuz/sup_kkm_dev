@@ -1146,16 +1146,6 @@
 	|		}
 	|
 	|	}
-	|	OnMessage(0x201, ""WM_LBUTTONDOWN"")
-	|	
-	|	WM_LBUTTONDOWN(wParam, lParam, msg, hwnd)
-	|	{
-	|		if (hwnd == this.hwnd)
-	|		{
-	|			this.GUI.Destroy
-	|		}
-	|	
-	|	}
 	|	
 	|	
 	|}
