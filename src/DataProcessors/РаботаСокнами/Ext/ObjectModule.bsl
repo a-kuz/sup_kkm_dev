@@ -1027,6 +1027,7 @@
 	Скрипт = "
 	|#NoTrayIcon
 	|
+	|Global w1,w2,w3,w4,w5,w6,w7
 	|Global THEME_COLOR := 0x068A3F
 	|Global ACCENT_COLOR := 0xFF6E3F
 	|
@@ -1145,6 +1146,16 @@
 	|		}
 	|
 	|	}
+	|	OnMessage(0x201, ""WM_LBUTTONDOWN"")
+	|	
+	|	WM_LBUTTONDOWN(wParam, lParam, msg, hwnd)
+	|	{
+	|		if (hwnd == this.hwnd)
+	|		{
+	|			this.GUI.Destroy
+	|		}
+	|	
+	|	}
 	|	
 	|	
 	|}
@@ -1152,13 +1163,14 @@
 	|Global curCaption, curText, curIndex, curTimeout
 	|
 	|ShowMessage() {
-	|	w2 := new MessageWindow(curIndex,curCaption, curText, curTimeout)
-	|	w2.show()
+	|	w%curIndex% := new MessageWindow(curIndex,curCaption, curText, curTimeout)
+	|	w%curindex%.show()
 	|}
 	|
 	|
 	|
 	|DeleteMessage() {
+	|	
 	|	Gui,G%curIndex%:Destroy 
 	|}";
 

@@ -3,7 +3,16 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаДокументЗаказОтправитьВлояльность" id="127">
+				<Type>CommandBarButton</Type>
+				<CommandName>Document.Заказ.Command.ОтправитьВлояльность</CommandName>
+				<DataPath>Объект.Заказ</DataPath>
+				<ExtendedTooltip name="ФормаДокументЗаказОтправитьВлояльностьРасширеннаяПодсказка" id="128"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<UsualGroup name="Группа2" id="115">
 			<Representation>None</Representation>
