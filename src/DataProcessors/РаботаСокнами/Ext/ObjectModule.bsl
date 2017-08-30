@@ -953,7 +953,6 @@
 		
 	Иначе
 		Попытка
-			AHK = Новый COMОбъект("AutoHotkey.Script");
 			AHK = ирПлатформа.ПолучитьCOMОбъектИзМакета("AutoHotkey","AutoHotkey.Script.UNICODE");
 		Исключение
 		КонецПопытки;
