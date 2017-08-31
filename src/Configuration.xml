@@ -195,9 +195,19 @@
 			<Style>СтанцияОплатыОфлайн</Style>
 			<CommonPicture>ITV</CommonPicture>
 			<CommonPicture>Блокировка</CommonPicture>
-			<CommonPicture>ВнешниеОбработки</CommonPicture>
-			<CommonPicture>ВыбратьЗаказ</CommonPicture>
+			<CommonPicture>Бронь</CommonPicture>
+			<CommonPicture>ВариантыОплаты</CommonPicture>
+			<CommonPicture>ВводЧисла</CommonPicture>
+			<CommonPicture>ВидеоЗакрепитьКамеры</CommonPicture>
 			<CommonPicture>ВидеоКамера</CommonPicture>
+			<CommonPicture>ВнешниеОбработки</CommonPicture>
+			<CommonPicture>ВосклицательныйЗнак</CommonPicture>
+			<CommonPicture>ВыбратьЗаказ</CommonPicture>
+			<CommonPicture>ВыгрузкаДанных</CommonPicture>
+			<CommonPicture>ВыравниваниеЛево</CommonPicture>
+			<CommonPicture>ВыравниваниеЦентр</CommonPicture>
+			<CommonPicture>ВырваниваниеПраво</CommonPicture>
+			<CommonPicture>Галка</CommonPicture>
 			<CommonPicture>Гости</CommonPicture>
 			<CommonPicture>ГрупповаяОбработка</CommonPicture>
 			<CommonPicture>ГруппыОплаты</CommonPicture>
@@ -238,7 +248,6 @@
 			<CommonPicture>Номенклатура</CommonPicture>
 			<CommonPicture>ОбщаяНастройка</CommonPicture>
 			<CommonPicture>ОбщаяСпецифика</CommonPicture>
-			<CommonPicture>ВариантыОплаты</CommonPicture>
 			<CommonPicture>ОтчетПоВозвратам</CommonPicture>
 			<CommonPicture>ОтчетПоВыручке</CommonPicture>
 			<CommonPicture>ОтчетПоРасходу</CommonPicture>
@@ -260,10 +269,8 @@
 			<CommonPicture>Предупреждение</CommonPicture>
 			<CommonPicture>Пречек</CommonPicture>
 			<CommonPicture>ПречекУдалить</CommonPicture>
-			<CommonPicture>ВводЧисла</CommonPicture>
 			<CommonPicture>ПричиныУдалений</CommonPicture>
 			<CommonPicture>Прочее</CommonPicture>
-			<CommonPicture>ВосклицательныйЗнак</CommonPicture>
 			<CommonPicture>РегистрацияСобытий</CommonPicture>
 			<CommonPicture>СВопросомИлиБез</CommonPicture>
 			<CommonPicture>Скидки</CommonPicture>
@@ -286,19 +293,15 @@
 			<CommonPicture>СправочникЭлементУдален</CommonPicture>
 			<CommonPicture>СтатьиРасходов</CommonPicture>
 			<CommonPicture>СтрелкаВверх</CommonPicture>
-			<CommonPicture>Бронь</CommonPicture>
 			<CommonPicture>СтрелкаВверхЧерная</CommonPicture>
 			<CommonPicture>СтрелкаВлевоЗеленая</CommonPicture>
 			<CommonPicture>СтрелкаВлевоМаленькая</CommonPicture>
 			<CommonPicture>СтрелкаВлевоСиняя</CommonPicture>
-			<CommonPicture>ВыравниваниеЛево</CommonPicture>
 			<CommonPicture>СтрелкаВниз</CommonPicture>
-			<CommonPicture>ВыравниваниеЦентр</CommonPicture>
 			<CommonPicture>СтрелкаВнизЧерная</CommonPicture>
 			<CommonPicture>СтрелкаВправоЗеленая</CommonPicture>
 			<CommonPicture>СтрелкаВправоМаленькая</CommonPicture>
 			<CommonPicture>СтрелкаВправоСиняя</CommonPicture>
-			<CommonPicture>Галка</CommonPicture>
 			<CommonPicture>ТаблицаЗаказаСтатусы</CommonPicture>
 			<CommonPicture>Тарифы</CommonPicture>
 			<CommonPicture>Телефон</CommonPicture>
@@ -319,9 +322,6 @@
 			<CommonPicture>Языки</CommonPicture>
 			<CommonPicture>КартинкаКнопкиВыбора</CommonPicture>
 			<CommonPicture>ОтправитьСМС</CommonPicture>
-			<CommonPicture>ВырваниваниеПраво</CommonPicture>
-			<CommonPicture>ВыгрузкаДанных</CommonPicture>
-			<CommonPicture>ВидеоЗакрепитьКамеры</CommonPicture>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
@@ -594,46 +594,46 @@
 			<CommonTemplate>ТабДокЛояльность</CommonTemplate>
 			<CommonTemplate>ИтогиФормыРМ</CommonTemplate>
 			<FilterCriterion>ШтрихкодыТовара</FilterCriterion>
-			<CommonModule>SQL</CommonModule>
 			<CommonModule>АвтообменДанными</CommonModule>
-			<CommonModule>Алкоголь</CommonModule>
-			<CommonModule>ВыполнениеРегламентныхЗаданий</CommonModule>
-			<CommonModule>Защита</CommonModule>
-			<CommonModule>ЗащитаСервер</CommonModule>
 			<CommonModule>ИнтерфейсАдмина</CommonModule>
 			<CommonModule>ИнтерфейсРМ</CommonModule>
+			<CommonModule>киКонтактнаяИнформация</CommonModule>
+			<CommonModule>ОбработкаПодписокНаСобытия</CommonModule>
+			<CommonModule>ОбщегоНазначения</CommonModule>
+			<CommonModule>Привилегированный</CommonModule>
+			<CommonModule>ПроцедурыОбменаДанными</CommonModule>
 			<CommonModule>ИнтерфейсРМЛояльность</CommonModule>
+			<CommonModule>РаботаСФайлами</CommonModule>
+			<CommonModule>УправлениеРИБ</CommonModule>
+			<CommonModule>ФормированиеОтчетов</CommonModule>
+			<CommonModule>ХранилищеДополнительнойИнформации</CommonModule>
+			<CommonModule>ОперативнаяСводка</CommonModule>
+			<CommonModule>УчетРабочегоВремени</CommonModule>
+			<CommonModule>ксТрактир</CommonModule>
+			<CommonModule>Лояльность</CommonModule>
+			<CommonModule>ЛояльностьКлиент</CommonModule>
+			<CommonModule>ЛояльностьКлиентСервер</CommonModule>
+			<CommonModule>УправлениеДиалогами</CommonModule>
+			<CommonModule>ЛояльностьКлиентСерверПовтИсп</CommonModule>
+			<CommonModule>Защита</CommonModule>
+			<CommonModule>ЗащитаСервер</CommonModule>
+			<CommonModule>ОбработкаВнешнихСобытий</CommonModule>
+			<CommonModule>РаботаСЕГАИС</CommonModule>
+			<CommonModule>Шрифты</CommonModule>
+			<CommonModule>SQL</CommonModule>
+			<CommonModule>Алкоголь</CommonModule>
 			<CommonModule>ирГлобальный</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
 			<CommonModule>ирОбщий</CommonModule>
 			<CommonModule>ирПортативный</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
-			<CommonModule>киКонтактнаяИнформация</CommonModule>
-			<CommonModule>ксТрактир</CommonModule>
-			<CommonModule>Лояльность</CommonModule>
-			<CommonModule>ЛояльностьКлиент</CommonModule>
-			<CommonModule>ЛояльностьКлиентСервер</CommonModule>
-			<CommonModule>ЛояльностьКлиентСерверПовтИсп</CommonModule>
-			<CommonModule>ОбработкаВнешнихСобытий</CommonModule>
-			<CommonModule>ОбработкаПодписокНаСобытия</CommonModule>
-			<CommonModule>ОбщегоНазначения</CommonModule>
+			<CommonModule>ВыполнениеРегламентныхЗаданий</CommonModule>
 			<CommonModule>ОбщегоНазначенияПовтИсп</CommonModule>
-			<CommonModule>ОперативнаяСводка</CommonModule>
-			<CommonModule>Привилегированный</CommonModule>
-			<CommonModule>ПроцедурыОбменаДанными</CommonModule>
-			<CommonModule>РаботаСЕГАИС</CommonModule>
-			<CommonModule>РаботаСФайлами</CommonModule>
-			<CommonModule>Сеть</CommonModule>
 			<CommonModule>ТорговоеОборудование</CommonModule>
-			<CommonModule>УправлениеДиалогами</CommonModule>
-			<CommonModule>УправлениеРИБ</CommonModule>
-			<CommonModule>УправлениеСерверамиПриложений</CommonModule>
-			<CommonModule>УчетРабочегоВремени</CommonModule>
-			<CommonModule>ФормированиеОтчетов</CommonModule>
-			<CommonModule>ХранилищеДополнительнойИнформации</CommonModule>
-			<CommonModule>Шрифты</CommonModule>
 			<CommonModule>ЭлектроннаяПочта</CommonModule>
+			<CommonModule>УправлениеСерверамиПриложений</CommonModule>
+			<CommonModule>Сеть</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>ирОбщийКлиент</CommonModule>
@@ -692,47 +692,17 @@
 			<Constant>АвтообменПериодПроверкиЗагрузки</Constant>
 			<Constant>АвтообменПравилаВыгрузки</Constant>
 			<Constant>АвтообменПравилаЗагрузки</Constant>
-			<Constant>АгентПлюсИспользуется</Constant>
-			<Constant>АгентПлюсПапкаОбмена</Constant>
-			<Constant>АгентПлюсПортСервера</Constant>
-			<Constant>АгентПлюсПрофильВхода</Constant>
 			<Constant>ВерсияПрограммы</Constant>
-			<Constant>ВнешнийЗаказВклОповещения</Constant>
-			<Constant>ВнешнийЗаказИспользуется</Constant>
-			<Constant>ВнешнийЗаказКаталог</Constant>
-			<Constant>ВнешнийЗаказПапкаВыгрузки</Constant>
-			<Constant>ВнешнийЗаказПапкаЗагрузки</Constant>
-			<Constant>ВнешнийЗаказПериодОпроса</Constant>
-			<Constant>ВнешнийЗаказПечатьМарок</Constant>
-			<Constant>ВнешнийЗаказПрофильВхода</Constant>
-			<Constant>ВнешнийЗаказЦветОповещения</Constant>
 			<Constant>ГруппаОбщихСпецифик</Constant>
 			<Constant>ДатаЗапретаРедактирования</Constant>
 			<Constant>ДатаОбновленияПризнакаНаличияВПродаже</Constant>
 			<Constant>ДопЯзыки</Constant>
-			<Constant>ИБВедениеСправочников</Constant>
-			<Constant>ИдентификаторКонфигурации</Constant>
 			<Constant>ИспользоватьГруппыОплаты</Constant>
 			<Constant>КаталогЛокальныхНастроек</Constant>
-			<Constant>КлючЗащиты_IPАдресСервера</Constant>
-			<Constant>КлючЗащиты_НомерКлюча</Constant>
-			<Constant>КлючЗащиты_ПортСервера</Constant>
-			<Constant>КлючЗащиты_ТипКлюча</Constant>
 			<Constant>КодГорода</Constant>
 			<Constant>КодСтраны</Constant>
-			<Constant>Лояльность_ДеньРождения</Constant>
-			<Constant>Лояльность_ДеньРождения_Лимит</Constant>
-			<Constant>Лояльность_КаталогОбмена</Constant>
-			<Constant>МаксимальнаяСуммаВстрокеЧека</Constant>
-			<Constant>МаксимальноеКоличествоВстрокеЧека</Constant>
-			<Constant>МаксимальноеКоличествоПДФвЧеке</Constant>
-			<Constant>МаксимальныйПроцентПревышенияЦеныПриВозврате</Constant>
 			<Constant>НакопительныеСкидки</Constant>
-			<Constant>НомерВерсии</Constant>
 			<Constant>НомерВерсииКонфигурации</Constant>
-			<Constant>НормативныйПериодВыдачиБыстрыхСек</Constant>
-			<Constant>НормативныйПериодВыдачиСек</Constant>
-			<Constant>НормативныйПериодПриготовленияСек</Constant>
 			<Constant>ОсновнаяВалюта</Constant>
 			<Constant>ОсновнаяГруппаОплаты</Constant>
 			<Constant>ОсновнаяЕдиницаИзмерения</Constant>
@@ -740,25 +710,55 @@
 			<Constant>ОсновнаяСтавкаНДС</Constant>
 			<Constant>ОсновноеМестоРеализации</Constant>
 			<Constant>ОсновноеПравилоОкругления</Constant>
-			<Constant>ОсновнойВариантОплаты</Constant>
-			<Constant>ОтчетФОНеСторнироватьВозвраты</Constant>
 			<Constant>ПечатьШКНаСчетах</Constant>
 			<Constant>ПодтверждениеВыдачи</Constant>
 			<Constant>ПодтверждениеГотовности</Constant>
-			<Constant>ПодтверждениеГотовностиИВыдачиПриОплатаЗаказа</Constant>
-			<Constant>ПодтверждениеГотовностиПриВыдачиБлюда</Constant>
 			<Constant>ПолеНачалаВводаТелефона</Constant>
-			<Constant>ПредупреждатьОбОграниченииПродажи</Constant>
 			<Constant>ПрефиксВнутреннихШК</Constant>
 			<Constant>ПрефиксШКкорешка</Constant>
 			<Constant>ПрефиксШКмарки</Constant>
 			<Constant>ПрефиксШКсчета</Constant>
-			<Constant>ПутьДляЛогирования</Constant>
-			<Constant>РаботаСПодтверждениямиПозицийЗаказа</Constant>
 			<Constant>РазделятьДозаказы</Constant>
 			<Constant>РумбаИнтерфейсВкл</Constant>
 			<Constant>РумбаСтрокаПодключения</Constant>
+			<Constant>ИБВедениеСправочников</Constant>
+			<Constant>КлючЗащиты_IPАдресСервера</Constant>
+			<Constant>КлючЗащиты_ПортСервера</Constant>
+			<Constant>КлючЗащиты_НомерКлюча</Constant>
+			<Constant>КлючЗащиты_ТипКлюча</Constant>
+			<Constant>АгентПлюсИспользуется</Constant>
+			<Constant>АгентПлюсПапкаОбмена</Constant>
+			<Constant>АгентПлюсПортСервера</Constant>
+			<Constant>АгентПлюсПрофильВхода</Constant>
+			<Constant>ВнешнийЗаказИспользуется</Constant>
+			<Constant>ВнешнийЗаказПапкаЗагрузки</Constant>
+			<Constant>ВнешнийЗаказПапкаВыгрузки</Constant>
+			<Constant>ВнешнийЗаказПрофильВхода</Constant>
+			<Constant>ВнешнийЗаказПериодОпроса</Constant>
+			<Constant>ВнешнийЗаказКаталог</Constant>
+			<Constant>ВнешнийЗаказПечатьМарок</Constant>
+			<Constant>ВнешнийЗаказВклОповещения</Constant>
+			<Constant>ВнешнийЗаказЦветОповещения</Constant>
+			<Constant>ОтчетФОНеСторнироватьВозвраты</Constant>
+			<Constant>ПодтверждениеГотовностиИВыдачиПриОплатаЗаказа</Constant>
+			<Constant>ОсновнойВариантОплаты</Constant>
+			<Constant>ПодтверждениеГотовностиПриВыдачиБлюда</Constant>
+			<Constant>РаботаСПодтверждениямиПозицийЗаказа</Constant>
+			<Constant>НормативныйПериодПриготовленияСек</Constant>
+			<Constant>НормативныйПериодВыдачиСек</Constant>
+			<Constant>НормативныйПериодВыдачиБыстрыхСек</Constant>
+			<Constant>Лояльность_КаталогОбмена</Constant>
+			<Constant>Лояльность_ДеньРождения</Constant>
+			<Constant>Лояльность_ДеньРождения_Лимит</Constant>
+			<Constant>ПредупреждатьОбОграниченииПродажи</Constant>
+			<Constant>ПутьДляЛогирования</Constant>
 			<Constant>ХешСтруктурыБД</Constant>
+			<Constant>МаксимальноеКоличествоВстрокеЧека</Constant>
+			<Constant>МаксимальнаяСуммаВстрокеЧека</Constant>
+			<Constant>МаксимальныйПроцентПревышенияЦеныПриВозврате</Constant>
+			<Constant>МаксимальноеКоличествоПДФвЧеке</Constant>
+			<Constant>НомерВерсии</Constant>
+			<Constant>ИдентификаторКонфигурации</Constant>
 			<CommonForm>ХодВыполненияОбработкиДанных</CommonForm>
 			<CommonForm>ФормаВыбораПечатныхФорм</CommonForm>
 			<CommonForm>ФормаВыполненияОбменаДанными</CommonForm>
@@ -928,29 +928,29 @@
 			<Report>БонусыКлиентов</Report>
 			<Report>ДавностьПосещенийПоКартамКеГеЛьБУМ</Report>
 			<Report>ДоляВладельцевКарт</Report>
-			<Report>ЖурналУчетРабочегоВремени</Report>
-			<Report>ирКонсольКомпоновокДанных</Report>
+			<Report>ОтчетПоВозвратам</Report>
+			<Report>ОтчетПоВыручке</Report>
 			<Report>НовыеГости</Report>
 			<Report>ОтчетПоВариантамСпецифик</Report>
-			<Report>ОтчетПоВозвратам</Report>
+			<Report>ОтчетПоПредварительнымЗаказам</Report>
 			<Report>ОтчетПоВремениНахожденияГостей</Report>
 			<Report>ОтчетПоВремениПриготовления</Report>
-			<Report>ОтчетПоВыручке</Report>
-			<Report>ОтчетПоПредварительнымЗаказам</Report>
 			<Report>ОтчетПоРасходу</Report>
 			<Report>ОтчетПоРасходуСпецифик</Report>
-			<Report>ОтчетПоРеализации</Report>
 			<Report>ОтчетПоСебестоимости</Report>
 			<Report>ОтчетПоСкидкамНаценкам</Report>
 			<Report>ОтчетПоУдалениям</Report>
-			<Report>ОтчетыФО</Report>
 			<Report>ПокупкиКлиентов</Report>
-			<Report>ПродажиПоКатегориям</Report>
 			<Report>РеестрДокументов</Report>
-			<Report>РейтингБлюдСредиНовыхГостей</Report>
 			<Report>СводныйОтчет</Report>
 			<Report>СистемныйБаланс</Report>
+			<Report>ЖурналУчетРабочегоВремени</Report>
+			<Report>ПродажиПоКатегориям</Report>
 			<Report>ТабельУчетаРабочегоВремени</Report>
+			<Report>РейтингБлюдСредиНовыхГостей</Report>
+			<Report>ирКонсольКомпоновокДанных</Report>
+			<Report>ОтчетыФО</Report>
+			<Report>ОтчетПоРеализации</Report>
 			<DataProcessor>АвтоОбменДанными</DataProcessor>
 			<DataProcessor>Авторизация</DataProcessor>
 			<DataProcessor>Браузер</DataProcessor>
@@ -976,25 +976,23 @@
 			<DataProcessor>ВыборСмен</DataProcessor>
 			<DataProcessor>ВыборСпецифик</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаJSON</DataProcessor>
-			<DataProcessor>ВыгрузкаСправочниковНаТТ</DataProcessor>
 			<DataProcessor>ВызовВнешнихОбработок</DataProcessor>
 			<DataProcessor>ГлавнаяФорма</DataProcessor>
+			<DataProcessor>ГрафикБронирования</DataProcessor>
 			<DataProcessor>ГлавнаяФормаАК</DataProcessor>
 			<DataProcessor>ГлавнаяФормаРесторан</DataProcessor>
 			<DataProcessor>ГлавнаяФормаСтанцияОплатыКМ</DataProcessor>
 			<DataProcessor>ГлавнаяФормаСтанцияСканирования</DataProcessor>
-			<DataProcessor>ГрафикБронирования</DataProcessor>
 			<DataProcessor>ДенежныеОперации</DataProcessor>
 			<DataProcessor>ЖурналБрони</DataProcessor>
 			<DataProcessor>ЖурналЗаказов</DataProcessor>
-			<DataProcessor>ЖурналРегистрацииТонкийКлиент</DataProcessor>
-			<DataProcessor>Заказ</DataProcessor>
 			<DataProcessor>ЗаменаКартыКеГеЛьБУМ</DataProcessor>
 			<DataProcessor>ИнициализацияВнешнихПечатныхФорм</DataProcessor>
+			<DataProcessor>Заказ</DataProcessor>
 			<DataProcessor>ИнформацияДляКлиента</DataProcessor>
-			<DataProcessor>ИнформацияОтоваре</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
+			<DataProcessor>ИнформацияОтоваре</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
@@ -1031,19 +1029,16 @@
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
 			<DataProcessor>КартинкиОбъектов</DataProcessor>
-			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
-			<DataProcessor>КонсольЗапросовИОбработчик</DataProcessor>
 			<DataProcessor>КурсыВалютРБК</DataProcessor>
 			<DataProcessor>МастерСозданияМестаРеализации</DataProcessor>
-			<DataProcessor>МастерТестированияРМ</DataProcessor>
 			<DataProcessor>МониторМарок</DataProcessor>
 			<DataProcessor>ОбновлениеИнформационнойБазы</DataProcessor>
 			<DataProcessor>ОбновлениеТоваров</DataProcessor>
+			<DataProcessor>Обслуживание_ФР_Атол326</DataProcessor>
 			<DataProcessor>ОбработкаЛояльности</DataProcessor>
 			<DataProcessor>Обслуживание_АО</DataProcessor>
 			<DataProcessor>Обслуживание_ДП</DataProcessor>
-			<DataProcessor>Обслуживание_ДП1</DataProcessor>
 			<DataProcessor>Обслуживание_Интеллект</DataProcessor>
 			<DataProcessor>Обслуживание_ИнфоДисплей</DataProcessor>
 			<DataProcessor>Обслуживание_КЭП</DataProcessor>
@@ -1061,55 +1056,59 @@
 			<DataProcessor>Обслуживание_СУ_Атол</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Атол</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Атол1</DataProcessor>
-			<DataProcessor>Обслуживание_ФР_Атол326</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Мультисофт</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Штрих</DataProcessor>
 			<DataProcessor>Обслуживание_ЭЛВЕСЫ_АТОЛ</DataProcessor>
-			<DataProcessor>Обслуживание_ЭЛВЕСЫ_АТОЛ1</DataProcessor>
 			<DataProcessor>Ожидание</DataProcessor>
 			<DataProcessor>Оплата</DataProcessor>
 			<DataProcessor>ОплатаЗаказа</DataProcessor>
 			<DataProcessor>ОповещениеОПремиальныхТоварах</DataProcessor>
 			<DataProcessor>ОткрытиеЗакрытиеСмены</DataProcessor>
 			<DataProcessor>ОткрытиЗакрытиеСменыКасса</DataProcessor>
+			<DataProcessor>Обслуживание_ЭЛВЕСЫ_АТОЛ1</DataProcessor>
 			<DataProcessor>ОтправкаСообщенийРазработчикам</DataProcessor>
 			<DataProcessor>ОтчетыККМ</DataProcessor>
 			<DataProcessor>ПечатьЗаказа</DataProcessor>
-			<DataProcessor>ПечатьКопииЧека</DataProcessor>
 			<DataProcessor>ПечатьСправочников</DataProcessor>
 			<DataProcessor>ПечатьЧека</DataProcessor>
 			<DataProcessor>ПодборТоваров</DataProcessor>
 			<DataProcessor>Подсказка</DataProcessor>
-			<DataProcessor>ПоискPLU</DataProcessor>
 			<DataProcessor>ПоискТовара</DataProcessor>
 			<DataProcessor>ПолучениеФайловИзИнтернета</DataProcessor>
 			<DataProcessor>ПредставлениеКонтактнойИнформации</DataProcessor>
-			<DataProcessor>ПрогрузкаВесов</DataProcessor>
-			<DataProcessor>ПросмотрОтчетов</DataProcessor>
 			<DataProcessor>РаботаСокнами</DataProcessor>
 			<DataProcessor>РазделениеЗаказа</DataProcessor>
 			<DataProcessor>РасчетыПоТарифу</DataProcessor>
 			<DataProcessor>РегистрацияКассиров</DataProcessor>
-			<DataProcessor>РедакторОбъектов</DataProcessor>
+			<DataProcessor>ПоискPLU</DataProcessor>
 			<DataProcessor>РежимАдминистратора</DataProcessor>
 			<DataProcessor>РежимБрони</DataProcessor>
 			<DataProcessor>СкрытьМенюИПанели</DataProcessor>
+			<DataProcessor>ПрогрузкаВесов</DataProcessor>
 			<DataProcessor>СозданиеПредставленийТаблицВсубд</DataProcessor>
 			<DataProcessor>СохранениеЗначений</DataProcessor>
-			<DataProcessor>СтопЛист</DataProcessor>
 			<DataProcessor>УниверсальныйОбменДаннымиXML</DataProcessor>
 			<DataProcessor>УправлениеКоммутатором</DataProcessor>
 			<DataProcessor>УправлениеСпецКлавиатурой</DataProcessor>
 			<DataProcessor>ФормированиеНачислений</DataProcessor>
 			<DataProcessor>ФормированиеОтчетовФО</DataProcessor>
 			<DataProcessor>ЭмуляторСканера</DataProcessor>
+			<DataProcessor>Обслуживание_ДП1</DataProcessor>
+			<DataProcessor>ПечатьКопииЧека</DataProcessor>
+			<DataProcessor>ВыгрузкаСправочниковНаТТ</DataProcessor>
+			<DataProcessor>СтопЛист</DataProcessor>
+			<DataProcessor>МастерТестированияРМ</DataProcessor>
+			<DataProcessor>ПросмотрОтчетов</DataProcessor>
+			<DataProcessor>РедакторОбъектов</DataProcessor>
+			<DataProcessor>КонсольЗапросовИОбработчик</DataProcessor>
+			<DataProcessor>ЖурналРегистрацииТонкийКлиент</DataProcessor>
+			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
 			<InformationRegister>Бронирование</InformationRegister>
 			<InformationRegister>ГруппыПечатиДопИнф</InformationRegister>
 			<InformationRegister>ДопНаименования</InformationRegister>
 			<InformationRegister>ДоставкаДопИнф</InformationRegister>
 			<InformationRegister>ЗаказДопИнф</InformationRegister>
-			<InformationRegister>ЗаказТоварыДопИнф</InformationRegister>
 			<InformationRegister>ИспользованиеОдноразовыхКартДоступа</InformationRegister>
 			<InformationRegister>Картинки</InformationRegister>
 			<InformationRegister>КурсыВалют</InformationRegister>
@@ -1132,19 +1131,20 @@
 			<InformationRegister>ОткрытыеЗаказыПоКартам</InformationRegister>
 			<InformationRegister>ВыданныеПейджеры</InformationRegister>
 			<InformationRegister>Марки</InformationRegister>
+			<InformationRegister>ИсторияВыдачиПейджеров</InformationRegister>
 			<InformationRegister>ДиалогиНаСтанциях</InformationRegister>
 			<InformationRegister>ДополнительныеСвойства</InformationRegister>
 			<InformationRegister>ЗначенияПараметровОграниченийПродажи</InformationRegister>
 			<InformationRegister>ВозвратДопИнф</InformationRegister>
 			<InformationRegister>Акции</InformationRegister>
+			<InformationRegister>ЗаказТоварыДопИнф</InformationRegister>
 			<InformationRegister>ВыбранныеТовары</InformationRegister>
 			<InformationRegister>СПУЛЛояльности</InformationRegister>
-			<InformationRegister>НомерЧекаНФР</InformationRegister>
 			<InformationRegister>ДоступностьКаталоговТоваров</InformationRegister>
 			<InformationRegister>СоставГруппИнформационныхБаз</InformationRegister>
 			<InformationRegister>ДействующиеРасписания</InformationRegister>
 			<InformationRegister>ВыгруженныеЦены</InformationRegister>
-			<InformationRegister>ИсторияВыдачиПейджеров</InformationRegister>
+			<InformationRegister>НомерЧекаНФР</InformationRegister>
 			<InformationRegister>ДанныеЛояльностиПоЗаказу</InformationRegister>
 			<InformationRegister>ЗаказыПоКассирам</InformationRegister>
 			<InformationRegister>БлокировкиЗаказов</InformationRegister>
