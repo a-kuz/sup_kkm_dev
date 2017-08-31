@@ -5,80 +5,135 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<ChildItems>
-		<UsualGroup name="ГруппаЗаказ" id="1">
+		<UsualGroup name="ГруппаТестирование" id="21">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заказ</v8:content>
+					<v8:content>Тестирование</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа заказ</v8:content>
+					<v8:content>Группа тестирование</v8:content>
 				</v8:item>
 			</ToolTip>
-			<HorizontalStretch>true</HorizontalStretch>
-			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаЗаказРасширеннаяПодсказка" id="2"/>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаТестированиеРасширеннаяПодсказка" id="22"/>
 			<ChildItems>
-				<InputField name="Заказ" id="3">
-					<DataPath>Заказ</DataPath>
-					<HorizontalStretch>true</HorizontalStretch>
-					<ContextMenu name="ЗаказКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="5"/>
-				</InputField>
-				<Button name="КомандаCALC" id="9">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.КомандаCALC</CommandName>
+				<UsualGroup name="ГруппаЗаказ" id="1">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>CALC</v8:content>
+							<v8:content>Заказ</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="КомандаCALCРасширеннаяПодсказка" id="10"/>
-				</Button>
-				<InputField name="РезультатJSON" id="6">
-					<DataPath>РезультатJSON</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа заказ</v8:content>
+						</v8:item>
+					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
-					<MultiLine>true</MultiLine>
-					<ContextMenu name="РезультатJSONКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="РезультатJSONРасширеннаяПодсказка" id="8"/>
-				</InputField>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаЗаказРасширеннаяПодсказка" id="2"/>
+					<ChildItems>
+						<InputField name="Заказ" id="3">
+							<DataPath>Заказ</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ЗаказКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="5"/>
+						</InputField>
+						<Button name="КомандаCALC" id="9">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаCALC</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CALC</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомандаCALCРасширеннаяПодсказка" id="10"/>
+						</Button>
+						<InputField name="РезультатJSON" id="6">
+							<DataPath>РезультатJSON</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="РезультатJSONКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="РезультатJSONРасширеннаяПодсказка" id="8"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРегистрация" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистрация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаРегистрацияРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<InputField name="КартаДоступа" id="13">
+							<DataPath>КартаДоступа</DataPath>
+							<ContextMenu name="КартаДоступаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="КартаДоступаРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="НомерКарты" id="16">
+							<DataPath>НомерКарты</DataPath>
+							<ContextMenu name="НомерКартыКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="НомерКартыРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<Button name="КомандаПривязатьКарту" id="19">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаПривязатьКарту</CommandName>
+							<ExtendedTooltip name="КомандаПривязатьКартуРасширеннаяПодсказка" id="20"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаРегистрация" id="11">
+		<UsualGroup name="ГруппаАдминистрирование" id="23">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Регистрация</v8:content>
+					<v8:content>Администрирование</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа регистрация</v8:content>
+					<v8:content>Группа администрирование</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаРегистрацияРасширеннаяПодсказка" id="12"/>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаАдминистрированиеРасширеннаяПодсказка" id="24"/>
 			<ChildItems>
-				<InputField name="КартаДоступа" id="13">
-					<DataPath>КартаДоступа</DataPath>
-					<ContextMenu name="КартаДоступаКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="КартаДоступаРасширеннаяПодсказка" id="15"/>
-				</InputField>
-				<InputField name="НомерКарты" id="16">
-					<DataPath>НомерКарты</DataPath>
-					<ContextMenu name="НомерКартыКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НомерКартыРасширеннаяПодсказка" id="18"/>
-				</InputField>
-				<Button name="КомандаПривязатьКарту" id="19">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.КомандаПривязатьКарту</CommandName>
-					<ExtendedTooltip name="КомандаПривязатьКартуРасширеннаяПодсказка" id="20"/>
-				</Button>
+				<UsualGroup name="ГруппаУправлениеСпулом" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление спулом</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа управление спулом</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаУправлениеСпуломРасширеннаяПодсказка" id="26"/>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
