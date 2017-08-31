@@ -11,6 +11,9 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="46">
 			<Group>Horizontal</Group>
@@ -265,7 +268,7 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	Т.Ссылка КАК Ссылка,
+	isnull(Т.Ссылка,"") КАК Ссылка,
 	Т.Узел.ИнформационнаяБаза КАК ИБ,
 	Т.Узел КАК Узел,
 	Т.Тип КАК Тип,
@@ -582,7 +585,7 @@
 	ОБЪЕДИНИТЬ ВСЕ
 	
 	ВЫБРАТЬ
-		NULL,
+		"",
 		ДополнительныеСвойстваИзменения.Узел,
 		"Дополнительные свойства",
 		ДополнительныеСвойстваИзменения.ИнформационнаяБаза,
@@ -600,7 +603,7 @@
 	ОБЪЕДИНИТЬ ВСЕ
 	
 	ВЫБРАТЬ
-		NULL,
+		"",
 		ДействующиеРасписанияИзменения.Узел,
 		"Наличие в продаже",
 		NULL,
@@ -618,7 +621,7 @@
 	ОБЪЕДИНИТЬ ВСЕ
 	
 	ВЫБРАТЬ
-		NULL,
+		"",
 		ЗначенияПараметровОграниченийПродажиИзменения.Узел,
 		"Значения параметров ограничений продажи",
 		NULL,
@@ -632,19 +635,27 @@
 		NULL
 	ИЗ
 		РегистрСведений.ЗначенияПараметровОграниченийПродажи.Изменения КАК ЗначенияПараметровОграниченийПродажиИзменения) КАК Т</QueryText>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
 							<dcsset:left xsi:type="dcscor:Field">ИБ</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:userSettingID>8de385ec-4340-454f-a3d5-68bfe76b90b3</dcsset:userSettingID>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
 							<dcsset:left xsi:type="dcscor:Field">Тип</dcsset:left>
 							<dcsset:comparisonType>Contains</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string"/>
 							<dcsset:userSettingID>c503a8f3-1432-4b91-9c2d-7dbc86d3ee7d</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Ссылка</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>8700e23d-1d1e-43cf-9c45-67d8de1e7d28</dcsset:userSettingID>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
@@ -721,4 +732,11 @@
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ОбъектДляВыгрузки">
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>
