@@ -467,8 +467,8 @@
 
 // Выводит всплывающее окно с сообщением
 // Напишем на autohotkey
-Процедура ShowMessageEx(ШиринаОкна, ЦветФона, ТекстСообщения, Событие, Данные, ИдСообщения) Экспорт 
-	ПоказатьПлашку("", ТекстСообщения);
+Процедура ShowMessageEx(ШиринаОкна, ЦветФона, ТекстСообщения, Событие, Данные, ИдСообщения) Экспорт
+	ПоказатьПлашку(" ", ТекстСообщения, , "1000000", 10, 230);
 КонецПроцедуры  
 
 // Закрывает экранную клавиатуру
@@ -1014,171 +1014,214 @@
 	|ExitApp");
 КонецПроцедуры
 
-Процедура ПоказатьПлашку(Заголовок = "(:-)", Текст = "", НомерПлашки = 0, Таймаут = "2500") Экспорт
+Процедура ПоказатьПлашку(Заголовок = "(:-)", Текст = "", НомерПлашки = 0, Таймаут = "2500", Лево = 0, Прозрачность = 255) Экспорт
 	Текст = СтрЗаменить(Текст, Символы.ПС, "`n");
 	Текст = СтрЗаменить(Текст, ";", "");
 	Текст = СтрЗаменить(Текст, """", """""");
 	
 	Если НомерПлашки = 0 Тогда
-		ТекНомерПлашки=ТекНомерПлашки+1;
 		НомерПлашки = ТекНомерПлашки%4+1;
+		ТекНомерПлашки=ТекНомерПлашки+1;
+		
 	КонецЕсли;
-	
-	Скрипт = "
-	|#NoTrayIcon
-	|
-	|Global w1,w2,w3,w4,w5,w6,w7
-	|Global THEME_COLOR := 0x068A3F
-	|Global ACCENT_COLOR := 0xFF6E3F
-	|
-	|Global WS_EX_TRANSPARENT := 0x20
-	|Global WS_EX_LAYERED := 0x80000
-	|Global AW_BLEND := 0x00080000
-	|Global AW_HOR_POSITIVE = 1
-	|Global AW_SLIDE = 0x00040000
-	|
-	|Global marginX := 10
-	|Global marginY := 25
-	|
-	|Global WINDOW_WIDTH := 300
-	|Global WINDOW_HEIGHT := 180	
-	|Global WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))
-	|Global animateEffect := AW_BLEND|AW_HOR_POSITIVE
-	|
-	|class MessageWindow {
-	|	
-	|	
-	|	y := 0
-	|	stepTrans := 0
-	|	hwnd := 0
-	|	
-	|	__New(pIndex, pCaption, pText,pTimeout) {
-	|		this.trans 		:= 255
-	|		this.dTrans		:= 1
-	|		this.stepTrans	:= 0	
-	|		this.timeout 	:= pTimeout
-	|		
-	|		
-	|		; ширина и высота окна, можно изменить на 1
-	|		this.index := pIndex
-	|		if (pindex <= 4) {
-	|			this.y := (pIndex-1)*(WINDOW_HEIGHT+marginY)+marginY*2
-	|			this.x := WINDOW_X
-	|		} else {
-	|			this.x := (A_ScreenWidth/2)-(WINDOW_WIDTH/2)
-	|			this.y := A_screenHeight - WINDOW_HEIGHT - 20
-	|		}
-	|		
-	|		this.strCaption := pCaption
-	|		this.strText := pText
-	|		this.TransDec:= ObjBindMethod(this, ""TransDecFunc"")
-	|		
-	|	}
-	|	
-	|	
-	|	show() {
-	|		index := this.index
-	|		Gui,G%index%:+AlwaysOnTop -Caption +ToolWindow +LastFound -border
-	|		
-	|		Gui,G%index%: Font, s14,Segoe UI
-	|		
-	|		if (mod(index,2)==1) {
-	|			Gui,G%index%: Color, %ACCENT_COLOR%
-	|		} else {
-	|			Gui,G%index%: Color, %THEME_COLOR%
-	|		}
-	|
-	|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
-	|		Width := WINDOW_WIDTH - 40
-	|		if (this.index <= 4) {
-	|			Gui,G%index%: Font, s9
-	|			Gui,G%index%: Add, Text, W%Width% H200 , % this.strText
-	|		} else {
-	|			Gui,G%index%: Font, s20
-	|			Gui,G%index%: Add, Text, CXY W%Width% H200 , % this.strText
-	|		}
-	|		
-	|		
-	|
-	|		win_y := this.y
-	|		win_x := this.x
-	|		Gui,G%index%: Show, y%win_y% x%win_x%  w%WINDOW_WIDTH% h%WINDOW_HEIGHT% hide ; показываем окно в выбранных координатах и размерах
-	|		hwnd := WinExist()
-	|		this.hwnd := WinExist()
-	|		DllCall(""AnimateWindow"", Ptr, hwnd, UInt, 300, UInt, animateEffect)   ; выдвигаем/задвигаем окно-слайдер
-	|		
-	|		WinSet, ExStyle, % ""+"" WS_EX_LAYERED | WS_EX_TRANSPARENT   ; добавляем прозрачность для кликов мыши
-	|		WinSet, Transparent, % this.trans
-	|		
-	|		if (this.timeout) {
-	|		this.hide(this.timeout)
-	|		}
-	|		
-	|	}
-	|		
-	|	
-	|	hide(after_ms=0) {
-	|		callback := ObjBindMethod(this, ""TransDecFunc"")
-	|		SetTimer,% callback, %after_ms%
-	|	}
-	|	
-	|	TransDecFunc() {
-	|		MouseGetPos,X,Y,hwnd
-	|		if (hwnd == this.hwnd) {
-	|			this.stepTrans := 0
-	|			this.dTrans := 1
-	|			this.trans := 255
-	|			WinSet, Transparent, % this.trans, % ""ahk_id "" + this.hwnd
-	|			SetTimer,,Off
-	|			this.hide(-this.timeout)
-	|			return
-	|		}
-	|		this.stepTrans := this.stepTrans + 1
-	|		this.dTrans := this.dTrans + (255.0/this.trans)**(1/1.1)
-	|		this.trans := this.trans - this.dTrans
-	|		WinSet, Transparent, % this.trans, % ""ahk_id "" + this.hwnd
-	|		if (this.trans>0) {
-	|			this.hide(-50)
-	|		} else {
-	|			index := this.index
-	|			Gui,G%index%:Destroy 
-	|			
-	|		}
-	|
-	|	}
-	|	
-	|	
-	|}
-	|
-	|Global curCaption, curText, curIndex, curTimeout
-	|
-	|ShowMessage() {
-	|	w%curIndex% := new MessageWindow(curIndex,curCaption, curText, curTimeout)
-	|	w%curindex%.show()
-	|}
-	|
-	|
-	|
-	|DeleteMessage() {
-	|	
-	|	Gui,G%curIndex%:Destroy 
-	|}";
-
-	
 	Если AHK_Balloon = Неопределено Тогда
-		AHK_Balloon = AHK(Истина, "Balloon");
-		AHK_Balloon.ahkTextDll(Скрипт);
-	КонецЕсли;
-	AHK_Balloon.addScript(
-	СтрШаблон(
-	"curIndex := %1
-	|curCaption := ""%2""
-	|curText := ""%3""
-	|curTimeout := ""%4""
-	|
-	|ShowMessage()",
-	НомерПлашки, Заголовок, Текст, Таймаут)
-	, 2); 
+		AHK_Balloon = AHK(,"Balloon");
+Скрипт = "#NoTrayIcon	
+	|Global w1 := 0 
+|Global w2 := 0 
+|Global w3 := 0 
+|Global w4 := 0 
+|Global w5 := 0                                                                                                                                      ;23010051?
+|Global w6 := 0                                                                                                                                      ;23010051?
+|Global w6 := 0                                                                                                                                      ;23010051?
+|Global w7 := 0                                                                                                                                      ;23010051?
+|Global w8 := 0                                                                                                                                      ;23010051?
+|Global w9 := 0                                                                                                                                      ;23010051?
+|Global w10 := 0 
+|Global THEME_COLOR := 0x068A3F
+|Global ACCENT_COLOR := 0xFF6E3F
+|
+|Global WS_EX_TRANSPARENT := 0x20
+|Global WS_EX_LAYERED := 0x80000
+|Global AW_BLEND := 0x00080000
+|Global AW_HOR_POSITIVE = 1
+|Global AW_SLIDE = 0x00040000
+|
+|Global marginX := 10
+|Global marginY := 25
+|
+|Global WINDOW_WIDTH := 300
+|Global WINDOW_HEIGHT := 180	
+|Global WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))
+|Global animateEffect := AW_BLEND|AW_HOR_POSITIVE
+|
+|class MessageWindow {
+|	
+|	
+|	y := 0
+|	stepTrans := 0
+|	hwnd := 0
+|	trans := 255
+|	
+|	__New(pIndex, pCaption, pText,pTimeout) {
+|		this.dTrans		:= 1
+|		this.stepTrans	:= 0	
+|		this.timeout 	:= pTimeout
+|		
+|		
+|		; ширина и высота окна, можно изменить на 1
+|		this.index := pIndex
+|		if (pindex <= 4) {
+|			this.y := (pIndex-1)*(WINDOW_HEIGHT+marginY)+marginY*2
+|			this.x := WINDOW_X
+|		} else {
+|			this.x := (A_ScreenWidth/2)-(WINDOW_WIDTH/2)
+|			this.y := A_screenHeight - WINDOW_HEIGHT - 20
+|		}
+|		
+|		this.strCaption := pCaption
+|		this.strText := pText
+|		this.TransDec:= ObjBindMethod(this, ""TransDecFunc"")
+|		
+|	}
+|	
+|	
+|	show() {
+|		index := this.index
+|		Gui,G%index%:+AlwaysOnTop -Caption +ToolWindow +LastFound -border
+|		
+|		Gui,G%index%: Font, s14,Segoe UI
+|		
+|		if (mod(index,2)==1) {
+|			Gui,G%index%: Color, %ACCENT_COLOR%
+|		} else {
+|			Gui,G%index%: Color, %THEME_COLOR%
+|		}
+|
+|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
+|		Width := WINDOW_WIDTH - 40
+|		if (this.index <= 4) {
+|			Gui,G%index%: Font, s9
+|			Gui,G%index%: Add, Text, W%Width% H200 , % this.strText
+|		} else {
+|			Gui,G%index%: Font, s20
+|			Gui,G%index%: Add, Text, CXY W%Width% H200 , % this.strText
+|		}
+|		
+|		
+|
+|		win_y := this.y
+|		win_x := this.x
+|		Gui,G%index%: Show, y%win_y% x%win_x%  w%WINDOW_WIDTH% h%WINDOW_HEIGHT% hide ; показываем окно в выбранных координатах и размерах
+|		hwnd := WinExist()
+|		this.hwnd := WinExist()
+|		DllCall(""AnimateWindow"", Ptr, hwnd, UInt, 300, UInt, animateEffect)   ; выдвигаем/задвигаем окно-слайдер
+|		
+|;		WinSet, ExStyle, % ""+"" WS_EX_LAYERED | WS_EX_TRANSPARENT   ; добавляем прозрачность для кликов мыши
+|		WinSet, Transparent, % this.trans
+|		
+|		if (this.timeout) {
+|		this.hide(this.timeout)
+|		}
+|		
+|	}
+|		
+|	
+|	hide(after_ms=0) {
+|		callback := ObjBindMethod(this, ""TransDecFunc"")
+|		SetTimer,% callback, %after_ms%
+|	}
+|	
+|	TransDecFunc() {
+|		MouseGetPos,X,Y,hwnd
+|		if (hwnd == this.hwnd) {
+|			this.stepTrans := 0
+|			this.dTrans := 1
+|			this.trans := 255
+|			WinSet, Transparent, % this.trans, % ""ahk_id "" + this.hwnd
+|			SetTimer,,Off
+|			this.hide(-this.timeout)
+|			return
+|		}
+|		this.stepTrans := this.stepTrans + 1
+|		this.dTrans := this.dTrans + (255.0/this.trans)**(1/1.1)
+|		this.trans := this.trans - this.dTrans
+|		WinSet, Transparent, % this.trans, % ""ahk_id "" + this.hwnd
+|		if (this.trans>0) {
+|			this.hide(-50)
+|		} else {
+|			index := this.index
+|			Gui,G%index%:Destroy 
+|			
+|		}
+|		WM_LBUTTONDOWN := ObjBindMethod(this, ""LBUTTONDOWN"")
+|	
+|		OnMessage(0x201,WM_LBUTTONDOWN)
+|	}
+|	
+|	
+|	LBUTTONDOWN(wParam, lParam, msg, hwnd)
+|	{
+|		ThWND := THIS.hwnd	
+|		if (hwnd == this.hwnd)
+|		{
+|			this.GUI.Destroy
+|		}
+|	
+|	}
+|	
+|	
+|}
+|
+|Global curCaption, curText, curIndex, curTimeout, curtrans
+|
+|ShowMessage() {
+|	w%curIndex% := new MessageWindow(curIndex,curCaption, curText, curTimeout)
+|	if (curTrans)
+|	w%curIndex%.trans := curTrans
+|	w%curindex%.show()
+|}
+|
+|
+|
+|DeleteMessage() {
+|	
+|	Gui,G%curIndex%:Destroy 
+|}
+|
+|
+|~LBUTTON::
+|	MouseGetPos,,,hwnd
+|	Loop 7 
+|	{
+|		w := w%A_Index%.hwnd
+|		; Sleep 2000
+|		if (hwnd == w%A_index%.hwnd) {
+|			w%A_Index%.Destroy()
+|			Gui,G%A_Index%:Destroy 
+|		}
+|	}
+|return
+|	";	
+AHK_Balloon.ahktextdll(Скрипт);	
+КонецЕсли;
+Если ЗначениеЗаполнено(Лево) Тогда
+	AHK_Balloon.ahkassign("Window_X", Лево);	
+Иначе
+	AHK_Balloon.addScript("WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))",2);	
+КонецЕсли;
+
+AHK_Balloon.addScript(
+СтрШаблон(
+"curIndex := %1
+|curCaption := ""%2""
+|curText := ""%3""
+|curTimeout := ""%4""
+|curTrans := ""%5""
+|
+|ShowMessage()",
+НомерПлашки, Заголовок, Текст, Таймаут, Прозрачность)
+, 2); 
 
 КонецПроцедуры
 

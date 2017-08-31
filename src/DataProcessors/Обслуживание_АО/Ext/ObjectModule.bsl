@@ -75,6 +75,8 @@
 	|	MouseGetPos,X,Y,curHwnd
 	|	if (hwnd == curHwnd)
 	|	{
+	|		animateEffect := AW_SLIDE|2
+	|		DllCall(""AnimateWindow"", Ptr, hwnd, UInt, 300, UInt, animateEffect) 
 	|		Gui, Destroy
 	|		Exit
 	|		ExitApp
