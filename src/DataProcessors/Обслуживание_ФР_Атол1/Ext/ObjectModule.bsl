@@ -723,7 +723,7 @@
 				DRV.Секция = 1;
 				
 				Если ЕНВД Тогда
-					DRV.TaxTypeNumber  = 0;
+					DRV.TaxTypeNumber  = 4;
 				Иначе
 					DRV.TaxTypeNumber = ПолучитьИндексНалога(ПозицияЧека.СтавкаНДС);
 				КонецЕсли;
