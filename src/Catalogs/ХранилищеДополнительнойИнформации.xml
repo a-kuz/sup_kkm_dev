@@ -37,7 +37,7 @@
 			<LimitLevelCount>true</LimitLevelCount>
 			<LevelCount>4</LevelCount>
 			<FoldersOnTop>false</FoldersOnTop>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>5</CodeLength>
@@ -60,8 +60,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.ХранилищеДополнительнойИнформации.Form.ФормаИзображения</DefaultObjectForm>
-			<DefaultFolderForm/>
+			<DefaultObjectForm>Catalog.ХранилищеДополнительнойИнформации.Form.ФормаЭлементаУправляемая</DefaultObjectForm>
+			<DefaultFolderForm>Catalog.ХранилищеДополнительнойИнформации.Form.ФормаГруппыУправляемая</DefaultFolderForm>
 			<DefaultListForm>Catalog.ХранилищеДополнительнойИнформации.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm>Catalog.ХранилищеДополнительнойИнформации.Form.ФормаВыбора</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
@@ -123,9 +123,51 @@
 					<FullTextSearch>DontUse</FullTextSearch>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="a8d312e6-2e83-4baa-a1c0-38b22c486665">
+				<Properties>
+					<Name>ИнформационнаяБазаГруппа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база / группа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ГруппыИнформационныхБаз</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForFolder</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Attribute>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
 			<Form>ФормаИзображения</Form>
+			<Form>ФормаГруппыУправляемая</Form>
+			<Form>ФормаЭлементаУправляемая</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

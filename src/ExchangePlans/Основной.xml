@@ -33,7 +33,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<CodeLength>5</CodeLength>
 			<CodeAllowedLength>Fixed</CodeAllowedLength>
 			<DescriptionLength>100</DescriptionLength>
@@ -49,7 +49,7 @@
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>ExchangePlan.Основной.Form.ФормаУзла</DefaultObjectForm>
-			<DefaultListForm>ExchangePlan.Основной.Form.ФормаСписка</DefaultListForm>
+			<DefaultListForm>ExchangePlan.Основной.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -148,6 +148,7 @@
 			</Attribute>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаУзла</Form>
+			<Form>ФормаСпискаУправляемая</Form>
 		</ChildObjects>
 	</ExchangePlan>
 </MetaDataObject>

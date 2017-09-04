@@ -30,7 +30,7 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.Пейджеры</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Catalog.Товары</Metadata>
@@ -42,7 +42,7 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.Специфики</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Constant.НомерВерсииКонфигурации</Metadata>
@@ -58,7 +58,7 @@
 	</Item>
 	<Item>
 		<Metadata>Document.РеестрЦен</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Catalog.КатегорииКлиентов</Metadata>
@@ -86,7 +86,7 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.ХранилищеДополнительнойИнформации</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Constant.РазделятьДозаказы</Metadata>
@@ -170,7 +170,7 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.ТорговоеОборудование</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Constant.ИБВедениеСправочников</Metadata>
@@ -234,7 +234,7 @@
 	</Item>
 	<Item>
 		<Metadata>InformationRegister.ДополнительныеСвойства</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Catalog.ШаблоныАктивности</Metadata>
@@ -258,7 +258,7 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.РабочиеМеста</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Catalog.ТипыШаблоновШК</Metadata>
@@ -306,11 +306,11 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.Фирмы</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Catalog.НаборыПейджеров</Metadata>
-		<AutoRecord>Allow</AutoRecord>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Catalog.КлассификаторЕдиницИзмерения</Metadata>
@@ -339,6 +339,10 @@
 	<Item>
 		<Metadata>Constant.МаксимальноеКоличествоПДФвЧеке</Metadata>
 		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.КартыДоступа</Metadata>
+		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Constant.ПодтверждениеГотовности</Metadata>
