@@ -840,6 +840,7 @@
 			<Catalog>ТипыАкций</Catalog>
 			<Catalog>ТипыДней</Catalog>
 			<Catalog>ТипыКартинок</Catalog>
+			<Catalog>ТипыТТ</Catalog>
 			<Catalog>ТипыЦен</Catalog>
 			<Catalog>ТипыШаблоновШК</Catalog>
 			<Catalog>ТипыЭлементовДиалогов</Catalog>
@@ -1104,21 +1105,41 @@
 			<DataProcessor>ЖурналРегистрацииТонкийКлиент</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
+			<InformationRegister>Акции</InformationRegister>
+			<InformationRegister>БлокировкиЗаказов</InformationRegister>
 			<InformationRegister>Бронирование</InformationRegister>
+			<InformationRegister>ВозвратДопИнф</InformationRegister>
+			<InformationRegister>ВыбранныеТовары</InformationRegister>
+			<InformationRegister>ВыгруженныеЦены</InformationRegister>
+			<InformationRegister>ВыданныеПейджеры</InformationRegister>
 			<InformationRegister>ГруппыПечатиДопИнф</InformationRegister>
+			<InformationRegister>ДанныеЛояльностиПоЗаказу</InformationRegister>
+			<InformationRegister>ДействующиеРасписания</InformationRegister>
+			<InformationRegister>ДиалогиНаСтанциях</InformationRegister>
 			<InformationRegister>ДопНаименования</InformationRegister>
+			<InformationRegister>ДополнительныеСвойства</InformationRegister>
 			<InformationRegister>ДоставкаДопИнф</InformationRegister>
+			<InformationRegister>ДоступностьКаталоговТоваров</InformationRegister>
 			<InformationRegister>ЗаказДопИнф</InformationRegister>
+			<InformationRegister>ЗаказТоварыДопИнф</InformationRegister>
+			<InformationRegister>ЗаказыПоКассирам</InformationRegister>
+			<InformationRegister>ЗначенияПараметровОграниченийПродажи</InformationRegister>
 			<InformationRegister>ИспользованиеОдноразовыхКартДоступа</InformationRegister>
+			<InformationRegister>ИсторияВыдачиПейджеров</InformationRegister>
 			<InformationRegister>Картинки</InformationRegister>
 			<InformationRegister>КурсыВалют</InformationRegister>
+			<InformationRegister>Марки</InformationRegister>
 			<InformationRegister>НастройкиКолЦентра</InformationRegister>
 			<InformationRegister>НастройкиОтчетовПриОткрытии</InformationRegister>
+			<InformationRegister>НомерЧекаНФР</InformationRegister>
 			<InformationRegister>ОбработкаСобытий</InformationRegister>
+			<InformationRegister>ОткрытыеЗаказыПоКартам</InformationRegister>
 			<InformationRegister>ПараметрыОбменаДанными</InformationRegister>
 			<InformationRegister>ПраваДоступа</InformationRegister>
 			<InformationRegister>Рекомендации</InformationRegister>
 			<InformationRegister>СловарьСлужебныхСлов</InformationRegister>
+			<InformationRegister>СоставГруппИнформационныхБаз</InformationRegister>
+			<InformationRegister>СПУЛЛояльности</InformationRegister>
 			<InformationRegister>СтопЛист</InformationRegister>
 			<InformationRegister>ТекущиеСмены</InformationRegister>
 			<InformationRegister>УР_ГрафикиРаботы</InformationRegister>
@@ -1128,26 +1149,6 @@
 			<InformationRegister>Цены</InformationRegister>
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<InformationRegister>ШтрихКодыНоменклатуры</InformationRegister>
-			<InformationRegister>ОткрытыеЗаказыПоКартам</InformationRegister>
-			<InformationRegister>ВыданныеПейджеры</InformationRegister>
-			<InformationRegister>Марки</InformationRegister>
-			<InformationRegister>ИсторияВыдачиПейджеров</InformationRegister>
-			<InformationRegister>ДиалогиНаСтанциях</InformationRegister>
-			<InformationRegister>ДополнительныеСвойства</InformationRegister>
-			<InformationRegister>ЗначенияПараметровОграниченийПродажи</InformationRegister>
-			<InformationRegister>ВозвратДопИнф</InformationRegister>
-			<InformationRegister>Акции</InformationRegister>
-			<InformationRegister>ЗаказТоварыДопИнф</InformationRegister>
-			<InformationRegister>ВыбранныеТовары</InformationRegister>
-			<InformationRegister>СПУЛЛояльности</InformationRegister>
-			<InformationRegister>ДоступностьКаталоговТоваров</InformationRegister>
-			<InformationRegister>СоставГруппИнформационныхБаз</InformationRegister>
-			<InformationRegister>ДействующиеРасписания</InformationRegister>
-			<InformationRegister>ВыгруженныеЦены</InformationRegister>
-			<InformationRegister>НомерЧекаНФР</InformationRegister>
-			<InformationRegister>ДанныеЛояльностиПоЗаказу</InformationRegister>
-			<InformationRegister>ЗаказыПоКассирам</InformationRegister>
-			<InformationRegister>БлокировкиЗаказов</InformationRegister>
 			<AccumulationRegister>ДенежныеОперации</AccumulationRegister>
 			<AccumulationRegister>ОборотыКлиентов</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ПраваДоступа</ChartOfCharacteristicTypes>

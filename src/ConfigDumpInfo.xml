@@ -438,12 +438,13 @@
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка" id="7fe3b46a-fa75-4020-b0d0-2ebae8d216fc" configVersion="74048f97171b3443bf84640258c2a7d400000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка.Form" id="7fe3b46a-fa75-4020-b0d0-2ebae8d216fc.0" configVersion="0157eaf3c4baa54a8a37503ebf86c24500000000"/>
 		<Metadata name="Catalog.Контрагенты.Help" id="43ee8ebb-8b2e-4c4f-9ce4-9d8e76c95cf9.1" configVersion="916150e08f80df4b89a5ba907542d27b00000000"/>
-		<Metadata name="Catalog.МенюЛояльности" id="536aef8d-3b49-4170-ad78-ebc1950d4295" configVersion="7b59a999a7fa794396f4b63cf4f4afde00000000">
+		<Metadata name="Catalog.МенюЛояльности" id="536aef8d-3b49-4170-ad78-ebc1950d4295" configVersion="4916c5194e01484d901a2616d043142300000000">
 			<Metadata name="Catalog.МенюЛояльности.Attribute.Регион" id="1facbbe3-b9cc-4203-b384-c1b91d4dc379"/>
 			<Metadata name="Catalog.МенюЛояльности.TabularSection.ЭлементыМеню.Attribute.ТекстКнопки" id="46038442-7bdf-4c1c-8350-a268c453d8b0"/>
 			<Metadata name="Catalog.МенюЛояльности.TabularSection.ЭлементыМеню.Attribute.Действие" id="4df0ec8a-b0d1-467f-bf6c-2c0f7899cc6e"/>
 			<Metadata name="Catalog.МенюЛояльности.Attribute.ДатаОкончанияДействия" id="64d193da-f60d-425b-a119-9c40a420d18d"/>
 			<Metadata name="Catalog.МенюЛояльности.TabularSection.ЭлементыМеню" id="6af11291-6470-42f2-a077-8ad11d8f9aa4"/>
+			<Metadata name="Catalog.МенюЛояльности.Attribute.ТипТТ" id="765e5e11-949e-49f3-ac9b-3dda31ee1163"/>
 			<Metadata name="Catalog.МенюЛояльности.Attribute.МестоРеализации" id="912eb994-886c-4986-b57e-122ac7544fe3"/>
 			<Metadata name="Catalog.МенюЛояльности.Attribute.ДатаНачалаДействия" id="934a301a-cfe0-42ae-a406-0a6d482867a7"/>
 			<Metadata name="Catalog.МенюЛояльности.TabularSection.ЭлементыМеню.Attribute.КодСУПтовара" id="978e1e6b-5313-47df-a8b0-21400a2824c8"/>
@@ -1086,6 +1087,8 @@
 			<Metadata name="Catalog.ТипыКартинок.Attribute.Комментарий" id="7fc399a5-04a9-4d35-a95d-a7656684abfa"/>
 		</Metadata>
 		<Metadata name="Catalog.ТипыКартинок.Predefined" id="b2cef318-7911-48ec-a1b9-b31d2a67bc7c.1c" configVersion="6fc364ade23e9f40b4999950995766e300000000"/>
+		<Metadata name="Catalog.ТипыТТ" id="e74f6075-5961-4b7d-9ed0-737b0f8ba084" configVersion="8ef61abc813d964ab65c4e0899e1a54800000000"/>
+		<Metadata name="Catalog.ТипыТТ.Predefined" id="e74f6075-5961-4b7d-9ed0-737b0f8ba084.1c" configVersion="9577d9edf5b05548a3838ca5234f346900000000"/>
 		<Metadata name="Catalog.ТипыЦен" id="cb533a5d-9101-4d14-a874-79a4b535b9c4" configVersion="2acf75df71c2f24bbf47c1181376824200000000">
 			<Metadata name="Catalog.ТипыЦен.Attribute.Валюта" id="9a5e88bf-2603-4464-93ed-c8c76ea89142"/>
 		</Metadata>
@@ -1227,7 +1230,7 @@
 		<Metadata name="Catalog.УР_Смены.Form.ФормаЭлемента" id="aea4eafe-961a-4998-9ea7-69f63c6a917b" configVersion="f40f4debf8dd7f4ea7052eb8b68a22c100000000"/>
 		<Metadata name="Catalog.УР_Смены.Form.ФормаЭлемента.Form" id="aea4eafe-961a-4998-9ea7-69f63c6a917b.0" configVersion="dbed07d9d3a78248aeca2e21a4ca504f00000000"/>
 		<Metadata name="Catalog.УР_Смены.ObjectModule" id="9f69c732-9a7a-41b5-b771-13f842c12055.0" configVersion="6a0df24b812e0c43a03328486bc60abf00000000"/>
-		<Metadata name="Catalog.Фирмы" id="db646743-e10c-4658-acd4-e6d3bfc6f29d" configVersion="84eb455349aaf74cbcb22ce68b6ad70800000000">
+		<Metadata name="Catalog.Фирмы" id="db646743-e10c-4658-acd4-e6d3bfc6f29d" configVersion="6d58d8c619c6d54195509c982b99835700000000">
 			<Metadata name="Catalog.Фирмы.Attribute.ОГРН" id="2c159321-417d-49b1-b00d-37ab06727380"/>
 			<Metadata name="Catalog.Фирмы.Attribute.ИФНС" id="3b584e21-2136-402f-a17c-a011d55cf710"/>
 			<Metadata name="Catalog.Фирмы.Attribute.КодТТ" id="4bee1717-4777-4d20-addb-f9faafb9e3ae"/>
@@ -1240,6 +1243,7 @@
 			<Metadata name="Catalog.Фирмы.Attribute.КодПоОКПО" id="898a39ad-163e-4782-b8c6-6e8fe0c49c88"/>
 			<Metadata name="Catalog.Фирмы.Attribute.Сайт" id="a3ba9d57-508a-4596-82a4-478d0958f87d"/>
 			<Metadata name="Catalog.Фирмы.Attribute.ИНН" id="a53988cd-2fab-4de8-a32a-85ed0753e270"/>
+			<Metadata name="Catalog.Фирмы.Attribute.ТипТТ" id="b5168ea5-bddd-418e-b084-9d65893df6a9"/>
 			<Metadata name="Catalog.Фирмы.Attribute.МестоРеализации" id="c3ece88c-2f04-42ec-b69b-1265ac12726e"/>
 			<Metadata name="Catalog.Фирмы.Attribute.Мерчант" id="c80a31b3-2254-4520-af2b-e212ed3264e5"/>
 			<Metadata name="Catalog.Фирмы.Attribute.АдресДляЕГАИС" id="c8daed41-c83a-4e50-8922-ca67b0c68314"/>
@@ -2385,7 +2389,7 @@
 		<Metadata name="CommonTemplate.ШрифтFontAwesomeOtf.Template" id="0fdf59cb-2739-47d4-b458-45973dc35bc0.0" configVersion="62f0d1c295033c428ba834f43193092a00000000"/>
 		<Metadata name="CommonTemplate.ксИзменения" id="9c3c6d7f-fb56-4d89-a0dd-f077cb375420" configVersion="c02f56cf7c426a4b92a0c6f287c0044400000000"/>
 		<Metadata name="CommonTemplate.ксИзменения.Template" id="9c3c6d7f-fb56-4d89-a0dd-f077cb375420.0" configVersion="d3464c9c7919cb4eac930bdf84393ef100000000"/>
-		<Metadata name="Configuration.СУПккм" id="7b992f15-a89f-4bdc-b88f-0d7e5fb698b8" configVersion="f6ce445c2e503346a496cbd98bfe9ad800000000"/>
+		<Metadata name="Configuration.СУПккм" id="7b992f15-a89f-4bdc-b88f-0d7e5fb698b8" configVersion="ae3f6d55e406864d803d304cb010684300000000"/>
 		<Metadata name="Configuration.СУПккм.ClientApplicationInterface" id="b5e4e820-af9d-4148-8b91-5266f9ff93e6.b" configVersion="57e0177acbedc546bdd7b3c4113c7dc000000000"/>
 		<Metadata name="Configuration.СУПккм.CommandInterface" id="b5e4e820-af9d-4148-8b91-5266f9ff93e6.a" configVersion="d233d8ef6be38843bbaf1ad812901bfb00000000"/>
 		<Metadata name="Configuration.СУПккм.ExternalConnectionModule" id="b5e4e820-af9d-4148-8b91-5266f9ff93e6.5" configVersion="242b5804dc42bb47a06b5be6913acbb600000000"/>
