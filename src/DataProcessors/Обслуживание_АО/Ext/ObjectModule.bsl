@@ -43,11 +43,7 @@
 	|Gui, Color, % THEME_COLOR
 	|Gui, Font, , Consolas
 	|Gui, Font, s10, Consolas	
-	|Gui, Add, Text, cWhite vTxt, %Text%
-	|
-	|Gui, Show, autosize x1 hide ; 
-	|
-	|DllCall(""AnimateWindow"", Ptr, hwnd, UInt, 1000, UInt, animateEffect) 
+	|Gui, Add, Text, cWhite vTxt xCenter YCenter, %Text%
 	|
 	|return
 	|
@@ -100,6 +96,7 @@
 	
 	
 	Скрипт = "GuiControl, , Txt, %Текст
+	|GuiControl,MoveDraw,Txt,W350,H600
 	|Gui, Show, autosize x1 hide ; 
 	|
 	|DllCall(""AnimateWindow"", Ptr, hwnd, UInt, 1000, UInt, animateEffect) 
