@@ -95,7 +95,7 @@
 Процедура ПоказатьОкошкоСТекстом(Текст) Экспорт
 	
 	
-	Скрипт = "GuiControl, , Txt, %Текст
+	Скрипт = "GuiControl, , Txt,% ""%Текст""
 	|GuiControl,MoveDraw,Txt,W350,H600
 	|Gui, Show, autosize x1 hide ; 
 	|
