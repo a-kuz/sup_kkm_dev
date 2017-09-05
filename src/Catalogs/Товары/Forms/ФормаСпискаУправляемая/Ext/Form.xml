@@ -233,6 +233,7 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦен.Розничная)) КАК ЦеныСрезПоследних
 		ПО СправочникТовары.Номенклатура = ЦеныСрезПоследних.Номенклатура</QueryText>
 				<MainTable>Catalog.Товары</MainTable>
+				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">

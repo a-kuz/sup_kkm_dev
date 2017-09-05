@@ -198,7 +198,7 @@
 			</Title>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="118"/>
 			<ChildItems>
-				<Page name="ДействующиеРасписанияГр" id="143">
+				<Page name="ДействующиеРасписанияСтраница" id="143">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -208,10 +208,10 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Действующие расписания гр</v8:content>
+							<v8:content>Действующие расписания страница</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ДействующиеРасписанияГрРасширеннаяПодсказка" id="144"/>
+					<ExtendedTooltip name="ДействующиеРасписанияСтраницаРасширеннаяПодсказка" id="144"/>
 					<ChildItems>
 						<UsualGroup name="Группа2" id="175">
 							<Representation>None</Representation>
@@ -320,6 +320,121 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="ЦеныСтраница" id="185">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены страница</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены страница</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЦеныСтраницаРасширеннаяПодсказка" id="186"/>
+					<ChildItems>
+						<Table name="СписокЦены" id="187">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокЦены</DataPath>
+							<RowPictureDataPath>СписокЦены.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>Refresh</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SetDateInterval</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокЦеныКонтекстноеМеню" id="188"/>
+							<AutoCommandBar name="СписокЦеныКоманднаяПанель" id="189"/>
+							<ExtendedTooltip name="СписокЦеныРасширеннаяПодсказка" id="190"/>
+							<SearchStringAddition name="СписокЦеныСтрокаПоиска" id="191">
+								<AdditionSource>
+									<Item>СписокЦены</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЦеныСтрокаПоискаКонтекстноеМеню" id="192"/>
+								<ExtendedTooltip name="СписокЦеныСтрокаПоискаРасширеннаяПодсказка" id="193"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокЦеныСостояниеПросмотра" id="194">
+								<AdditionSource>
+									<Item>СписокЦены</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЦеныСостояниеПросмотраКонтекстноеМеню" id="195"/>
+								<ExtendedTooltip name="СписокЦеныСостояниеПросмотраРасширеннаяПодсказка" id="196"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокЦеныУправлениеПоиском" id="197">
+								<AdditionSource>
+									<Item>СписокЦены</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЦеныУправлениеПоискомКонтекстноеМеню" id="198"/>
+								<ExtendedTooltip name="СписокЦеныУправлениеПоискомРасширеннаяПодсказка" id="199"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокЦеныСтандартнаяКартинка" id="215">
+									<DataPath>СписокЦены.DefaultPicture</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ContextMenu name="СписокЦеныСтандартнаяКартинкаКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="СписокЦеныСтандартнаяКартинкаРасширеннаяПодсказка" id="217"/>
+								</LabelField>
+								<LabelField name="СписокЦеныНоменклатура" id="200">
+									<DataPath>СписокЦены.Номенклатура</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="СписокЦеныНоменклатураКонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="СписокЦеныНоменклатураРасширеннаяПодсказка" id="202"/>
+								</LabelField>
+								<LabelField name="СписокЦеныПериод" id="203">
+									<DataPath>СписокЦены.Период</DataPath>
+									<ContextMenu name="СписокЦеныПериодКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="СписокЦеныПериодРасширеннаяПодсказка" id="205"/>
+								</LabelField>
+								<LabelField name="СписокЦеныТипЦен" id="209">
+									<DataPath>СписокЦены.ТипЦен</DataPath>
+									<ContextMenu name="СписокЦеныТипЦенКонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="СписокЦеныТипЦенРасширеннаяПодсказка" id="211"/>
+								</LabelField>
+								<LabelField name="СписокЦеныЦена" id="212">
+									<DataPath>СписокЦены.Цена</DataPath>
+									<ContextMenu name="СписокЦеныЦенаКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="СписокЦеныЦенаРасширеннаяПодсказка" id="214"/>
+								</LabelField>
+								<LabelField name="СписокЦеныРеестрЦен" id="206">
+									<DataPath>СписокЦены.РеестрЦен</DataPath>
+									<ContextMenu name="СписокЦеныРеестрЦенКонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="СписокЦеныРеестрЦенРасширеннаяПодсказка" id="208"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -378,6 +493,46 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="СписокЦены" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список цены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЦеныНоменклатурыСрезПоследних.Период КАК Период,
+	ЦеныНоменклатурыСрезПоследних.ТипЦен КАК ТипЦен,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура КАК Номенклатура,
+	ЦеныНоменклатурыСрезПоследних.Цена КАК Цена,
+	ЦеныНоменклатурыСрезПоследних.РеестрЦен КАК РеестрЦен
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, Номенклатура = &amp;Номенклатура) КАК ЦеныНоменклатурыСрезПоследних</QueryText>
+				<MainTable>InformationRegister.ЦеныНоменклатуры.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
 		</Attribute>
 	</Attributes>
 </Form>
