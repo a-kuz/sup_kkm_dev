@@ -140,6 +140,7 @@
 
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|Sleep, 50
 		|WinMove,%Заголовок,,%X,%Y,%W,%H
 		|";
@@ -160,6 +161,7 @@
 	Если ВариантСостоянияОкна.Свободное = СостояниеОкна Тогда
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|global hwnd
 		|capt := ""%Заголовок""
 		|WinGet, hwnd, id, %capt% ahk_pid %1 ahk_class %Class
@@ -192,6 +194,7 @@
 	Попытка                                 
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|WinGet, hwnd, id, %Заголовок ahk_pid %1 ahk_class V8NewLocalFrameBaseWnd
 		|WinRestore, ahk_id %hwnd%
 		|WinMove,  ahk_id %hwnd%, , , , %W, %H
@@ -215,6 +218,7 @@
 	Попытка                                 
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|WinGet, hwnd, id, ahk_pid %1 ahk_class V8TopLevelFrame
 		|WinRestore, ahk_id %hwnd%
 		|WinMove,  ahk_id %hwnd%, , 0, 0, %W, %H
@@ -230,6 +234,7 @@
 Процедура ПереназначитьКнопки() Экспорт
 	Скрипт = "
 	|	#NoTrayIcon
+	|	#NoEnv
 	|	SetTitleMatchMode, RegEx
 	|	SetNumlockState, On
 	|	SetNumLockState, AlwaysOn
@@ -404,6 +409,7 @@
 Процедура Максимизировать(hwnd=0) Экспорт
 	Скрипт = "
 	|#NoTrayIcon
+	|#NoEnv
 	|SetWinDelay 100
 	|WinWaitActive, ahk_pid %1 ahk_class V8TopLevelFrame
 	|WinGet, hwnd, id, ahk_pid %1 ahk_class V8TopLevelFrame
@@ -416,6 +422,7 @@
 Процедура МаксимизироватьДочернее(Заголовок="") Экспорт
 	Скрипт = "
 	|#NoTrayIcon
+	|#NoEnv
 	|SetWinDelay 100
 	|";
 	Скрипт = Скрипт+"WinMaximize, " + Заголовок;
@@ -490,12 +497,12 @@
 		
 		Текст = "
 		|#NoTrayIcon
-		|WinGet, hwnd, id, ahk_pid %1 ahk_class V8TopLevelFrame
+		|#NoEnv
+		|WinGet, hwnd, id, ahk_pid %pid ahk_class V8TopLevelFrame
+		|WinWaitActive, ahk_pid %pid ahk_class V8TopLevelFrame, , 10
 		|WinSet, Style,"+?(flag=1,"+","-")+"0x00C00000, ahk_id %hwnd%
-		|ControlGetPos, X, Y, W, H, V8MDIClient1, ahk_id %kwnd1%
-		|ControlMove, V8MDIClient1,%X%,%Y%,%W%,%H%,ahk_id %kwnd1%
 		|";
-		Текст = СтрЗаменить(текст,"%1",Формат(pid,"ЧРГ=; ЧГ=0"));
+		Текст = СтрЗаменить(текст,"%pid",Формат(pid,"ЧРГ=; ЧГ=0"));
 		Если flag = 1 Тогда
 			Текст = Текст + "
 			|WinShow, ahk_class Shell_TrayWnd";
@@ -503,17 +510,7 @@
 		КонецЕсли;  
 		
 		showCaptionA.ahkTextDll(Текст);
-		//
-		//Текст="WinGet, hwnd, id, ahk_pid %1 ahk_class V8TopLevelFrame
-		//|WinMaximize, ahk_id %hwnd%
-		//|";
-		//Текст = СтрЗаменить(текст,"%1",Формат(pid,"ЧРГ=; ЧГ=0"));
-		//AutohotkeyDll.ahkTextDll(текст);
-		//пока AutohotkeyDll.ahkReady() Цикл
-		//	ОбработкаПрерыванияПользователя();
-		//	Враппер.sleep(10);
-		//КонецЦикла;
-		
+
 		
 	Исключение		
 		Сообщить(ОписаниеОшибки());
@@ -535,6 +532,7 @@
 		onTopA = ЭтотОбъект.AHK(,"OnTop");
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|WinGet, hwnd, id, ahk_pid %1 ahk_class V8TopLevelFrame
 		|WinSet, AlwaysOnTop, On, ahk_id %hwnd%
 		|";
@@ -557,19 +555,15 @@
 	
 	Попытка
 		A_FS = ЭтотОбъект.AHK(Истина, "FullScreen");	
-		Скрипт = ";#NoTrayIcon
+		Скрипт = "#NoTrayIcon
+		|#NoEnv
 		|#KeyHistory 500
-		|;if (A_ScreenWidth > 1924) {
-		|;	WinWaitActive, ahk_pid %pid ahk_class V8TopLevelFrame
-		|;	WinMove, ahk_pid %pid ahk_class V8TopLevelFrame,,0,0,1024,786
-		|;} else {
 		|	WinMove, ahk_pid %pid ahk_class V8TopLevelFrame,,0,0,%A_ScreenWidth%,%A_ScreenHeight%
 		|	Sleep 100
 		|	WinWaitActive, ahk_pid %pid ahk_class V8TopLevelFrame, , 10
 		|	WinRestore, ahk_id %hwnd%
 		|	WinMaximize, ahk_id %hwnd%
 		|	settimer, CheckFullScreen, -100
-		|;}
 		|return
 		|
 		|CheckFullScreen:
@@ -597,7 +591,6 @@
 		|WinGetClass, A_Class, A 
 		|
 		|if (A_Class == ""V8NewLocalFrameBaseWnd"") {
-		|	; TOOLTIP % A_Class
 		|	WinGetPos, X, Y, W, H, A
 		|	WindowCenter := (X+W/2)
 		|	if ((WindowCenter < (A_ScreenWidth/2-1))&&(W<(A_ScreenWidth-1)))	{
@@ -630,6 +623,7 @@
 		AHK = ЭтотОбъект.AHK(,"СкрытьПенельЗадач");	
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|WinHide, ahk_class Shell_TrayWnd
 		|WinHide, ahk_class Button
 		|Monitor_setWorkArea(0,0,A_ScreenWidth,A_ScreenHeight)
@@ -659,6 +653,7 @@
 		AHK = ЭтотОбъект.AHK(,"ВернутьПанельЗадач");	
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|WinShow, ahk_class Shell_TrayWnd
 		|ExitApp
 		|return";
@@ -679,6 +674,7 @@
 		
 		Скрипт = "
 		|#NoTrayIcon
+		|#NoEnv
 		|global PID := DllCall(""GetCurrentProcessId"")
 		|
 		|Start() 
@@ -1012,6 +1008,7 @@
 	Текст = СтрЗаменить(Текст, "%", "");
 	AHK.ahkTextDll("
 	|#NoTrayIcon
+	|#NoEnv
 	|ToolTip " + Текст + "
 	|Sleep 2000
 	|ExitApp");
@@ -1029,18 +1026,17 @@
 	КонецЕсли;
 	Если AHK_Balloon = Неопределено Тогда
 		AHK_Balloon = AHK(,"Balloon");
-			Скрипт = "#NoTrayIcon
-		|Global w1 := 0 
-		|Global w2 := 0 
-		|Global w3 := 0 
-		|Global w4 := 0 
-		|Global w5 := 0
-		|Global w6 := 0
-		|Global w6 := 0
-		|Global w7 := 0
-		|Global w8 := 0
-		|Global w9 := 0
-		|Global w10 := 0 
+		Скрипт = "#NoTrayIcon
+		|#NoEnv
+		|Global w1
+		|Global w2
+		|Global w3
+		|Global w4
+		|Global w5
+		|Global w6
+		|Global w7
+		|Global w8
+		|Global w9
 		|Global THEME_COLOR := 0x068A3F
 		|Global ACCENT_COLOR := 0xFF6E3F
 		|
@@ -1084,7 +1080,7 @@
 		|		
 		|		this.strCaption := pCaption
 		|		this.strText := pText
-		|		this.TransDec:= ObjBindMethod(this, ""TransDecFunc"")
+		|		this.callback := ObjBindMethod(this, ""TransDecFunc"")
 		|		
 		|	}
 		|	
@@ -1092,9 +1088,7 @@
 		|	{
 		|		index := this.index
 		|		Gui,G%index%:Destroy
-		|		CallBack := ObjBindMethod(this, ""TransDecFunc"")
-		|		SetTimer,% CallBack, off
-		|				
+		|		OnMessage(0x201, this.WM_LBUTTONDOWN,0)
 		|	}
 		|	
 		|	
@@ -1135,16 +1129,16 @@
 		|		if (this.timeout) {
 		|			this.hide(-this.timeout)
 		|		}
-		|		WM_LBUTTONDOWN := ObjBindMethod(this, ""LBUTTONDOWN"")
-		|	
-		|		OnMessage(0x201,WM_LBUTTONDOWN)
+		|		this.WM_LBUTTONDOWN := ObjBindMethod(this, ""LBUTTONDOWN"")
+		|		OnMessage(0x201, this.WM_LBUTTONDOWN)
 		|
 		|		
 		|	}
 		|		
 		|	
 		|	hide(after_ms=0) {
-		|		callback := ObjBindMethod(this, ""TransDecFunc"")
+		|		
+		|		callback := this.callback
 		|		SetTimer,% callback, %after_ms%
 		|	}
 		|	
@@ -1169,8 +1163,11 @@
 		|		} else {
 		|			index := this.index
 		|			SetTimer,,Off
-		|			this.__Delete()
-		|			
+		|			OnMessage(0x201, this.WM_LBUTTONDOWN,0)
+		|			Gui,G%index%:Destroy
+		|			this.WM_LBUTTONDOWN := 0
+		|			this.Callback := 0
+		|			w%index% := 0			
 		|		}
 		|	}
 		|	
@@ -1178,16 +1175,22 @@
 		|	LBUTTONDOWN(wParam, lParam, msg, hwnd)
 		|	{
 		|		ThWND := THIS.hwnd	
-		|		if (hwnd == this.hwnd)
+		|		if (hwnd == this.hwnd)|(!this.hwnd)
 		|		{
-		|			
-		|			this.__Delete()
+		|			index := this.index
+		|			OnMessage(0x201, this.WM_LBUTTONDOWN,0)
+		|			Gui,G%index%:Destroy
+		|			this.WM_LBUTTONDOWN := 0
+		|			if (!this.timeout)
+		|				this.Callback := 0
+		|			w%index% := 0
 		|		}
 		|	
 		|	}
 		|	
 		|	
 		|}
+		|
 		|
 		|Global curCaption, curText, curIndex, curTimeout, curtrans
 		|
@@ -1201,10 +1204,11 @@
 		|
 		|
 		|DeleteMessage() {
-		|	
-		|	w%curIndex%.__Delete()
+		|	this := w%curindex%
+		|	this.timeout := 1
+		|	this.hide(-1)
 		|}
-		|";	
+		|";
 		AHK_Balloon.ahktextdll(Скрипт);	
 	КонецЕсли;
 	Если ЗначениеЗаполнено(Лево) Тогда
