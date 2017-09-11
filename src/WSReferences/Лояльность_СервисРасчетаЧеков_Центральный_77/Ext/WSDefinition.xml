@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://www.kegelbum.ru/"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://www.kegelbum.ru/"
+		name="Check"
+		targetNamespace="http://www.kegelbum.ru/">
+	<types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="http://www.kegelbum.ru/"
+				targetNamespace="http://www.kegelbum.ru/"
+				elementFormDefault="qualified">
+			<xs:element name="calc">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="check_json"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="calcResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="status">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="statusResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="kkm_status">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="request_json"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="kkm_statusResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="price_list">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="request_json"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="price_listResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="info">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="request_json"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="infoResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="reg">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="request_json"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="regResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="edit">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="request_json"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="editResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="order">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="check_json"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="orderResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</types>
+	<message name="calcRequestMessage">
+		<part name="parameters"
+				element="tns:calc"/>
+	</message>
+	<message name="calcResponseMessage">
+		<part name="parameters"
+				element="tns:calcResponse"/>
+	</message>
+	<message name="statusRequestMessage">
+		<part name="parameters"
+				element="tns:status"/>
+	</message>
+	<message name="statusResponseMessage">
+		<part name="parameters"
+				element="tns:statusResponse"/>
+	</message>
+	<message name="kkm_statusRequestMessage">
+		<part name="parameters"
+				element="tns:kkm_status"/>
+	</message>
+	<message name="kkm_statusResponseMessage">
+		<part name="parameters"
+				element="tns:kkm_statusResponse"/>
+	</message>
+	<message name="price_listRequestMessage">
+		<part name="parameters"
+				element="tns:price_list"/>
+	</message>
+	<message name="price_listResponseMessage">
+		<part name="parameters"
+				element="tns:price_listResponse"/>
+	</message>
+	<message name="infoRequestMessage">
+		<part name="parameters"
+				element="tns:info"/>
+	</message>
+	<message name="infoResponseMessage">
+		<part name="parameters"
+				element="tns:infoResponse"/>
+	</message>
+	<message name="regRequestMessage">
+		<part name="parameters"
+				element="tns:reg"/>
+	</message>
+	<message name="regResponseMessage">
+		<part name="parameters"
+				element="tns:regResponse"/>
+	</message>
+	<message name="editRequestMessage">
+		<part name="parameters"
+				element="tns:edit"/>
+	</message>
+	<message name="editResponseMessage">
+		<part name="parameters"
+				element="tns:editResponse"/>
+	</message>
+	<message name="orderRequestMessage">
+		<part name="parameters"
+				element="tns:order"/>
+	</message>
+	<message name="orderResponseMessage">
+		<part name="parameters"
+				element="tns:orderResponse"/>
+	</message>
+	<portType name="CheckPortType">
+		<operation name="calc">
+			<input name="calcRequest"
+					message="tns:calcRequestMessage"/>
+			<output name="calcResponse"
+					message="tns:calcResponseMessage"/>
+		</operation>
+		<operation name="status">
+			<input name="statusRequest"
+					message="tns:statusRequestMessage"/>
+			<output name="statusResponse"
+					message="tns:statusResponseMessage"/>
+		</operation>
+		<operation name="kkm_status">
+			<input name="kkm_statusRequest"
+					message="tns:kkm_statusRequestMessage"/>
+			<output name="kkm_statusResponse"
+					message="tns:kkm_statusResponseMessage"/>
+		</operation>
+		<operation name="price_list">
+			<input name="price_listRequest"
+					message="tns:price_listRequestMessage"/>
+			<output name="price_listResponse"
+					message="tns:price_listResponseMessage"/>
+		</operation>
+		<operation name="info">
+			<input name="infoRequest"
+					message="tns:infoRequestMessage"/>
+			<output name="infoResponse"
+					message="tns:infoResponseMessage"/>
+		</operation>
+		<operation name="reg">
+			<input name="regRequest"
+					message="tns:regRequestMessage"/>
+			<output name="regResponse"
+					message="tns:regResponseMessage"/>
+		</operation>
+		<operation name="edit">
+			<input name="editRequest"
+					message="tns:editRequestMessage"/>
+			<output name="editResponse"
+					message="tns:editResponseMessage"/>
+		</operation>
+		<operation name="order">
+			<input name="orderRequest"
+					message="tns:orderRequestMessage"/>
+			<output name="orderResponse"
+					message="tns:orderResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="CheckSoapBinding"
+			type="tns:CheckPortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="calc">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:calc"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="status">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:status"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="kkm_status">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:kkm_status"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="price_list">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:price_list"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="info">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:info"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="reg">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:reg"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="edit">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:edit"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="order">
+			<soapbind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:order"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="CheckSoap12Binding"
+			type="tns:CheckPortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="calc">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:calc"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="status">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:status"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="kkm_status">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:kkm_status"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="price_list">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:price_list"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="info">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:info"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="reg">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:reg"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="edit">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:edit"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="order">
+			<soap12bind:operation style="document"
+					soapAction="http://www.kegelbum.ru/#Check:order"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="Check">
+		<port name="CheckSoap"
+				binding="tns:CheckSoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="http://p77sp.msk.local:89/check_v3/ws/check"/>
+		</port>
+		<port name="CheckSoap12"
+				binding="tns:CheckSoap12Binding">
+			<soap12bind:address location="http://p77sp.msk.local:89/check_v3/ws/check"/>
+		</port>
+	</service>
+</definitions>
