@@ -67,26 +67,36 @@
 					<ContextMenu name="КодСУПКонтекстноеМеню" id="98"/>
 					<ExtendedTooltip name="КодСУПРасширеннаяПодсказка" id="99"/>
 				</LabelField>
-				<LabelField name="Наименование" id="16">
-					<DataPath>~Список.Description</DataPath>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
-				</LabelField>
-				<LabelField name="БазоваяЕдиницаИзмерения" id="22">
-					<DataPath>Список.БазоваяЕдиницаИзмерения</DataPath>
-					<ContextMenu name="БазоваяЕдиницаИзмеренияКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="БазоваяЕдиницаИзмеренияРасширеннаяПодсказка" id="24"/>
-				</LabelField>
-				<LabelField name="Выход" id="28">
-					<DataPath>Список.Выход</DataPath>
-					<ContextMenu name="ВыходКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ВыходРасширеннаяПодсказка" id="30"/>
+				<LabelField name="Цена" id="109">
+					<DataPath>Список.Цена</DataPath>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="111"/>
 				</LabelField>
 				<LabelField name="Код" id="19">
 					<DataPath>~Список.Code</DataPath>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="Наименование" id="16">
+					<DataPath>Список.Наименование</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="КодДляВесов" id="103">
+					<DataPath>Список.КодДляВесов</DataPath>
+					<ContextMenu name="КодДляВесовКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="КодДляВесовРасширеннаяПодсказка" id="105"/>
+				</LabelField>
+				<LabelField name="ДляЦенника" id="106">
+					<DataPath>Список.ДляЦенника</DataPath>
+					<ContextMenu name="ДляЦенникаКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ДляЦенникаРасширеннаяПодсказка" id="108"/>
+				</LabelField>
+				<InputField name="Состав" id="100">
+					<DataPath>Список.Состав</DataPath>
+					<ContextMenu name="СоставКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="СоставРасширеннаяПодсказка" id="102"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -98,6 +108,7 @@
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
 				<Field>Список.фАлкоголь</Field>
+				<Field>Список.Цена</Field>
 				<Field>Список.СпецификаУдельныйВес</Field>
 				<Field>Список.СпецификаГруппа</Field>
 				<Field>Список.Состав</Field>
