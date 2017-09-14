@@ -57,6 +57,18 @@
 									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 									<ExtendedTooltip name="ДокументЗаказОткрытьПротоколРасчетовРасширеннаяПодсказка" id="101"/>
 								</Button>
+								<Button name="ДанныеЛояльности" id="108">
+									<Type>CommandBarButton</Type>
+									<OnlyInAllActions>false</OnlyInAllActions>
+									<CommandName>Form.Command.ДанныеЛояльности</CommandName>
+									<ExtendedTooltip name="ДанныеЛояльностиРасширеннаяПодсказка" id="109"/>
+								</Button>
+								<Button name="СПУЛЛояльности" id="110">
+									<Type>CommandBarButton</Type>
+									<OnlyInAllActions>false</OnlyInAllActions>
+									<CommandName>Form.Command.СПУЛЛояльности</CommandName>
+									<ExtendedTooltip name="СПУЛЛояльностиРасширеннаяПодсказка" id="111"/>
+								</Button>
 							</ChildItems>
 						</CommandBar>
 					</ChildItems>
@@ -448,4 +460,36 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СПУЛЛояльности" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СПУЛЛояльности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СПУЛЛояльности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СПУЛЛояльности</Action>
+		</Command>
+		<Command name="ДанныеЛояльности" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные лояльности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные лояльности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДанныеЛояльности</Action>
+		</Command>
+	</Commands>
 </Form>
