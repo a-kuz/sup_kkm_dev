@@ -38,38 +38,36 @@
 				<Event name="Click">ЛогоККГурмэНажатие</Event>
 			</Events>
 		</PictureDecoration>
-		<InputField name="ТекстОшибки1" id="1">
+		<LabelField name="ТекстОшибки1" id="1">
 			<DataPath>ТекстОшибки1</DataPath>
 			<Enabled>false</Enabled>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>None</TitleLocation>
 			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<GroupVerticalAlign>Center</GroupVerticalAlign>
-			<VerticalStretch>true</VerticalStretch>
-			<MultiLine>true</MultiLine>
-			<BorderColor>style:FormBackColor</BorderColor>
+			<VerticalStretch>false</VerticalStretch>
 			<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
 			<ContextMenu name="ТекстОшибки1КонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ТекстОшибки1РасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<InputField name="ТекстОшибки2" id="4">
+		</LabelField>
+		<LabelField name="ТекстОшибки2" id="4">
 			<DataPath>ТекстОшибки2</DataPath>
 			<Enabled>false</Enabled>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>None</TitleLocation>
 			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<GroupVerticalAlign>Center</GroupVerticalAlign>
 			<VerticalStretch>true</VerticalStretch>
-			<MultiLine>true</MultiLine>
-			<BorderColor>style:FormBackColor</BorderColor>
 			<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
 			<ContextMenu name="ТекстОшибки2КонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ТекстОшибки2РасширеннаяПодсказка" id="6"/>
-		</InputField>
+		</LabelField>
 		<Button name="КомандаОК" id="7">
 			<Type>UsualButton</Type>
 			<Height>2</Height>
