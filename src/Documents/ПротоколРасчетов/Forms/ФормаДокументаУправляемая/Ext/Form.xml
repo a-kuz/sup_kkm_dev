@@ -31,6 +31,11 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаРегистрНакопленияДенежныеОперацииОткрытьПоРегистраторуРасширеннаяПодсказка" id="128"/>
 			</Button>
+			<Button name="ФормаСПУЛЛояльности" id="179">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СПУЛЛояльности</CommandName>
+				<ExtendedTooltip name="ФормаСПУЛЛояльностиРасширеннаяПодсказка" id="180"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
@@ -572,4 +577,21 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СПУЛЛояльности" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СПУЛЛояльности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СПУЛЛояльности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СПУЛЛояльности</Action>
+		</Command>
+	</Commands>
 </Form>
