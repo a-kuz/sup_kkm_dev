@@ -647,6 +647,7 @@
 								</Button>
 								<Button name="БэкСпейс" id="97">
 									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
 									<Width>13</Width>
 									<HorizontalStretch>true</HorizontalStretch>
 									<CommandName>Form.Command.БэкСпейс</CommandName>
@@ -654,6 +655,10 @@
 									<BackColor>style:FormBackColor</BackColor>
 									<BorderColor>style:ЦветТемы</BorderColor>
 									<Font faceName="Segoe UI Semibold" height="28" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<ExtendedTooltip name="БэкСпейсРасширеннаяПодсказка" id="98"/>
 								</Button>
