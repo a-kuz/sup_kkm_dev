@@ -23,82 +23,151 @@
 			<Representation>StrongSeparation</Representation>
 			<ExtendedTooltip name="ГруппаТестированиеРасширеннаяПодсказка" id="22"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаЗаказ" id="1">
+				<Pages name="СтраницыТестирование" id="32">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Заказ</v8:content>
+							<v8:content>Страницы тестирование</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа заказ</v8:content>
+							<v8:content>Страницы тестирование</v8:content>
 						</v8:item>
 					</ToolTip>
-					<HorizontalStretch>true</HorizontalStretch>
-					<Group>Vertical</Group>
-					<ExtendedTooltip name="ГруппаЗаказРасширеннаяПодсказка" id="2"/>
+					<ExtendedTooltip name="СтраницыТестированиеРасширеннаяПодсказка" id="33"/>
 					<ChildItems>
-						<InputField name="Заказ" id="3">
-							<DataPath>Заказ</DataPath>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ContextMenu name="ЗаказКонтекстноеМеню" id="4"/>
-							<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="5"/>
-						</InputField>
-						<Button name="КомандаCALC" id="9">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.КомандаCALC</CommandName>
+						<Page name="ГруппаЗаказ" id="1">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>CALC</v8:content>
+									<v8:content>Заказ</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="КомандаCALCРасширеннаяПодсказка" id="10"/>
-						</Button>
-						<InputField name="РезультатJSON" id="6">
-							<DataPath>РезультатJSON</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заказ</v8:content>
+								</v8:item>
+							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
-							<MultiLine>true</MultiLine>
-							<ContextMenu name="РезультатJSONКонтекстноеМеню" id="7"/>
-							<ExtendedTooltip name="РезультатJSONРасширеннаяПодсказка" id="8"/>
-						</InputField>
+							<ExtendedTooltip name="ГруппаЗаказРасширеннаяПодсказка" id="2"/>
+							<ChildItems>
+								<InputField name="Заказ" id="3">
+									<DataPath>Заказ</DataPath>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ЗаказКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="5"/>
+								</InputField>
+								<Button name="КомандаCALC" id="9">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаCALC</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>CALC</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаCALCРасширеннаяПодсказка" id="10"/>
+								</Button>
+								<InputField name="РезультатJSON" id="6">
+									<DataPath>РезультатJSON</DataPath>
+									<HorizontalStretch>true</HorizontalStretch>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="РезультатJSONКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="РезультатJSONРасширеннаяПодсказка" id="8"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаРегистрация" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистрация</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаРегистрацияРасширеннаяПодсказка" id="12"/>
+							<ChildItems>
+								<InputField name="КартаДоступа" id="13">
+									<DataPath>КартаДоступа</DataPath>
+									<ContextMenu name="КартаДоступаКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="КартаДоступаРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="НомерКарты" id="16">
+									<DataPath>НомерКарты</DataPath>
+									<ContextMenu name="НомерКартыКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="НомерКартыРасширеннаяПодсказка" id="18"/>
+								</InputField>
+								<Button name="КомандаПривязатьКарту" id="19">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаПривязатьКарту</CommandName>
+									<ExtendedTooltip name="КомандаПривязатьКартуРасширеннаяПодсказка" id="20"/>
+								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаЦенники" id="27">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ценники</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ценники</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЦенникиРасширеннаяПодсказка" id="28"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЦенники1" id="37">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ценники1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ценники1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦенники1РасширеннаяПодсказка" id="38"/>
+									<ChildItems>
+										<InputField name="Ценники_ЗапросJSON" id="29">
+											<DataPath>Ценники_ЗапросJSON</DataPath>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="Ценники_ЗапросJSONКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="Ценники_ЗапросJSONРасширеннаяПодсказка" id="31"/>
+										</InputField>
+										<InputField name="Ценники_ОтветJSON" id="34">
+											<DataPath>Ценники_ОтветJSON</DataPath>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="Ценники_ОтветJSONКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="Ценники_ОтветJSONРасширеннаяПодсказка" id="36"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="КомандаРассчитатьЦенники" id="39">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаРассчитатьЦенники</CommandName>
+									<ExtendedTooltip name="КомандаРассчитатьЦенникиРасширеннаяПодсказка" id="40"/>
+								</Button>
+							</ChildItems>
+						</Page>
 					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="ГруппаРегистрация" id="11">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Регистрация</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа регистрация</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<ExtendedTooltip name="ГруппаРегистрацияРасширеннаяПодсказка" id="12"/>
-					<ChildItems>
-						<InputField name="КартаДоступа" id="13">
-							<DataPath>КартаДоступа</DataPath>
-							<ContextMenu name="КартаДоступаКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="КартаДоступаРасширеннаяПодсказка" id="15"/>
-						</InputField>
-						<InputField name="НомерКарты" id="16">
-							<DataPath>НомерКарты</DataPath>
-							<ContextMenu name="НомерКартыКонтекстноеМеню" id="17"/>
-							<ExtendedTooltip name="НомерКартыРасширеннаяПодсказка" id="18"/>
-						</InputField>
-						<Button name="КомандаПривязатьКарту" id="19">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.КомандаПривязатьКарту</CommandName>
-							<ExtendedTooltip name="КомандаПривязатьКартуРасширеннаяПодсказка" id="20"/>
-						</Button>
-					</ChildItems>
-				</UsualGroup>
+				</Pages>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаАдминистрирование" id="23">
@@ -205,6 +274,36 @@
 				<Field>НомерКарты</Field>
 			</Save>
 		</Attribute>
+		<Attribute name="Ценники_ЗапросJSON" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ценники запрос JSON</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ценники_ОтветJSON" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ценники запрос JSON</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="КомандаCALC" id="1">
@@ -251,6 +350,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаПривязатьКарту</Action>
+		</Command>
+		<Command name="КомандаРассчитатьЦенники" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать ценники</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда рассчитать ценники</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРассчитатьЦенники</Action>
 		</Command>
 	</Commands>
 </Form>
