@@ -666,6 +666,7 @@
 			<ScheduledJob>ОбновитьНаличиеВпродаже</ScheduledJob>
 			<ScheduledJob>ОбновлениеИндексаПолнотекстовогоПоиска</ScheduledJob>
 			<ScheduledJob>ВыгрузкаНаТТ</ScheduledJob>
+			<ScheduledJob>ОчисткаИБ</ScheduledJob>
 			<DefinedType>ТипыДляИР</DefinedType>
 			<DefinedType>РеплицируемыеТипы</DefinedType>
 			<CommonCommand>ирЗапуститьОбычноеПриложение</CommonCommand>
@@ -762,6 +763,7 @@
 			<Constant>НомерВерсии</Constant>
 			<Constant>ИдентификаторКонфигурации</Constant>
 			<Constant>Лояльность_РежимОффлайн</Constant>
+			<Constant>ГлубинаАрхива</Constant>
 			<CommonForm>ХодВыполненияОбработкиДанных</CommonForm>
 			<CommonForm>ФормаВыбораПечатныхФорм</CommonForm>
 			<CommonForm>ФормаВыполненияОбменаДанными</CommonForm>
@@ -1107,6 +1109,7 @@
 			<DataProcessor>КонсольЗапросовИОбработчик</DataProcessor>
 			<DataProcessor>ЖурналРегистрацииТонкийКлиент</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
+			<DataProcessor>ОчисткаБазы</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
 			<InformationRegister>Акции</InformationRegister>
 			<InformationRegister>БлокировкиЗаказов</InformationRegister>

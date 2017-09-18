@@ -71,6 +71,17 @@
 			<ContextMenu name="НомерВерсииКонтекстноеМеню" id="68"/>
 			<ExtendedTooltip name="НомерВерсииРасширеннаяПодсказка" id="69"/>
 		</InputField>
+		<CheckBoxField name="Лояльность_РежимОффлайн" id="73">
+			<DataPath>НаборКонстант.Лояльность_РежимОффлайн</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Лояльность_РежимОффлайнКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="Лояльность_РежимОффлайнРасширеннаяПодсказка" id="75"/>
+		</CheckBoxField>
+		<InputField name="ГлубинаАрхива" id="70">
+			<DataPath>НаборКонстант.ГлубинаАрхива</DataPath>
+			<ContextMenu name="ГлубинаАрхиваКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="ГлубинаАрхиваРасширеннаяПодсказка" id="72"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="НаборКонстант" id="1">

@@ -127,8 +127,6 @@
 	// Параметры связи
 	DRV.Model			= Model;
 	DRV.PortNumber		= PortNumber;
-	//DRV.BaudRate		= BaudRate;
-	//DRV.Parity			= Parity;
 	DRV.PortIP			= ?(СтрНайти(PortIP,":") = 0,PortIP + ":5002",PortIP);
 	// свойство появилось в версии 6.5
 	Попытка
