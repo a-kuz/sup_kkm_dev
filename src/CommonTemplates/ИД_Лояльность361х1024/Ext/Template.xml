@@ -108,20 +108,205 @@
 	<rowsItem>
 		<index>6</index>
 		<row>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>0</f>
+					<f>12</f>
+					<parameter>Текст</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ваши кегли</v8:content>
+							<v8:content>Ваши КеГЛи по заказу:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>15</f>
+					<parameter>КГЛ</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>17</f>
+					<parameter>Текст</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+					<parameter>КГЛ</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>19</f>
+					<parameter>Текст</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>20</f>
+					<parameter>КГЛ</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>19</f>
+					<parameter>Текст</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>22</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>22</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>14</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>22</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>22</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>16</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>22</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>17</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>22</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>18</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>22</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
 				</c>
 			</c>
 		</row>
@@ -141,13 +326,13 @@
 		<row>
 			<c>
 				<c>
-					<f>11</f>
+					<f>23</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>12</defaultFormatIndex>
+	<defaultFormatIndex>24</defaultFormatIndex>
 	<height>22</height>
 	<vgRows>22</vgRows>
 	<merge>
@@ -181,6 +366,11 @@
 		<w>1</w>
 	</merge>
 	<merge>
+		<r>6</r>
+		<c>0</c>
+		<w>1</w>
+	</merge>
+	<merge>
 		<r>20</r>
 		<c>0</c>
 	</merge>
@@ -189,6 +379,56 @@
 		<c>0</c>
 		<w>1</w>
 	</merge>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ИтогиДетально</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>10</beginRow>
+			<endRow>10</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ИтогиДетально0</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>11</beginRow>
+			<endRow>11</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ИтогиПустаяСтрока</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>12</beginRow>
+			<endRow>12</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ИтогиРМ</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>9</beginRow>
+			<endRow>9</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ИтогиШапка</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>8</beginRow>
+			<endRow>8</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>КупонПустой</name>
 		<area>
@@ -230,6 +470,16 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>ЛУЧ</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>6</beginRow>
+			<endRow>6</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>НетКарты</name>
 		<area>
 			<type>Rows</type>
@@ -252,6 +502,10 @@
 	<font faceName="Segoe UI" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Segoe UI" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Segoe UI" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Segoe UI" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>283</width>
 	</format>
@@ -316,6 +570,97 @@
 		<textColor>#6B6B6B</textColor>
 		<backColor>#FAFAFA</backColor>
 		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<height>340</height>
+	</format>
+	<format>
+		<font>3</font>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<height>80</height>
+	</format>
+	<format>
+		<font>4</font>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<backColor>#DEFCDE</backColor>
+	</format>
+	<format>
+		<font>4</font>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<backColor>#DEFCDE</backColor>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧДЦ=; ЧГ=3,0</v8:content>
+			</v8:item>
+		</format>
+	</format>
+	<format>
+		<height>72</height>
+	</format>
+	<format>
+		<font>5</font>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<font>5</font>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧДЦ=; ЧГ=3,0</v8:content>
+			</v8:item>
+		</format>
+	</format>
+	<format>
+		<font>6</font>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<fillType>Parameter</fillType>
+		<indent>1</indent>
+	</format>
+	<format>
+		<font>6</font>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<backColor>#DEFCDE</backColor>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧДЦ=; ЧГ=3,0</v8:content>
+			</v8:item>
+		</format>
+	</format>
+	<format>
+		<font>6</font>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+	</format>
+	<format>
+		<font>6</font>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
 	</format>
 	<format>
 		<picIndex>1</picIndex>
