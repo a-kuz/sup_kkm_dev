@@ -36,12 +36,7 @@
 			<c>
 				<c>
 					<f>4</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>[Имя], добро пожаловать в КуулКЛЕВЕР Гурмэ!</v8:content>
-						</v8:item>
-					</tl>
+					<parameter>ДоброПожаловать</parameter>
 				</c>
 			</c>
 		</row>
@@ -273,7 +268,7 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
-		<fillType>Template</fillType>
+		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<font>1</font>
