@@ -460,6 +460,9 @@
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Double</v8ui:style>
+	</line>
 	<font faceName="Segoe UI" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Segoe UI" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Segoe UI" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
@@ -501,6 +504,8 @@
 	</format>
 	<format>
 		<font>2</font>
+		<border>0</border>
+		<borderColor>#343434</borderColor>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#343434</textColor>
@@ -510,6 +515,8 @@
 	</format>
 	<format>
 		<font>2</font>
+		<border>0</border>
+		<borderColor>#343434</borderColor>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#343434</textColor>
@@ -519,6 +526,8 @@
 	</format>
 	<format>
 		<font>2</font>
+		<border>0</border>
+		<borderColor>#343434</borderColor>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#343434</textColor>
@@ -531,7 +540,6 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#6B6B6B</textColor>
-		<backColor>#FAFAFA</backColor>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
