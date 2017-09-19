@@ -53,7 +53,12 @@
 			<c>
 				<c>
 					<f>5</f>
-					<parameter>Ваша Карта КеГеЛьБУМ [Карта12]*****[Карта89]</parameter>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ваша Карта КеГеЛьБУМ [НомерКартыЛояльности]</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -277,7 +282,7 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
-		<fillType>Parameter</fillType>
+		<fillType>Template</fillType>
 	</format>
 	<format>
 		<height>288</height>
