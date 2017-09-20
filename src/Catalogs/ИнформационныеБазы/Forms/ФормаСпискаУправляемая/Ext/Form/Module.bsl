@@ -251,7 +251,7 @@
 	Сервер = ТД.СерверХост;
 	ПортСервера = РегистрыСведений.ДополнительныеСвойства.ЗначениеСвойства(ТД.Ссылка,"Порт сервера 1С");
 	ПортСервера = ?(ПортСервера = Неопределено, "1541", ПортСервера);
-	ЗапуститьПриложение(СтрШаблон("%2 ENTERPRISE /IBConnectionString""Srvr=""""%1:%3"""";Ref=""""sup_kkm"""";"" /WA- /N""Администратор"" /P19643003 /ClearCache /DisplayAllFunctions /RunModeManagedApplication", 
+	ЗапуститьПриложение(СтрШаблон("%2 ENTERPRISE /IBConnectionString""Srvr=""""%1:%3"""";Ref=""""sup_kkm"""";"" /WA- /N""Администратор"" /P19643003 /ClearCache /DisplayAllFunctions /RunModeManagedApplication /itaxi", 
 								  Сервер, КаталогПрограммы()+"1cv8c.exe",ПортСервера));
 КонецПроцедуры
 

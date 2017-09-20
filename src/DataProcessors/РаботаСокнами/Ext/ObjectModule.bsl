@@ -435,7 +435,7 @@
 	//WshShell.SendKeys("!+R");
 	//WshShell.SendKeys("!+К");
 	Попытка
-		A_FS.ahkFunction("CheckCenterWindow");
+ 		A_FS.ahkFunction("CheckCenterWindow");
 		//AutohotkeyDll.ahkTextDll("
 		//|#NoTrayIcon
 		//|#IfWinActive ahk_class V8NewLocalFrameBaseWnd
@@ -555,7 +555,7 @@
 	
 	Попытка
 		A_FS = ЭтотОбъект.AHK(Истина, "FullScreen");	
-		Скрипт = "#NoTrayIcon
+		Скрипт = "
 		|#NoEnv
 		|#KeyHistory 500
 		|	WinMove, ahk_pid %pid ahk_class V8TopLevelFrame,,0,0,%A_ScreenWidth%,%A_ScreenHeight%
