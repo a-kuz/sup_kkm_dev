@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Работа с локальными копиями на РМ</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ScalingMode>Normal</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="ДеревоРМОбновитьДанныеКонтрольныхПроверок" id="135">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбновитьДанныеКонтрольныхПроверок</CommandName>
+			<ExtendedTooltip name="ДеревоРМОбновитьДанныеКонтрольныхПроверокРасширеннаяПодсказка" id="136"/>
+		</Button>
+		<Pages name="Страницы" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="82"/>
+			<ChildItems>
+				<Page name="ГруппаДеревоРМ" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дерево РМ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дерево РМ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДеревоРМРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<Table name="ДеревоРМ" id="87">
+							<Representation>Tree</Representation>
+							<MultipleChoice>true</MultipleChoice>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоРМ</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="ДеревоРМКонтекстноеМеню" id="88">
+								<ChildItems>
+									<Button name="СкопироватьЛокальнуюКопиюСсервераТТнаРМ1" id="133">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СкопироватьЛокальнуюКопиюСсервераТТнаРМ</CommandName>
+										<ExtendedTooltip name="СкопироватьЛокальнуюКопиюСсервераТТнаРМ1РасширеннаяПодсказка" id="134"/>
+									</Button>
+									<Button name="ОбщаяКомандаDameWare2" id="141">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>CommonCommand.DameWare</CommandName>
+										<DataPath>Items.ДеревоРМ.CurrentData.РабочееМесто</DataPath>
+										<ExtendedTooltip name="ОбщаяКомандаDameWare2РасширеннаяПодсказка" id="142"/>
+									</Button>
+									<Button name="СправочникРабочиеМестаПроводник2" id="143">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Catalog.РабочиеМеста.Command.Проводник</CommandName>
+										<DataPath>Items.ДеревоРМ.CurrentData.РабочееМесто</DataPath>
+										<ExtendedTooltip name="СправочникРабочиеМестаПроводник2РасширеннаяПодсказка" id="144"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДеревоРМКоманднаяПанель" id="89">
+								<ChildItems>
+									<Button name="СкопироватьЛокальнуюКопиюСсервераТТнаРМ" id="131">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СкопироватьЛокальнуюКопиюСсервераТТнаРМ</CommandName>
+										<ExtendedTooltip name="СкопироватьЛокальнуюКопиюСсервераТТнаРМРасширеннаяПодсказка" id="132"/>
+									</Button>
+									<Button name="ОбщаяКомандаDameWare1" id="137">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>CommonCommand.DameWare</CommandName>
+										<DataPath>Items.ДеревоРМ.CurrentData.РабочееМесто</DataPath>
+										<ExtendedTooltip name="ОбщаяКомандаDameWare1РасширеннаяПодсказка" id="138"/>
+									</Button>
+									<Button name="СправочникРабочиеМестаПроводник1" id="139">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Catalog.РабочиеМеста.Command.Проводник</CommandName>
+										<DataPath>Items.ДеревоРМ.CurrentData.РабочееМесто</DataPath>
+										<ExtendedTooltip name="СправочникРабочиеМестаПроводник1РасширеннаяПодсказка" id="140"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоРМРасширеннаяПодсказка" id="90"/>
+							<SearchStringAddition name="ДеревоРМСтрокаПоиска" id="91">
+								<AdditionSource>
+									<Item>ДеревоРМ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРМСтрокаПоискаКонтекстноеМеню" id="92"/>
+								<ExtendedTooltip name="ДеревоРМСтрокаПоискаРасширеннаяПодсказка" id="93"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоРМСостояниеПросмотра" id="94">
+								<AdditionSource>
+									<Item>ДеревоРМ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРМСостояниеПросмотраКонтекстноеМеню" id="95"/>
+								<ExtendedTooltip name="ДеревоРМСостояниеПросмотраРасширеннаяПодсказка" id="96"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоРМУправлениеПоиском" id="97">
+								<AdditionSource>
+									<Item>ДеревоРМ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРМУправлениеПоискомКонтекстноеМеню" id="98"/>
+								<ExtendedTooltip name="ДеревоРМУправлениеПоискомРасширеннаяПодсказка" id="99"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ДеревоРМПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ДеревоРМГруппа1" id="127">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ТТ / РМ</v8:content>
+										</v8:item>
+									</Title>
+									<Width>9</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>InCell</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ДеревоРМГруппа1РасширеннаяПодсказка" id="128"/>
+									<ChildItems>
+										<InputField name="ДеревоРМРабочееМесто" id="100">
+											<DataPath>ДеревоРМ.РабочееМесто</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>1</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ДеревоРМРабочееМестоКонтекстноеМеню" id="101"/>
+											<ExtendedTooltip name="ДеревоРМРабочееМестоРасширеннаяПодсказка" id="102"/>
+										</InputField>
+										<InputField name="ДеревоРМИБ" id="121">
+											<DataPath>ДеревоРМ.ИБ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>6</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ДеревоРМИБКонтекстноеМеню" id="122"/>
+											<ExtendedTooltip name="ДеревоРМИБРасширеннаяПодсказка" id="123"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ДеревоРМГруппа2" id="129">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Файл локальной копии</v8:content>
+										</v8:item>
+									</Title>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ДеревоРМГруппа2РасширеннаяПодсказка" id="130"/>
+									<ChildItems>
+										<CheckBoxField name="ДеревоРМКаталогДоступен" id="106">
+											<DataPath>ДеревоРМ.КаталогДоступен</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ДеревоРМКаталогДоступенКонтекстноеМеню" id="107"/>
+											<ExtendedTooltip name="ДеревоРМКаталогДоступенРасширеннаяПодсказка" id="108"/>
+										</CheckBoxField>
+										<InputField name="ДеревоРМПутьКлокальнойКопии" id="103">
+											<DataPath>ДеревоРМ.ПутьКлокальнойКопии</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="ДеревоРМПутьКлокальнойКопииКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="ДеревоРМПутьКлокальнойКопииРасширеннаяПодсказка" id="105"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ДеревоРМРазмерФайла" id="112">
+									<DataPath>ДеревоРМ.РазмерФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРМРазмерФайлаКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="ДеревоРМРазмерФайлаРасширеннаяПодсказка" id="114"/>
+								</InputField>
+								<InputField name="ДеревоРМДатаФайла" id="109">
+									<DataPath>ДеревоРМ.ДатаФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>9</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ДеревоРМДатаФайлаКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ДеревоРМДатаФайлаРасширеннаяПодсказка" id="111"/>
+								</InputField>
+								<InputField name="ДеревоРМОписаниеПроблемы" id="118">
+									<DataPath>ДеревоРМ.ОписаниеПроблемы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>42</Width>
+									<ContextMenu name="ДеревоРМОписаниеПроблемыКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ДеревоРМОписаниеПроблемыРасширеннаяПодсказка" id="120"/>
+								</InputField>
+								<CheckBoxField name="ДеревоРМОбработан" id="124">
+									<DataPath>ДеревоРМ.Обработан</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоРМОбработанКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ДеревоРМОбработанРасширеннаяПодсказка" id="126"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СписокРМ" id="83">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список РМ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список РМ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокРМРасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<Table name="ТаблицаРабочихМест" id="1">
+							<Representation>List</Representation>
+							<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+							<MultipleChoice>true</MultipleChoice>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаРабочихМест</DataPath>
+							<RowPictureDataPath>ТаблицаРабочихМест.НомерКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.ЛоготипыАкций40</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаРабочихМестКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ТаблицаРабочихМестКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="ТаблицаРабочихМестИзменитьФорму" id="34">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+										<ExtendedTooltip name="ТаблицаРабочихМестИзменитьФормуРасширеннаяПодсказка" id="35"/>
+									</Button>
+									<Button name="ОбщаяКомандаDameWare" id="38">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>CommonCommand.DameWare</CommandName>
+										<DataPath>Items.ТаблицаРабочихМест.CurrentData.РабочееМесто</DataPath>
+										<ExtendedTooltip name="ОбщаяКомандаDameWareРасширеннаяПодсказка" id="39"/>
+									</Button>
+									<Button name="СправочникРабочиеМестаПроводник" id="36">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Catalog.РабочиеМеста.Command.Проводник</CommandName>
+										<DataPath>Items.ТаблицаРабочихМест.CurrentData.РабочееМесто</DataPath>
+										<ExtendedTooltip name="СправочникРабочиеМестаПроводникРасширеннаяПодсказка" id="37"/>
+									</Button>
+									<Button name="ТаблицаРабочихМестСохранитьЗначения" id="77">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.SaveValues</CommandName>
+										<ExtendedTooltip name="ТаблицаРабочихМестСохранитьЗначенияРасширеннаяПодсказка" id="78"/>
+									</Button>
+									<Button name="ТаблицаРабочихМестВосстановитьЗначения" id="79">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+										<ExtendedTooltip name="ТаблицаРабочихМестВосстановитьЗначенияРасширеннаяПодсказка" id="80"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаРабочихМестРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ТаблицаРабочихМестСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ТаблицаРабочихМест</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаРабочихМестСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ТаблицаРабочихМестСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаРабочихМестСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ТаблицаРабочихМест</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаРабочихМестСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ТаблицаРабочихМестСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаРабочихМестУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ТаблицаРабочихМест</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаРабочихМестУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТаблицаРабочихМестУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаРабочихМестНомерКартинки" id="31">
+									<DataPath>ТаблицаРабочихМест.НомерКартинки</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаРабочихМестНомерКартинкиКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестНомерКартинкиРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ТаблицаРабочихМестРабочееМесто" id="14">
+									<DataPath>ТаблицаРабочихМест.РабочееМесто</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>2</Height>
+									<ContextMenu name="ТаблицаРабочихМестРабочееМестоКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестРабочееМестоРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ТаблицаРабочихМестПутьКлокальнойКопии" id="17">
+									<DataPath>ТаблицаРабочихМест.ПутьКлокальнойКопии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>39</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ТаблицаРабочихМестПутьКлокальнойКопииКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестПутьКлокальнойКопииРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<CheckBoxField name="ТаблицаРабочихМестКаталогДоступен" id="20">
+									<DataPath>ТаблицаРабочихМест.КаталогДоступен</DataPath>
+									<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаРабочихМестКаталогДоступенКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестКаталогДоступенРасширеннаяПодсказка" id="22"/>
+								</CheckBoxField>
+								<InputField name="ТаблицаРабочихМестИБ" id="43">
+									<DataPath>ТаблицаРабочихМест.ИБ</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаРабочихМестИБКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестИБРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="ТаблицаРабочихМестДатаФайла" id="23">
+									<DataPath>ТаблицаРабочихМест.ДатаФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаРабочихМестДатаФайлаКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестДатаФайлаРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ТаблицаРабочихМестОписаниеПроблемы" id="40">
+									<DataPath>ТаблицаРабочихМест.ОписаниеПроблемы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаРабочихМестОписаниеПроблемыКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестОписаниеПроблемыРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="ТаблицаРабочихМестРазмерФайла" id="26">
+									<DataPath>ТаблицаРабочихМест.РазмерФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ТаблицаРабочихМестРазмерФайлаКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ТаблицаРабочихМестРазмерФайлаРасширеннаяПодсказка" id="28"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ТаблицаТТ" id="46">
+							<Representation>List</Representation>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаТТ</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаТТКонтекстноеМеню" id="47"/>
+							<AutoCommandBar name="ТаблицаТТКоманднаяПанель" id="48"/>
+							<ExtendedTooltip name="ТаблицаТТРасширеннаяПодсказка" id="49"/>
+							<SearchStringAddition name="ТаблицаТТСтрокаПоиска" id="50">
+								<AdditionSource>
+									<Item>ТаблицаТТ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаТТСтрокаПоискаКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ТаблицаТТСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаТТСостояниеПросмотра" id="53">
+								<AdditionSource>
+									<Item>ТаблицаТТ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаТТСостояниеПросмотраКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ТаблицаТТСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаТТУправлениеПоиском" id="56">
+								<AdditionSource>
+									<Item>ТаблицаТТ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаТТУправлениеПоискомКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ТаблицаТТУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаТТИБ" id="59">
+									<DataPath>ТаблицаТТ.ИБ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаТТИБКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ТаблицаТТИБРасширеннаяПодсказка" id="61"/>
+								</InputField>
+								<InputField name="ТаблицаТТПутьКлокальнойКопии" id="62">
+									<DataPath>ТаблицаТТ.ПутьКлокальнойКопии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаТТПутьКлокальнойКопииКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ТаблицаТТПутьКлокальнойКопииРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<CheckBoxField name="ТаблицаТТКаталогДоступен" id="65">
+									<DataPath>ТаблицаТТ.КаталогДоступен</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаТТКаталогДоступенКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ТаблицаТТКаталогДоступенРасширеннаяПодсказка" id="67"/>
+								</CheckBoxField>
+								<InputField name="ТаблицаТТДатаФайла" id="68">
+									<DataPath>ТаблицаТТ.ДатаФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаТТДатаФайлаКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ТаблицаТТДатаФайлаРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ТаблицаТТРазмерФайла" id="71">
+									<DataPath>ТаблицаТТ.РазмерФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаТТРазмерФайлаКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ТаблицаТТРазмерФайлаРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="ТаблицаТТОписаниеПроблемы" id="74">
+									<DataPath>ТаблицаТТ.ОписаниеПроблемы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаТТОписаниеПроблемыКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ТаблицаТТОписаниеПроблемыРасширеннаяПодсказка" id="76"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСлокальнымиКопиямиНаРМ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТаблицаРабочихМест" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица рабочих мест</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ТаблицаРабочихМест</Field>
+			</Save>
+			<Columns>
+				<Column name="РабочееМесто" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочее место</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РабочиеМеста</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПутьКлокальнойКопии" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к локальной копии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КаталогДоступен" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог доступен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаФайла" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазмерФайла" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер файла (МБ)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеПроблемы" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание проблемы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИБ" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИБ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Обработан" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаТТ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица ТТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ТаблицаТТ</Field>
+			</Save>
+			<Columns>
+				<Column name="ИБ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИБ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПутьКлокальнойКопии" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к локальной копии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КаталогДоступен" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог доступен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаФайла" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазмерФайла" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер файла (МБ)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеПроблемы" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание проблемы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<Edit>
+						<xr:Common>false</xr:Common>
+					</Edit>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДеревоРМ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево РМ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Save>
+				<Field>ДеревоРМ</Field>
+			</Save>
+			<Columns>
+				<Column name="РабочееМесто" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочее место</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РабочиеМеста</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПутьКлокальнойКопии" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к локальной копии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КаталогДоступен" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог доступен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаФайла" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазмерФайла" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер файла (МБ)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеПроблемы" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание проблемы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИБ" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИБ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Обработан" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаРабочихМест</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаРабочихМест.КаталогДоступен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаРабочихМестДатаФайла</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаРабочихМест.ДатаФайла</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:StandardBeginningDate">
+							<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаРабочихМестРазмерФайла</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаРабочихМест.РазмерФайла</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">150</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаРабочихМест</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаРабочихМест.КаталогДоступен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаРабочихМест.РазмерФайла</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">150</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаРабочихМест.ДатаФайла</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:StandardBeginningDate">
+							<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F8FFF1</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоРМ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоРМ.КаталогДоступен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоРМ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоРМ.ДатаФайла</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:StandardBeginningDate">
+							<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоРМРазмерФайла</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоРМ.РазмерФайла</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">150</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоРМ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоРМ.КаталогДоступен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоРМ.РазмерФайла</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">150</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоРМ.ДатаФайла</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:StandardBeginningDate">
+							<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F8FFF1</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьДанныеКонтрольныхПроверок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные контрольных проверок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные контрольных проверок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДанныеКонтрольныхПроверок</Action>
+		</Command>
+		<Command name="СкопироватьЛокальнуюКопиюСсервераТТнаРМ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать локальную копию ссервера ТТ на РМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать локальную копию ссервера т тна РМ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирКопировать2</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+	</Commands>
+</Form>
