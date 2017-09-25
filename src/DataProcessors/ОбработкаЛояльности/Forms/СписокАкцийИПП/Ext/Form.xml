@@ -26,6 +26,9 @@
 			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
+			</Events>
 			<ChildItems>
 				<Page name="ГруппаКупоны" id="7">
 					<Title>
