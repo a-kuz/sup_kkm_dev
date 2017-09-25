@@ -6,6 +6,7 @@
 			<v8:content>Работа с локальными копиями на РМ</v8:content>
 		</v8:item>
 	</Title>
+	<Width>100</Width>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<SaveDataInSettings>UseList</SaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
@@ -104,6 +105,11 @@
 										<CommandName>Catalog.РабочиеМеста.Command.Проводник</CommandName>
 										<DataPath>Items.ДеревоРМ.CurrentData.РабочееМесто</DataPath>
 										<ExtendedTooltip name="СправочникРабочиеМестаПроводник1РасширеннаяПодсказка" id="140"/>
+									</Button>
+									<Button name="ДеревоРМПроверитьФайл" id="145">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПроверитьФайл</CommandName>
+										<ExtendedTooltip name="ДеревоРМПроверитьФайлРасширеннаяПодсказка" id="146"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -302,6 +308,11 @@
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.StandardCommand.RestoreValues</CommandName>
 										<ExtendedTooltip name="ТаблицаРабочихМестВосстановитьЗначенияРасширеннаяПодсказка" id="80"/>
+									</Button>
+									<Button name="ДеревоРМПроверитьФайл1" id="147">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПроверитьФайл</CommandName>
+										<ExtendedTooltip name="ДеревоРМПроверитьФайл1РасширеннаяПодсказка" id="148"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -636,6 +647,17 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ОбработанНаКлиенте" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработан на клиенте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ТаблицаТТ" id="3">
@@ -737,6 +759,17 @@
 					<Edit>
 						<xr:Common>false</xr:Common>
 					</Edit>
+				</Column>
+				<Column name="ОбработанНаКлиенте" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработан на клиенте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
 				</Column>
 			</Columns>
 		</Attribute>
@@ -868,6 +901,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Обработан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОбработанНаКлиенте" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработан на клиенте</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1113,19 +1157,35 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Скопировать локальную копию ссервера ТТ на РМ</v8:content>
+					<v8:content>Скопировать локальную копию с сервера ТТ на РМ</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Скопировать локальную копию ссервера т тна РМ</v8:content>
+					<v8:content>Скопировать локальную копию с сервера ТТ на РМ</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ирКопировать2</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>СкопироватьЛокальнуюКопиюСсервераТТнаРМ</Action>
+		</Command>
+		<Command name="ПроверитьФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьФайл</Action>
 		</Command>
 	</Commands>
 </Form>
