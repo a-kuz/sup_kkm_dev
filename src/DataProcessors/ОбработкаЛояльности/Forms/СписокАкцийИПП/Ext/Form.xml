@@ -30,8 +30,10 @@
 		</UsualGroup>
 		<Button name="Закрыть" id="1">
 			<Type>UsualButton</Type>
-			<Width>20</Width>
+			<Width>25</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<Height>3</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
 			<CommandName>Form.Command.Закрыть</CommandName>
 			<Font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 			<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="2"/>
