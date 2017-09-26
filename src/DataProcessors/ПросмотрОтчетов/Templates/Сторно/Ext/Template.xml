@@ -155,6 +155,12 @@
 				<dcsat:tableCell>
 					<dcsat:item xsi:type="dcsat:Field">
 						<dcsat:value xsi:type="dcscor:Parameter">Дата</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДЛФ=D</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
 					</dcsat:item>
 					<dcsat:appearance>
 						<dcscor:item>
@@ -216,6 +222,12 @@
 				<dcsat:tableCell>
 					<dcsat:item xsi:type="dcsat:Field">
 						<dcsat:value xsi:type="dcscor:Parameter">ВремяДобавления</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДЛФ=T</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
 					</dcsat:item>
 					<dcsat:appearance>
 						<dcscor:item>
@@ -449,11 +461,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">11.375</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">11.375</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -510,11 +522,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6.125</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">37.125</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6.125</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">37.125</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -1103,11 +1115,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">11.375</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">11.375</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -1165,11 +1177,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6.125</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">37.125</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6.125</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">37.125</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
