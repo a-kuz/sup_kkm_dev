@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Height>27</Height>
 	<Customizable>false</Customizable>
 	<CommandBarLocation>None</CommandBarLocation>
-	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<ScalingMode>Compact</ScalingMode>
 	<ShowCloseButton>false</ShowCloseButton>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -49,6 +50,8 @@
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="ГруппаКупоныРасширеннаяПодсказка" id="8"/>
 				</Page>
 				<Page name="ГруппаВыход" id="9">
@@ -68,8 +71,39 @@
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>true</VerticalStretch>
+					<Group>Horizontal</Group>
 					<ExtendedTooltip name="ГруппаВыходРасширеннаяПодсказка" id="10"/>
 					<ChildItems>
+						<Button name="Закрыть1" id="13">
+							<Type>UsualButton</Type>
+							<Width>25</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>3</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<CommandName>Form.Command.Закрыть</CommandName>
+							<Font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ExtendedTooltip name="Закрыть1РасширеннаяПодсказка" id="14"/>
+						</Button>
+						<Button name="Закрыть2" id="15">
+							<Type>UsualButton</Type>
+							<Width>25</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>3</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<CommandName>Form.Command.Закрыть</CommandName>
+							<Font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ExtendedTooltip name="Закрыть2РасширеннаяПодсказка" id="16"/>
+						</Button>
+						<Button name="Закрыть3" id="17">
+							<Type>UsualButton</Type>
+							<Width>25</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>3</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<CommandName>Form.Command.Закрыть</CommandName>
+							<Font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ExtendedTooltip name="Закрыть3РасширеннаяПодсказка" id="18"/>
+						</Button>
 						<Button name="Закрыть" id="1">
 							<Type>UsualButton</Type>
 							<Width>25</Width>
