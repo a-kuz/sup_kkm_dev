@@ -46,7 +46,6 @@
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<Group>HorizontalIfPossible</Group>
 					<ExtendedTooltip name="ГруппаКупоныРасширеннаяПодсказка" id="8"/>
 				</Page>
 				<Page name="ГруппаВыход" id="9">
@@ -64,6 +63,7 @@
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="ГруппаВыходРасширеннаяПодсказка" id="10"/>
 					<ChildItems>
 						<Button name="Закрыть" id="1">
