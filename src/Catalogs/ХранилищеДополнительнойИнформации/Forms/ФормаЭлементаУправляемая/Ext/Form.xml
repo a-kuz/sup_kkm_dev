@@ -26,25 +26,13 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
 			<ExtendedTooltip name="КолонкиРасширеннаяПодсказка" id="19"/>
 			<ChildItems>
-				<UsualGroup name="Лево" id="16">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Лево</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Лево</v8:content>
-						</v8:item>
-					</ToolTip>
+				<UsualGroup name="Группа1" id="31">
 					<Representation>None</Representation>
-					<United>false</United>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ЛевоРасширеннаяПодсказка" id="17"/>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
 					<ChildItems>
 						<InputField name="Код" id="1">
 							<DataPath>Объект.Code</DataPath>
@@ -67,22 +55,27 @@
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="Право" id="20">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Право</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Право</v8:content>
-						</v8:item>
-					</ToolTip>
+				<UsualGroup name="Группа2" id="33">
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ПравоРасширеннаяПодсказка" id="21"/>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="ДействуетС" id="22">
+							<DataPath>Объект.ДействуетС</DataPath>
+							<ContextMenu name="ДействуетСКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ДействуетСРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="ДействуетПо" id="25">
+							<DataPath>Объект.ДействуетПо</DataPath>
+							<ContextMenu name="ДействуетПоКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ДействуетПоРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ВремяОтображения" id="28">
+							<DataPath>Объект.ВремяОтображения</DataPath>
+							<ContextMenu name="ВремяОтображенияКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ВремяОтображенияРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
