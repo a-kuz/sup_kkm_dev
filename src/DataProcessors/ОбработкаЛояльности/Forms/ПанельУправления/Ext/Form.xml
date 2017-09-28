@@ -186,7 +186,7 @@
 											<v8:content>Группа ценники1</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Group>Vertical</Group>
+									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЦенники1РасширеннаяПодсказка" id="38"/>
@@ -210,6 +210,91 @@
 									<CommandName>Form.Command.КомандаРассчитатьЦенники</CommandName>
 									<ExtendedTooltip name="КомандаРассчитатьЦенникиРасширеннаяПодсказка" id="40"/>
 								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаСервисCHECK" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сервис CHECK</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ценники</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСервисCHECKРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСервисCHECK1" id="47">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ценники1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ценники1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСервисCHECK1РасширеннаяПодсказка" id="48"/>
+									<ChildItems>
+										<InputField name="СервисCheck_ЗапросJSON" id="49">
+											<DataPath>СервисCheck_ЗапросJSON</DataPath>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="СервисCheck_ЗапросJSONКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="СервисCheck_ЗапросJSONРасширеннаяПодсказка" id="51"/>
+										</InputField>
+										<InputField name="СервисCheck_ОтветJSON" id="52">
+											<DataPath>СервисCheck_ОтветJSON</DataPath>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="СервисCheck_ОтветJSONКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="СервисCheck_ОтветJSONРасширеннаяПодсказка" id="54"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСервисCHECK2" id="61">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сервис CHECK2</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сервис CHECK2</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСервисCHECK2РасширеннаяПодсказка" id="62"/>
+									<ChildItems>
+										<Button name="КомандаCHECK_INFO" id="55">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.КомандаCHECK_INFO</CommandName>
+											<ExtendedTooltip name="КомандаCHECK_INFOРасширеннаяПодсказка" id="56"/>
+										</Button>
+										<Button name="КомандаCHECK_GET" id="57">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.КомандаCHECK_GET</CommandName>
+											<ExtendedTooltip name="КомандаCHECK_GETРасширеннаяПодсказка" id="58"/>
+										</Button>
+										<Button name="КомандаCHECK_EDIT" id="59">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.КомандаCHECK_EDIT</CommandName>
+											<ExtendedTooltip name="КомандаCHECK_EDITРасширеннаяПодсказка" id="60"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</Page>
 					</ChildItems>
@@ -289,7 +374,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ценники запрос JSON</v8:content>
+					<v8:content>Запрос JSON</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -304,7 +389,37 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ценники запрос JSON</v8:content>
+					<v8:content>Ответ JSON</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СервисCheck_ЗапросJSON" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос JSON</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СервисCheck_ОтветJSON" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ JSON</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -406,6 +521,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаВыключитьРежимОффлайн</Action>
+		</Command>
+		<Command name="КомандаCHECK_INFO" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>INFO</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда CHECK INFO</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаCHECK_INFO</Action>
+		</Command>
+		<Command name="КомандаCHECK_GET" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GET</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда CHECK INFO</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаCHECK_GET</Action>
+		</Command>
+		<Command name="КомандаCHECK_EDIT" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>EDIT</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда CHECK INFO</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаCHECK_EDIT</Action>
 		</Command>
 	</Commands>
 </Form>
