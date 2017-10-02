@@ -14,11 +14,23 @@
 	<ScalingMode>Normal</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<Button name="ДеревоРМОбновитьДанныеКонтрольныхПроверок" id="135">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ОбновитьДанныеКонтрольныхПроверок</CommandName>
-			<ExtendedTooltip name="ДеревоРМОбновитьДанныеКонтрольныхПроверокРасширеннаяПодсказка" id="136"/>
-		</Button>
+		<UsualGroup name="Группа1" id="152">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="153"/>
+			<ChildItems>
+				<Button name="ДеревоРМОбновитьДанныеКонтрольныхПроверок" id="135">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьДанныеКонтрольныхПроверок</CommandName>
+					<ExtendedTooltip name="ДеревоРМОбновитьДанныеКонтрольныхПроверокРасширеннаяПодсказка" id="136"/>
+				</Button>
+				<InputField name="НаДату" id="149">
+					<DataPath>НаДату</DataPath>
+					<ContextMenu name="НаДатуКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="151"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Pages name="Страницы" id="81">
 			<Title>
 				<v8:item>
@@ -919,6 +931,20 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="НаДату" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
