@@ -187,6 +187,12 @@
 										<CommandName>Form.Command.ОтключитьСессии</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюОтключитьСессииРасширеннаяПодсказка" id="213"/>
 									</Button>
+									<Button name="СписокКонтекстноеМенюСправочникИнформационныеБазыПроводник" id="214">
+										<Type>CommandBarButton</Type>
+										<CommandName>Catalog.ИнформационныеБазы.Command.Проводник</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+										<ExtendedTooltip name="СписокКонтекстноеМенюСправочникИнформационныеБазыПроводникРасширеннаяПодсказка" id="215"/>
+									</Button>
 								</ChildItems>
 							</ContextMenu>
 							<AutoCommandBar name="СписокКоманднаяПанель" id="5">
@@ -198,6 +204,14 @@
 										<DefaultButton>true</DefaultButton>
 										<CommandName>Form.Command.ЗапуститьТонкийКлиент</CommandName>
 										<ExtendedTooltip name="ФормаЗапуститьТонкийКлиентРасширеннаяПодсказка" id="50"/>
+									</Button>
+									<Button name="СписокСправочникИнформационныеБазыПроводник" id="216">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Catalog.ИнформационныеБазы.Command.Проводник</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+										<ExtendedTooltip name="СписокСправочникИнформационныеБазыПроводникРасширеннаяПодсказка" id="217"/>
 									</Button>
 									<Button name="СписокОтправитьСообщениеОбмена" id="55">
 										<Type>CommandBarButton</Type>
