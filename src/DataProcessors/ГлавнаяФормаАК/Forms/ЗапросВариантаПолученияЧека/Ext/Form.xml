@@ -263,22 +263,6 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<LabelDecoration name="ДекорацияКеглиРубли" id="148">
-			<Height>3</Height>
-			<HorizontalStretch>true</HorizontalStretch>
-			<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Декорация кегли рубли</v8:content>
-				</v8:item>
-			</Title>
-			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-			<GroupVerticalAlign>Top</GroupVerticalAlign>
-			<HorizontalAlign>Center</HorizontalAlign>
-			<ContextMenu name="ДекорацияКеглиРублиКонтекстноеМеню" id="149"/>
-			<ExtendedTooltip name="ДекорацияКеглиРублиРасширеннаяПодсказка" id="150"/>
-		</LabelDecoration>
 		<Pages name="ГруппаСтраницы" id="11">
 			<Title>
 				<v8:item>
@@ -664,6 +648,22 @@ cool***@mail.ru
 				</Page>
 			</ChildItems>
 		</Pages>
+		<LabelDecoration name="ДекорацияКеглиРубли" id="148">
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декорация кегли рубли</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="ДекорацияКеглиРублиКонтекстноеМеню" id="149"/>
+			<ExtendedTooltip name="ДекорацияКеглиРублиРасширеннаяПодсказка" id="150"/>
+		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
