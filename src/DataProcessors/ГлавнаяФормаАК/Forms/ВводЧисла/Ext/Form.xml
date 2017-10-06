@@ -266,21 +266,6 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<LabelDecoration name="ДекорацияКеглиРубли" id="141">
-			<HorizontalStretch>true</HorizontalStretch>
-			<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Декорация кегли рубли</v8:content>
-				</v8:item>
-			</Title>
-			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-			<GroupVerticalAlign>Top</GroupVerticalAlign>
-			<HorizontalAlign>Center</HorizontalAlign>
-			<ContextMenu name="ДекорацияКеглиРублиКонтекстноеМеню" id="142"/>
-			<ExtendedTooltip name="ДекорацияКеглиРублиРасширеннаяПодсказка" id="143"/>
-		</LabelDecoration>
 		<LabelDecoration name="НадписьВведитеНомер" id="57">
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<Height>3</Height>
@@ -732,61 +717,21 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="КнопкиПодвала" id="105">
-			<Title>
+		<LabelDecoration name="ДекорацияКеглиРубли" id="141">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
+			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Кнопки подвала</v8:content>
+					<v8:content>Декорация кегли рубли</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Кнопки подвала</v8:content>
-				</v8:item>
-			</ToolTip>
-			<HorizontalStretch>false</HorizontalStretch>
-			<Group>Horizontal</Group>
-			<HorizontalSpacing>None</HorizontalSpacing>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="КнопкиПодвалаРасширеннаяПодсказка" id="106"/>
-			<ChildItems>
-				<Button name="НазадПодвал" id="107">
-					<Type>UsualButton</Type>
-					<TitleHeight>2</TitleHeight>
-					<Width>33</Width>
-					<Height>3</Height>
-					<CommandName>Form.Command.Назад</CommandName>
-					<TextColor>style:ЦветТемы</TextColor>
-					<BackColor>style:FormBackColor</BackColor>
-					<BorderColor>style:ЦветТемы</BorderColor>
-					<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Продолжить оплату
-с начислением</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<ExtendedTooltip name="НазадПодвалРасширеннаяПодсказка" id="108"/>
-				</Button>
-				<Button name="ПолучитьПИН" id="109">
-					<Type>UsualButton</Type>
-					<TitleHeight>2</TitleHeight>
-					<Width>33</Width>
-					<Height>3</Height>
-					<CommandName>Form.Command.ПолучитьПИН</CommandName>
-					<TextColor>style:ЦветТемы</TextColor>
-					<BackColor>style:FormBackColor</BackColor>
-					<BorderColor>style:ЦветТемы</BorderColor>
-					<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<ExtendedTooltip name="ПолучитьПИНРасширеннаяПодсказка" id="110"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="ДекорацияКеглиРублиКонтекстноеМеню" id="142"/>
+			<ExtendedTooltip name="ДекорацияКеглиРублиРасширеннаяПодсказка" id="143"/>
+		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
