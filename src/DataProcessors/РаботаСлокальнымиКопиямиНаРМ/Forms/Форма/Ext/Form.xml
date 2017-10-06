@@ -13,6 +13,9 @@
 	<CommandBarLocation>None</CommandBarLocation>
 	<ScalingMode>Normal</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="152">
 			<Representation>None</Representation>
@@ -432,9 +435,6 @@
 						</Table>
 						<Table name="ТаблицаТТ" id="46">
 							<Representation>List</Representation>
-							<UserVisible>
-								<xr:Common>false</xr:Common>
-							</UserVisible>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
