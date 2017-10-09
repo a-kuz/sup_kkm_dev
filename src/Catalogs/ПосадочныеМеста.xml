@@ -37,7 +37,7 @@
 			<LimitLevelCount>false</LimitLevelCount>
 			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>5</CodeLength>
@@ -62,7 +62,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.ПосадочныеМеста.Form.ФормаЭлемента_Координаты</DefaultObjectForm>
 			<DefaultFolderForm>Catalog.ПосадочныеМеста.Form.ФормаГруппы</DefaultFolderForm>
-			<DefaultListForm>Catalog.ПосадочныеМеста.Form.ФормаСписка</DefaultListForm>
+			<DefaultListForm>Catalog.ПосадочныеМеста.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<DefaultChoiceForm>Catalog.ПосадочныеМеста.Form.ФормаВыбора</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -74,7 +74,7 @@
 			<BasedOn/>
 			<DataLockFields/>
 			<DataLockControlMode>Automatic</DataLockControlMode>
-			<FullTextSearch>DontUse</FullTextSearch>
+			<FullTextSearch>Use</FullTextSearch>
 			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
@@ -913,6 +913,45 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="7310769d-cbc5-40ed-b025-0ed98a5a363f">
+				<Properties>
+					<Name>НовыйГость</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый гость</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="c9ee798d-c99b-413f-896f-e898dbf189e6">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.ПосадочныеМеста.АвтоТовары" category="TabularSection">
@@ -1018,6 +1057,8 @@
 			<Form>Автозаполнение</Form>
 			<Form>ФормаВыбора</Form>
 			<Form>ФормаЭлемента_Координаты</Form>
+			<Form>ФормаСпискаУправляемая</Form>
+			<Form>ФормаЭлементаУправляемая</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

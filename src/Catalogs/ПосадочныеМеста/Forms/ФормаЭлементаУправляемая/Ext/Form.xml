@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="МестоРеализации" id="10">
+			<DataPath>Объект.МестоРеализации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МестоРеализацииКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="МестоРеализацииРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="ЗапретНесколькихЗаказов" id="13">
+			<DataPath>Объект.ЗапретНесколькихЗаказов</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретНесколькихЗаказовКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЗапретНесколькихЗаказовРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="Клиент" id="16">
+			<DataPath>Объект.Клиент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Скидка" id="19">
+			<DataPath>Объект.Скидка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкидкаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СкидкаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="КоммутироемоеУстройство" id="22">
+			<DataPath>Объект.КоммутироемоеУстройство</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоммутироемоеУстройствоКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КоммутироемоеУстройствоРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<CheckBoxField name="ЛимитнаяКарта" id="25">
+			<DataPath>Объект.ЛимитнаяКарта</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЛимитнаяКартаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЛимитнаяКартаРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<InputField name="СуммаЛимита" id="28">
+			<DataPath>Объект.СуммаЛимита</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаЛимитаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СуммаЛимитаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="СуммаМинимальнойПредоплаты" id="31">
+			<DataPath>Объект.СуммаМинимальнойПредоплаты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаМинимальнойПредоплатыКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="СуммаМинимальнойПредоплатыРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<CheckBoxField name="ЗапросСуммыПредоплаты" id="34">
+			<DataPath>Объект.ЗапросСуммыПредоплаты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапросСуммыПредоплатыКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ЗапросСуммыПредоплатыРасширеннаяПодсказка" id="36"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЗапретДовнесенияПредоплаты" id="37">
+			<DataPath>Объект.ЗапретДовнесенияПредоплаты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретДовнесенияПредоплатыКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ЗапретДовнесенияПредоплатыРасширеннаяПодсказка" id="39"/>
+		</CheckBoxField>
+		<InputField name="ИнформационнаяБаза" id="40">
+			<DataPath>Объект.ИнформационнаяБаза</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИнформационнаяБазаКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ИнформационнаяБазаРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<CheckBoxField name="НеИнтернетБронь" id="43">
+			<DataPath>Объект.НеИнтернетБронь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеИнтернетБроньКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="НеИнтернетБроньРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<InputField name="Емкость" id="46">
+			<DataPath>Объект.Емкость</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЕмкостьКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ЕмкостьРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="Номер" id="49">
+			<DataPath>Объект.Номер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="Лево" id="52">
+			<DataPath>Объект.Лево</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЛевоКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="ЛевоРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="Верх" id="55">
+			<DataPath>Объект.Верх</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВерхКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ВерхРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<InputField name="Ширина" id="58">
+			<DataPath>Объект.Ширина</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ШиринаКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="ШиринаРасширеннаяПодсказка" id="60"/>
+		</InputField>
+		<InputField name="Высота" id="61">
+			<DataPath>Объект.Высота</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВысотаКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="ВысотаРасширеннаяПодсказка" id="63"/>
+		</InputField>
+		<InputField name="ЗанятоМест" id="64">
+			<DataPath>Объект.ЗанятоМест</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗанятоМестКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ЗанятоМестРасширеннаяПодсказка" id="66"/>
+		</InputField>
+		<CheckBoxField name="НовыйГость" id="67">
+			<DataPath>Объект.НовыйГость</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НовыйГостьКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="НовыйГостьРасширеннаяПодсказка" id="69"/>
+		</CheckBoxField>
+		<Table name="АвтоТовары" id="70">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.АвтоТовары</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="АвтоТоварыКонтекстноеМеню" id="71"/>
+			<AutoCommandBar name="АвтоТоварыКоманднаяПанель" id="72"/>
+			<ExtendedTooltip name="АвтоТоварыРасширеннаяПодсказка" id="73"/>
+			<SearchStringAddition name="АвтоТоварыСтрокаПоиска" id="74">
+				<AdditionSource>
+					<Item>АвтоТовары</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="АвтоТоварыСтрокаПоискаКонтекстноеМеню" id="75"/>
+				<ExtendedTooltip name="АвтоТоварыСтрокаПоискаРасширеннаяПодсказка" id="76"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="АвтоТоварыСостояниеПросмотра" id="77">
+				<AdditionSource>
+					<Item>АвтоТовары</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="АвтоТоварыСостояниеПросмотраКонтекстноеМеню" id="78"/>
+				<ExtendedTooltip name="АвтоТоварыСостояниеПросмотраРасширеннаяПодсказка" id="79"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="АвтоТоварыУправлениеПоиском" id="80">
+				<AdditionSource>
+					<Item>АвтоТовары</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="АвтоТоварыУправлениеПоискомКонтекстноеМеню" id="81"/>
+				<ExtendedTooltip name="АвтоТоварыУправлениеПоискомРасширеннаяПодсказка" id="82"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="АвтоТоварыНомерСтроки" id="83">
+					<DataPath>Объект.АвтоТовары.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АвтоТоварыНомерСтрокиКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="АвтоТоварыНомерСтрокиРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<InputField name="АвтоТоварыТовар" id="86">
+					<DataPath>Объект.АвтоТовары.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АвтоТоварыТоварКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="АвтоТоварыТоварРасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<CheckBoxField name="АвтоТоварыПоКоличествуПосетителей" id="89">
+					<DataPath>Объект.АвтоТовары.ПоКоличествуПосетителей</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АвтоТоварыПоКоличествуПосетителейКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="АвтоТоварыПоКоличествуПосетителейРасширеннаяПодсказка" id="91"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПосадочныеМеста</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
