@@ -47,7 +47,7 @@
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
-					<PictureSize>Stretch</PictureSize>
+					<PictureSize>Proportionally</PictureSize>
 					<Picture>
 						<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -254,12 +254,13 @@
 				<Button name="Назад" id="9">
 					<Type>UsualButton</Type>
 					<Representation>PictureAndText</Representation>
+					<Height>1</Height>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
 					<CommandName>Form.Command.ВернутьсяКВыбору</CommandName>
-					<TextColor>style:ЦветТемы</TextColor>
-					<BackColor>style:FormBackColor</BackColor>
-					<BorderColor>style:ЦветТемы</BorderColor>
+					<TextColor>style:FormBackColor</TextColor>
+					<BackColor>web:DarkGray</BackColor>
+					<BorderColor>web:DarkGray</BorderColor>
 					<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="10"/>
@@ -674,7 +675,7 @@
 							<Type>UsualButton</Type>
 							<TitleHeight>3</TitleHeight>
 							<Enabled>false</Enabled>
-							<Width>25</Width>
+							<Width>28</Width>
 							<Height>4</Height>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<CommandName>Form.Command.ПодтвердитьВыбор</CommandName>
@@ -909,7 +910,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Назад</v8:content>
+					<v8:content>НАЗАД</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -918,7 +919,12 @@
 					<v8:content>Вернуться к выбору</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СтрелкаВлевоУголок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ВернутьсяКВыбору</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="Очистить" id="7">
 			<Title>

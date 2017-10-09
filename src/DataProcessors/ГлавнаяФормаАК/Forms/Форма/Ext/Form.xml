@@ -29,6 +29,7 @@
 					<v8:content>Группа страницы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<Height>3</Height>
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>true</VerticalStretch>
@@ -136,10 +137,10 @@
 						</UsualGroup>
 						<LabelDecoration name="НадписьПриветствие1" id="430">
 							<AutoMaxWidth>false</AutoMaxWidth>
-							<Height>2</Height>
 							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
 							<TextColor>style:ЦветТемы</TextColor>
-							<Font ref="style:АК_ШрифтНадписи" height="28" kind="StyleItem"/>
+							<Font ref="style:АК_ШрифтНадписи" height="36" kind="StyleItem"/>
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -153,6 +154,7 @@ by credit card</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Center</VerticalAlign>
 							<ContextMenu name="НадписьПриветствие1КонтекстноеМеню" id="431"/>
@@ -177,6 +179,7 @@ by credit card</v8:content>
 							<HorizontalStretch>false</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
 							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -213,6 +216,7 @@ by credit card</v8:content>
 							</ToolTip>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<HorizontalStretch>true</HorizontalStretch>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -293,7 +297,7 @@ by credit card</v8:content>
 							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 							<GroupVerticalAlign>Top</GroupVerticalAlign>
 							<Picture>
-								<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
+								<xr:Ref>CommonPicture.ЛогоКухняПолли</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</Picture>
 							<ContextMenu name="ЛогоККГурмэ3КонтекстноеМеню" id="493"/>
@@ -468,7 +472,7 @@ by credit card</v8:content>
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
-									<PictureSize>Stretch</PictureSize>
+									<PictureSize>Proportionally</PictureSize>
 									<Picture>
 										<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -845,6 +849,97 @@ by credit card</v8:content>
 							<ContextMenu name="НадписьЗавершение_7_2КонтекстноеМеню" id="471"/>
 							<ExtendedTooltip name="НадписьЗавершение_7_2РасширеннаяПодсказка" id="472"/>
 						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаЗавершениеКартинки" id="547">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница завершение картинки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница завершение картинки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СтраницаЗавершениеКартинкиРасширеннаяПодсказка" id="548"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаЗавершение_КМ" id="555">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка завершение КМ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.jpg</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаЗавершение_КМКонтекстноеМеню" id="556"/>
+							<ExtendedTooltip name="КартинкаЗавершение_КМРасширеннаяПодсказка" id="557"/>
+						</PictureDecoration>
+						<PictureDecoration name="КартинкаЗавершение_МОКП" id="549">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка завершение МОКП</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.jpg</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаЗавершение_МОКПКонтекстноеМеню" id="550"/>
+							<ExtendedTooltip name="КартинкаЗавершение_МОКПРасширеннаяПодсказка" id="551"/>
+						</PictureDecoration>
+						<PictureDecoration name="КартинкаЗавершение_КП" id="552">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка завершение КП</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.jpg</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаЗавершение_КПКонтекстноеМеню" id="553"/>
+							<ExtendedTooltip name="КартинкаЗавершение_КПРасширеннаяПодсказка" id="554"/>
+						</PictureDecoration>
+						<PictureDecoration name="КартинкаПродолжение" id="558">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка завершение КМ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.jpg</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаПродолжениеКонтекстноеМеню" id="559"/>
+							<ExtendedTooltip name="КартинкаПродолжениеРасширеннаяПодсказка" id="560"/>
+						</PictureDecoration>
 					</ChildItems>
 				</Page>
 			</ChildItems>

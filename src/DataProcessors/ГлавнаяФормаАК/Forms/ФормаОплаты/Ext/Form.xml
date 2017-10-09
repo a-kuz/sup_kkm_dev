@@ -84,7 +84,7 @@
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
-									<PictureSize>Stretch</PictureSize>
+									<PictureSize>Proportionally</PictureSize>
 									<Picture>
 										<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -291,38 +291,40 @@
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
 									<Enabled>false</Enabled>
+									<Height>1</Height>
 									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
 									<CommandName>Form.Command.Назад</CommandName>
-									<TextColor>style:ЦветТемы</TextColor>
-									<BackColor>style:FormBackColor</BackColor>
-									<BorderColor>style:ЦветТемы</BorderColor>
+									<TextColor>web:DarkGray</TextColor>
+									<BackColor>web:Gainsboro</BackColor>
+									<BorderColor>web:Gainsboro</BorderColor>
 									<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="10"/>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
-						<LabelField name="НадписьКартаЛОЛ" id="32">
-							<DataPath>НадписьКартаЛОЛ</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<ToolTipRepresentation>None</ToolTipRepresentation>
-							<HorizontalAlign>Left</HorizontalAlign>
-							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-							<TextColor>style:АппБар</TextColor>
-							<Font faceName="Segoe UI" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-							<ContextMenu name="НадписьКартаЛОЛКонтекстноеМеню" id="33"/>
-							<ExtendedTooltip name="НадписьКартаЛОЛРасширеннаяПодсказка" id="34"/>
-						</LabelField>
-						<UsualGroup name="Группа1" id="51">
+						<UsualGroup name="ГруппаИнструкции" id="51">
 							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа инструкции</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа инструкции</v8:content>
+								</v8:item>
+							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
 							<GroupVerticalAlign>Top</GroupVerticalAlign>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="52"/>
+							<ExtendedTooltip name="ГруппаИнструкцииРасширеннаяПодсказка" id="52"/>
 							<ChildItems>
 								<LabelDecoration name="НадписьИнструкции" id="40">
 									<AutoMaxWidth>false</AutoMaxWidth>
@@ -772,7 +774,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Назад</v8:content>
+					<v8:content>НАЗАД</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -781,7 +783,12 @@
 					<v8:content>Назад</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СтрелкаВлевоУголок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>Назад</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ПродолжитьОплату" id="2">
 			<Title>

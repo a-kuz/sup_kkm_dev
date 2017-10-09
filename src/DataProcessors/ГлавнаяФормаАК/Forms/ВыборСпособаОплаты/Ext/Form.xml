@@ -47,7 +47,7 @@
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
-					<PictureSize>Stretch</PictureSize>
+					<PictureSize>Proportionally</PictureSize>
 					<Picture>
 						<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -258,9 +258,9 @@
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
 					<CommandName>Form.Command.Назад</CommandName>
-					<TextColor>style:ЦветТемы</TextColor>
-					<BackColor>style:FormBackColor</BackColor>
-					<BorderColor>style:ЦветТемы</BorderColor>
+					<TextColor>style:FormBackColor</TextColor>
+					<BackColor>web:DarkGray</BackColor>
+					<BorderColor>web:DarkGray</BorderColor>
 					<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="10"/>
@@ -374,6 +374,7 @@
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>false</VerticalStretch>
+					<GroupVerticalAlign>Top</GroupVerticalAlign>
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -406,19 +407,17 @@
 									<SkipOnInput>true</SkipOnInput>
 									<ChangeRowSet>false</ChangeRowSet>
 									<ChangeRowOrder>false</ChangeRowOrder>
-									<HeightInTableRows>4</HeightInTableRows>
+									<HeightInTableRows>5</HeightInTableRows>
 									<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 									<AutoMaxRowsCount>false</AutoMaxRowsCount>
-									<MaxRowsCount>4</MaxRowsCount>
+									<MaxRowsCount>5</MaxRowsCount>
 									<RowSelectionMode>Row</RowSelectionMode>
-									<Footer>true</Footer>
 									<HorizontalScrollBar>DontUse</HorizontalScrollBar>
 									<VerticalScrollBar>DontUse</VerticalScrollBar>
 									<VerticalLines>false</VerticalLines>
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<AutoMarkIncomplete>false</AutoMarkIncomplete>
 									<Output>Disable</Output>
-									<VerticalStretch>false</VerticalStretch>
 									<DataPath>ТаблицаТовары</DataPath>
 									<BackColor>style:FormBackColor</BackColor>
 									<BorderColor>style:BorderColor</BorderColor>
@@ -467,6 +466,7 @@
 											<TitleFont faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 											<ToolTipRepresentation>None</ToolTipRepresentation>
 											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
 											<FooterText>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -668,21 +668,6 @@
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<LabelField name="КОплате" id="60">
-					<DataPath>КОплате</DataPath>
-					<TitleTextColor>style:ЦветТемы</TitleTextColor>
-					<TitleFont faceName="Segoe UI" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-					<TitleLocation>Left</TitleLocation>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
-					<HorizontalStretch>false</HorizontalStretch>
-					<TextColor>style:ЦветТемы</TextColor>
-					<BackColor>style:FormBackColor</BackColor>
-					<Font faceName="Segoe UI" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-					<ContextMenu name="КОплатеКонтекстноеМеню" id="61"/>
-					<ExtendedTooltip name="КОплатеРасширеннаяПодсказка" id="62"/>
-				</LabelField>
 				<LabelDecoration name="НадписьСписокКОплате" id="136">
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
@@ -710,24 +695,27 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>&lt;b&gt;Здравствуйте, ИМЯ!&lt;/&gt;
-&lt;b&gt;ВЫБЕРИТЕ:&lt;/&gt;</v8:content>
+&lt;b&gt;Выберите способ оплаты:&lt;/&gt;</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 					<HorizontalAlign>Center</HorizontalAlign>
 					<ContextMenu name="НадписьЗдравствуйтеКонтекстноеМеню" id="85"/>
 					<ExtendedTooltip name="НадписьЗдравствуйтеРасширеннаяПодсказка" id="86"/>
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="СтрокаКнопок" id="13">
-			<Visible>false</Visible>
+		<UsualGroup name="СтрокаКнопок" id="68">
+			<EnableContentChange>true</EnableContentChange>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Строка кнопок</v8:content>
+					<v8:content>Выберите способ оплаты:</v8:content>
 				</v8:item>
 			</Title>
+			<TitleTextColor>style:FormTextColor</TitleTextColor>
+			<TitleFont faceName="Segoe UI" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -736,92 +724,14 @@
 			</ToolTip>
 			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 			<Group>Horizontal</Group>
 			<HorizontalSpacing>None</HorizontalSpacing>
-			<HorizontalAlign>Center</HorizontalAlign>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="СтрокаКнопокРасширеннаяПодсказка" id="14"/>
-			<ChildItems>
-				<Button name="ОплатитьОтдельно" id="15">
-					<Type>UsualButton</Type>
-					<Width>21</Width>
-					<Height>5</Height>
-					<CommandName>Form.Command.ОплатитьОтдельно</CommandName>
-					<TextColor>style:ЦветТемы</TextColor>
-					<BackColor>style:FormBackColor</BackColor>
-					<BorderColor>style:ЦветТемы</BorderColor>
-					<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оплатить ОТДЕЛЬНО
-заказы МясновЪ
-и Кухня Полли</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<ExtendedTooltip name="ОплатитьОтдельноРасширеннаяПодсказка" id="16"/>
-				</Button>
-				<Button name="ОплатитьВсеСоСписанием" id="17">
-					<Type>UsualButton</Type>
-					<Width>32</Width>
-					<Height>5</Height>
-					<CommandName>Form.Command.ОплатитьВсеСоСписанием</CommandName>
-					<TextColor>style:ЦветТемы</TextColor>
-					<BackColor>style:FormBackColor</BackColor>
-					<BorderColor>style:ЦветТемы</BorderColor>
-					<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СПИСАТЬ весь заказ за КеГЛи
-Будет списано 999000 КГЛ
-К доплате 500000,00 Р</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<ExtendedTooltip name="ОплатитьВсеСоСписаниемРасширеннаяПодсказка" id="18"/>
-				</Button>
-				<Button name="ОплатитьВсеСНачислением" id="19">
-					<Type>UsualButton</Type>
-					<Width>32</Width>
-					<Height>5</Height>
-					<CommandName>Form.Command.ОплатитьВсеСНачислением</CommandName>
-					<TextColor>style:FormBackColor</TextColor>
-					<BackColor>style:ЦветТемы</BackColor>
-					<BorderColor>style:ЦветТемы</BorderColor>
-					<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОПЛАТИТЬ  весь заказ
-с начислением КеГЛей
-К ОПЛАТЕ: 150000,00 Р
-Будет начислено 250000 КГЛ</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<ExtendedTooltip name="ОплатитьВсеСНачислениемРасширеннаяПодсказка" id="20"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="СтрокаКнопок1" id="68">
-			<EnableContentChange>true</EnableContentChange>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Строка кнопок1</v8:content>
-				</v8:item>
-			</ToolTip>
-			<HorizontalStretch>true</HorizontalStretch>
-			<VerticalStretch>false</VerticalStretch>
-			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
-			<Group>Horizontal</Group>
-			<HorizontalSpacing>None</HorizontalSpacing>
-			<Representation>None</Representation>
-			<ExtendedTooltip name="СтрокаКнопок1РасширеннаяПодсказка" id="69"/>
+			<ExtendedTooltip name="СтрокаКнопокРасширеннаяПодсказка" id="69"/>
 			<ChildItems>
 				<UsualGroup name="Кегли" id="70">
 					<Title>
@@ -846,13 +756,14 @@
 							<Type>UsualButton</Type>
 							<Width>38</Width>
 							<CommandName>Form.Command.ОплатитьВсеСоСписанием</CommandName>
-							<TextColor>style:ЦветТемы</TextColor>
+							<TextColor>style:FormBackColor</TextColor>
+							<BackColor>style:ЦветТемы</BackColor>
 							<BorderColor>style:ЦветТемы</BorderColor>
-							<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+							<Font ref="style:АК_ШрифтКнопки" height="24" kind="StyleItem"/>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>КЕГЛИ</v8:content>
+									<v8:content>КеГЛи</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -860,6 +771,7 @@
 						</Button>
 						<LabelDecoration name="ДекорацияКегли" id="74">
 							<Width>38</Width>
+							<Height>3</Height>
 							<VerticalStretch>false</VerticalStretch>
 							<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
 							<Title formatted="true">
@@ -901,13 +813,14 @@
 							<Type>UsualButton</Type>
 							<Width>38</Width>
 							<CommandName>Form.Command.ОплатитьВсеСНачислением</CommandName>
-							<TextColor>style:ЦветТемы</TextColor>
+							<TextColor>style:FormBackColor</TextColor>
+							<BackColor>style:ЦветТемы</BackColor>
 							<BorderColor>style:ЦветТемы</BorderColor>
-							<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+							<Font ref="style:АК_ШрифтКнопки" height="24" kind="StyleItem"/>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>РУБЛИ</v8:content>
+									<v8:content>Рубли</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -915,6 +828,7 @@
 						</Button>
 						<LabelDecoration name="ДекорацияРубли" id="81">
 							<Width>38</Width>
+							<Height>3</Height>
 							<VerticalStretch>false</VerticalStretch>
 							<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
 							<Title formatted="true">
@@ -1425,7 +1339,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Назад</v8:content>
+					<v8:content>НАЗАД</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -1434,7 +1348,12 @@
 					<v8:content>Назад</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СтрелкаВлевоУголок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>Назад</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ОплатитьОтдельно" id="2">
 			<Title>
