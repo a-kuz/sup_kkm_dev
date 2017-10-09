@@ -409,7 +409,6 @@
 									<ChangeRowOrder>false</ChangeRowOrder>
 									<HeightInTableRows>5</HeightInTableRows>
 									<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
-									<AutoMaxRowsCount>false</AutoMaxRowsCount>
 									<MaxRowsCount>5</MaxRowsCount>
 									<RowSelectionMode>Row</RowSelectionMode>
 									<HorizontalScrollBar>DontUse</HorizontalScrollBar>
@@ -418,6 +417,7 @@
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<AutoMarkIncomplete>false</AutoMarkIncomplete>
 									<Output>Disable</Output>
+									<VerticalStretch>false</VerticalStretch>
 									<DataPath>ТаблицаТовары</DataPath>
 									<BackColor>style:FormBackColor</BackColor>
 									<BorderColor>style:BorderColor</BorderColor>
@@ -611,6 +611,7 @@
 							</ToolTip>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
 							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 							<Group>Vertical</Group>
 							<VerticalSpacing>None</VerticalSpacing>
@@ -622,14 +623,15 @@
 									<Type>UsualButton</Type>
 									<Representation>Picture</Representation>
 									<Width>7</Width>
-									<VerticalStretch>true</VerticalStretch>
+									<Height>2</Height>
+									<GroupVerticalAlign>Top</GroupVerticalAlign>
 									<CommandName>Form.Command.СкроллВверх</CommandName>
 									<TextColor>style:FormBackColor</TextColor>
-									<BackColor>style:ЦветТемы</BackColor>
-									<BorderColor>style:FormBackColor</BorderColor>
+									<BackColor>web:DarkGray</BackColor>
+									<BorderColor>web:DarkGray</BorderColor>
 									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
 									<Picture>
-										<xr:Abs>Picture.png</xr:Abs>
+										<xr:Ref>CommonPicture.СтрелкаВверхУголок</xr:Ref>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<Title>
@@ -645,14 +647,15 @@
 									<Type>UsualButton</Type>
 									<Representation>Picture</Representation>
 									<Width>7</Width>
-									<VerticalStretch>true</VerticalStretch>
+									<Height>2</Height>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 									<CommandName>Form.Command.СкроллВниз</CommandName>
 									<TextColor>style:FormBackColor</TextColor>
-									<BackColor>style:ЦветТемы</BackColor>
-									<BorderColor>style:FormBackColor</BorderColor>
+									<BackColor>web:DarkGray</BackColor>
+									<BorderColor>web:DarkGray</BorderColor>
 									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
 									<Picture>
-										<xr:Abs>Picture.png</xr:Abs>
+										<xr:Ref>CommonPicture.СтрелкаВнизУголок</xr:Ref>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<Title>
