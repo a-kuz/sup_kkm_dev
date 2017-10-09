@@ -985,23 +985,25 @@
 			<DataProcessor>ВыборСмен</DataProcessor>
 			<DataProcessor>ВыборСпецифик</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаJSON</DataProcessor>
+			<DataProcessor>ВыгрузкаСправочниковНаТТ</DataProcessor>
 			<DataProcessor>ВызовВнешнихОбработок</DataProcessor>
 			<DataProcessor>ГлавнаяФорма</DataProcessor>
-			<DataProcessor>ГрафикБронирования</DataProcessor>
 			<DataProcessor>ГлавнаяФормаАК</DataProcessor>
 			<DataProcessor>ГлавнаяФормаРесторан</DataProcessor>
 			<DataProcessor>ГлавнаяФормаСтанцияОплатыКМ</DataProcessor>
 			<DataProcessor>ГлавнаяФормаСтанцияСканирования</DataProcessor>
+			<DataProcessor>ГрафикБронирования</DataProcessor>
 			<DataProcessor>ДенежныеОперации</DataProcessor>
 			<DataProcessor>ЖурналБрони</DataProcessor>
 			<DataProcessor>ЖурналЗаказов</DataProcessor>
+			<DataProcessor>ЖурналРегистрацииТонкийКлиент</DataProcessor>
+			<DataProcessor>Заказ</DataProcessor>
 			<DataProcessor>ЗаменаКартыКеГеЛьБУМ</DataProcessor>
 			<DataProcessor>ИнициализацияВнешнихПечатныхФорм</DataProcessor>
-			<DataProcessor>Заказ</DataProcessor>
 			<DataProcessor>ИнформацияДляКлиента</DataProcessor>
+			<DataProcessor>ИнформацияОтоваре</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
-			<DataProcessor>ИнформацияОтоваре</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
@@ -1038,16 +1040,19 @@
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
 			<DataProcessor>КартинкиОбъектов</DataProcessor>
+			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
+			<DataProcessor>КонсольЗапросовИОбработчик</DataProcessor>
 			<DataProcessor>КурсыВалютРБК</DataProcessor>
 			<DataProcessor>МастерСозданияМестаРеализации</DataProcessor>
+			<DataProcessor>МастерТестированияРМ</DataProcessor>
 			<DataProcessor>МониторМарок</DataProcessor>
 			<DataProcessor>ОбновлениеИнформационнойБазы</DataProcessor>
 			<DataProcessor>ОбновлениеТоваров</DataProcessor>
-			<DataProcessor>Обслуживание_ФР_Атол326</DataProcessor>
 			<DataProcessor>ОбработкаЛояльности</DataProcessor>
 			<DataProcessor>Обслуживание_АО</DataProcessor>
 			<DataProcessor>Обслуживание_ДП</DataProcessor>
+			<DataProcessor>Обслуживание_ДП1</DataProcessor>
 			<DataProcessor>Обслуживание_Интеллект</DataProcessor>
 			<DataProcessor>Обслуживание_ИнфоДисплей</DataProcessor>
 			<DataProcessor>Обслуживание_КЭП</DataProcessor>
@@ -1065,55 +1070,50 @@
 			<DataProcessor>Обслуживание_СУ_Атол</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Атол</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Атол1</DataProcessor>
+			<DataProcessor>Обслуживание_ФР_Атол326</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Мультисофт</DataProcessor>
 			<DataProcessor>Обслуживание_ФР_Штрих</DataProcessor>
 			<DataProcessor>Обслуживание_ЭЛВЕСЫ_АТОЛ</DataProcessor>
+			<DataProcessor>Обслуживание_ЭЛВЕСЫ_АТОЛ1</DataProcessor>
 			<DataProcessor>Ожидание</DataProcessor>
 			<DataProcessor>Оплата</DataProcessor>
 			<DataProcessor>ОплатаЗаказа</DataProcessor>
 			<DataProcessor>ОповещениеОПремиальныхТоварах</DataProcessor>
 			<DataProcessor>ОткрытиеЗакрытиеСмены</DataProcessor>
 			<DataProcessor>ОткрытиЗакрытиеСменыКасса</DataProcessor>
-			<DataProcessor>Обслуживание_ЭЛВЕСЫ_АТОЛ1</DataProcessor>
 			<DataProcessor>ОтправкаСообщенийРазработчикам</DataProcessor>
 			<DataProcessor>ОтчетыККМ</DataProcessor>
+			<DataProcessor>ОчисткаБазы</DataProcessor>
 			<DataProcessor>ПечатьЗаказа</DataProcessor>
+			<DataProcessor>ПечатьКопииЧека</DataProcessor>
 			<DataProcessor>ПечатьСправочников</DataProcessor>
 			<DataProcessor>ПечатьЧека</DataProcessor>
 			<DataProcessor>ПодборТоваров</DataProcessor>
 			<DataProcessor>Подсказка</DataProcessor>
+			<DataProcessor>ПоискPLU</DataProcessor>
 			<DataProcessor>ПоискТовара</DataProcessor>
 			<DataProcessor>ПолучениеФайловИзИнтернета</DataProcessor>
 			<DataProcessor>ПредставлениеКонтактнойИнформации</DataProcessor>
+			<DataProcessor>ПрогрузкаВесов</DataProcessor>
+			<DataProcessor>ПросмотрОтчетов</DataProcessor>
+			<DataProcessor>РаботаСлокальнымиКопиямиНаРМ</DataProcessor>
 			<DataProcessor>РаботаСокнами</DataProcessor>
 			<DataProcessor>РазделениеЗаказа</DataProcessor>
 			<DataProcessor>РасчетыПоТарифу</DataProcessor>
 			<DataProcessor>РегистрацияКассиров</DataProcessor>
-			<DataProcessor>ПоискPLU</DataProcessor>
+			<DataProcessor>РедакторОбъектов</DataProcessor>
 			<DataProcessor>РежимАдминистратора</DataProcessor>
 			<DataProcessor>РежимБрони</DataProcessor>
 			<DataProcessor>СкрытьМенюИПанели</DataProcessor>
-			<DataProcessor>ПрогрузкаВесов</DataProcessor>
 			<DataProcessor>СозданиеПредставленийТаблицВсубд</DataProcessor>
 			<DataProcessor>СохранениеЗначений</DataProcessor>
+			<DataProcessor>СтопЛист</DataProcessor>
 			<DataProcessor>УниверсальныйОбменДаннымиXML</DataProcessor>
 			<DataProcessor>УправлениеКоммутатором</DataProcessor>
 			<DataProcessor>УправлениеСпецКлавиатурой</DataProcessor>
 			<DataProcessor>ФормированиеНачислений</DataProcessor>
 			<DataProcessor>ФормированиеОтчетовФО</DataProcessor>
 			<DataProcessor>ЭмуляторСканера</DataProcessor>
-			<DataProcessor>Обслуживание_ДП1</DataProcessor>
-			<DataProcessor>ПечатьКопииЧека</DataProcessor>
-			<DataProcessor>ВыгрузкаСправочниковНаТТ</DataProcessor>
-			<DataProcessor>СтопЛист</DataProcessor>
-			<DataProcessor>МастерТестированияРМ</DataProcessor>
-			<DataProcessor>ПросмотрОтчетов</DataProcessor>
-			<DataProcessor>РедакторОбъектов</DataProcessor>
-			<DataProcessor>КонсольЗапросовИОбработчик</DataProcessor>
-			<DataProcessor>ЖурналРегистрацииТонкийКлиент</DataProcessor>
-			<DataProcessor>КонсольЗаданий</DataProcessor>
-			<DataProcessor>ОчисткаБазы</DataProcessor>
-			<DataProcessor>РаботаСлокальнымиКопиямиНаРМ</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
 			<InformationRegister>Акции</InformationRegister>
 			<InformationRegister>БлокировкиЗаказов</InformationRegister>
