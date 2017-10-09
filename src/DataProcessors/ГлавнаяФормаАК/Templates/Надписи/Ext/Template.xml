@@ -106,9 +106,20 @@
 		<index>2</index>
 		<row>
 			<c>
-				<i>2</i>
+				<i>1</i>
 				<c>
 					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>999 999</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -125,7 +136,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>14</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -140,21 +151,21 @@
 		<index>4</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>15</formatIndex>
+			<formatIndex>16</formatIndex>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>17</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>18</f>
+					<f>19</f>
 				</c>
 			</c>
 		</row>
@@ -163,21 +174,21 @@
 		<index>5</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>15</formatIndex>
+			<formatIndex>16</formatIndex>
 			<c>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>17</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>18</f>
+					<f>19</f>
 				</c>
 			</c>
 		</row>
@@ -188,25 +199,25 @@
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
 			<c>
 				<c>
-					<f>20</f>
+					<f>21</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>21</f>
 					<parameter>Сумма</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>22</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>22</defaultFormatIndex>
+	<defaultFormatIndex>23</defaultFormatIndex>
 	<height>7</height>
 	<vgRows>7</vgRows>
 	<merge>
@@ -286,7 +297,7 @@
 		<width>144</width>
 	</format>
 	<format>
-		<width>52</width>
+		<width>64</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<textPosition>Auto</textPosition>
 	</format>
@@ -321,7 +332,7 @@
 	<format>
 		<font>0</font>
 		<width>71</width>
-		<horizontalAlignment>Center</horizontalAlignment>
+		<horizontalAlignment>Right</horizontalAlignment>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Parameter</fillType>
 		<textOrientation>0</textOrientation>
@@ -350,12 +361,17 @@
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
+		<font>1</font>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<textOrientation>3590</textOrientation>
+	</format>
+	<format>
 		<font>0</font>
 		<width>71</width>
-		<horizontalAlignment>Center</horizontalAlignment>
+		<horizontalAlignment>Right</horizontalAlignment>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Text</fillType>
-		<textOrientation>0</textOrientation>
+		<textOrientation>10</textOrientation>
 		<bySelectedColumns>false</bySelectedColumns>
 		<indent>0</indent>
 		<autoIndent>0</autoIndent>
