@@ -103,24 +103,58 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
+		<index>2</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КГЛ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>,00 Р</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
 		<index>4</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>14</formatIndex>
+			<formatIndex>15</formatIndex>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>17</f>
+					<f>18</f>
 				</c>
 			</c>
 		</row>
@@ -129,21 +163,21 @@
 		<index>5</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>14</formatIndex>
+			<formatIndex>15</formatIndex>
 			<c>
 				<c>
-					<f>18</f>
+					<f>19</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>17</f>
+					<f>18</f>
 				</c>
 			</c>
 		</row>
@@ -154,19 +188,19 @@
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
 			<c>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>Сумма</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>21</f>
 				</c>
 			</c>
 		</row>
@@ -177,7 +211,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>21</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -188,7 +222,7 @@
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -200,7 +234,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>23</defaultFormatIndex>
+	<defaultFormatIndex>24</defaultFormatIndex>
 	<height>11</height>
 	<vgRows>11</vgRows>
 	<merge>
@@ -275,13 +309,14 @@
 	<font faceName="Segoe UI" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
-		<width>246</width>
+		<width>235</width>
 	</format>
 	<format>
 		<width>154</width>
 	</format>
 	<format>
-		<width>83</width>
+		<width>56</width>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
@@ -315,7 +350,7 @@
 	<format>
 		<font>0</font>
 		<width>71</width>
-		<horizontalAlignment>Left</horizontalAlignment>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<textPlacement>Cut</textPlacement>
 		<fillType>Parameter</fillType>
 		<textOrientation>0</textOrientation>
@@ -341,6 +376,18 @@
 	<format>
 		<width>83</width>
 		<textPlacement>Wrap</textPlacement>
+		<textPosition>Auto</textPosition>
+	</format>
+	<format>
+		<font>0</font>
+		<width>71</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<textPlacement>Cut</textPlacement>
+		<fillType>Text</fillType>
+		<textOrientation>0</textOrientation>
+		<bySelectedColumns>false</bySelectedColumns>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
@@ -391,6 +438,7 @@
 	</format>
 	<format>
 		<font>2</font>
+		<horizontalAlignment>Center</horizontalAlignment>
 	</format>
 	<format>
 		<width>72</width>
