@@ -179,6 +179,7 @@
 		<index>6</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
+			<formatIndex>16</formatIndex>
 			<c>
 				<c>
 					<f>21</f>
@@ -198,10 +199,38 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>7</index>
+		<row>
+			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
+			<formatIndex>23</formatIndex>
+			<c>
+				<c>
+					<f>24</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не забудьте оплатить Ваш заказ в ОТДОХНИ: 999 999.99Р</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>23</defaultFormatIndex>
-	<height>7</height>
-	<vgRows>7</vgRows>
+	<defaultFormatIndex>27</defaultFormatIndex>
+	<height>8</height>
+	<vgRows>8</vgRows>
 	<merge>
 		<r>1</r>
 		<c>0</c>
@@ -214,6 +243,11 @@
 	</merge>
 	<merge>
 		<r>5</r>
+		<c>0</c>
+		<w>2</w>
+	</merge>
+	<merge>
+		<r>7</r>
 		<c>0</c>
 		<w>2</w>
 	</merge>
@@ -290,7 +324,7 @@
 		<width>226</width>
 	</format>
 	<format>
-		<width>141</width>
+		<width>131</width>
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
@@ -359,7 +393,7 @@
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
-		<height>120</height>
+		<height>100</height>
 	</format>
 	<format>
 		<font>0</font>
@@ -399,6 +433,32 @@
 		<font>0</font>
 		<horizontalAlignment>Right</horizontalAlignment>
 		<fillType>Text</fillType>
+	</format>
+	<format>
+		<height>100</height>
+		<fillType>Text</fillType>
+	</format>
+	<format>
+		<font>0</font>
+		<height>132</height>
+		<width>246</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<fillType>Text</fillType>
+		<picIndex>2</picIndex>
+	</format>
+	<format>
+		<height>132</height>
+		<width>154</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<fillType>Text</fillType>
+	</format>
+	<format>
+		<height>132</height>
+		<width>83</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<fillType>Text</fillType>
+		<textPosition>Auto</textPosition>
 	</format>
 	<format>
 		<width>72</width>
