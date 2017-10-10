@@ -782,12 +782,18 @@
 					<ChildItems>
 						<Button name="СписатьКегли" id="72">
 							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
 							<Width>38</Width>
+							<Height>1</Height>
 							<CommandName>Form.Command.ОплатитьВсеСоСписанием</CommandName>
 							<TextColor>style:FormBackColor</TextColor>
 							<BackColor>style:ЦветТемы</BackColor>
 							<BorderColor>style:ЦветТемы</BorderColor>
-							<Font ref="style:АК_ШрифтКнопки" height="24" kind="StyleItem"/>
+							<Font ref="style:АК_ШрифтКнопки" height="36" kind="StyleItem"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -804,7 +810,7 @@
 							<TitleLocation>None</TitleLocation>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<Width>38</Width>
-							<Height>6</Height>
+							<Height>5</Height>
 							<HorizontalStretch>false</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
 							<VerticalScrollBar>false</VerticalScrollBar>
@@ -861,12 +867,18 @@
 					<ChildItems>
 						<Button name="НачислитьКегли" id="79">
 							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
 							<Width>38</Width>
+							<Height>1</Height>
 							<CommandName>Form.Command.ОплатитьВсеСНачислением</CommandName>
 							<TextColor>style:FormBackColor</TextColor>
 							<BackColor>style:ЦветТемы</BackColor>
 							<BorderColor>style:ЦветТемы</BorderColor>
-							<Font ref="style:АК_ШрифтКнопки" height="24" kind="StyleItem"/>
+							<Font ref="style:АК_ШрифтКнопки" height="36" kind="StyleItem"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -883,7 +895,7 @@
 							<TitleLocation>None</TitleLocation>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<Width>38</Width>
-							<Height>6</Height>
+							<Height>5</Height>
 							<HorizontalStretch>false</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
 							<VerticalScrollBar>false</VerticalScrollBar>
