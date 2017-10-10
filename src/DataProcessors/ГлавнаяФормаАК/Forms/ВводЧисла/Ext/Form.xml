@@ -718,6 +718,29 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<SpreadSheetDocumentField name="ПодвалКеГЛиРубли" id="144">
+			<DataPath>ПодвалКеГЛиРубли</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<SkipOnInput>true</SkipOnInput>
+			<TitleLocation>None</TitleLocation>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<Width>38</Width>
+			<Height>6</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<VerticalScrollBar>false</VerticalScrollBar>
+			<HorizontalScrollBar>false</HorizontalScrollBar>
+			<Protection>true</Protection>
+			<SelectionShowMode>DontShow</SelectionShowMode>
+			<ShowGroups>false</ShowGroups>
+			<EnableStartDrag>false</EnableStartDrag>
+			<EnableDrag>false</EnableDrag>
+			<BorderColor>style:FormBackColor</BorderColor>
+			<ContextMenu name="ПодвалКеГЛиРублиКонтекстноеМеню" id="145"/>
+			<ExtendedTooltip name="ПодвалКеГЛиРублиРасширеннаяПодсказка" id="146"/>
+		</SpreadSheetDocumentField>
 		<LabelDecoration name="ДекорацияКеглиРубли" id="141">
 			<HorizontalStretch>true</HorizontalStretch>
 			<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
@@ -827,6 +850,17 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.РабочиеМеста</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодвалКеГЛиРубли" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал ке г ли рубли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -994,6 +1028,11 @@
 		<Parameter name="ДекорацияКеглиРубли">
 			<Type>
 				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ПодвалКеГЛиРубли">
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Parameter>
 	</Parameters>
