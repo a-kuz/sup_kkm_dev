@@ -106,14 +106,36 @@
 		<index>2</index>
 		<row>
 			<c>
-				<i>1</i>
 				<c>
 					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата:</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>999 999</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>,99 Р</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -122,9 +144,36 @@
 		<index>3</index>
 		<row>
 			<c>
-				<i>2</i>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Будет начислено:</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>999 999</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КГЛ</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -132,22 +181,26 @@
 	<rowsItem>
 		<index>4</index>
 		<row>
-			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>16</formatIndex>
+			<formatIndex>10</formatIndex>
 			<c>
 				<c>
 					<f>17</f>
-					<parameter>ТЕКСТ</parameter>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банковской картой</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>18</f>
+					<f>12</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>13</f>
 				</c>
 			</c>
 		</row>
@@ -156,21 +209,21 @@
 		<index>5</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>16</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<c>
-					<f>20</f>
+					<f>19</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>18</f>
+					<f>20</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>21</f>
 				</c>
 			</c>
 		</row>
@@ -179,22 +232,21 @@
 		<index>6</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>16</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>22</f>
 					<parameter>ТЕКСТ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>21</f>
-					<parameter>Сумма</parameter>
+					<f>20</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>21</f>
 				</c>
 			</c>
 		</row>
@@ -203,10 +255,34 @@
 		<index>7</index>
 		<row>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-			<formatIndex>23</formatIndex>
+			<formatIndex>18</formatIndex>
+			<c>
+				<c>
+					<f>23</f>
+					<parameter>ТЕКСТ</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>23</f>
+					<parameter>Сумма</parameter>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>24</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
+			<formatIndex>25</formatIndex>
+			<c>
+				<c>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -217,20 +293,20 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>27</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>26</f>
+					<f>28</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>27</defaultFormatIndex>
-	<height>8</height>
-	<vgRows>8</vgRows>
+	<defaultFormatIndex>29</defaultFormatIndex>
+	<height>9</height>
+	<vgRows>9</vgRows>
 	<merge>
 		<r>1</r>
 		<c>0</c>
@@ -247,12 +323,28 @@
 		<w>2</w>
 	</merge>
 	<merge>
-		<r>7</r>
+		<r>6</r>
+		<c>0</c>
+		<w>2</w>
+	</merge>
+	<merge>
+		<r>8</r>
 		<c>0</c>
 		<w>2</w>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>КОплате</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>7</beginRow>
+			<endRow>7</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>НеОплачено</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>6</beginRow>
@@ -263,22 +355,11 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>НеОплачено</name>
+		<name>Оплачено</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>5</beginRow>
 			<endRow>5</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>Оплачено</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>4</beginRow>
-			<endRow>4</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 			<columnsID>b121181a-f987-48f4-be69-4d0a7fbc046f</columnsID>
@@ -377,23 +458,45 @@
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
-		<font>1</font>
+		<font>0</font>
+		<width>246</width>
 		<horizontalAlignment>Right</horizontalAlignment>
-		<textOrientation>3590</textOrientation>
+		<fillType>Text</fillType>
+	</format>
+	<format>
+		<font>1</font>
+		<width>160</width>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<textPlacement>Block</textPlacement>
+		<fillType>Text</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<bySelectedColumns>false</bySelectedColumns>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
 	</format>
 	<format>
 		<font>0</font>
 		<width>71</width>
 		<horizontalAlignment>Right</horizontalAlignment>
 		<textPlacement>Auto</textPlacement>
-		<textOrientation>10</textOrientation>
+		<fillType>Text</fillType>
+		<textOrientation>0</textOrientation>
 		<bySelectedColumns>false</bySelectedColumns>
 		<indent>0</indent>
 		<autoIndent>0</autoIndent>
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
+		<font>0</font>
+		<width>246</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Text</fillType>
+	</format>
+	<format>
 		<height>100</height>
+		<verticalAlignment>Center</verticalAlignment>
 	</format>
 	<format>
 		<font>0</font>
@@ -407,12 +510,12 @@
 	<format>
 		<height>132</height>
 		<width>154</width>
-		<verticalAlignment>Top</verticalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 	</format>
 	<format>
 		<height>132</height>
 		<width>83</width>
-		<verticalAlignment>Top</verticalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
@@ -427,11 +530,13 @@
 	<format>
 		<font>0</font>
 		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<font>0</font>
 		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<fillType>Text</fillType>
 	</format>
 	<format>
