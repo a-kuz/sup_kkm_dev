@@ -30,10 +30,8 @@
 				</v8:item>
 			</ToolTip>
 			<ToolTipRepresentation>None</ToolTipRepresentation>
-			<Height>3</Height>
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>true</VerticalStretch>
-			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="9"/>
 			<ChildItems>
@@ -50,9 +48,11 @@
 							<v8:content>Страница приветствие</v8:content>
 						</v8:item>
 					</ToolTip>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>true</VerticalStretch>
 					<HorizontalAlign>Center</HorizontalAlign>
+					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="СтраницаПриветствиеРасширеннаяПодсказка" id="11"/>
 					<ChildItems>
 						<UsualGroup name="ШапкаПриветствие" id="433">
@@ -68,6 +68,7 @@
 									<v8:content>Шапка приветствие</v8:content>
 								</v8:item>
 							</ToolTip>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
 							<GroupVerticalAlign>Top</GroupVerticalAlign>
@@ -78,6 +79,8 @@
 							<ChildItems>
 								<LabelDecoration name="НормировочнаяНадпись" id="443">
 									<Width>13</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
 									<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
@@ -175,9 +178,8 @@ by credit card</v8:content>
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
-							<HorizontalStretch>false</HorizontalStretch>
+							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
-							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
@@ -255,11 +257,9 @@ by credit card</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
-							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Top</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
 							<ContextMenu name="НадписьПриветствиеКонтекстноеМеню" id="13"/>
 							<ExtendedTooltip name="НадписьПриветствиеРасширеннаяПодсказка" id="14"/>
 						</LabelDecoration>
@@ -319,8 +319,6 @@ by credit card</v8:content>
 							<GroupVerticalAlign>Top</GroupVerticalAlign>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Center</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="НадписьПриветствие_1_1КонтекстноеМеню" id="499"/>
 							<ExtendedTooltip name="НадписьПриветствие_1_1РасширеннаяПодсказка" id="500"/>
 						</LabelDecoration>
@@ -340,8 +338,6 @@ by credit card</v8:content>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<GroupVerticalAlign>Top</GroupVerticalAlign>
 							<VerticalAlign>Center</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="НадписьСписокМарокКонтекстноеМеню" id="496"/>
 							<ExtendedTooltip name="НадписьСписокМарокРасширеннаяПодсказка" id="497"/>
 						</LabelDecoration>
@@ -362,8 +358,6 @@ by credit card</v8:content>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Center</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="НадписьПриветствие_1_2КонтекстноеМеню" id="502"/>
 							<ExtendedTooltip name="НадписьПриветствие_1_2РасширеннаяПодсказка" id="503"/>
 						</LabelDecoration>
@@ -380,10 +374,10 @@ by credit card</v8:content>
 									<v8:content>Группа кнопок приветствие 1</v8:content>
 								</v8:item>
 							</ToolTip>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<HorizontalStretch>true</HorizontalStretch>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<Group>Horizontal</Group>
-							<HorizontalSpacing>None</HorizontalSpacing>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКнопокПриветствие_1РасширеннаяПодсказка" id="505"/>
@@ -399,6 +393,7 @@ by credit card</v8:content>
 									<BackColor>style:FormBackColor</BackColor>
 									<BorderColor>style:ЦветТемы</BorderColor>
 									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<ExtendedTooltip name="ОтказатьсяОтОплатыРасширеннаяПодсказка" id="507"/>
 								</Button>
 								<Button name="НачатьОплату" id="508">
@@ -412,6 +407,7 @@ by credit card</v8:content>
 									<BackColor>style:ЦветТемы</BackColor>
 									<BorderColor>style:ЦветТемы</BorderColor>
 									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<ExtendedTooltip name="НачатьОплатуРасширеннаяПодсказка" id="509"/>
 								</Button>
 							</ChildItems>
@@ -690,8 +686,6 @@ by credit card</v8:content>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Center</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="НадписьЗавершение_6_1КонтекстноеМеню" id="462"/>
 							<ExtendedTooltip name="НадписьЗавершение_6_1РасширеннаяПодсказка" id="463"/>
 						</LabelDecoration>
@@ -710,8 +704,6 @@ by credit card</v8:content>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Center</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="НадписьЗавершение_6_2КонтекстноеМеню" id="465"/>
 							<ExtendedTooltip name="НадписьЗавершение_6_2РасширеннаяПодсказка" id="466"/>
 						</LabelDecoration>
@@ -822,8 +814,6 @@ by credit card</v8:content>
 							<GroupVerticalAlign>Center</GroupVerticalAlign>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Center</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="НадписьЗавершение_7_1КонтекстноеМеню" id="468"/>
 							<ExtendedTooltip name="НадписьЗавершение_7_1РасширеннаяПодсказка" id="469"/>
 						</LabelDecoration>
@@ -843,8 +833,6 @@ by credit card</v8:content>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<VerticalAlign>Center</VerticalAlign>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="НадписьЗавершение_7_2КонтекстноеМеню" id="471"/>
 							<ExtendedTooltip name="НадписьЗавершение_7_2РасширеннаяПодсказка" id="472"/>
 						</LabelDecoration>
@@ -864,6 +852,9 @@ by credit card</v8:content>
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="СтраницаЗавершениеКартинкиРасширеннаяПодсказка" id="548"/>
 					<ChildItems>
@@ -886,6 +877,7 @@ by credit card</v8:content>
 							<ExtendedTooltip name="КартинкаЗавершение_КМРасширеннаяПодсказка" id="557"/>
 						</PictureDecoration>
 						<PictureDecoration name="КартинкаЗавершение_МОКП" id="549">
+							<Visible>false</Visible>
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>
 							<Title formatted="false">
@@ -904,6 +896,7 @@ by credit card</v8:content>
 							<ExtendedTooltip name="КартинкаЗавершение_МОКПРасширеннаяПодсказка" id="551"/>
 						</PictureDecoration>
 						<PictureDecoration name="КартинкаЗавершение_КП" id="552">
+							<Visible>false</Visible>
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>
 							<Title formatted="false">
@@ -922,6 +915,7 @@ by credit card</v8:content>
 							<ExtendedTooltip name="КартинкаЗавершение_КПРасширеннаяПодсказка" id="554"/>
 						</PictureDecoration>
 						<PictureDecoration name="КартинкаПродолжение" id="558">
+							<Visible>false</Visible>
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>
 							<Title formatted="false">
