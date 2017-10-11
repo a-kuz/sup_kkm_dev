@@ -670,11 +670,24 @@ by credit card</v8:content>
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<LabelDecoration name="НадписьСостояниеОплаты" id="561">
+							<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Надпись состояние оплаты</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьСостояниеОплатыКонтекстноеМеню" id="562"/>
+							<ExtendedTooltip name="НадписьСостояниеОплатыРасширеннаяПодсказка" id="563"/>
+						</LabelDecoration>
 						<LabelDecoration name="НадписьЗавершение_6_1" id="461">
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>2</Height>
 							<TextColor>style:ЦветТемы</TextColor>
-							<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
+							<Font ref="style:АК_ШрифтИнфо" height="20" kind="StyleItem"/>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -691,7 +704,7 @@ by credit card</v8:content>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>3</Height>
 							<TextColor>style:ЦветТемы</TextColor>
-							<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
+							<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
