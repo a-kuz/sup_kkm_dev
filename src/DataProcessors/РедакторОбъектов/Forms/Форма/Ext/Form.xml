@@ -154,6 +154,13 @@
 					</Title>
 				</ExtendedTooltip>
 			</Button>
+			<Button name="ФормаЗаписатьИзакрыть" id="223">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьИзакрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИзакрытьРасширеннаяПодсказка" id="224"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -1161,6 +1168,7 @@
 					<v8:content>Записать</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Ctrl+S</Shortcut>
 			<Picture>
 				<xr:Ref>StdPicture.SaveFile</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1295,6 +1303,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВосстановитьВерсиюОбъекта</Action>
+		</Command>
+		<Command name="ЗаписатьИзакрыть" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать изакрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаписатьИзакрыть</Action>
 		</Command>
 	</Commands>
 	<Parameters>
