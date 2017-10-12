@@ -118,6 +118,20 @@
 	РезультатЗапроса = Неопределено;
 КонецПроцедуры
 
+Процедура ВыполнитьЗапросАсинхронно(Подключение, ТекстЗапроса, Отказ=Ложь, ТекстОшибки="") Экспорт
+	
+	ADODBCommand = Новый COMОбъект("ADODB.Command");
+	adAsyncExecute = 16; adExecuteNoRecords = 128;
+	Options = adAsyncExecute + adExecuteNoRecords;// 16 + 128
+
+	ADODBCommand.ActiveConnection = Подключение;
+	ADODBCommand.CommandText = ТекстЗапроса;
+
+	RecordsAffected = 0;
+	ADODBCommand.Execute(RecordsAffected, Null, Options);
+	ADODBCommand = Неопределено;
+КонецПроцедуры
+
 Функция ВыполнитьЗапросВыборки(Подключение, ТекстЗапроса, Отказ=Ложь, ТекстОшибки="", Таймаут = 30) Экспорт
 	
 	РезультатЗапроса = Новый COMОбъект("ADODB.Recordset");

@@ -11345,7 +11345,7 @@
 		adLongVarBinaryType = ирОбщий.intTypeADOЛкс("adLongVarBinary");
 		ПервыйРаз = Истина;
 		Счетчик = 0;
-		Если РезультатRecordset.EOF() = 0 И РезультатRecordset.ВOF() = 0 Тогда
+		Если РезультатRecordset.EOF() = 0 И РезультатRecordset.BOF() = 0 Тогда
 			РезультатRecordset.MoveFirst();
 		КонецЕсли; 
 		Пока РезультатRecordset.EOF() = 0 Цикл
