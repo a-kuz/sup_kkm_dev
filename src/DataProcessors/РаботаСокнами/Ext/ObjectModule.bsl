@@ -604,6 +604,8 @@
 		|}
 		|return
 		|
+		|
+		|
 		|^!VK4B::KeyHistory ; ^!k
 		|~!+^VKBE::
 		|	Gosub, CheckFullScreen
