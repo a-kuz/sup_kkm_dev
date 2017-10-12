@@ -584,8 +584,13 @@
 		|
 		|CheckCenterWindow() {
 		|	Settimer, CheckCenterWindow_Label, -100
+		|	Settimer, fun2, -1000
 		|	return 1	
 		|}
+		|
+		|fun2:
+		|Gosub, CheckCenterWindow_Label
+		|return
 		|
 		|CheckCenterWindow_Label:
 		|WinGetClass, A_Class, A 
