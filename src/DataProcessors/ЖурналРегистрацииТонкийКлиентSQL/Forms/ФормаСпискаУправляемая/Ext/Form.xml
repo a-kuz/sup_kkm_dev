@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Width>120</Width>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Данные_Фильтр" id="47">
+			<DataPath>Данные_Фильтр</DataPath>
+			<ContextMenu name="Данные_ФильтрКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="Данные_ФильтрРасширеннаяПодсказка" id="49"/>
+			<Events>
+				<Event name="OnChange">Данные_ФильтрПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Список" id="1">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ирУровниЖурналаРегистрации</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<ChildItems>
+					<ButtonGroup name="ГруппаФорма" id="41">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа форма</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Form</CommandSource>
+						<ExtendedTooltip name="ГруппаФормаРасширеннаяПодсказка" id="42"/>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="СписокГруппа1" id="43">
+					<ExtendedTooltip name="СписокГруппа1РасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<LabelField name="СписокДата" id="23">
+							<DataPath>Список.Дата</DataPath>
+							<ContextMenu name="СписокДатаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="СписокКомпьютер" id="29">
+					<DataPath>Список.Компьютер</DataPath>
+					<ContextMenu name="СписокКомпьютерКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокКомпьютерРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<ColumnGroup name="СписокГруппа2" id="45">
+					<ExtendedTooltip name="СписокГруппа2РасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<LabelField name="СписокСобытие" id="35">
+							<DataPath>Список.Событие</DataPath>
+							<ContextMenu name="СписокСобытиеКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="СписокСобытиеРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+						<LabelField name="СписокКомментарий" id="26">
+							<DataPath>Список.Комментарий</DataPath>
+							<Width>100</Width>
+							<Height>5</Height>
+							<ContextMenu name="СписокКомментарийКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СписокКомментарийРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="СписокДанные_Ссылка" id="17">
+					<DataPath>Список.Данные_Ссылка</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокДанные_СсылкаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокДанные_СсылкаРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="СписокДанные_ТипСсылки" id="20">
+					<DataPath>Список.Данные_ТипСсылки</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокДанные_ТипСсылкиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокДанные_ТипСсылкиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="СписокПользователь" id="32">
+					<DataPath>Список.Пользователь</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокПользовательКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокПользовательРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<LabelField name="СписокУровень" id="38">
+					<DataPath>Список.Уровень</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокУровеньКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СписокУровеньРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="СписокДанные_Представление" id="14">
+					<DataPath>Список.Данные_Представление</DataPath>
+					<ContextMenu name="СписокДанные_ПредставлениеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокДанные_ПредставлениеРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЖурналРегистрацииТонкийКлиентSQL</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Список" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>Список.Уровень</Field>
+				<Field>Список.Дата</Field>
+				<Field>Список.Данные_ТипСсылки</Field>
+				<Field>Список.Данные_Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЖурналРегистрации.Дата КАК Дата,
+	ЖурналРегистрации.Пользователь КАК Пользователь,
+	ЖурналРегистрации.Компьютер КАК Компьютер,
+	ЖурналРегистрации.Уровень КАК Уровень,
+	ЖурналРегистрации.Событие КАК Событие,
+	ЖурналРегистрации.Комментарий КАК Комментарий,
+	ЖурналРегистрации.Данные_Ссылка КАК Данные_Ссылка,
+	ЖурналРегистрации.Данные_ТипСсылки КАК Данные_ТипСсылки,
+	ЖурналРегистрации.Данные_Представление КАК Данные_Представление
+ИЗ
+	ВнешнийИсточникДанных.ЖурналРегистрации.Таблица.ЖурналРегистрации КАК ЖурналРегистрации</QueryText>
+				<MainTable>ExternalDataSource.ЖурналРегистрации.Table.ЖурналРегистрации</MainTable>
+				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+							<dcsset:comparisonType>Greater</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfLastDay</v8:variant>
+							</dcsset:right>
+							<dcsset:userSettingID>5d3996cd-ed4a-4c40-96c7-daba45f9c4fe</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+							</dcsset:right>
+							<dcsset:userSettingID>68b477c1-b8d6-40a5-87d7-d2ce373543cf</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Событие</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
+							<dcsset:userSettingID>a40c311a-be68-4548-b76a-751efb58018b</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Событие</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Уровень</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:string">Ошибка</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Brown</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Данные_Фильтр" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтборПоДанным" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по данным</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по данным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтборПоДанным</Action>
+		</Command>
+	</Commands>
+</Form>

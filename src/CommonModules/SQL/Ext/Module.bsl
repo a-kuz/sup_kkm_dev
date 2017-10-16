@@ -125,7 +125,7 @@
 	
 	Если Подключение.State <> 1 Тогда
 		локПодключение =  Новый COMОбъект("ADODB.Connection");
-	    локПодключение.ConnectionString = Подключение.ConnectString;
+	    локПодключение.ConnectionString = Подключение.ConnectionString+Подключение.Properties.item("Extended Properties").value;
 		локПодключение.Open();
 		локПодключение.Execute(ТекстЗапроса,,128);
 		локПодключение.Close();
