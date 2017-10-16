@@ -4,7 +4,110 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаНастройка" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа администрирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаНастройкаРасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДополнительныеСвойства" id="65">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа управление спулом</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДополнительныеСвойстваРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<Table name="ДополнительныеСвойства" id="67">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДополнительныеСвойства</DataPath>
+							<RowPictureDataPath>ДополнительныеСвойства.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ДополнительныеСвойстваКонтекстноеМеню" id="68"/>
+							<AutoCommandBar name="ДополнительныеСвойстваКоманднаяПанель" id="69"/>
+							<ExtendedTooltip name="ДополнительныеСвойстваРасширеннаяПодсказка" id="70"/>
+							<SearchStringAddition name="ДополнительныеСвойстваСтрокаПоиска" id="71">
+								<AdditionSource>
+									<Item>ДополнительныеСвойства</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДополнительныеСвойстваСтрокаПоискаКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="ДополнительныеСвойстваСтрокаПоискаРасширеннаяПодсказка" id="73"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДополнительныеСвойстваСостояниеПросмотра" id="74">
+								<AdditionSource>
+									<Item>ДополнительныеСвойства</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДополнительныеСвойстваСостояниеПросмотраКонтекстноеМеню" id="75"/>
+								<ExtendedTooltip name="ДополнительныеСвойстваСостояниеПросмотраРасширеннаяПодсказка" id="76"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДополнительныеСвойстваУправлениеПоиском" id="77">
+								<AdditionSource>
+									<Item>ДополнительныеСвойства</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДополнительныеСвойстваУправлениеПоискомКонтекстноеМеню" id="78"/>
+								<ExtendedTooltip name="ДополнительныеСвойстваУправлениеПоискомРасширеннаяПодсказка" id="79"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДополнительныеСвойстваИнформационнаяБаза" id="83">
+									<DataPath>ДополнительныеСвойства.ИнформационнаяБаза</DataPath>
+									<ContextMenu name="ДополнительныеСвойстваИнформационнаяБазаКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ДополнительныеСвойстваИнформационнаяБазаРасширеннаяПодсказка" id="85"/>
+								</LabelField>
+								<LabelField name="ДополнительныеСвойстваОбъект" id="86">
+									<DataPath>ДополнительныеСвойства.Объект</DataPath>
+									<ContextMenu name="ДополнительныеСвойстваОбъектКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ДополнительныеСвойстваОбъектРасширеннаяПодсказка" id="88"/>
+								</LabelField>
+								<LabelField name="ДополнительныеСвойстваСвойство" id="89">
+									<DataPath>ДополнительныеСвойства.Свойство</DataPath>
+									<ContextMenu name="ДополнительныеСвойстваСвойствоКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ДополнительныеСвойстваСвойствоРасширеннаяПодсказка" id="91"/>
+								</LabelField>
+								<LabelField name="ДополнительныеСвойстваЗначение" id="80">
+									<DataPath>ДополнительныеСвойства.Значение</DataPath>
+									<ContextMenu name="ДополнительныеСвойстваЗначениеКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДополнительныеСвойстваЗначениеРасширеннаяПодсказка" id="82"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаАдминистрирование" id="23">
 			<Title>
 				<v8:item>
@@ -18,15 +121,43 @@
 					<v8:content>Группа администрирование</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>Vertical</Group>
+			<Group>Horizontal</Group>
 			<Behavior>Collapsible</Behavior>
 			<ExtendedTooltip name="ГруппаАдминистрированиеРасширеннаяПодсказка" id="24"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаУправлениеСпулом" id="25">
+				<UsualGroup name="ГруппаРежимОффлайн" id="25">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Управление спулом</v8:content>
+							<v8:content>Режим оффлайн</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа режим оффлайн</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаРежимОффлайнРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<Button name="КомандаВключитьРежимОффлайн" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаВключитьРежимОффлайн</CommandName>
+							<ExtendedTooltip name="КомандаВключитьРежимОффлайнРасширеннаяПодсказка" id="42"/>
+						</Button>
+						<Button name="КомандаВыключитьРежимОффлайн" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаВыключитьРежимОффлайн</CommandName>
+							<ExtendedTooltip name="КомандаВыключитьРежимОффлайнРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКэш" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кэш</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
@@ -36,18 +167,15 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
-					<ExtendedTooltip name="ГруппаУправлениеСпуломРасширеннаяПодсказка" id="26"/>
+					<ExtendedTooltip name="ГруппаКэшРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<Button name="КомандаСброситьКеш" id="94">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаСброситьКэш</CommandName>
+							<ExtendedTooltip name="КомандаСброситьКешРасширеннаяПодсказка" id="95"/>
+						</Button>
+					</ChildItems>
 				</UsualGroup>
-				<Button name="КомандаВключитьРежимОффлайн" id="41">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.КомандаВключитьРежимОффлайн</CommandName>
-					<ExtendedTooltip name="КомандаВключитьРежимОффлайнРасширеннаяПодсказка" id="42"/>
-				</Button>
-				<Button name="КомандаВыключитьРежимОффлайн" id="43">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.КомандаВыключитьРежимОффлайн</CommandName>
-					<ExtendedTooltip name="КомандаВыключитьРежимОффлайнРасширеннаяПодсказка" id="44"/>
-				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаТестирование" id="21">
@@ -106,17 +234,42 @@
 									<ContextMenu name="ЗаказКонтекстноеМеню" id="4"/>
 									<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="5"/>
 								</InputField>
-								<Button name="КомандаCALC" id="9">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.КомандаCALC</CommandName>
+								<UsualGroup name="ГруппаТестирование_Команды" id="98">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>CALC</v8:content>
+											<v8:content>Группа тестирование команды</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="КомандаCALCРасширеннаяПодсказка" id="10"/>
-								</Button>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа тестирование команды</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТестирование_КомандыРасширеннаяПодсказка" id="99"/>
+									<ChildItems>
+										<Button name="КомандаCALC" id="9">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.КомандаCALC</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>CALC</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаCALCРасширеннаяПодсказка" id="10"/>
+										</Button>
+										<Button name="КомандаPRESALE" id="96">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.КомандаPRESALE</CommandName>
+											<ExtendedTooltip name="КомандаPRESALEРасширеннаяПодсказка" id="97"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<InputField name="РезультатJSON" id="6">
 									<DataPath>РезультатJSON</DataPath>
 									<HorizontalStretch>true</HorizontalStretch>
@@ -430,6 +583,48 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ДополнительныеСвойства" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийДополнительныеСвойства.ИнформационнаяБаза КАК ИнформационнаяБаза,
+	РегистрСведенийДополнительныеСвойства.Объект КАК Объект,
+	РегистрСведенийДополнительныеСвойства.Свойство КАК Свойство,
+	РегистрСведенийДополнительныеСвойства.Значение КАК Значение
+ИЗ
+	РегистрСведений.ДополнительныеСвойства КАК РегистрСведенийДополнительныеСвойства
+ГДЕ
+	РегистрСведенийДополнительныеСвойства.ИнформационнаяБаза В(&amp;ИнформационнаяБаза)
+	И ПОДСТРОКА(РегистрСведенийДополнительныеСвойства.Свойство, 1, 11) = &amp;Свойство</QueryText>
+				<MainTable>InformationRegister.ДополнительныеСвойства</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="КомандаCALC" id="1">
@@ -566,6 +761,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаCHECK_EDIT</Action>
+		</Command>
+		<Command name="КомандаСброситьКэш" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить кэш</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сбросить кэш</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСброситьКэш</Action>
+		</Command>
+		<Command name="КомандаPRESALE" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>PRESALE</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда PRESALE</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаPRESALE</Action>
 		</Command>
 	</Commands>
 </Form>
