@@ -71,12 +71,12 @@
 			<Explanation/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ReadOnly>true</ReadOnly>
-			<TransactionsIsolationLevel>Auto</TransactionsIsolationLevel>
+			<TransactionsIsolationLevel>ReadUncommitted</TransactionsIsolationLevel>
 			<DataVersionField/>
 			<EditType>InDialog</EditType>
 			<BasedOn/>
 			<DataLockFields/>
-			<DataLockControlMode>Automatic</DataLockControlMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
 		</Properties>
 		<ChildObjects>
 			<Field uuid="d454100f-efe7-4313-bff8-b899d8321115">
@@ -267,7 +267,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>20</v8:Length>
+							<v8:Length>120</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -313,8 +313,8 @@
 					<ToolTip/>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
+					<MultiLine>true</MultiLine>
+					<ExtendedEdit>true</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
@@ -327,7 +327,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<ChoiceForm/>
 					<NameInDataSource>Комментарий</NameInDataSource>
-					<ReadOnly>false</ReadOnly>
+					<ReadOnly>true</ReadOnly>
 					<AllowNull>true</AllowNull>
 				</Properties>
 			</Field>
