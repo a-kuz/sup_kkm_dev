@@ -152,6 +152,14 @@
 							<ContextMenu name="СписокДатаКонтекстноеМеню" id="24"/>
 							<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="25"/>
 						</LabelField>
+						<LabelField name="СписокИд" id="64">
+							<DataPath>Список.Ид</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="СписокИдКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="СписокИдРасширеннаяПодсказка" id="66"/>
+						</LabelField>
 					</ChildItems>
 				</ColumnGroup>
 				<LabelField name="СписокКомпьютер" id="29">
@@ -227,14 +235,15 @@
 			</Type>
 			<UseAlways>
 				<Field>Список.Уровень</Field>
+				<Field>Список.Ид</Field>
 				<Field>Список.Дата</Field>
 				<Field>Список.Данные_ТипСсылки</Field>
 				<Field>Список.Данные_Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
-				<QueryText>ВЫБРАТЬ
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ             ид,
 	ЖурналРегистрации.Дата КАК Дата,
 	ЖурналРегистрации.Пользователь КАК Пользователь,
 	ЖурналРегистрации.Компьютер КАК Компьютер,
