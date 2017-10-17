@@ -48,6 +48,14 @@
 							<ContextMenu name="УровеньКонтекстноеМеню" id="18"/>
 							<ExtendedTooltip name="УровеньРасширеннаяПодсказка" id="19"/>
 						</InputField>
+						<InputField name="Данные_ТипСсылки" id="31">
+							<DataPath>Запись.Данные_ТипСсылки</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="Данные_ТипСсылкиКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="Данные_ТипСсылкиРасширеннаяПодсказка" id="33"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ПраваяКолонка" id="20">
@@ -72,23 +80,29 @@
 						</InputField>
 						<InputField name="Данные_Ссылка" id="28">
 							<DataPath>Запись.Данные_Ссылка</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>УИД</v8:content>
+								</v8:item>
+							</Title>
 							<ChoiceButton>false</ChoiceButton>
 							<OpenButton>true</OpenButton>
 							<ContextMenu name="Данные_СсылкаКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="Данные_СсылкаРасширеннаяПодсказка" id="30"/>
 						</InputField>
+						<InputField name="Данные" id="37">
+							<DataPath>Данные</DataPath>
+							<ContextMenu name="ДанныеКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ДанныеРасширеннаяПодсказка" id="39"/>
+						</InputField>
 						<InputField name="Данные_Представление" id="34">
 							<DataPath>Запись.Данные_Представление</DataPath>
 							<ContextMenu name="Данные_ПредставлениеКонтекстноеМеню" id="35"/>
 							<ExtendedTooltip name="Данные_ПредставлениеРасширеннаяПодсказка" id="36"/>
-						</InputField>
-						<InputField name="Данные_ТипСсылки" id="31">
-							<DataPath>Запись.Данные_ТипСсылки</DataPath>
-							<UserVisible>
-								<xr:Common>false</xr:Common>
-							</UserVisible>
-							<ContextMenu name="Данные_ТипСсылкиКонтекстноеМеню" id="32"/>
-							<ExtendedTooltip name="Данные_ТипСсылкиРасширеннаяПодсказка" id="33"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
