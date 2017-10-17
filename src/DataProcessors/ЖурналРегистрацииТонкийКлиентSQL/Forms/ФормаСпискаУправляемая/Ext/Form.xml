@@ -143,6 +143,9 @@
 				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
 			<ChildItems>
 				<ColumnGroup name="СписокГруппа1" id="43">
 					<ExtendedTooltip name="СписокГруппа1РасширеннаяПодсказка" id="44"/>

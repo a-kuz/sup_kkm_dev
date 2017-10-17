@@ -59,7 +59,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 			<DefaultObjectForm/>
-			<DefaultRecordForm/>
+			<DefaultRecordForm>ExternalDataSource.ЖурналРегистрации.Table.ЖурналРегистрации.Form.ФормаЗаписи</DefaultRecordForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<ObjectPresentation/>
@@ -70,7 +70,7 @@
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<ReadOnly>false</ReadOnly>
+			<ReadOnly>true</ReadOnly>
 			<TransactionsIsolationLevel>Auto</TransactionsIsolationLevel>
 			<DataVersionField/>
 			<EditType>InDialog</EditType>
@@ -334,14 +334,15 @@
 			<Field uuid="f89b4b29-fff3-4810-8d8f-401c6ce80fef">
 				<Properties>
 					<Name>Данные_Ссылка</Name>
-					<Synonym/>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:base64Binary</v8:Type>
-						<v8:BinaryDataQualifiers>
-							<v8:Length>16</v8:Length>
-							<v8:AllowedLength>Fixed</v8:AllowedLength>
-						</v8:BinaryDataQualifiers>
+						<v8:Type>v8:UUID</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -370,7 +371,12 @@
 			<Field uuid="2dee10ba-67c9-4ffd-a924-e6eedc624b59">
 				<Properties>
 					<Name>Данные_ТипСсылки</Name>
-					<Synonym/>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метаданные</v8:content>
+						</v8:item>
+					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -406,7 +412,12 @@
 			<Field uuid="93f5a877-8b0e-4103-a150-5b1cfcddb0c6">
 				<Properties>
 					<Name>Данные_Представление</Name>
-					<Synonym/>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление данных</v8:content>
+						</v8:item>
+					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -439,6 +450,7 @@
 					<AllowNull>true</AllowNull>
 				</Properties>
 			</Field>
+			<Form>ФормаЗаписи</Form>
 		</ChildObjects>
 	</Table>
 </MetaDataObject>
