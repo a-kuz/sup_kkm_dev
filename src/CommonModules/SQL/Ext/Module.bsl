@@ -32,8 +32,8 @@
 	SQLConnection = Новый COMОбъект("ADODB.Connection");
     
     ConnectString = "Provider=SQLOLEDB;DRIVER={SQL Server Native Client 11.0};" + 
-	                "Data Source=" + ServerName + ";" +
-	                ";UID=" + UID + ";PWD=" + PWD;
+	                "Data Source=" + ServerName +
+					";UID=" + UID + ";PWD=" + PWD;
 	Если DB <> Неопределено Тогда
 		ConnectString = ConnectString + "; Initial Catalog=" + DB;						
 	КонецЕсли;  	
@@ -121,16 +121,15 @@
 Функция ВыполнитьЗапросАсинхронно(Подключение, ТекстЗапроса, Отказ=Ложь, ТекстОшибки="") Экспорт
 	
 	adAsyncExecute = 16; adExecuteNoRecords = 128;
-	Options = adAsyncExecute + adExecuteNoRecords;// 16 + 128
 	
 	Если Подключение.State <> 1 Тогда
 		локПодключение =  Новый COMОбъект("ADODB.Connection");
-	    локПодключение.ConnectionString = Подключение.ConnectionString+Подключение.Properties.item("Extended Properties").value;
+	    локПодключение.ConnectionString = Подключение.ConnectionString + Подключение.Properties.Item("Extended Properties").Value;
 		локПодключение.Open();
-		локПодключение.Execute(ТекстЗапроса,,128);
+		локПодключение.Execute(ТекстЗапроса, , adExecuteNoRecords);
 		локПодключение.Close();
 	Иначе
-		Подключение.Execute(ТекстЗапроса, , Options);
+		Подключение.Execute(ТекстЗапроса, , adExecuteNoRecords + adAsyncExecute);
 	КонецЕсли;
 
 КонецФункции

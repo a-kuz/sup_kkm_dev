@@ -5,16 +5,41 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
-		<InputField name="Данные_Фильтр" id="47">
-			<DataPath>Данные_Фильтр</DataPath>
-			<ContextMenu name="Данные_ФильтрКонтекстноеМеню" id="48"/>
-			<ExtendedTooltip name="Данные_ФильтрРасширеннаяПодсказка" id="49"/>
-			<Events>
-				<Event name="OnChange">Данные_ФильтрПриИзменении</Event>
-			</Events>
-		</InputField>
+		<UsualGroup name="Настройки" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="Данные_Фильтр" id="47">
+					<DataPath>Данные_Фильтр</DataPath>
+					<ContextMenu name="Данные_ФильтрКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="Данные_ФильтрРасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="OnChange">Данные_ФильтрПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="Список" id="1">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
@@ -36,8 +61,10 @@
 			<ShowRoot>true</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>Настройки</UserSettingsGroup>
 			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
 				<ChildItems>
 					<ButtonGroup name="ГруппаФорма" id="41">
 						<Title>
@@ -55,6 +82,40 @@
 						<CommandSource>Form</CommandSource>
 						<ExtendedTooltip name="ГруппаФормаРасширеннаяПодсказка" id="42"/>
 					</ButtonGroup>
+					<Button name="СписокНастройкаСписка" id="52">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.ListSettings</CommandName>
+						<ExtendedTooltip name="СписокНастройкаСпискаРасширеннаяПодсказка" id="53"/>
+					</Button>
+					<Button name="СписокСохранитьНастройкиДинамическогоСписка" id="54">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.SaveDynamicListSettings</CommandName>
+						<ExtendedTooltip name="СписокСохранитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="55"/>
+					</Button>
+					<Button name="СписокЗагрузитьНастройкиДинамическогоСписка" id="56">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.LoadDynamicListSettings</CommandName>
+						<ExtendedTooltip name="СписокЗагрузитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="57"/>
+					</Button>
+					<Button name="ВывестиСписок" id="60">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.OutputList</CommandName>
+						<ExtendedTooltip name="ВывестиСписокРасширеннаяПодсказка" id="61"/>
+					</Button>
+					<Button name="ФормаСтандартныеНастройкиДинамическогоСписка" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.DynamicListStandardSettings</CommandName>
+						<ExtendedTooltip name="ФормаСтандартныеНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="59"/>
+					</Button>
+					<Button name="СписокОбновить" id="62">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+						<ExtendedTooltip name="СписокОбновитьРасширеннаяПодсказка" id="63"/>
+					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
@@ -185,25 +246,47 @@
 	ЖурналРегистрации.Данные_Представление КАК Данные_Представление
 ИЗ
 	ВнешнийИсточникДанных.ЖурналРегистрации.Таблица.ЖурналРегистрации КАК ЖурналРегистрации</QueryText>
-				<MainTable>1:3124178e-6aa7-461d-9cd3-418f1ab537fb</MainTable>
+				<MainTable>ExternalDataSource.ЖурналРегистрации.Table.ЖурналРегистрации</MainTable>
 				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
 					<dcsset:filter>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
-							<dcsset:comparisonType>Greater</dcsset:comparisonType>
-							<dcsset:right xsi:type="v8:StandardBeginningDate">
-								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfLastDay</v8:variant>
-							</dcsset:right>
-							<dcsset:userSettingID>5d3996cd-ed4a-4c40-96c7-daba45f9c4fe</dcsset:userSettingID>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
-							<dcsset:comparisonType>Less</dcsset:comparisonType>
-							<dcsset:right xsi:type="v8:StandardBeginningDate">
-								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-							</dcsset:right>
-							<dcsset:userSettingID>68b477c1-b8d6-40a5-87d7-d2ce373543cf</dcsset:userSettingID>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="v8:StandardBeginningDate">
+									<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+								</dcsset:right>
+								<dcsset:userSettingID>68b477c1-b8d6-40a5-87d7-d2ce373543cf</dcsset:userSettingID>
+								<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>С</v8:content>
+									</v8:item>
+								</dcsset:userSettingPresentation>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+								<dcsset:comparisonType>Greater</dcsset:comparisonType>
+								<dcsset:right xsi:type="v8:StandardBeginningDate">
+									<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfLastDay</v8:variant>
+								</dcsset:right>
+								<dcsset:userSettingID>5d3996cd-ed4a-4c40-96c7-daba45f9c4fe</dcsset:userSettingID>
+								<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>по</v8:content>
+									</v8:item>
+								</dcsset:userSettingPresentation>
+							</dcsset:item>
+							<dcsset:userSettingID>b237a083-b6b1-48fb-be5f-de4b7b1f4c2f</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+							</dcsset:userSettingPresentation>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:use>false</dcsset:use>
@@ -211,6 +294,16 @@
 							<dcsset:comparisonType>Contains</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string"/>
 							<dcsset:userSettingID>a40c311a-be68-4548-b76a-751efb58018b</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Компьютер</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Уровень</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
@@ -282,4 +375,11 @@
 			<Action>ОтборПоДанным</Action>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="Данные">
+			<Type>
+				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>
