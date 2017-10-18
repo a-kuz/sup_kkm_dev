@@ -96,6 +96,7 @@
 						</InputField>
 						<InputField name="Данные" id="37">
 							<DataPath>Данные</DataPath>
+							<ReadOnly>true</ReadOnly>
 							<ContextMenu name="ДанныеКонтекстноеМеню" id="38"/>
 							<ExtendedTooltip name="ДанныеРасширеннаяПодсказка" id="39"/>
 						</InputField>
@@ -124,10 +125,9 @@
 	<Attributes>
 		<Attribute name="Запись" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataSourceTableRecordManager.ЖурналРегистрации.ЖурналРегистрации</v8:Type>
+				<v8:Type>cfg:ExternalDataSourceTableObject.ЖурналРегистрации.ЖурналРегистрации</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
-			<SavedData>true</SavedData>
 		</Attribute>
 		<Attribute name="Данные" id="2">
 			<Title>
