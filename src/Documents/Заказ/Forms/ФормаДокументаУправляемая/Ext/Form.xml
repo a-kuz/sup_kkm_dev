@@ -131,7 +131,9 @@
 							<ExtendedTooltip name="КассоваяСменаРасширеннаяПодсказка" id="45"/>
 						</InputField>
 						<UsualGroup name="Группа1" id="110">
+							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Horizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="111"/>
@@ -162,18 +164,41 @@
 											<v8:content>Смена</v8:content>
 										</v8:item>
 									</Title>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 									<EditMode>EnterOnInput</EditMode>
+									<Width>16</Width>
+									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="НомерСменыКонтекстноеМеню" id="32"/>
 									<ExtendedTooltip name="НомерСменыРасширеннаяПодсказка" id="33"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="НомерКартыЛояльности" id="19">
-							<DataPath>Объект.НомерКартыЛояльности</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="НомерКартыЛояльностиКонтекстноеМеню" id="20"/>
-							<ExtendedTooltip name="НомерКартыЛояльностиРасширеннаяПодсказка" id="21"/>
-						</InputField>
+						<UsualGroup name="Группа4" id="367">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="368"/>
+							<ChildItems>
+								<InputField name="НомерКартыЛояльности" id="19">
+									<DataPath>Объект.НомерКартыЛояльности</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>18</Width>
+									<ContextMenu name="НомерКартыЛояльностиКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НомерКартыЛояльностиРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="КартаДоступа" id="364">
+									<DataPath>Объект.КартаДоступа</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>13</Width>
+									<DropListButton>false</DropListButton>
+									<ClearButton>false</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="КартаДоступаКонтекстноеМеню" id="365"/>
+									<ExtendedTooltip name="КартаДоступаРасширеннаяПодсказка" id="366"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 						<InputField name="ИдентификаторЛояльности" id="34">
 							<DataPath>Объект.ИдентификаторЛояльности</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -339,6 +364,19 @@
 									<ContextMenu name="ТоварыКоличествоУдаленоКонтекстноеМеню" id="72"/>
 									<ExtendedTooltip name="ТоварыКоличествоУдаленоРасширеннаяПодсказка" id="73"/>
 								</InputField>
+								<InputField name="ТоварыЦенаРеализации" id="80">
+									<DataPath>Объект.Товары.ЦенаРеализации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыЦенаРеализацииКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ТоварыЦенаРеализацииРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ТоварыСуммаРеализации" id="83">
+									<DataPath>Объект.Товары.СуммаРеализации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Items.Товары.CurrentData.СуммаРеализации</FooterDataPath>
+									<ContextMenu name="ТоварыСуммаРеализацииКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ТоварыСуммаРеализацииРасширеннаяПодсказка" id="85"/>
+								</InputField>
 								<InputField name="ТоварыЦена" id="74">
 									<DataPath>Объект.Товары.Цена</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -354,19 +392,6 @@
 									<FooterDataPath>Объект.Товары.TotalСумма</FooterDataPath>
 									<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="78"/>
 									<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="79"/>
-								</InputField>
-								<InputField name="ТоварыЦенаРеализации" id="80">
-									<DataPath>Объект.Товары.ЦенаРеализации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТоварыЦенаРеализацииКонтекстноеМеню" id="81"/>
-									<ExtendedTooltip name="ТоварыЦенаРеализацииРасширеннаяПодсказка" id="82"/>
-								</InputField>
-								<InputField name="ТоварыСуммаРеализации" id="83">
-									<DataPath>Объект.Товары.СуммаРеализации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<FooterDataPath>Items.Товары.CurrentData.СуммаРеализации</FooterDataPath>
-									<ContextMenu name="ТоварыСуммаРеализацииКонтекстноеМеню" id="84"/>
-									<ExtendedTooltip name="ТоварыСуммаРеализацииРасширеннаяПодсказка" id="85"/>
 								</InputField>
 								<InputField name="ТоварыПДФ" id="92">
 									<DataPath>Объект.Товары.ПДФ</DataPath>
