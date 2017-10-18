@@ -217,9 +217,10 @@
 		<index>2</index>
 		<row>
 			<columnsID>cca6726b-0b4a-432d-9e2e-f7d5709eaf35</columnsID>
+			<formatIndex>13</formatIndex>
 			<c>
 				<c>
-					<f>13</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -227,16 +228,16 @@
 [Цена]</v8:content>
 						</v8:item>
 					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>14</f>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -247,11 +248,7 @@
 				</c>
 			</c>
 			<c>
-				<c>
-					<f>16</f>
-				</c>
-			</c>
-			<c>
+				<i>4</i>
 				<c>
 					<f>17</f>
 					<tl>
@@ -265,7 +262,7 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
@@ -282,13 +279,13 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>18</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>18</defaultFormatIndex>
+	<defaultFormatIndex>19</defaultFormatIndex>
 	<height>3</height>
 	<vgRows>3</vgRows>
 	<merge>
@@ -310,6 +307,11 @@
 		<r>0</r>
 		<c>6</c>
 		<h>1</h>
+	</merge>
+	<merge>
+		<r>2</r>
+		<c>2</c>
+		<w>1</w>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ВидимаяОбласть</name>
@@ -386,6 +388,9 @@
 		<width>248</width>
 	</format>
 	<format>
+		<height>264</height>
+	</format>
+	<format>
 		<font>0</font>
 		<width>8</width>
 		<horizontalAlignment>Center</horizontalAlignment>
@@ -400,16 +405,18 @@
 		<width>8</width>
 		<autoWidthCalculation>true</autoWidthCalculation>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 	</format>
 	<format>
 		<font>0</font>
-		<width>24</width>
+		<width>8</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 	</format>
 	<format>
 		<font>0</font>
-		<width>8</width>
+		<width>24</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 	</format>
 	<format>
