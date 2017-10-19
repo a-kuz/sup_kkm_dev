@@ -215,6 +215,11 @@
 			<ContextMenu name="ИнформационнаяБазаКонтекстноеМеню" id="41"/>
 			<ExtendedTooltip name="ИнформационнаяБазаРасширеннаяПодсказка" id="42"/>
 		</InputField>
+		<InputField name="ТипТТ" id="64">
+			<DataPath>Объект.ТипТТ</DataPath>
+			<ContextMenu name="ТипТТКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ТипТТРасширеннаяПодсказка" id="66"/>
+		</InputField>
 		<InputField name="МестоРеализации" id="43">
 			<DataPath>Объект.МестоРеализации</DataPath>
 			<EditMode>EnterOnInput</EditMode>
