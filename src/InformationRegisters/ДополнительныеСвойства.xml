@@ -42,10 +42,10 @@
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm/>
+			<DefaultRecordForm>InformationRegister.ДополнительныеСвойства.Form.ФормаЗаписиУправляемая</DefaultRecordForm>
 			<DefaultListForm>InformationRegister.ДополнительныеСвойства.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<AuxiliaryRecordForm/>
-			<AuxiliaryListForm/>
+			<AuxiliaryListForm>InformationRegister.ДополнительныеСвойства.Form.ФормаСпискаУправляемая</AuxiliaryListForm>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
@@ -238,6 +238,7 @@
 				</Properties>
 			</Dimension>
 			<Form>ФормаСпискаУправляемая</Form>
+			<Form>ФормаЗаписиУправляемая</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

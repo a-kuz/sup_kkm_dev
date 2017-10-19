@@ -122,6 +122,9 @@
 	
 	adAsyncExecute = 16; adExecuteNoRecords = 128;
 	
+	Если Подключение.Errors.Count Тогда
+		ВызватьИсключение Подключение.Errors.Item(0).Description;
+	КонецЕсли;
 	Если Подключение.State <> 1 Тогда
 		локПодключение =  Новый COMОбъект("ADODB.Connection");
 	    локПодключение.ConnectionString = Подключение.ConnectionString + Подключение.Properties.Item("Extended Properties").Value;
