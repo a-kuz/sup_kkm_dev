@@ -658,6 +658,7 @@
 			<EventSubscription>ПриЗаписиДокументов</EventSubscription>
 			<EventSubscription>ПриЗаписиСправочников</EventSubscription>
 			<EventSubscription>ПриЗаписиРегистраИнформационнаяБазаГруппа</EventSubscription>
+			<EventSubscription>ПередУдалениемСправочника</EventSubscription>
 			<ScheduledJob>ЗаданиеАвтономноеРешение</ScheduledJob>
 			<ScheduledJob>ЗагрузкаСправочникаСотрудников</ScheduledJob>
 			<ScheduledJob>ОбновлениеСтруктурыБД</ScheduledJob>
@@ -1117,8 +1118,8 @@
 			<DataProcessor>УправлениеСпецКлавиатурой</DataProcessor>
 			<DataProcessor>ФормированиеНачислений</DataProcessor>
 			<DataProcessor>ФормированиеОтчетовФО</DataProcessor>
-			<DataProcessor>ЭмуляторСканера</DataProcessor>
 			<DataProcessor>ЖурналРегистрацииТонкийКлиентSQL</DataProcessor>
+			<DataProcessor>ЭмуляторСканера</DataProcessor>
 			<DataProcessor>УправлениеВнешнимиИсточникамиДанных</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
 			<InformationRegister>Акции</InformationRegister>

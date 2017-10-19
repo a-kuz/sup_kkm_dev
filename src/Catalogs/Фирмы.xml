@@ -289,8 +289,8 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Фирмы.Form.ФормаЭлементаУправляемая</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm>Catalog.Фирмы.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm>Catalog.Фирмы.Form.ФормаВыбора</DefaultChoiceForm>
+			<DefaultListForm>Catalog.Фирмы.Form.ФормаСпискаУправляемая</DefaultListForm>
+			<DefaultChoiceForm>Catalog.Фирмы.Form.ФормаВыбораУправляемая</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -1084,6 +1084,8 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаВыбора</Form>
 			<Form>ФормаЭлементаУправляемая</Form>
+			<Form>ФормаСпискаУправляемая</Form>
+			<Form>ФормаВыбораУправляемая</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
