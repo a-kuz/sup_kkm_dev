@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Style xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<Item name="FormBackColor">
-		<Color>#FAFAFA</Color>
+		<Color>#FFFFFF</Color>
 	</Item>
 	<Item name="FormTextColor">
-		<Color>#5A5A5A</Color>
+		<Color>#464646</Color>
 	</Item>
 	<Item name="ButtonBackColor">
 		<Color>#F5F2DD</Color>
 	</Item>
 	<Item name="ButtonTextColor">
-		<Color>#6B6B6B</Color>
+		<Color>#5A5A5A</Color>
 	</Item>
 	<Item name="FieldBackColor">
 		<Color>style:FieldBackColor</Color>
@@ -60,7 +60,7 @@
 		</Border>
 	</Item>
 	<Item name="TextFont">
-		<Font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+		<Font ref="style:TextFont" faceName="Segoe UI" height="10" kind="StyleItem"/>
 	</Item>
 	<Item name="SmallTextFont">
 		<Font faceName="MS Shell Dlg" height="6" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
@@ -141,10 +141,10 @@
 		<Font ref="style:Шрифт7" kind="StyleItem"/>
 	</Item>
 	<Item name="StyleItem.Шрифт8">
-		<Font ref="style:Шрифт8" kind="StyleItem"/>
+		<Font faceName="Segoe UI" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	</Item>
 	<Item name="StyleItem.Шрифт8ж">
-		<Font ref="style:Шрифт8ж" kind="StyleItem"/>
+		<Font faceName="Segoe UI Semibold" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	</Item>
 	<Item name="StyleItem.Шрифт9ж">
 		<Font ref="style:Шрифт9ж" kind="StyleItem"/>
