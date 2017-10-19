@@ -327,23 +327,24 @@
 		<index>3</index>
 		<row>
 			<columnsID>cca6726b-0b4a-432d-9e2e-f7d5709eaf35</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
-				<c>
-					<f>15</f>
-					<parameter>Цена</parameter>
-				</c>
-			</c>
-			<c>
-				<i>2</i>
 				<c>
 					<f>16</f>
 					<parameter>Цена</parameter>
 				</c>
 			</c>
 			<c>
-				<i>4</i>
+				<i>2</i>
 				<c>
 					<f>17</f>
+					<parameter>Цена</parameter>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -379,17 +380,17 @@
 		<index>5</index>
 		<row>
 			<columnsID>5098e7b9-3f1f-421d-bcac-48ee971bdf78</columnsID>
-			<formatIndex>18</formatIndex>
+			<formatIndex>19</formatIndex>
 			<c>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>Наименование</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>20</defaultFormatIndex>
+	<defaultFormatIndex>21</defaultFormatIndex>
 	<height>6</height>
 	<vgRows>6</vgRows>
 	<merge>
@@ -539,6 +540,9 @@
 		<font>0</font>
 		<width>24</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+	</format>
+	<format>
+		<height>-88</height>
 	</format>
 	<format>
 		<font>0</font>
