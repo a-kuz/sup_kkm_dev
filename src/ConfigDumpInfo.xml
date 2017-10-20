@@ -2429,7 +2429,7 @@
 		<Metadata name="CommonTemplate.ШрифтFontAwesomeOtf.Template" id="0fdf59cb-2739-47d4-b458-45973dc35bc0.0" configVersion="62f0d1c295033c428ba834f43193092a00000000"/>
 		<Metadata name="CommonTemplate.ксИзменения" id="9c3c6d7f-fb56-4d89-a0dd-f077cb375420" configVersion="c02f56cf7c426a4b92a0c6f287c0044400000000"/>
 		<Metadata name="CommonTemplate.ксИзменения.Template" id="9c3c6d7f-fb56-4d89-a0dd-f077cb375420.0" configVersion="d3464c9c7919cb4eac930bdf84393ef100000000"/>
-		<Metadata name="Configuration.СУПккм" id="7b992f15-a89f-4bdc-b88f-0d7e5fb698b8" configVersion="d7cf64a7d12e7345a65128da0b7fc29000000000"/>
+		<Metadata name="Configuration.СУПккм" id="7b992f15-a89f-4bdc-b88f-0d7e5fb698b8" configVersion="c1116c11f4ea15449d7808c846bf86bc00000000"/>
 		<Metadata name="Configuration.СУПккм.ClientApplicationInterface" id="b5e4e820-af9d-4148-8b91-5266f9ff93e6.b" configVersion="57e0177acbedc546bdd7b3c4113c7dc000000000"/>
 		<Metadata name="Configuration.СУПккм.CommandInterface" id="b5e4e820-af9d-4148-8b91-5266f9ff93e6.a" configVersion="39853f190b50fc429c7da88acd69900b00000000"/>
 		<Metadata name="Configuration.СУПккм.ExternalConnectionModule" id="b5e4e820-af9d-4148-8b91-5266f9ff93e6.5" configVersion="0141059942ff224992f28bfae1ef901a00000000"/>
@@ -6218,6 +6218,17 @@
 		<Metadata name="Document.РеестрЦен.Form.ФормаСписка" id="fe598a68-5a54-4c61-9d09-70f3aee72f7f" configVersion="2c7d15eb4be93b46baf38bc8be1fb1d400000000"/>
 		<Metadata name="Document.РеестрЦен.Form.ФормаСписка.Form" id="fe598a68-5a54-4c61-9d09-70f3aee72f7f.0" configVersion="d05293a05c1011409b0803c344c741ef00000000"/>
 		<Metadata name="Document.РеестрЦен.ObjectModule" id="248315b6-586c-456f-8979-5f69f3c8f187.0" configVersion="7ec51391521bc04f8ea7d0f6c7b5e43700000000"/>
+		<Metadata name="Document.РецептГостя" id="c24effc7-eff0-4a09-83a6-8f121f73cadd" configVersion="bdf6a8eb46b5dd40a6afa6b5e45a699e00000000">
+			<Metadata name="Document.РецептГостя.TabularSection.Товары.Attribute.СпецификаНоменклатура" id="500c29c9-8fd3-4cb1-a8b1-9b4622bd9eac"/>
+			<Metadata name="Document.РецептГостя.TabularSection.Товары" id="63917b9d-0e93-4d10-98dc-d1a1d23417c9"/>
+			<Metadata name="Document.РецептГостя.Attribute.ТТ" id="6b73f4ea-e46a-464f-bfa0-64f5a995dadc"/>
+			<Metadata name="Document.РецептГостя.TabularSection.Товары.Attribute.Количество" id="6ea9b6c9-5f57-41d9-a644-46102921170a"/>
+			<Metadata name="Document.РецептГостя.Attribute.Автор" id="84860970-2487-4009-ae87-d583d99accde"/>
+			<Metadata name="Document.РецептГостя.TabularSection.Товары.Attribute.Специфика" id="9d126ec9-4f6e-485f-9cdd-8f6db9ead346"/>
+			<Metadata name="Document.РецептГостя.Attribute.Блюдо" id="bb7fb844-46c4-499b-8e43-244f027dc9f7"/>
+			<Metadata name="Document.РецептГостя.Attribute.ДокументОснование" id="c04e5aac-1fae-4d32-9cb8-c7779ac5d6a0"/>
+			<Metadata name="Document.РецептГостя.Attribute.ИмяРецепта" id="c8e7e3fd-ca54-40cb-898d-d7d786c4a8e1"/>
+		</Metadata>
 		<Metadata name="Document.СменаКартДоступа" id="7f0b638f-f3bd-4b94-ae02-1279ffac4864" configVersion="0dd6426185b9fa429041f3af7838f48600000000">
 			<Metadata name="Document.СменаКартДоступа.Attribute.Автор" id="21e8ab60-112d-40f0-9bb9-5e6791fd1127"/>
 			<Metadata name="Document.СменаКартДоступа.Attribute.ИдентификаторКеГеЛьБУМ" id="3c380b71-b229-4041-bd75-c8a856019c27"/>
@@ -6241,6 +6252,19 @@
 			<Metadata name="Document.СтопЛист.TabularSection.Товары.Attribute.вСтопе" id="d86bb4b3-d318-4d13-92f2-3765ecc06bcf"/>
 		</Metadata>
 		<Metadata name="Document.СтопЛист.ObjectModule" id="ff486224-e2c5-49ef-9da8-f9741de43f94.0" configVersion="b6105d314d5c78458d59bc131d7e4b2600000000"/>
+		<Metadata name="Document.ТТКдляПовара" id="0f835c3e-dfdb-4024-ac19-32c9e6646f71" configVersion="973daade7da3e147a10e55e58b5a1bce00000000">
+			<Metadata name="Document.ТТКдляПовара.TabularSection.Товары.Attribute.Нетто" id="02077e90-87d9-4a5e-bb95-18fdedfd1c38"/>
+			<Metadata name="Document.ТТКдляПовара.Attribute.ТехнологияПриготовления" id="2902c538-ef97-49f0-a1ba-d46103b223bf"/>
+			<Metadata name="Document.ТТКдляПовара.TabularSection.Товары.Attribute.Количество" id="30915ae8-afcd-4f60-8810-af646f938d88"/>
+			<Metadata name="Document.ТТКдляПовара.Attribute.Автор" id="455d5514-377c-4f59-858a-276d3598a872"/>
+			<Metadata name="Document.ТТКдляПовара.TabularSection.Товары.Attribute.Ингредиент" id="496ac99d-3ae4-4a39-bd8a-2fff1c4c475d"/>
+			<Metadata name="Document.ТТКдляПовара.TabularSection.Товары.Attribute.Примечание" id="72b5147e-0f1c-4700-9a6d-2b631bd88185"/>
+			<Metadata name="Document.ТТКдляПовара.Attribute.Оформление" id="8b72cc6d-c011-49b0-b6b5-fc2f0555d5c1"/>
+			<Metadata name="Document.ТТКдляПовара.TabularSection.Товары.Attribute.ЕдиницаИзмерения" id="8ef9424b-7f3b-49e7-b84c-d677c72f0adb"/>
+			<Metadata name="Document.ТТКдляПовара.Attribute.ВыходБлюда" id="93985a96-ead1-41c7-a606-beda285f06f3"/>
+			<Metadata name="Document.ТТКдляПовара.Attribute.Блюдо" id="abd95512-55b6-49bc-96c9-bb3abb752af6"/>
+			<Metadata name="Document.ТТКдляПовара.TabularSection.Товары" id="db588b03-3e9a-4953-8e21-7cadd74db939"/>
+		</Metadata>
 		<Metadata name="Document.ТранзакцияПлатежнойСистемы" id="75002bec-a892-466d-bd45-dcd49ba352de" configVersion="4615e0cd56fb3443863b172db60838c700000000">
 			<Metadata name="Document.ТранзакцияПлатежнойСистемы.Attribute.ВремяТранзакции" id="0adfdebd-49a6-40c4-9bd7-ae851cfc953d"/>
 			<Metadata name="Document.ТранзакцияПлатежнойСистемы.Attribute.КодАвторизации" id="15c6470a-7481-4148-b231-b36480d58899"/>
