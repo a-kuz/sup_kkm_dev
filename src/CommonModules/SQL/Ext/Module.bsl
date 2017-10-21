@@ -122,15 +122,23 @@
 	
 	adAsyncExecute = 16; adExecuteNoRecords = 128;
 	
-	Если Подключение.Errors.Count Тогда
-		ВызватьИсключение Подключение.Errors.Item(0).Description;
-	КонецЕсли;
-	Если Подключение.State <> 1 Тогда
+	Попытка
+		Отказ = Подключение.State <> 1;
+	Исключение
+		Отказ = Истина;
+	КонецПопытки;
+	Если Отказ Тогда
 		локПодключение =  Новый COMОбъект("ADODB.Connection");
 	    локПодключение.ConnectionString = Подключение.ConnectionString + Подключение.Properties.Item("Extended Properties").Value;
-		локПодключение.Open();
-		локПодключение.Execute(ТекстЗапроса, , adExecuteNoRecords);
-		локПодключение.Close();
+		
+		Отказ = Ложь;
+		Попытка
+			локПодключение.Open();
+			локПодключение.Execute(ТекстЗапроса, , adExecuteNoRecords);	
+		Исключение
+			ТекстОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
+			Отказ = Истина;
+		КонецПопытки;
 	Иначе
 		Подключение.Execute(ТекстЗапроса, , adExecuteNoRecords + adAsyncExecute);
 	КонецЕсли;

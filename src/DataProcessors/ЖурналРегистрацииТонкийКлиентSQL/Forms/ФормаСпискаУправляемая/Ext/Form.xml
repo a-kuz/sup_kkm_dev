@@ -2,6 +2,7 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<Width>120</Width>
 	<ScalingMode>Compact</ScalingMode>
+	<Scale>87</Scale>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -143,12 +144,64 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">СписокВыбор</Event>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 			</Events>
 			<ChildItems>
+				<ColumnGroup name="СписокГруппа1" id="43">
+					<ExtendedTooltip name="СписокГруппа1РасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<LabelField name="СписокИд" id="64">
+							<DataPath>Список.Ид</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="СписокИдКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="СписокИдРасширеннаяПодсказка" id="66"/>
+						</LabelField>
+						<LabelField name="СписокДата" id="23">
+							<DataPath>Список.Дата</DataPath>
+							<ContextMenu name="СписокДатаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="СписокГруппа4" id="78">
+					<ExtendedTooltip name="СписокГруппа4РасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<LabelField name="СписокКомпьютер" id="29">
+							<DataPath>Список.Компьютер</DataPath>
+							<ContextMenu name="СписокКомпьютерКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="СписокКомпьютерРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+						<LabelField name="СписокПользователь" id="32">
+							<DataPath>Список.Пользователь</DataPath>
+							<ContextMenu name="СписокПользовательКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СписокПользовательРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
 				<ColumnGroup name="СписокГруппа3" id="70">
-					<Group>Horizontal</Group>
 					<ExtendedTooltip name="СписокГруппа3РасширеннаяПодсказка" id="71"/>
 					<ChildItems>
+						<LabelField name="СписокНомерИконки" id="72">
+							<DataPath>Список.НомерИконки</DataPath>
+							<Visible>false</Visible>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="СписокНомерИконкиКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="СписокНомерИконкиРасширеннаяПодсказка" id="74"/>
+						</LabelField>
+						<LabelField name="СписокСобытие" id="35">
+							<DataPath>Список.Событие</DataPath>
+							<ContextMenu name="СписокСобытиеКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="СписокСобытиеРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+						<LabelField name="СписокДанные_Представление" id="14">
+							<DataPath>Список.Данные_Представление</DataPath>
+							<ContextMenu name="СписокДанные_ПредставлениеКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="СписокДанные_ПредставлениеРасширеннаяПодсказка" id="16"/>
+						</LabelField>
 						<PictureField name="СписокСтандартнаяКартинка" id="67">
 							<DataPath>Список.НомерИконки</DataPath>
 							<ShowInHeader>false</ShowInHeader>
@@ -159,47 +212,11 @@
 							<ContextMenu name="СписокСтандартнаяКартинкаКонтекстноеМеню" id="68"/>
 							<ExtendedTooltip name="СписокСтандартнаяКартинкаРасширеннаяПодсказка" id="69"/>
 						</PictureField>
-						<ColumnGroup name="СписокГруппа1" id="43">
-							<ExtendedTooltip name="СписокГруппа1РасширеннаяПодсказка" id="44"/>
-							<ChildItems>
-								<LabelField name="СписокИд" id="64">
-									<DataPath>Список.Ид</DataPath>
-									<UserVisible>
-										<xr:Common>false</xr:Common>
-									</UserVisible>
-									<ContextMenu name="СписокИдКонтекстноеМеню" id="65"/>
-									<ExtendedTooltip name="СписокИдРасширеннаяПодсказка" id="66"/>
-								</LabelField>
-								<LabelField name="СписокДата" id="23">
-									<DataPath>Список.Дата</DataPath>
-									<ContextMenu name="СписокДатаКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="25"/>
-								</LabelField>
-							</ChildItems>
-						</ColumnGroup>
-						<LabelField name="СписокНомерИконки" id="72">
-							<DataPath>Список.НомерИконки</DataPath>
-							<UserVisible>
-								<xr:Common>false</xr:Common>
-							</UserVisible>
-							<ContextMenu name="СписокНомерИконкиКонтекстноеМеню" id="73"/>
-							<ExtendedTooltip name="СписокНомерИконкиРасширеннаяПодсказка" id="74"/>
-						</LabelField>
 					</ChildItems>
 				</ColumnGroup>
-				<LabelField name="СписокКомпьютер" id="29">
-					<DataPath>Список.Компьютер</DataPath>
-					<ContextMenu name="СписокКомпьютерКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="СписокКомпьютерРасширеннаяПодсказка" id="31"/>
-				</LabelField>
 				<ColumnGroup name="СписокГруппа2" id="45">
 					<ExtendedTooltip name="СписокГруппа2РасширеннаяПодсказка" id="46"/>
 					<ChildItems>
-						<LabelField name="СписокСобытие" id="35">
-							<DataPath>Список.Событие</DataPath>
-							<ContextMenu name="СписокСобытиеКонтекстноеМеню" id="36"/>
-							<ExtendedTooltip name="СписокСобытиеРасширеннаяПодсказка" id="37"/>
-						</LabelField>
 						<LabelField name="СписокКомментарий" id="26">
 							<DataPath>Список.Комментарий</DataPath>
 							<AutoCellHeight>true</AutoCellHeight>
@@ -222,36 +239,14 @@
 					<ContextMenu name="СписокДанные_ТипСсылкиКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="СписокДанные_ТипСсылкиРасширеннаяПодсказка" id="22"/>
 				</LabelField>
-				<LabelField name="СписокПользователь" id="32">
-					<DataPath>Список.Пользователь</DataPath>
-					<Visible>false</Visible>
-					<ContextMenu name="СписокПользовательКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="СписокПользовательРасширеннаяПодсказка" id="34"/>
-				</LabelField>
 				<LabelField name="СписокУровень" id="38">
 					<DataPath>Список.Уровень</DataPath>
 					<Visible>false</Visible>
 					<ContextMenu name="СписокУровеньКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="СписокУровеньРасширеннаяПодсказка" id="40"/>
 				</LabelField>
-				<LabelField name="СписокДанные_Представление" id="14">
-					<DataPath>Список.Данные_Представление</DataPath>
-					<ContextMenu name="СписокДанные_ПредставлениеКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="СписокДанные_ПредставлениеРасширеннаяПодсказка" id="16"/>
-				</LabelField>
 			</ChildItems>
 		</Table>
-		<FormattedDocumentField name="ФорматированныйДокумент" id="75">
-			<DataPath>ФорматированныйДокумент</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content> </v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="ФорматированныйДокументКонтекстноеМеню" id="76"/>
-			<ExtendedTooltip name="ФорматированныйДокументРасширеннаяПодсказка" id="77"/>
-		</FormattedDocumentField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -296,6 +291,7 @@
 ИЗ
 	ВнешнийИсточникДанных.ЖурналРегистрации.Таблица.ЖурналРегистрации КАК ЖурналРегистрации</QueryText>
 				<MainTable>ExternalDataSource.ЖурналРегистрации.Table.ЖурналРегистрации</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
 					<dcsset:filter>
@@ -309,19 +305,33 @@
 									<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfLastDay</v8:variant>
 								</dcsset:right>
 								<dcsset:userSettingID>68b477c1-b8d6-40a5-87d7-d2ce373543cf</dcsset:userSettingID>
-								<dcsset:userSettingPresentation xsi:type="xs:string">С</dcsset:userSettingPresentation>
+								<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>С</v8:content>
+									</v8:item>
+								</dcsset:userSettingPresentation>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:use>false</dcsset:use>
 								<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
-								<dcsset:comparisonType>Greater</dcsset:comparisonType>
+								<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
 								<dcsset:right xsi:type="v8:StandardBeginningDate">
 									<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 								</dcsset:right>
 								<dcsset:userSettingID>5d3996cd-ed4a-4c40-96c7-daba45f9c4fe</dcsset:userSettingID>
-								<dcsset:userSettingPresentation xsi:type="xs:string">по</dcsset:userSettingPresentation>
+								<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>по</v8:content>
+									</v8:item>
+								</dcsset:userSettingPresentation>
 							</dcsset:item>
-							<dcsset:userSettingPresentation xsi:type="xs:string">Период</dcsset:userSettingPresentation>
+							<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+							</dcsset:userSettingPresentation>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:use>false</dcsset:use>
@@ -342,12 +352,19 @@
 							<dcsset:comparisonType>Contains</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string"/>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Пользователь</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
+							<dcsset:userSettingID>11fd74d4-d21a-4f2f-8741-41069c0c6aed</dcsset:userSettingID>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>Ид</dcsset:field>
+							<dcsset:field>Дата</dcsset:field>
 							<dcsset:orderType>Asc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -357,6 +374,9 @@
 							<dcsset:selection>
 								<dcsset:item>
 									<dcsset:field>Событие</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Комментарий</dcsset:field>
 								</dcsset:item>
 							</dcsset:selection>
 							<dcsset:filter>
@@ -393,15 +413,15 @@
 				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
 			</Type>
 		</Attribute>
-		<Attribute name="ФорматированныйДокумент" id="4">
+		<Attribute name="Расшифровка" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Форматированный документ</v8:content>
+					<v8:content>Расшифровка</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type xmlns:fd="http://v8.1c.ru/8.2/data/formatted-document">fd:FormattedDocument</v8:Type>
+				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

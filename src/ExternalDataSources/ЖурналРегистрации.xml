@@ -28,6 +28,22 @@
 		</Properties>
 		<ChildObjects>
 			<Table>ЖурналРегистрации</Table>
+			<Function uuid="47d1e9aa-d321-411f-ac2e-dc97c3aff993">
+				<Properties>
+					<Name>ЗаписатьСобытие</Name>
+					<Synonym/>
+					<Comment/>
+					<ReturnValue>false</ReturnValue>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<ExpressionInDataSource>dbo.insert_ЖурналРегистрации(&amp;1, &amp;2, &amp;3, &amp;4, &amp;5, &amp;6, &amp;7, &amp;8, &amp;9)</ExpressionInDataSource>
+				</Properties>
+			</Function>
 		</ChildObjects>
 	</ExternalDataSource>
 </MetaDataObject>
