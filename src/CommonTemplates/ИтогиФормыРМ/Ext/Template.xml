@@ -151,47 +151,16 @@
 	<rowsItem>
 		<index>2</index>
 		<row>
-			<formatIndex>10</formatIndex>
-			<c>
-				<c>
-					<f>17</f>
-				</c>
-			</c>
+			<formatIndex>17</formatIndex>
 			<c>
 				<c>
 					<f>18</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>13</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>19</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>3</index>
-		<row>
-			<formatIndex>20</formatIndex>
-			<c>
-				<c>
-					<f>21</f>
 					<parameter>Фирма</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>19</f>
 					<parameter>СуммаРЕализации</parameter>
 				</c>
 			</c>
@@ -203,18 +172,18 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>20</f>
 					<parameter>КОплате</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>21</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -226,12 +195,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>4</index>
+		<index>3</index>
 		<row>
-			<formatIndex>20</formatIndex>
+			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>26</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -242,7 +211,7 @@
 			</c>
 			<c>
 				<c>
-					<f>27</f>
+					<f>24</f>
 					<parameter>СуммаРЕализации</parameter>
 				</c>
 			</c>
@@ -254,18 +223,18 @@
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>25</f>
 					<parameter>КОплате</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>29</f>
+					<f>26</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>27</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -277,32 +246,27 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>5</index>
+		<index>4</index>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>6</index>
+		<index>5</index>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>31</defaultFormatIndex>
-	<height>65520</height>
-	<vgRows>65520</vgRows>
-	<merge>
-		<r>1</r>
-		<c>5</c>
-		<h>1</h>
-	</merge>
+	<defaultFormatIndex>28</defaultFormatIndex>
+	<height>65519</height>
+	<vgRows>65519</vgRows>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Итог</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>4</beginRow>
-			<endRow>4</endRow>
+			<beginRow>3</beginRow>
+			<endRow>3</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -312,7 +276,7 @@
 		<area>
 			<type>Rectangle</type>
 			<beginRow>1</beginRow>
-			<endRow>2</endRow>
+			<endRow>1</endRow>
 			<beginColumn>5</beginColumn>
 			<endColumn>5</endColumn>
 		</area>
@@ -321,8 +285,8 @@
 		<name>КоплатеПоДругимФирмам</name>
 		<area>
 			<type>Rectangle</type>
-			<beginRow>3</beginRow>
-			<endRow>3</endRow>
+			<beginRow>2</beginRow>
+			<endRow>2</endRow>
 			<beginColumn>5</beginColumn>
 			<endColumn>5</endColumn>
 		</area>
@@ -331,8 +295,8 @@
 		<name>СтрокаДругаяФирма</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>3</beginRow>
-			<endRow>3</endRow>
+			<beginRow>2</beginRow>
+			<endRow>2</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -342,7 +306,7 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>1</beginRow>
-			<endRow>2</endRow>
+			<endRow>1</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -541,56 +505,6 @@
 		<pattern>Solid</pattern>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Parameter</fillType>
-		<format>
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>ЧДЦ=2; ЧРГ=; ЧН=' '</v8:content>
-			</v8:item>
-		</format>
-	</format>
-	<format>
-		<font>2</font>
-		<height>108</height>
-		<borderColor>#000000</borderColor>
-		<width>142</width>
-		<autoWidthCalculation>true</autoWidthCalculation>
-		<horizontalAlignment>Left</horizontalAlignment>
-		<verticalAlignment>Center</verticalAlignment>
-		<textColor>#000000</textColor>
-		<backColor>#FFFFFF</backColor>
-		<pattern>Solid</pattern>
-		<textPlacement>Auto</textPlacement>
-	</format>
-	<format>
-		<font>2</font>
-		<height>108</height>
-		<borderColor>#000000</borderColor>
-		<width>89</width>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<verticalAlignment>Center</verticalAlignment>
-		<textColor>#000000</textColor>
-		<backColor>#FFFFFF</backColor>
-		<pattern>Solid</pattern>
-		<textPlacement>Auto</textPlacement>
-		<format>
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>ЧДЦ=2; ЧРГ=; ЧН=' '</v8:content>
-			</v8:item>
-		</format>
-	</format>
-	<format>
-		<font>2</font>
-		<rightBorder>0</rightBorder>
-		<height>0</height>
-		<borderColor>#D6D6D6</borderColor>
-		<width>86</width>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<verticalAlignment>Center</verticalAlignment>
-		<textColor>#000000</textColor>
-		<backColor>#FFFFFF</backColor>
-		<pattern>Solid</pattern>
-		<textPlacement>Auto</textPlacement>
 		<format>
 			<v8:item>
 				<v8:lang>ru</v8:lang>
