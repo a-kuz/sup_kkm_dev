@@ -15,11 +15,11 @@
 	|	 ,Пользователь VARCHAR(25) NULL
 	|	 ,Компьютер VARCHAR(25) NULL
 	|	 ,Уровень VARCHAR(15) NOT NULL
-	|	 ,Событие VARCHAR(120) NOT NULL
+	|	 ,Событие VARCHAR(220) NOT NULL
 	|	 ,Комментарий VARCHAR(max) NULL
 	|	 ,Данные_Ссылка BINARY(16) NULL
-	|	 ,Данные_ТипСсылки VARCHAR(50) NULL
-	|	 ,Данные_Представление VARCHAR(100) NULL
+	|	 ,Данные_ТипСсылки VARCHAR(500) NULL
+	|	 ,Данные_Представление VARCHAR(200) NULL
 	|	) 
 	|
 	|	CREATE INDEX IX_Дата ON ЖурналРегистрации (Дата)
