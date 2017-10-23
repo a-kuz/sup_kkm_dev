@@ -115,6 +115,16 @@
 						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
 						<ExtendedTooltip name="СписокОбновитьРасширеннаяПодсказка" id="63"/>
 					</Button>
+					<Button name="ФормаЗагрузитьЖРвЖР" id="80">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.ЗагрузитьЖРвЖР</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.РегистрацияСобытий</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ФормаЗагрузитьЖРвЖРРасширеннаяПодсказка" id="81"/>
+					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
@@ -204,6 +214,7 @@
 						</LabelField>
 						<PictureField name="СписокСтандартнаяКартинка" id="67">
 							<DataPath>Список.НомерИконки</DataPath>
+							<Visible>false</Visible>
 							<ShowInHeader>false</ShowInHeader>
 							<ValuesPicture>
 								<xr:Ref>CommonPicture.ирУровниЖурналаРегистрации</xr:Ref>
@@ -267,7 +278,9 @@
 			</Type>
 			<UseAlways>
 				<Field>Список.Уровень</Field>
+				<Field>Список.Событие</Field>
 				<Field>Список.НомерИконки</Field>
+				<Field>Список.Комментарий</Field>
 				<Field>Список.Ид</Field>
 				<Field>Список.Дата</Field>
 				<Field>Список.Данные_ТипСсылки</Field>
@@ -313,6 +326,7 @@
 								</dcsset:userSettingPresentation>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:use>false</dcsset:use>
 								<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
 								<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
 								<dcsset:right xsi:type="v8:StandardBeginningDate">
@@ -440,6 +454,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтборПоДанным</Action>
+		</Command>
+		<Command name="ЗагрузитьЖРвЖР" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ЖР в ЖР</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ж рв ЖР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьЖРвЖР</Action>
 		</Command>
 	</Commands>
 	<Parameters>
