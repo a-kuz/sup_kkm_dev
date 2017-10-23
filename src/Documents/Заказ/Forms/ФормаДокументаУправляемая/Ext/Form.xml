@@ -30,6 +30,12 @@
 				<DataPath>Объект.Ref</DataPath>
 				<ExtendedTooltip name="ФормаДокументЗаказОткрытьПротоколРасчетовРасширеннаяПодсказка" id="125"/>
 			</Button>
+			<Button name="ФормаРегистрСведенийМаркиОткрытьПоЗначениюЗаказ" id="369">
+				<Type>CommandBarButton</Type>
+				<CommandName>InformationRegister.Марки.StandardCommand.OpenByValue.Заказ</CommandName>
+				<DataPath>Объект.Ref</DataPath>
+				<ExtendedTooltip name="ФормаРегистрСведенийМаркиОткрытьПоЗначениюЗаказРасширеннаяПодсказка" id="370"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>

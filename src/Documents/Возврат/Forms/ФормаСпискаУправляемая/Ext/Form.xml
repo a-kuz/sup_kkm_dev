@@ -8,6 +8,18 @@
 				<DataPath>Items.Список.CurrentData.Заказ</DataPath>
 				<ExtendedTooltip name="ФормаДокументЗаказОтправитьВлояльностьРасширеннаяПодсказка" id="95"/>
 			</Button>
+			<Button name="РегистрСведенийВозвратДопИнфОткрытьПоЗначениюВозврат" id="96">
+				<Type>CommandBarButton</Type>
+				<CommandName>InformationRegister.ВозвратДопИнф.StandardCommand.OpenByValue.Возврат</CommandName>
+				<DataPath>Items.Список.CurrentData.Ref</DataPath>
+				<ExtendedTooltip name="РегистрСведенийВозвратДопИнфОткрытьПоЗначениюВозвратРасширеннаяПодсказка" id="97"/>
+			</Button>
+			<Button name="ФормаОбщаяКомандаЖурналРегистрацииПоОбъекту" id="98">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ЖурналРегистрацииПоОбъекту</CommandName>
+				<DataPath>Items.Список.CurrentData.Ref</DataPath>
+				<ExtendedTooltip name="ФормаОбщаяКомандаЖурналРегистрацииПоОбъектуРасширеннаяПодсказка" id="99"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
