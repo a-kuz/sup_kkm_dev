@@ -1,4 +1,4 @@
-﻿Перем AutohotkeyDLL;
+﻿
 Перем ФормаСкрытияМеню, фФормаСкрытияМеню;
 Перем мСдвигаемыеЭлементы;
 Перем ОтборФирма;
@@ -327,27 +327,6 @@
 	ЭлементыФормы.тпТовары.Колонки.НомерСтроки.Ширина = 2;
 	ЭлементыФормы.тпТовары.Колонки.НомерСтроки.ВысотаЯчейки = 2;
 	
-	
-КонецПроцедуры
-
-Процедура ВосстановитьФорму() Экспорт
-		Если AutohotkeyDLL = Неопределено Тогда
-			AutohotkeyDLL = РаботаСокнами.AHK(,"ВосстановитьФорму");
-		КонецЕсли;
-		
-			Cкрипт = "
-			|#NoTrayIcon
-			|WinWaitActive, ahk_pid %pid ahk_class V8TopLevelFrame,,15
-			|Sleep 100
-			|WinRestore, ahk_pid %pid ahk_class V8TopLevelFrame
-			|WinMaximize, ahk_pid %pid ahk_class V8TopLevelFrame
-			|Sleep 100
-			|Send {alt down}{shift down}{VK52}{alt up}{shift up}
-			|Exitapp";	
-			Cкрипт = СтрЗаменить(Cкрипт, "%pid", формат(РаботаСокнами.pid, "ЧГ=0"));
-			AutohotkeyDLL.ahkTextDll(Cкрипт);		
-			
-	ПодключитьОбработчикОжидания("ЗаблокироватьВформе", 1.1,1);
 	
 КонецПроцедуры
 
