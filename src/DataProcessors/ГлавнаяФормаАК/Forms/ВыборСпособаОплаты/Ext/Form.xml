@@ -55,24 +55,6 @@
 					<ContextMenu name="ЛогоККГурмэКонтекстноеМеню" id="4"/>
 					<ExtendedTooltip name="ЛогоККГурмэРасширеннаяПодсказка" id="5"/>
 				</PictureDecoration>
-				<LabelDecoration name="СтрокаСостояния" id="87">
-					<Visible>false</Visible>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxHeight>1</MaxHeight>
-					<HorizontalStretch>true</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<Font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-					<Title formatted="true">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>&lt;b&gt;&lt;colorstyle 0:84b52463-c7ca-4dea-8b97-42fbf6c6ce93&gt;Шаг 1 из 4: Просмотр заказа&lt;/&gt;&lt;/&gt;</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<GroupVerticalAlign>Center</GroupVerticalAlign>
-					<ContextMenu name="СтрокаСостоянияКонтекстноеМеню" id="88"/>
-					<ExtendedTooltip name="СтрокаСостоянияРасширеннаяПодсказка" id="89"/>
-				</LabelDecoration>
 				<UsualGroup name="ГруппаСтрокаСостояния" id="113">
 					<Title>
 						<v8:item>
@@ -704,6 +686,7 @@
 					<ExtendedTooltip name="СписокОплатыРасширеннаяПодсказка" id="147"/>
 				</SpreadSheetDocumentField>
 				<LabelDecoration name="НадписьСписокКОплате" id="136">
+					<Visible>false</Visible>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<MaxHeight>2</MaxHeight>
@@ -729,8 +712,7 @@
 					<Title formatted="true">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>&lt;b&gt;Здравствуйте, ИМЯ!&lt;/&gt;
-&lt;b&gt;Выберите способ оплаты:&lt;/&gt;</v8:content>
+							<v8:content>&lt;b&gt;Выберите способ оплаты:&lt;/&gt;</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -789,7 +771,7 @@
 					<ChildItems>
 						<Button name="СписатьКегли" id="72">
 							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
+							<Representation>Text</Representation>
 							<Width>38</Width>
 							<Height>1</Height>
 							<CommandName>Form.Command.ОплатитьВсеСоСписанием</CommandName>
@@ -834,6 +816,7 @@
 							<ExtendedTooltip name="ПодвалКеГЛиРасширеннаяПодсказка" id="141"/>
 						</SpreadSheetDocumentField>
 						<LabelDecoration name="ДекорацияКегли" id="74">
+							<Visible>false</Visible>
 							<Width>38</Width>
 							<Height>3</Height>
 							<VerticalStretch>false</VerticalStretch>
@@ -875,7 +858,7 @@
 					<ChildItems>
 						<Button name="НачислитьКегли" id="79">
 							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
+							<Representation>Text</Representation>
 							<Width>38</Width>
 							<Height>1</Height>
 							<CommandName>Form.Command.ОплатитьВсеСНачислением</CommandName>
@@ -920,6 +903,7 @@
 							<ExtendedTooltip name="ПодвалРублиРасширеннаяПодсказка" id="144"/>
 						</SpreadSheetDocumentField>
 						<LabelDecoration name="ДекорацияРубли" id="81">
+							<Visible>false</Visible>
 							<Width>38</Width>
 							<Height>3</Height>
 							<VerticalStretch>false</VerticalStretch>
