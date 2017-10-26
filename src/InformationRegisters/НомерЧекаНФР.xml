@@ -40,10 +40,10 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm/>
-			<DefaultListForm/>
+			<DefaultRecordForm>InformationRegister.НомерЧекаНФР.Form.ФормаЗаписи</DefaultRecordForm>
+			<DefaultListForm>InformationRegister.НомерЧекаНФР.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -337,6 +337,9 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Dimension>
+			<Form>ФормаНабораЗаписей</Form>
+			<Form>ФормаЗаписи</Form>
+			<Form>ФормаСпискаУправляемая</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

@@ -40,10 +40,10 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InList</EditType>
-			<DefaultRecordForm/>
-			<DefaultListForm/>
+			<DefaultRecordForm>InformationRegister.ОткрытыеЗаказыПоКартам.Form.ФормаЗаписиУправляемая</DefaultRecordForm>
+			<DefaultListForm>InformationRegister.ОткрытыеЗаказыПоКартам.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -359,6 +359,8 @@
 					<FullTextSearch>DontUse</FullTextSearch>
 				</Properties>
 			</Dimension>
+			<Form>ФормаСпискаУправляемая</Form>
+			<Form>ФормаЗаписиУправляемая</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

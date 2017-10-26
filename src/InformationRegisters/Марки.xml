@@ -42,8 +42,8 @@
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InList</EditType>
-			<DefaultRecordForm/>
-			<DefaultListForm/>
+			<DefaultRecordForm>InformationRegister.Марки.Form.ФормаЗаписиУправляемая</DefaultRecordForm>
+			<DefaultListForm>InformationRegister.Марки.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -530,6 +530,8 @@
 					<FullTextSearch>DontUse</FullTextSearch>
 				</Properties>
 			</Dimension>
+			<Form>ФормаСпискаУправляемая</Form>
+			<Form>ФормаЗаписиУправляемая</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>
