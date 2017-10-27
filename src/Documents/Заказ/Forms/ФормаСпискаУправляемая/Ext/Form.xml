@@ -65,12 +65,10 @@
 									</Title>
 									<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="115"/>
 								</Button>
-								<Button name="ДокументЗаказОткрытьПротоколРасчетов" id="100">
-									<Type>CommandBarButton</Type>
-									<CommandName>Document.Заказ.Command.ОткрытьПротоколРасчетов</CommandName>
-									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-									<ExtendedTooltip name="ДокументЗаказОткрытьПротоколРасчетовРасширеннаяПодсказка" id="101"/>
-								</Button>
+								<ButtonGroup name="ФормаГруппа2" id="120">
+									<CommandSource>Item.Список</CommandSource>
+									<ExtendedTooltip name="ФормаГруппа2РасширеннаяПодсказка" id="121"/>
+								</ButtonGroup>
 								<Button name="ДанныеЛояльности" id="108">
 									<Type>CommandBarButton</Type>
 									<OnlyInAllActions>false</OnlyInAllActions>
@@ -93,10 +91,52 @@
 								<ButtonGroup name="ФормаГруппа1" id="118">
 									<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="119"/>
 								</ButtonGroup>
-								<ButtonGroup name="ФормаГруппа2" id="120">
-									<CommandSource>Item.Список</CommandSource>
-									<ExtendedTooltip name="ФормаГруппа2РасширеннаяПодсказка" id="121"/>
-								</ButtonGroup>
+								<Button name="ДокументЗаказОтправитьВлояльность" id="125">
+									<Type>CommandBarButton</Type>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>Document.Заказ.Command.ОтправитьВлояльность</CommandName>
+									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+									<ExtendedTooltip name="ДокументЗаказОтправитьВлояльностьРасширеннаяПодсказка" id="126"/>
+								</Button>
+								<Button name="ОбщаяКомандаDameWare" id="129">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<OnlyInAllActions>false</OnlyInAllActions>
+									<CommandName>CommonCommand.DameWare</CommandName>
+									<DataPath>Items.Список.CurrentData.РабочееМесто</DataPath>
+									<ExtendedTooltip name="ОбщаяКомандаDameWareРасширеннаяПодсказка" id="130"/>
+								</Button>
+								<Button name="СправочникРабочиеМестаПроводник" id="133">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<OnlyInAllActions>false</OnlyInAllActions>
+									<CommandName>Catalog.РабочиеМеста.Command.Проводник</CommandName>
+									<DataPath>Items.Список.CurrentData.РабочееМесто</DataPath>
+									<ShapeRepresentation>Always</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникРабочиеМестаПроводникРасширеннаяПодсказка" id="134"/>
+								</Button>
+								<Button name="ОбщаяКомандаирРедактироватьОбъект" id="131">
+									<Type>CommandBarButton</Type>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>CommonCommand.ирРедактироватьОбъект</CommandName>
+									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+									<ExtendedTooltip name="ОбщаяКомандаирРедактироватьОбъектРасширеннаяПодсказка" id="132"/>
+								</Button>
+								<Button name="ДокументЗаказОткрытьПротоколРасчетов1" id="127">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<OnlyInAllActions>false</OnlyInAllActions>
+									<CommandName>Document.Заказ.Command.ОткрытьПротоколРасчетов</CommandName>
+									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+									<ShapeRepresentation>Always</ShapeRepresentation>
+									<ExtendedTooltip name="ДокументЗаказОткрытьПротоколРасчетов1РасширеннаяПодсказка" id="128"/>
+								</Button>
+								<Button name="ОбщаяКомандаЖурналРегистрацииПоОбъекту" id="135">
+									<Type>CommandBarButton</Type>
+									<CommandName>CommonCommand.ЖурналРегистрацииПоОбъекту</CommandName>
+									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+									<ExtendedTooltip name="ОбщаяКомандаЖурналРегистрацииПоОбъектуРасширеннаяПодсказка" id="136"/>
+								</Button>
 							</ChildItems>
 						</CommandBar>
 					</ChildItems>
