@@ -76,7 +76,25 @@
 					<DataPath>Список</DataPath>
 					<RowFilter xsi:nil="true"/>
 					<ContextMenu name="СписокКонтекстноеМеню" id="12"/>
-					<AutoCommandBar name="СписокКоманднаяПанель" id="13"/>
+					<AutoCommandBar name="СписокКоманднаяПанель" id="13">
+						<ChildItems>
+							<Button name="СписокВыделитьВсе" id="49">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыделитьВсе</CommandName>
+								<ExtendedTooltip name="СписокВыделитьВсеРасширеннаяПодсказка" id="50"/>
+							</Button>
+							<Button name="СписокСнятьВыделение" id="51">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СнятьВыделение</CommandName>
+								<ExtendedTooltip name="СписокСнятьВыделениеРасширеннаяПодсказка" id="52"/>
+							</Button>
+							<Button name="СписокПрочитатьКаталог" id="47">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПрочитатьКаталог</CommandName>
+								<ExtendedTooltip name="СписокПрочитатьКаталогРасширеннаяПодсказка" id="48"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
 					<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="14"/>
 					<SearchStringAddition name="СписокСтрокаПоиска" id="15">
 						<AdditionSource>
@@ -305,6 +323,59 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьЗагрузку</Action>
+		</Command>
+		<Command name="ПрочитатьКаталог" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файлы из каталога</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать каталог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьКаталог</Action>
+		</Command>
+		<Command name="ВыделитьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыделитьВсе</Action>
+		</Command>
+		<Command name="СнятьВыделение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять выделение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять выделение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВыделение</Action>
 		</Command>
 	</Commands>
 </Form>
