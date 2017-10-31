@@ -2868,7 +2868,7 @@
 		<Metadata name="DataProcessor.ГлавнаяФормаАК.ObjectModule" id="1197e3a5-2d5f-48d0-b413-564115126944.0" configVersion="2794f1d5033f4040ade92048d1b58ec100000000"/>
 		<Metadata name="DataProcessor.ГлавнаяФормаАК.Template.Надписи" id="7df6c9b0-95af-42b0-93a8-a32daec99265" configVersion="9437f946cdff67449ef3b607bc38030700000000"/>
 		<Metadata name="DataProcessor.ГлавнаяФормаАК.Template.Надписи.Template" id="7df6c9b0-95af-42b0-93a8-a32daec99265.0" configVersion="fe62e26031cfcb4f8eeb91c6d552d1e900000000"/>
-		<Metadata name="DataProcessor.ГлавнаяФормаМОКП" id="e5bbbaf5-9a21-4027-8f2e-0acf2fef020f" configVersion="59a36fd130f4c84e87223d9855c5ebab00000000">
+		<Metadata name="DataProcessor.ГлавнаяФормаМОКП" id="e5bbbaf5-9a21-4027-8f2e-0acf2fef020f" configVersion="a5512a4168fd34429f462eded05016f200000000">
 			<Metadata name="DataProcessor.ГлавнаяФормаМОКП.Attribute.ТекущийДокумент" id="19f19eb8-e393-4241-b2ff-d789c4084d4b"/>
 			<Metadata name="DataProcessor.ГлавнаяФормаМОКП.Attribute.Заказ" id="1d4f1637-b1b5-431c-966e-aced53cc79de"/>
 			<Metadata name="DataProcessor.ГлавнаяФормаМОКП.Attribute.докВозврат" id="67fd0c5e-b45e-465f-ab96-7753238d56c2"/>
@@ -2878,7 +2878,7 @@
 		<Metadata name="DataProcessor.ГлавнаяФормаМОКП.Form.ФормаПовара" id="5d2be75c-8750-48e7-8104-cd96de3a316d" configVersion="90f09b372d40c34691ec9ab7c9898f9900000000"/>
 		<Metadata name="DataProcessor.ГлавнаяФормаМОКП.Form.ФормаПовара.Form" id="5d2be75c-8750-48e7-8104-cd96de3a316d.0" configVersion="e9be18c40d6ffa4998d79d48c71d6b7700000000"/>
 		<Metadata name="DataProcessor.ГлавнаяФормаМОКП.Help" id="e5bbbaf5-9a21-4027-8f2e-0acf2fef020f.1" configVersion="dfbe2dc2c5f7804aaa373c8d2201396c00000000"/>
-		<Metadata name="DataProcessor.ГлавнаяФормаМОКП.ObjectModule" id="e5bbbaf5-9a21-4027-8f2e-0acf2fef020f.0" configVersion="f21a4beff0c2c54a8b4ce13ad025a25c00000000"/>
+		<Metadata name="DataProcessor.ГлавнаяФормаМОКП.ObjectModule" id="e5bbbaf5-9a21-4027-8f2e-0acf2fef020f.0" configVersion="0db303e0375ae94293576d352c320c5e00000000"/>
 		<Metadata name="DataProcessor.ГлавнаяФормаРесторан" id="d149b764-aa76-49a5-9041-a61da68f114d" configVersion="6ef75b563d63bc4ba8860baa0c5251aa00000000"/>
 		<Metadata name="DataProcessor.ГлавнаяФормаРесторан.Form.КолЦентр" id="b88f99de-366b-4ae0-8bb2-a2240f9849b7" configVersion="393fd1e879724548ad28b05ed35d46c600000000"/>
 		<Metadata name="DataProcessor.ГлавнаяФормаРесторан.Form.КолЦентр.Form" id="b88f99de-366b-4ae0-8bb2-a2240f9849b7.0" configVersion="4ea78a946b7c7848a52e06955cc9caa900000000"/>
@@ -6646,7 +6646,7 @@
 		<Metadata name="ExchangePlan.Основной.Form.ФормаУзла.Form" id="38d02103-ed27-4c9a-83b7-9e69d15f9af3.0" configVersion="d3381256f8dfa3468a47a25dd61ca87e00000000"/>
 		<Metadata name="ExchangePlan.Основной.Help" id="127f5ef8-56b1-45dd-b92d-bc03ba416e76.0" configVersion="9bf7add2063266468cea80e43417e75500000000"/>
 		<Metadata name="ExchangePlan.Основной.ObjectModule" id="127f5ef8-56b1-45dd-b92d-bc03ba416e76.2" configVersion="d1dbb739b9c4354b88bfa549b3ea6e2600000000"/>
-		<Metadata name="ExternalDataSource.СУП_ККМ" id="e69d3848-aaa0-4711-aa1e-3aff1d43d503" configVersion="100a1c5c424eb8499c48a02c4f7c0a6100000000"/>
+		<Metadata name="ExternalDataSource.СУП_ККМ" id="e69d3848-aaa0-4711-aa1e-3aff1d43d503" configVersion="fa176fe7b5654542be37ba18d8d95fae00000000"/>
 		<Metadata name="ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации" id="16360115-a4a8-436e-8338-dd8caf11c725" configVersion="aeec920a10eb62459b515cf8d32747ea00000000">
 			<Metadata name="ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации.Field.Пользователь" id="08ed4b9e-84ae-491c-9835-f7cd338dd803"/>
 			<Metadata name="ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации.Field.Компьютер" id="11af1309-70ad-434b-9cb5-29ac3b5ec1ef"/>
@@ -6661,6 +6661,24 @@
 		</Metadata>
 		<Metadata name="ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации.Form.ФормаЗаписи" id="0b081fd9-9d27-4538-a3bf-eb9692ddeaef" configVersion="5455e0c3a559b34fb483d7fab17515a900000000"/>
 		<Metadata name="ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации.Form.ФормаЗаписи.Form" id="0b081fd9-9d27-4538-a3bf-eb9692ddeaef.0" configVersion="97c5e87a869310468bcf7e3c405bfaf400000000"/>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели" id="709d42e4-d401-485e-acab-db32b368845f" configVersion="a835997bb8cd364ba698b47698ca1cdc00000000">
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели.Field.ид" id="7a0536f1-99cb-4d5c-9e22-d760a3559344"/>
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели.Field.Наименование" id="aa9782f6-bbda-4182-937c-ccc37b903684"/>
+		</Metadata>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели.Form.ФормаСписка" id="9951f101-72db-4708-b69d-b2cc62d6b320" configVersion="da1187389db6fe4f912b8aaf0d64240b00000000"/>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели.Form.ФормаСписка.Form" id="9951f101-72db-4708-b69d-b2cc62d6b320.0" configVersion="601faf57380a0746aa1e13c5f23155ce00000000"/>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения" id="26b396d9-57bd-4796-ad4e-9b68d83a019f" configVersion="7686716143d68549930cfff5d15ba25500000000">
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Field.Ид" id="064c3677-f71e-4e53-a9ca-ea93743162da"/>
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Field.ДатаВыгрузки" id="5a66bef5-9d1d-492b-8947-41e7b32d24ae"/>
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Field.КодПоказателя" id="71649c6f-5971-46ba-bd59-d4dc234978d3"/>
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Field.ЗначениеПоказателя" id="de736b2c-f24b-4ecf-83b6-d184d861a8e8"/>
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Field.Хост" id="f83d752b-59f5-4494-8743-399796f84980"/>
+			<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Field.ДатаРегистрации" id="fa568e7d-99f4-4917-b3eb-0172317f5266"/>
+		</Metadata>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Form.ФормаЗаписи" id="af664cb3-c324-417a-9e7f-564fdfa17187" configVersion="aa253c7c76ac43429cc80738f4fa608f00000000"/>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Form.ФормаЗаписи.Form" id="af664cb3-c324-417a-9e7f-564fdfa17187.0" configVersion="8b02d6b3364f6f488cc0b5409329e2bd00000000"/>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Form.ФормаСписка" id="5de03f26-a5cf-46a9-9051-2f2d26eeeacf" configVersion="dab67e21c249084f9433f7dcaa06a42600000000"/>
+		<Metadata name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели_Значения.Form.ФормаСписка.Form" id="5de03f26-a5cf-46a9-9051-2f2d26eeeacf.0" configVersion="dd6054b62340214b998aa6eb60c5c23300000000"/>
 		<Metadata name="ExternalDataSource.СУПтт" id="9cdd9ed5-a6b5-4bf5-967e-db21a2ab5acd" configVersion="a3b8940990416a42a18a782fcb0baaba00000000"/>
 		<Metadata name="ExternalDataSource.СУПтт.Table.dbo_Спр_Товары" id="feffab66-1e64-47d3-8c1d-befb9ce50a86" configVersion="fda367bd7665d14bb35f160387543f7000000000">
 			<Metadata name="ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Field.ИнформацияДляВесов" id="03290213-f05b-423f-ae35-8276caca254a"/>
