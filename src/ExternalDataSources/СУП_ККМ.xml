@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<ExternalDataSource uuid="e69d3848-aaa0-4711-aa1e-3aff1d43d503">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.СУП_ККМ" category="Manager">
+				<xr:TypeId>7e011902-7e7a-43ea-808f-256084c31b68</xr:TypeId>
+				<xr:ValueId>68f3061e-7814-4da8-bfae-b08deaa95d06</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.СУП_ККМ" category="TablesManager">
+				<xr:TypeId>ecebd56e-af4f-4349-aff3-ad89bfccc729</xr:TypeId>
+				<xr:ValueId>f49fea81-40d3-4f08-96b3-a23b85687787</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.СУП_ККМ" category="CubesManager">
+				<xr:TypeId>774bec39-bdf4-46d1-9fdf-621e88c6c234</xr:TypeId>
+				<xr:ValueId>fefcb6d8-b074-4c33-a1c2-0503e7a4a947</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СУП_ККМ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СУП ККМ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Table>ЖурналРегистрации</Table>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>
