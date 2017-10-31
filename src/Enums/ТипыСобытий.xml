@@ -24,7 +24,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment>Типы событий</Comment>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<StandardAttributes>
 				<xr:StandardAttribute name="Order">
 					<xr:LinkByType/>
@@ -81,7 +81,7 @@
 			<QuickChoice>true</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<DefaultListForm/>
-			<DefaultChoiceForm/>
+			<DefaultChoiceForm>Enum.ТипыСобытий.Form.ФормаВыбораУправляемая</DefaultChoiceForm>
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
 			<ListPresentation/>
@@ -174,6 +174,19 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="dcd2b337-a19d-4f46-b88b-b3b69b7c7a34">
+				<Properties>
+					<Name>ТребованиеСбросаЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требование сброса заказа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<Form>ФормаВыбораУправляемая</Form>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

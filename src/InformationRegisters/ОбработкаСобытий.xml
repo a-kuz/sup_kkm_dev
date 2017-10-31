@@ -40,10 +40,10 @@
 				</v8:item>
 			</Synonym>
 			<Comment>для обработки на рабочем месте</Comment>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InList</EditType>
-			<DefaultRecordForm/>
-			<DefaultListForm/>
+			<DefaultRecordForm>InformationRegister.ОбработкаСобытий.Form.ФормаЗаписиУправляемая</DefaultRecordForm>
+			<DefaultListForm>InformationRegister.ОбработкаСобытий.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -367,7 +367,8 @@
 					<FullTextSearch>DontUse</FullTextSearch>
 				</Properties>
 			</Dimension>
-			<Form>Форма1</Form>
+			<Form>ФормаСпискаУправляемая</Form>
+			<Form>ФормаЗаписиУправляемая</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>
