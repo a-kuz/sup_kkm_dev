@@ -61,18 +61,18 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Dimension uuid="e750657d-04d8-43bc-a547-54d4895c148d">
+			<Resource uuid="204ebe15-3a85-4ffa-a905-d36a415435c9">
 				<Properties>
-					<Name>ИнформационнаяБаза</Name>
+					<Name>Станция</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Информационная база</v8:content>
+							<v8:content>Станция</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+						<v8:Type>cfg:CatalogRef.Станции</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -95,25 +95,22 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>true</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
-			</Dimension>
-			<Dimension uuid="6f2f329a-4f7b-4d64-8579-6a39ba52a67e">
+			</Resource>
+			<Dimension uuid="e750657d-04d8-43bc-a547-54d4895c148d">
 				<Properties>
-					<Name>Станция</Name>
+					<Name>ИнформационнаяБаза</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Станция</v8:content>
+							<v8:content>Информационная база</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Станции</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
