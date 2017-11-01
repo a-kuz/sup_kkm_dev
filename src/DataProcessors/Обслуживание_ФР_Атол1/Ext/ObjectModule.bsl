@@ -149,9 +149,6 @@
 	
 	// параметры СОМ порта
 	DRV.BaudRate		= ПараметрыТО.BaudRate;
-	DRV.DataBits		= ПараметрыТО.DataBits;
-	DRV.Parity			= ПараметрыТО.Parity;
-	DRV.StopBits		= ПараметрыТО.StopBits;
 	
 КонецПроцедуры
 
