@@ -1477,6 +1477,9 @@
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
 	</line>
 	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">ThinDashed</v8ui:style>
+	</line>
+	<line width="1" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
 	</line>
 	<line width="1" gap="false">
@@ -1660,7 +1663,8 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>0</bottomBorder>
+		<topBorder>1</topBorder>
+		<bottomBorder>1</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1715,7 +1719,7 @@
 	</format>
 	<format>
 		<font>1</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>-140</height>
 		<borderColor>#808080</borderColor>
 		<width>40</width>
@@ -1723,7 +1727,7 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1733,7 +1737,7 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1793,7 +1797,8 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>0</bottomBorder>
+		<topBorder>1</topBorder>
+		<bottomBorder>1</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1805,7 +1810,7 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1816,7 +1821,7 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1958,7 +1963,8 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>0</bottomBorder>
+		<topBorder>1</topBorder>
+		<bottomBorder>1</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1970,7 +1976,7 @@
 	</format>
 	<format>
 		<font>1</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>-140</height>
 		<borderColor>#808080</borderColor>
 		<width>40</width>
@@ -1979,7 +1985,7 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -1990,7 +1996,7 @@
 	</format>
 	<format>
 		<font>5</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#808080</borderColor>
 		<width>313</width>
@@ -2025,7 +2031,7 @@
 	</format>
 	<format>
 		<font>1</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>126</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>151</width>
@@ -2035,7 +2041,7 @@
 	</format>
 	<format>
 		<font>2</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>313</width>
@@ -2044,7 +2050,7 @@
 	</format>
 	<format>
 		<font>3</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>313</width>
@@ -2054,7 +2060,7 @@
 	</format>
 	<format>
 		<font>1</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>126</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>151</width>
@@ -2063,7 +2069,7 @@
 	</format>
 	<format>
 		<font>3</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>128</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>94</width>
@@ -2078,7 +2084,7 @@
 	</format>
 	<format>
 		<font>1</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>126</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>151</width>
@@ -2087,7 +2093,7 @@
 	</format>
 	<format>
 		<font>4</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>126</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>151</width>
@@ -2104,7 +2110,7 @@
 	</format>
 	<format>
 		<font>3</font>
-		<bottomBorder>1</bottomBorder>
+		<bottomBorder>2</bottomBorder>
 		<height>126</height>
 		<borderColor>#7F7F7F</borderColor>
 		<width>151</width>
@@ -2119,7 +2125,7 @@
 		</format>
 	</format>
 	<format>
-		<drawingBorder>2</drawingBorder>
+		<drawingBorder>3</drawingBorder>
 		<borderColor>style:FieldBackColor</borderColor>
 	</format>
 	<format>
