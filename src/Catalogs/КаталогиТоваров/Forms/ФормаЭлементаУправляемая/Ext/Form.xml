@@ -22,6 +22,16 @@
 			<ContextMenu name="ГруппаИнформационныхБазДляРепликацииКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ГруппаИнформационныхБазДляРепликацииРасширеннаяПодсказка" id="12"/>
 		</InputField>
+		<InputField name="МестоРеализации" id="13">
+			<DataPath>Объект.МестоРеализации</DataPath>
+			<ContextMenu name="МестоРеализацииКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="МестоРеализацииРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Фирма" id="16">
+			<DataPath>Объект.Фирма</DataPath>
+			<ContextMenu name="ФирмаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ФирмаРасширеннаяПодсказка" id="18"/>
+		</InputField>
 		<CheckBoxField name="ЕстьВпродаже" id="7">
 			<DataPath>Объект.ЕстьВпродаже</DataPath>
 			<ReadOnly>true</ReadOnly>

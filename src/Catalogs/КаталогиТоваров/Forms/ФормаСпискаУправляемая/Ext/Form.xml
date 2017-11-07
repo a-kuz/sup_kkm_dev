@@ -78,6 +78,16 @@
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="МестоРеализации" id="25">
+					<DataPath>Список.МестоРеализации</DataPath>
+					<ContextMenu name="МестоРеализацииКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="МестоРеализацииРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="Фирма" id="28">
+					<DataPath>Список.Фирма</DataPath>
+					<ContextMenu name="ФирмаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ФирмаРасширеннаяПодсказка" id="30"/>
+				</LabelField>
 				<InputField name="ГруппаИнформационныхБазДляРепликации" id="22">
 					<DataPath>Список.ГруппаИнформационныхБазДляРепликации</DataPath>
 					<ContextMenu name="ГруппаИнформационныхБазДляРепликацииКонтекстноеМеню" id="23"/>
