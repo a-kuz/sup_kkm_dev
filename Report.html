@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			background-color: #EEEEEE;	
+		}
+		.margin-top-25{
+			margin-top:25px;
+		}
+		.tablinks:hover{
+			background-color: #2F3640!important;
+		}
+		.widget i{
+			margin-bottom: 5px;
+		}
+		.widget{
+			height: 74px;
+			width: calc( (100% / 5) - 3.3px);
+			display: inline-block;
+			text-align: center;
+			color:#fff;
+			padding-top:12.5px;
+			font-size: 14px;
+			font-weight: lighter;
+		}
+		.widget.summary{
+			background-color: #28b779;
+		}
+		.widget.list{
+			background-color: #27a9e3;
+		}
+		.widget.chart{
+			background-color: #da542e;
+		}
+		.widget.file{
+			background-color: #2255a4;
+		}
+		.widget.all{
+			background-color: #da542e;
+		}
+		.widgets{
+			padding-bottom: 10px;
+			border-bottom: solid 1px #ddd;
+			margin-bottom: 50px
+		}
+		.tcontent{
+			display:none;
+			padding: 0px;
+			font-family: 'Open Sans',sans-serif;
+		}
+		.modal-content{
+			box-shadow: none;
+			border-radius: 0px;
+		}
+		.box-header{
+			border:solid 1px #cdcdcd;
+			height: 36px;
+			padding:0px;
+			color: #666;
+			font-size: 12px;
+			line-height: 36px;
+			font-weight: bold;
+			background-color: #eee;
+		}
+		.box-header span{
+			margin-left:10px;
+		}
+		.box-header i{
+			display: inline;
+			padding: 11px 12px;	
+			height: 100%;
+			border-right: solid 1px #cdcdcd;
+		}
+		.box-body{
+			border:solid 1px #cdcdcd;
+			background-color: #fff;
+			padding:30px 15px;
+		}
+		.outer, .inner{
+			padding: 60px 15px 30px 15px;
+		}
+		.inner{
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+<div class="container-fluid col-sm-8 col-sm-offset-2 margin-top-25" >
+
+	<div id="summary" class="tcontent row" style="display:block">
+		<div class="col-sm-12 box-header">
+			<i class="fa fa-inbox " aria-hidden="true"></i>
+			<span>Summary</span>
+		</div>
+		<div class="box-body outer">
+				
+				
+				
+				
+				
+<div class="col-sm-12 box-header">
+	<span>.ssh</span>
+</div>
+<div class="box-body inner">
+	
+	<div id="mygraph0" class="span9"></div>
+</div>
+
+
+
+<div class="col-sm-12 box-header">
+	<span>src</span>
+</div>
+<div class="box-body inner">
+	
+	<div id="mygraph1" class="span9"></div>
+</div>
+
+
+
+	
+				
+				
+				
+				
+		</div>
+	</div>
+
+	
+</div>
+
+
+  
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://almende.github.io/chap-links-library/js/graph/graph.js"></script>
+	
+	
+    <link rel="stylesheet" type="text/css" href="http://almende.github.io/chap-links-library/js/graph/graph.css"> 
+	
+
+    <script type="text/javascript">
+		
+      google.load("visualization", "1");
+
+      // Set callback to run when API is loaded
+      google.setOnLoadCallback(drawVisualization);
+		
+      // Called when the Visualization API is loaded.
+      function drawVisualization() {
+
+    
+var data0 = new google.visualization.DataTable();
+data0.addColumn('number', 'time');
+data0.addColumn('number', 'Ping Result');
+
+var graph0 = new links.Graph(document.getElementById('mygraph0'));
+
+var data1 = new google.visualization.DataTable();
+data1.addColumn('number', 'time');
+data1.addColumn('number', 'Ping Result');
+
+var graph1 = new links.Graph(document.getElementById('mygraph1'));
+
+
+
+
+		// specify options
+        var options = {
+          "width":  "100%",
+          "height": "500px",
+		  "visible": "true"
+		  
+        };
+
+       
+
+        // Draw our graph with the created data and options
+		//#menu3.toggle(function () {
+		
+         graph0.draw(data0, options);graph1.draw(data1, options);
+        
+		
+		
+		
+      }
+
+   </script>
+
+
+</body>
+</html>
