@@ -368,17 +368,14 @@
 	|#NoTrayIcon
 	|#NoEnv
 	|WinWaitActive, ahk_pid %pid ahk_class V8TopLevelFrame,,15
-	|;Лайтово Sleep 100
-	|;Лайтово WinRestore, ahk_pid %pid ahk_class V8TopLevelFrame
-	|;Лайтово WinMazimize, ahk_pid %pid ahk_class V8TopLevelFrame
+	|Sleep 100
+	|WinRestore, ahk_pid %pid ahk_class V8TopLevelFrame
+	|WinMaximize, ahk_pid %pid  ahk_class V8TopLevelFrame
 	|Sleep 100
 	|Send {alt down}{shift down}{VK52}{alt up}{shift up}
 	|Exitapp";	
 	Cкрипт = СтрЗаменить(Cкрипт, "%pid", формат(РаботаСокнами.pid, "ЧГ=0"));
 	
-	Если не Лайтово Тогда
-		Скрипт = СтрЗаменить(Cкрипт, ";Лайтово ","");
-	КонецЕсли;
 	AutohotkeyDLL.ahkTextDll(Cкрипт);		
 	Если ЗаблокироватьВформе Тогда
 		ГлавнаяФорма.ПодключитьОбработчикОжидания("ЗаблокироватьВформе", 0.5,1);
@@ -851,14 +848,20 @@
 КонецПроцедуры
 
 Процедура КнопкаСтрелкаВверхНажатие(Элемент)
+	Попытка
+		ФормаПодбораТоваров.Пролистать(-1);	
+	Исключение
+	КонецПопытки;
 	
-	ФормаПодбораТоваров.Пролистать(-1);
 	
 КонецПроцедуры
 
 Процедура КнопкаСтрелкаВнизНажатие(Элемент)
 	
-	ФормаПодбораТоваров.Пролистать(1);
+	Попытка
+		ФормаПодбораТоваров.Пролистать(1);	
+	Исключение
+	КонецПопытки;
 	
 КонецПроцедуры
 
