@@ -5765,7 +5765,7 @@
 		<Metadata name="Document.Возврат.Form.ФормаСпискаУправляемая.Form" id="4d73f569-286c-4074-a708-2bec2449bbcc.0" configVersion="99807c0b4e3c8c4cabd63feb1e77d57800000000"/>
 		<Metadata name="Document.Возврат.Help" id="28cf99d2-6e98-4cbd-a698-7e6a1fab8054.1" configVersion="d0f5724a030f4442bf4f5887f6d005ac00000000"/>
 		<Metadata name="Document.Возврат.ObjectModule" id="28cf99d2-6e98-4cbd-a698-7e6a1fab8054.0" configVersion="91d7fb8f4e49c147bab0c23a9a03f68000000000"/>
-		<Metadata name="Document.Заказ" id="d832ee89-cef4-40b1-87f0-efecadbf9be3" configVersion="7c27edf1aebbf94ba0e9ce5d03db6d4a00000000">
+		<Metadata name="Document.Заказ" id="d832ee89-cef4-40b1-87f0-efecadbf9be3" configVersion="22868506aac662448e977dd9d98816b300000000">
 			<Metadata name="Document.Заказ.TabularSection.Специфики.Attribute.ЛояльностьДопСтатусАкции" id="04254710-5a87-40a9-927f-e477e6bd2461"/>
 			<Metadata name="Document.Заказ.TabularSection.Скидки.Attribute.Сумма" id="04d557a8-3b71-466a-b71e-1bedfd2e3ccd"/>
 			<Metadata name="Document.Заказ.TabularSection.Товары" id="060d43c4-0978-4151-a049-25a55e809c37"/>
@@ -5781,6 +5781,7 @@
 			<Metadata name="Document.Заказ.TabularSection.Товары.Attribute.ЦенаРеализации" id="2566a206-23a2-44d8-912b-84e6d236568a"/>
 			<Metadata name="Document.Заказ.TabularSection.Специфики.Attribute.ГруппаОплаты" id="25890ded-f5d7-4543-b1a5-50457a0aac68"/>
 			<Metadata name="Document.Заказ.Command.ОткрытьПротоколРасчетов" id="2e87bd3c-b8e6-45a5-a34a-ee0bb9f12541"/>
+			<Metadata name="Document.Заказ.TabularSection.Товары.Attribute.ИдСвязаннойСтроки" id="31ba22f5-53c1-4a7e-ad2c-caf1918fd39c"/>
 			<Metadata name="Document.Заказ.TabularSection.Товары.Attribute.КоличествоНачальное" id="34445984-0838-4a6c-bb5e-6078985efa5a"/>
 			<Metadata name="Document.Заказ.TabularSection.Купоны.Attribute.Наименование" id="364e3591-6a1a-46b1-80f3-9ee132660a85"/>
 			<Metadata name="Document.Заказ.TabularSection.Товары.Attribute.Подарок" id="3bc93183-1738-4b21-a4c5-d3c5bef3ad32"/>
@@ -6657,11 +6658,11 @@
 		<Metadata name="EventSubscription.ПриЗаписиДокументов" id="d3d86dfe-3220-4166-8266-205a5c6342cc" configVersion="df1301ea40ae7b43a1330163636e47cf00000000"/>
 		<Metadata name="EventSubscription.ПриЗаписиРегистраИнформационнаяБазаГруппа" id="0a055076-58f7-4eed-8ff0-85e7aa3827e0" configVersion="7b7faa088158a54e9d0c4828fe5cea5d00000000"/>
 		<Metadata name="EventSubscription.ПриЗаписиСправочников" id="22aeb1dc-c51c-4205-89b4-4cb1e8c67bc6" configVersion="ced7c8823f63704b89dfcdd846e928a700000000"/>
-		<Metadata name="ExchangePlan.Основной" id="127f5ef8-56b1-45dd-b92d-bc03ba416e76" configVersion="4c87c2170b432e459b3a1e597115fa6a00000000">
+		<Metadata name="ExchangePlan.Основной" id="127f5ef8-56b1-45dd-b92d-bc03ba416e76" configVersion="2a541f121cf1bf4a8cc91144cce6f28d00000000">
 			<Metadata name="ExchangePlan.Основной.Attribute.Центр" id="42d16936-8d15-4963-b5c4-90807530dab9"/>
 			<Metadata name="ExchangePlan.Основной.Attribute.ИнформационнаяБаза" id="bddaab12-b125-4963-8613-a29d8ff62ac1"/>
 		</Metadata>
-		<Metadata name="ExchangePlan.Основной.Content" id="127f5ef8-56b1-45dd-b92d-bc03ba416e76.1" configVersion="9e312681e0bdc64ea85e9e89a1d0249200000000"/>
+		<Metadata name="ExchangePlan.Основной.Content" id="127f5ef8-56b1-45dd-b92d-bc03ba416e76.1" configVersion="dcfc6e1a68c8454b8f894a0074f5429c00000000"/>
 		<Metadata name="ExchangePlan.Основной.Form.ФормаСписка" id="1caf2a76-f4d8-44fd-8693-177681eabb75" configVersion="d740dd54d1a7ee44b1745146f4b9c15100000000"/>
 		<Metadata name="ExchangePlan.Основной.Form.ФормаСписка.Form" id="1caf2a76-f4d8-44fd-8693-177681eabb75.0" configVersion="3302b3e9368e0b42beccd0e403e1367d00000000"/>
 		<Metadata name="ExchangePlan.Основной.Form.ФормаСпискаУправляемая" id="9a0f58c8-e53f-4bbd-aa5e-e306e9e75347" configVersion="2bed46f32bc5b641a92122b1abbb12d800000000"/>
@@ -6937,7 +6938,8 @@
 		<Metadata name="InformationRegister.ЗаказДопИнф.Form.ФормаСписка.Form" id="43e8d665-d38f-4f32-a521-02d69ae1e5fc.0" configVersion="fcc63e06dcd0704f9d30aeab7acff5a400000000"/>
 		<Metadata name="InformationRegister.ЗаказДопИнф.Help" id="8b40b1b5-cadc-48f9-b190-9becb11307ff.0" configVersion="8ee1da91ed4ccb4f878da7e514daa1a600000000"/>
 		<Metadata name="InformationRegister.ЗаказДопИнф.RecordSetModule" id="8b40b1b5-cadc-48f9-b190-9becb11307ff.1" configVersion="5d5b6f5a3149264b9fb169254e3674de00000000"/>
-		<Metadata name="InformationRegister.ЗаказТоварыДопИнф" id="e6db3ea3-4147-4222-b5f6-f9508c5e8393" configVersion="e8ef10b5d3e28e439b0651a09724eae400000000">
+		<Metadata name="InformationRegister.ЗаказТоварыДопИнф" id="e6db3ea3-4147-4222-b5f6-f9508c5e8393" configVersion="b96481fcc54e464ea2532a7a6715e21a00000000">
+			<Metadata name="InformationRegister.ЗаказТоварыДопИнф.Attribute.ИдСвязаннойСтроки" id="0a44fc73-894d-4233-8439-dd15b4259aa3"/>
 			<Metadata name="InformationRegister.ЗаказТоварыДопИнф.Attribute.Количество" id="15093b18-17d9-4fc7-b2ba-e95e6addbaa2"/>
 			<Metadata name="InformationRegister.ЗаказТоварыДопИнф.Attribute.ГруппаПечати" id="1d9284f7-1eff-4cb7-942c-590df01df1cb"/>
 			<Metadata name="InformationRegister.ЗаказТоварыДопИнф.Attribute.КодПодтверждения" id="2714aee4-61d5-44f8-9a41-21fb3908a6e5"/>
@@ -7876,8 +7878,8 @@
 		<Metadata name="Subsystem.КП.Subsystem.Настройки.CommandInterface" id="fd4a31fa-2db7-4cf7-92ce-0c0c5b62d287.1" configVersion="b4205dca1144934ba26ed11ca7f9c3fe00000000"/>
 		<Metadata name="Subsystem.КП.Subsystem.УправлениеСправочникамиКП" id="1ba4209e-5cc4-40a4-846b-9716fdca6521" configVersion="be06b1439c29d54db9916c1131c23ef700000000"/>
 		<Metadata name="Subsystem.КП.Subsystem.УправлениеСправочникамиКП.CommandInterface" id="1ba4209e-5cc4-40a4-846b-9716fdca6521.1" configVersion="8b6f57a3705d6f4c923552bc4d3df67200000000"/>
-		<Metadata name="Subsystem.СУПккм" id="1c72053f-d88a-43e7-b5e0-df5118299272" configVersion="fac4ad7407e848408964c27c004b9fe400000000"/>
-		<Metadata name="Subsystem.СУПккм.CommandInterface" id="1c72053f-d88a-43e7-b5e0-df5118299272.1" configVersion="a53853220196bc47910404f0682f024e00000000"/>
+		<Metadata name="Subsystem.СУПккм" id="1c72053f-d88a-43e7-b5e0-df5118299272" configVersion="4d0d2cb595eabd43a7007ef7513bf86500000000"/>
+		<Metadata name="Subsystem.СУПккм.CommandInterface" id="1c72053f-d88a-43e7-b5e0-df5118299272.1" configVersion="5e1fb3c96ddb1a4cbbd133222b930e2400000000"/>
 		<Metadata name="Subsystem.СУПккм.Subsystem.СтанцияОплаты" id="1effd9e8-a384-400d-a4c4-58f3c882333e" configVersion="aa78167d8bd8a04bb10842259e9b128d00000000"/>
 		<Metadata name="Subsystem.СУПккм.Subsystem.УправлениеНаличиемВПродаже" id="8221ac49-6e0e-43c5-ae8a-6fabe1feb7d7" configVersion="f148607932ba1547ae668dfbab93451000000000"/>
 		<Metadata name="Subsystem.УправлениеАкциями" id="30d80fb9-144e-48d1-abc9-12e10b5f5832" configVersion="bddf4c817942f643a512cde85d13a15b00000000"/>
