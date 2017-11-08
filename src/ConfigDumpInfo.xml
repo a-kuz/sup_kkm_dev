@@ -1614,8 +1614,8 @@
 		<Metadata name="CommonModule.ИнтерфейсАдмина.Module" id="6ca9b612-e946-4916-b097-e52444df16f8.0" configVersion="92315800ac9a3844b2520bc714dc5e7000000000"/>
 		<Metadata name="CommonModule.ИнтерфейсРМ" id="d7235633-6c31-425e-8715-d5d737b379f7" configVersion="efbfb10c19c048469244bcbf631c755800000000"/>
 		<Metadata name="CommonModule.ИнтерфейсРМ.Module" id="d7235633-6c31-425e-8715-d5d737b379f7.0" configVersion="8ea9a93bfd647e49ba5b721396491eae00000000"/>
-		<Metadata name="CommonModule.ИнтерфейсРМЛояльность" id="07826e7d-d785-4eed-bc8e-916389b9d710" configVersion="65122bf5a7183e4baf76b9f869c3e80300000000"/>
-		<Metadata name="CommonModule.ИнтерфейсРМЛояльность.Module" id="07826e7d-d785-4eed-bc8e-916389b9d710.0" configVersion="31115e64cf754a4f94f98d7e94ef3a5800000000"/>
+		<Metadata name="CommonModule.ИнтерфейсРМЛояльность" id="07826e7d-d785-4eed-bc8e-916389b9d710" configVersion="24befd33745c224fbc8fcfa53413fba400000000"/>
+		<Metadata name="CommonModule.ИнтерфейсРМЛояльность.Module" id="07826e7d-d785-4eed-bc8e-916389b9d710.0" configVersion="9fa1dcc39a87bf4d96fb45646c6eb7b900000000"/>
 		<Metadata name="CommonModule.КонтрольныеПоказатели" id="d1a5d651-2d4d-4eb8-9532-cd46586a5624" configVersion="a3b07a31b391cf4f9559c2367d8e477f00000000"/>
 		<Metadata name="CommonModule.КонтрольныеПоказатели.Module" id="d1a5d651-2d4d-4eb8-9532-cd46586a5624.0" configVersion="93da450f87e14943b12505d033b16c0200000000"/>
 		<Metadata name="CommonModule.Лояльность" id="89fd4854-3ac2-4937-95b3-61c824a7d2d2" configVersion="0ddc7d8705d2a3468192a1b159efc06b00000000"/>
@@ -2810,8 +2810,8 @@
 			<Metadata name="DataProcessor.ВыборСпецифик.TabularSection.ГруппыСпецифик.Attribute.Порядок" id="eb2f15f6-2252-4275-9cce-85f9b380a077"/>
 			<Metadata name="DataProcessor.ВыборСпецифик.TabularSection.ГруппыСпецифик.Attribute.Сумма" id="fcbef364-09a1-48e9-9d81-3c1c4c5e9641"/>
 		</Metadata>
-		<Metadata name="DataProcessor.ВыборСпецифик.Form.Форма0" id="0c73630b-eac3-4f2f-8c21-beac20dcb624" configVersion="f2a8a4d6c0064641b58539aa43e7564200000000"/>
-		<Metadata name="DataProcessor.ВыборСпецифик.Form.Форма0.Form" id="0c73630b-eac3-4f2f-8c21-beac20dcb624.0" configVersion="6d16d25d1d569f4387526bfcf76dc20600000000"/>
+		<Metadata name="DataProcessor.ВыборСпецифик.Form.Форма0" id="0c73630b-eac3-4f2f-8c21-beac20dcb624" configVersion="ff49e5c08d2eff448893d81ef8a78f3a00000000"/>
+		<Metadata name="DataProcessor.ВыборСпецифик.Form.Форма0.Form" id="0c73630b-eac3-4f2f-8c21-beac20dcb624.0" configVersion="b114641803773c4fa0c0d37ada4e6f2a00000000"/>
 		<Metadata name="DataProcessor.ВыборСпецифик.Help" id="80289324-2c6a-4c1e-bf2a-b1e34e77f0c0.1" configVersion="a6d85160a166044e80391180bfb0400900000000"/>
 		<Metadata name="DataProcessor.ВыборСпецифик.ObjectModule" id="80289324-2c6a-4c1e-bf2a-b1e34e77f0c0.0" configVersion="c890d8c65fcf91458a85e26a70cf403500000000"/>
 		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаJSON" id="a259df18-04a1-4320-b7a2-db6669d867fd" configVersion="8c13d81ddc133845926a1c8ff3ca32ce00000000">
@@ -4114,7 +4114,21 @@
 		<Metadata name="DataProcessor.РежимБрони.Form.Форма.Form" id="3b988754-ca8b-4978-95f8-d857f8c08cc2.0" configVersion="a0a6919bbb980e4892f8e23aa0454f2f00000000"/>
 		<Metadata name="DataProcessor.РежимБрони.Help" id="3823db34-9b05-4248-ad16-855c4137bc2b.1" configVersion="d5e0410dd6506f419ade1172bacb2c6300000000"/>
 		<Metadata name="DataProcessor.РежимБрони.ObjectModule" id="3823db34-9b05-4248-ad16-855c4137bc2b.0" configVersion="208972e8d90fd24aa65c750b4e22e55c00000000"/>
-		<Metadata name="DataProcessor.РецептыГостя" id="27c16abc-4bc3-4d46-915a-cde909de6109" configVersion="3119c7ea58db2a42b83787ad4de1392900000000"/>
+		<Metadata name="DataProcessor.РецептыГостя" id="27c16abc-4bc3-4d46-915a-cde909de6109" configVersion="52a9ff83066ab545a0bc20d4a4121d3900000000">
+			<Metadata name="DataProcessor.РецептыГостя.TabularSection.Товары.Attribute.СпецификаНоменклатура" id="111fb4d4-4be3-4c2e-bd0d-778db6159ed6"/>
+			<Metadata name="DataProcessor.РецептыГостя.Attribute.ТТ" id="2dd897d6-80bc-43ba-a60f-46d1b70e9538"/>
+			<Metadata name="DataProcessor.РецептыГостя.TabularSection.Товары.Attribute.Рецепт" id="356107eb-c3db-4c75-b93f-6fe46e88d48c"/>
+			<Metadata name="DataProcessor.РецептыГостя.Attribute.НомерКартыЛояльности" id="577ebc0c-183e-426f-80d7-472a993367f4"/>
+			<Metadata name="DataProcessor.РецептыГостя.TabularSection.Товары.Attribute.Количество" id="73325672-3624-46b6-9252-05ae4cdf5a31"/>
+			<Metadata name="DataProcessor.РецептыГостя.TabularSection.Товары.Attribute.Блюдо" id="97249e8b-4d5a-45e9-8c45-179ff5b0ed1d"/>
+			<Metadata name="DataProcessor.РецептыГостя.TabularSection.Товары.Attribute.Специфика" id="a7721383-7707-47e1-b085-a5c1b403bb7b"/>
+			<Metadata name="DataProcessor.РецептыГостя.TabularSection.Товары" id="f1825fc9-d32c-4424-a9c4-89c2b5b01c45"/>
+		</Metadata>
+		<Metadata name="DataProcessor.РецептыГостя.Form.ВыборРецептаГостя" id="5e24f3cf-26ab-4686-a1cb-4ec984a4b932" configVersion="e340c693959a7746a403c951d07437c300000000"/>
+		<Metadata name="DataProcessor.РецептыГостя.Form.ВыборРецептаГостя.Form" id="5e24f3cf-26ab-4686-a1cb-4ec984a4b932.0" configVersion="fc101f24fc9b4f42bee87ff5b2df887300000000"/>
+		<Metadata name="DataProcessor.РецептыГостя.Form.РедактированиеРецептаГостя" id="9faca661-d63f-41ef-84d5-0f6573b21671" configVersion="605bf48cf440fe40abe78da4e2120e3000000000"/>
+		<Metadata name="DataProcessor.РецептыГостя.Form.РедактированиеРецептаГостя.Form" id="9faca661-d63f-41ef-84d5-0f6573b21671.0" configVersion="c090b9132e93b24892f4761f704358c600000000"/>
+		<Metadata name="DataProcessor.РецептыГостя.ObjectModule" id="27c16abc-4bc3-4d46-915a-cde909de6109.0" configVersion="ffd503b52170c044b06d0bc1bc57f9a200000000"/>
 		<Metadata name="DataProcessor.СкрытьМенюИПанели" id="40749ed1-8810-4d8d-84bf-8e1fb1933718" configVersion="c25462d52ba26a499f9c48a7f1bd3c0000000000">
 			<Metadata name="DataProcessor.СкрытьМенюИПанели.Attribute.ПродолжитьЗапускРабочегоМеста" id="10cac95a-194e-4f17-8c90-575b8fb35740"/>
 			<Metadata name="DataProcessor.СкрытьМенюИПанели.Attribute.Тест" id="ba34667f-ddc7-4e6a-aabf-7649d0eee41e"/>
