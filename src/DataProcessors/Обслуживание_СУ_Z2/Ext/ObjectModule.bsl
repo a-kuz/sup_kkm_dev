@@ -33,14 +33,14 @@
 	
 	// заполнение списка моделей
 	КодыМоделей = Новый Структура;
-	КодыМоделей.Вставить("СканерШК"				,0);
-	КодыМоделей.Вставить("РидерМК"				,1);
-	КодыМоделей.Вставить("Проксимити"			,6);
-	КодыМоделей.Вставить("ПроксимитиPERCo"		,8);
-	КодыМоделей.Вставить("ПроксимитиParsec"		,11);
-	КодыМоделей.Вставить("ПроксиIronLogicZ2"	,13);
-	КодыМоделей.Вставить("ПроксимитиCoreRFID"	,14);
-	КодыМоделей.Вставить("ПроксиАрсеналПС01"	,15);
+	//КодыМоделей.Вставить("СканерШК"				,0);
+	//КодыМоделей.Вставить("РидерМК"				,1);
+	//КодыМоделей.Вставить("Проксимити"			,6);
+	//КодыМоделей.Вставить("ПроксимитиPERCo"		,8);
+	//КодыМоделей.Вставить("ПроксимитиParsec"		,11);
+	КодыМоделей.Вставить("ПроксиIronLogicZ2MF"	,3);
+	//КодыМоделей.Вставить("ПроксимитиCoreRFID"	,14);
+	//КодыМоделей.Вставить("ПроксиАрсеналПС01"	,15);
 	
 КонецПроцедуры
 
@@ -56,12 +56,11 @@
 	КонецЕсли; 
 	
 	Попытка 
-		ПодключитьВнешнююКомпоненту("AddIn.Scaner45");
-		ЗагрузитьВнешнююКомпоненту("Scaner1C.dll");
-		DRV = Новый("AddIn.Scaner45");
+		ПодключитьВнешнююКомпоненту("ZR1C.dll", "Comp", ТипВнешнейКомпоненты.Native);
+		DRV = Новый("AddIn.Comp.ZR1CExtension");
 	Исключение
 		Попытка
-			DRV = Новый COMОбъект("AddIn.Scaner45");
+			DRV = Новый COMОбъект("AddIn.Comp.ZR1CExtension");
 		Исключение
 			Возврат Ложь;
 		КонецПопытки;
@@ -127,18 +126,30 @@
 //
 Процедура Подключить() Экспорт
 	
-	Пока DRV.DeviceCount < CurrentDeviceNumber Цикл
-        DRV.AddDevice();
-	КонецЦикла;
-	
 	УстановитьСвойстваДрайвера();
+	DRV.ОчиститьЛог();
+	DRV.ЗагрузитьНайстройки();
+	DRV.ОчиститьФорматы();
+	DRV.ВставитьФормат(0,"МОКП","%.2X%.2X%.2X%.2X%.2X%.2X%.2X%.2X","b0 b1 b2 b3 b4 b5 b6 b7");
+	DRV.СохранитьНастройки(3);
+	ИмяПорта = "";
+	Ответ = DRV.Подключить(ИмяПорта);
 	
-	DRV.OldVersion			= 0;
-	DRV.DataEventEnabled	= 1;
-	DRV.AutoDisable			= 1;
-	
-	DRV.DeviceEnabled		= 1;
-	Ошибка();
+	Если не Ответ Тогда
+		Ошибка();
+	КонецЕсли;
+	//Пока DRV.DeviceCount < CurrentDeviceNumber Цикл
+	//    DRV.AddDevice();
+	//КонецЦикла;
+	//
+	//УстановитьСвойстваДрайвера();
+	//
+	//DRV.OldVersion			= 0;
+	//DRV.DataEventEnabled	= 1;
+	//DRV.AutoDisable			= 1;
+	//
+	//DRV.DeviceEnabled		= 1;
+	//Ошибка();
 	
 КонецПроцедуры
 
@@ -149,17 +160,21 @@
 //
 Процедура Отключить() Экспорт
 	
-	DRV.CurrentDeviceNumber	= CurrentDeviceNumber;
-	DRV.DeviceEnabled		= 0;
-	Ошибка();
+	//DRV.CurrentDeviceNumber	= CurrentDeviceNumber;
+	//DRV.DeviceEnabled		= 0;
+	ИмяПорта = "COM" + Формат(PortNumber,"ЧГ=0");
+	Ответ = DRV.Отключить(ИмяПорта);
+	Если не Ответ Тогда
+		Ошибка();
+	КонецЕсли;
 	
 КонецПроцедуры
 
 Процедура ОчиститьОчередь() Экспорт 
 	
-	Пока DRV.DataCount Цикл
-		DRV.УдалитьСообщение();
-	КонецЦикла;
+	//Пока DRV.DataCount Цикл
+	//	DRV.УдалитьСообщение();
+	//КонецЦикла;
 	
 КонецПроцедуры
 
@@ -169,26 +184,21 @@
 Процедура УстановитьСвойстваДрайвера() Экспорт
 	
 	// Свойства для работы с ЛУ
-	DRV.CurrentDeviceNumber	= CurrentDeviceNumber;
-	DRV.CurrentDeviceName  	= Лев(ТО.Наименование,20);
+	//DRV.CurrentDeviceNumber	= CurrentDeviceNumber;
+	//DRV.CurrentDeviceName  	= Лев(ТО.Наименование,20);
 	
 	// Параметры связи
-	//DRV.Model				= КодыМоделей[ТО.КодМодели];
-	DRV.PortNumber			= PortNumber;
+	DRV.Model				= КодыМоделей[ТО.КодМодели];
+	DRV.Port				= "Com" + Формат(PortNumber,"ЧГ=0");
 	
 	DRV.Prefix				= Prefix;
 	DRV.Suffix				= Suffix;
 	
-	Если DRV.PortNumber=100 Тогда
-		// чувствительность клавиатуры
-		DRV.Sensitive		= Sensitive;
-	Иначе
-		// параметры СОМ порта
-		DRV.BaudRate		= BaudRate;
-		DRV.DataBits		= DataBits;
-		DRV.Parity			= Parity;
-		DRV.StopBits		= StopBits;
-	КонецЕсли;
+	// параметры СОМ порта
+	DRV.Speed				= 0; // Автоматически выбирается максимальная скорость
+	//DRV.DataBits		= DataBits;
+	//DRV.Parity			= Parity;
+	//DRV.StopBits		= StopBits;
 	
 КонецПроцедуры
  
@@ -200,21 +210,11 @@
 	CurrentDeviceNumber	= DRV.CurrentDeviceNumber;
 	
 	// Параметры связи
-	PortNumber			= DRV.PortNumber;
+	PortNumber			= СтрЗаменить(DRV.Port,"Com","");
 	
 	Prefix				= DRV.Prefix;
 	Suffix				= DRV.Suffix;
 	
-	Если DRV.PortNumber=100 Тогда
-		// чувствительность клавиатуры
-		Sensitive		= DRV.Sensitive;
-	Иначе
-		// параметры СОМ порта
-		BaudRate		= DRV.BaudRate;
-		DataBits		= DRV.DataBits;
-		Parity			= DRV.Parity;
-		StopBits		= DRV.StopBits;
-	КонецЕсли;
 	
 КонецПроцедуры
  
@@ -225,26 +225,28 @@
 //
 Функция Ошибка()
 	
-	ResultCode			= DRV.ResultCode;
-	ResultDescription	= DRV.ResultDescription;
+	//ResultCode			= DRV.ResultCode;
+	//ResultDescription	= DRV.ResultDescription;
 	
-	Если DRV.ResultCode = 0 Тогда
-		Возврат Ложь;
-		
-	Иначе
-		ЗарегистрироватьСобытие("Торговое оборудование.Ошибка",
-		УровеньЖурналаРегистрации.Предупреждение,
-		,
-		ТО.Ссылка,
-		Строка(DRV.ResultCode)+" - "+DRV.ResultDescription);
+	//Если DRV.ResultCode = 0 Тогда
+	//	Возврат Ложь;
+	//	
+	//Иначе
+	ТекстОшибки = "";
+	КодОшибки = DRV.ПолучитьОшибку(ТекстОшибки);
+	ЗарегистрироватьСобытие("Торговое оборудование.Ошибка",
+	УровеньЖурналаРегистрации.Предупреждение,
+	,
+	ТО.Ссылка,
+	Строка(КодОшибки)+" - "+ТекстОшибки);
+	
+	Результат.Ошибка	= Истина;
+	Результат.Описание	= "Ошибка драйвера: "+КодОшибки;
+	Результат.Подробно	= СокрЛП(ТекстОшибки);
+	
+	Возврат Истина;
 		
-		Результат.Ошибка	= Истина;
-		Результат.Описание	= "Ошибка драйвера: "+DRV.ResultCode;
-		Результат.Подробно	= СокрЛП(DRV.ResultDescription);
-		
-		Возврат Истина;
-		
-	КонецЕсли;
+	//КонецЕсли;
 	
 КонецФункции
 
