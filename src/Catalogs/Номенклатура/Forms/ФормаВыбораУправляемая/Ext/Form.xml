@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -15,12 +16,13 @@
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
 		<Table name="Список" id="3">
-			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
@@ -67,67 +69,22 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<ColumnGroup name="Группа1" id="37">
-					<Group>InCell</Group>
-					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
-					<ChildItems>
-						<CheckBoxField name="Действует" id="34">
-							<DataPath>Список.Действует</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content> </v8:content>
-								</v8:item>
-							</Title>
-							<ShowInHeader>false</ShowInHeader>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ДействуетКонтекстноеМеню" id="35"/>
-							<ExtendedTooltip name="ДействуетРасширеннаяПодсказка" id="36"/>
-						</CheckBoxField>
-						<LabelField name="ИнформационнаяБаза" id="16">
-							<DataPath>Список.ИнформационнаяБаза</DataPath>
-							<DefaultItem>true</DefaultItem>
-							<ContextMenu name="ИнформационнаяБазаКонтекстноеМеню" id="17"/>
-							<ExtendedTooltip name="ИнформационнаяБазаРасширеннаяПодсказка" id="18"/>
-						</LabelField>
-					</ChildItems>
-				</ColumnGroup>
-				<LabelField name="Товар_КодСУП" id="19">
-					<DataPath>Список.Товар_КодСУП</DataPath>
+				<LabelField name="Наименование" id="16">
+					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Код товара</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="Товар_КодСУПКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="Товар_КодСУПРасширеннаяПодсказка" id="21"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
-				<LabelField name="Услуга" id="22">
-					<DataPath>Список.Услуга</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="УслугаКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="24"/>
+				<LabelField name="КодСУП" id="19">
+					<DataPath>Список.КодСУП</DataPath>
+					<ContextMenu name="КодСУПКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодСУПРасширеннаяПодсказка" id="21"/>
 				</LabelField>
-				<LabelField name="Специфика" id="31">
-					<DataPath>Список.Специфика</DataPath>
-					<ContextMenu name="СпецификаКонтекстноеМеню" id="32"/>
-					<ExtendedTooltip name="СпецификаРасширеннаяПодсказка" id="33"/>
+				<LabelField name="КодДляВесов" id="22">
+					<DataPath>Список.КодДляВесов</DataPath>
+					<ContextMenu name="КодДляВесовКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="КодДляВесовРасширеннаяПодсказка" id="24"/>
 				</LabelField>
-				<LabelField name="Кратность" id="25">
-					<DataPath>Список.Кратность</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="КратностьКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="КратностьРасширеннаяПодсказка" id="27"/>
-				</LabelField>
-				<CheckBoxField name="Активность" id="28">
-					<DataPath>~Список.Активность</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="АктивностьКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="АктивностьРасширеннаяПодсказка" id="30"/>
-				</CheckBoxField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -138,18 +95,9 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>true</ManualQuery>
+				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<QueryText>ВЫБРАТЬ
-	РегистрСведенийНастройкаУслугПоПриготовлению.ИнформационнаяБаза КАК ИнформационнаяБаза,
-	РегистрСведенийНастройкаУслугПоПриготовлению.Товар_КодСУП КАК Товар_КодСУП,
-	РегистрСведенийНастройкаУслугПоПриготовлению.Услуга КАК Услуга,
-	РегистрСведенийНастройкаУслугПоПриготовлению.Кратность КАК Кратность,
-	РегистрСведенийНастройкаУслугПоПриготовлению.Специфика КАК Специфика,
-	РегистрСведенийНастройкаУслугПоПриготовлению.Действует КАК Действует
-ИЗ
-	РегистрСведений.НастройкаУслугПоПриготовлению КАК РегистрСведенийНастройкаУслугПоПриготовлению</QueryText>
-				<MainTable>InformationRegister.НастройкаУслугПоПриготовлению</MainTable>
+				<MainTable>Catalog.Номенклатура</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
