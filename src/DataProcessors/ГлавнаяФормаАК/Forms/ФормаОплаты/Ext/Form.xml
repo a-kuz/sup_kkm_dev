@@ -368,6 +368,29 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаСтрокиМРРасширеннаяПодсказка" id="36"/>
 						</UsualGroup>
+						<SpreadSheetDocumentField name="СостояниеОплаты" id="79">
+							<DataPath>СостояниеОплаты</DataPath>
+							<Enabled>false</Enabled>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<Height>5</Height>
+							<VerticalStretch>false</VerticalStretch>
+							<VerticalScrollBar>false</VerticalScrollBar>
+							<HorizontalScrollBar>false</HorizontalScrollBar>
+							<Protection>true</Protection>
+							<SelectionShowMode>DontShow</SelectionShowMode>
+							<ShowGroups>false</ShowGroups>
+							<EnableStartDrag>false</EnableStartDrag>
+							<EnableDrag>false</EnableDrag>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ViewScalingMode>Normal</ViewScalingMode>
+							<ContextMenu name="СостояниеОплатыКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="СостояниеОплатыРасширеннаяПодсказка" id="81"/>
+						</SpreadSheetDocumentField>
 						<LabelField name="НадписьСостояниеОплаты" id="37">
 							<DataPath>НадписьСостояниеОплаты</DataPath>
 							<Title>
@@ -699,6 +722,22 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
+				<Column name="ЭтапОплаты" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап оплаты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="НадписьСостояниеОплаты" id="9">
@@ -773,6 +812,17 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеОплаты" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние оплаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
