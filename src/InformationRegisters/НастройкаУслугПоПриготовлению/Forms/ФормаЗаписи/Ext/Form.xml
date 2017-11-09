@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
-	<AutoCommandBar name="" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="ИнформационнаяБаза" id="1">
 			<DataPath>Запись.ИнформационнаяБаза</DataPath>
@@ -24,8 +24,15 @@
 			<ExtendedTooltip name="КратностьРасширеннаяПодсказка" id="12"/>
 		</InputField>
 		<CheckBoxField name="Активность" id="13">
-			<DataPath>1/0:327b92c3-bb03-4108-91fc-36c6077fa18b</DataPath>
-			<CheckBoxType>Auto</CheckBoxType>
+			<DataPath>Запись.Действует</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<CheckBoxType>Tumbler</CheckBoxType>
+			<EditFormat>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БЛ='Не действует'; БИ=Действует</v8:content>
+				</v8:item>
+			</EditFormat>
 			<ContextMenu name="АктивностьКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="АктивностьРасширеннаяПодсказка" id="15"/>
 		</CheckBoxField>
