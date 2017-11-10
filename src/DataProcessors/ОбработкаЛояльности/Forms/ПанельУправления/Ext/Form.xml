@@ -176,6 +176,39 @@
 						</Button>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ГруппаОчисткаДанных" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очистка данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа очистка данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаОчисткаДанныхРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<InputField name="ОчисткаДанных_Дата" id="102">
+							<DataPath>ОчисткаДанных_Дата</DataPath>
+							<ContextMenu name="ОчисткаДанных_ДатаКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ОчисткаДанных_ДатаРасширеннаяПодсказка" id="104"/>
+						</InputField>
+						<Button name="КомандаОчисткаДанныхЛояльностиПоЗаказу" id="105">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаОчисткаДанныхЛояльностиПоЗаказу</CommandName>
+							<ExtendedTooltip name="КомандаОчисткаДанныхЛояльностиПоЗаказуРасширеннаяПодсказка" id="106"/>
+						</Button>
+						<Button name="КомандаОчисткаСПУЛа" id="107">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаОчисткаСПУЛа</CommandName>
+							<ExtendedTooltip name="КомандаОчисткаСПУЛаРасширеннаяПодсказка" id="108"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаТестирование" id="21">
@@ -625,6 +658,23 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<Attribute name="ОчисткаДанных_Дата" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата очистки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ОчисткаДанных_Дата</Field>
+			</Save>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="КомандаCALC" id="1">
@@ -791,6 +841,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаPRESALE</Action>
+		</Command>
+		<Command name="КомандаОчисткаДанныхЛояльностиПоЗаказу" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка данных лояльности по заказу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда очистка данных лояльности по заказу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОчисткаДанныхЛояльностиПоЗаказу</Action>
+		</Command>
+		<Command name="КомандаОчисткаСПУЛа" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка СПУЛа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда очистка СПУЛа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОчисткаСПУЛа</Action>
 		</Command>
 	</Commands>
 </Form>
