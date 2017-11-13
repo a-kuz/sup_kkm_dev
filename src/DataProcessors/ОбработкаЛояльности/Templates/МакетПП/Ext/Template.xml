@@ -270,16 +270,18 @@
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Double</v8ui:style>
+	</line>
 	<font faceName="Segoe UI" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>40</width>
-		<autoWidthCalculation>true</autoWidthCalculation>
 		<widthWeightFactor>5</widthWeightFactor>
 	</format>
 	<format>
 		<width>160</width>
 		<autoWidthCalculation>true</autoWidthCalculation>
-		<widthWeightFactor>90</widthWeightFactor>
+		<widthWeightFactor>1</widthWeightFactor>
 	</format>
 	<format>
 		<font>0</font>
@@ -291,6 +293,8 @@
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
+		<border>0</border>
+		<borderColor>#787878</borderColor>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<fillType>Parameter</fillType>
@@ -299,6 +303,8 @@
 		<height>20</height>
 	</format>
 	<format>
+		<border>0</border>
+		<borderColor>#787878</borderColor>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<backColor>#82C86E</backColor>
