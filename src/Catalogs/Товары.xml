@@ -289,18 +289,17 @@
 				</xr:StandardAttribute>
 			</StandardAttributes>
 			<Characteristics/>
-			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
+			<PredefinedDataUpdate>AutoUpdate</PredefinedDataUpdate>
 			<EditType>InDialog</EditType>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
 				<xr:Field>Catalog.Товары.StandardAttribute.Description</xr:Field>
 				<xr:Field>Catalog.Товары.Attribute.КодСУП</xr:Field>
-				<xr:Field>Catalog.Товары.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>Use</FullTextSearchOnInputByString>
-			<ChoiceDataGetModeOnInputByString>Background</ChoiceDataGetModeOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Товары.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm>Catalog.Товары.Form.ФормаГруппы</DefaultFolderForm>
 			<DefaultListForm>Catalog.Товары.Form.ФормаСписка</DefaultListForm>
