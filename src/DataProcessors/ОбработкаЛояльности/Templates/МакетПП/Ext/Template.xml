@@ -206,10 +206,31 @@
 			<empty>true</empty>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<formatIndex>6</formatIndex>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>16</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>17</index>
+		<row>
+			<formatIndex>6</formatIndex>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>8</defaultFormatIndex>
-	<height>15</height>
-	<vgRows>15</vgRows>
+	<defaultFormatIndex>9</defaultFormatIndex>
+	<height>18</height>
+	<vgRows>18</vgRows>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ВидимаяОбласть</name>
 		<area>
@@ -218,6 +239,16 @@
 			<endRow>-1</endRow>
 			<beginColumn>0</beginColumn>
 			<endColumn>2</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>КупонПустой</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>15</beginRow>
+			<endRow>17</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
@@ -309,6 +340,9 @@
 		<verticalAlignment>Center</verticalAlignment>
 		<backColor>#82C86E</backColor>
 		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<height>288</height>
 	</format>
 	<format>
 		<width>72</width>
