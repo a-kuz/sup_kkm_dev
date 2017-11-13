@@ -215,7 +215,7 @@
 	
 	DRV.Prefix				= Prefix;
 	DRV.Suffix				= Suffix;
-	
+	DRV.BinaryMode			= false;
 	// параметры СОМ порта
 	DRV.Speed				= 0; // Автоматически выбирается максимальная скорость
 	//DRV.DataBits		= DataBits;
