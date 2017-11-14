@@ -6,12 +6,12 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Редактировать объект (ИР)</v8:content>
+					<v8:content>Пассатижи</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Для любых ссылочных объектов</Comment>
-			<Group>CommandGroup.ирКоманднаяПанельФормы</Group>
-			<Representation>Auto</Representation>
+			<Group>FormCommandBarImportant</Group>
+			<Representation>PictureAndText</Representation>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -23,12 +23,10 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="13" y="8"/>
 			</Picture>
-			<Shortcut/>
+			<Shortcut>Ctrl+Shift+Q</Shortcut>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<CommandParameterType>
-				<v8:Type>cfg:CatalogRef.ирКомандаРедактироватьОбъект</v8:Type>
-				<v8:Type>cfg:CatalogRef.ирОбъектыДляОтладки</v8:Type>
-				<v8:Type>cfg:CatalogRef.ирАлгоритмы</v8:Type>
+				<v8:TypeSet>cfg:DefinedType.ТипыДляИР</v8:TypeSet>
 			</CommandParameterType>
 			<ParameterUseMode>Single</ParameterUseMode>
 			<ModifiesData>false</ModifiesData>

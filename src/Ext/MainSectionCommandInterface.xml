@@ -1,107 +1,61 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<CommandsVisibility>
-		<Command name="InformationRegister.ВозвратДопИнф.StandardCommand.OpenList">
+		<Command name="Catalog.Товары.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.Возврат.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="InformationRegister.ВыданныеПейджеры.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Catalog.ГруппыИнформационныхБаз.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="InformationRegister.ДополнительныеСвойства.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="InformationRegister.ДоступностьКаталоговТоваров.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Catalog.Задачи.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="Document.Заказ.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
-		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
+		<Command name="Document.Возврат.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.Касса_ОткрытиеСмены.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="InformationRegister.Марки.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Catalog.Товары.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="InformationRegister.ДействующиеРасписания.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="InformationRegister.НомерЧекаНФР.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.ОтчетФО.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="Document.ПротоколРасчетов.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
-		<Command name="Document.РеестрЦен.StandardCommand.OpenList">
+		<Command name="Document.Касса_ОткрытиеСмены.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="Document.ОткрытиеСмены.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
-		<Command name="Catalog.ХранилищеДополнительнойИнформации.StandardCommand.OpenList">
+		<Command name="Document.ОтчетФО.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
-		<Command name="InformationRegister.Цены.StandardCommand.OpenList">
+		<Command name="Document.РеестрЦен.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ГруппыИнформационныхБаз.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:3124178e-6aa7-461d-9cd3-418f1ab537fb">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -111,7 +65,7 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Catalog.ШаблоныЗадач.StandardCommand.OpenList">
+		<Command name="InformationRegister.ДоступностьКаталоговТоваров.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -121,22 +75,48 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Report.ирКонсольКомпоновокДанных.StandardCommand.Open">
+		<Command name="Catalog.ХранилищеДополнительнойИнформации.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Report.ОтчетПоВыручке.StandardCommand.Open">
+		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ШаблоныЗадач.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Задачи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="Report.ОтчетПоРеализации.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоВыручке.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="Report.ОтчетыФО.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ирКонсольКомпоновокДанных.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -144,11 +124,13 @@
 		<Command name="CommonCommand.ВыполнитьОбновлениеПризнакаНаличияВпродаже">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="CommonCommand.ирЗапуститьОбычноеПриложение">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="CommonCommand.КонсольЗапросов">
@@ -159,35 +141,12 @@
 		<Command name="CommonForm.ФормаКонстант.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Автокасса">false</xr:Value>
 			</Visibility>
 		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
-		<Command name="InformationRegister.ВозвратДопИнф.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="Document.Возврат.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="InformationRegister.ВыданныеПейджеры.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="Catalog.ГруппыИнформационныхБаз.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="InformationRegister.ДополнительныеСвойства.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="InformationRegister.ДоступностьКаталоговТоваров.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="Catalog.Задачи.StandardCommand.OpenList">
+		<Command name="Catalog.Товары.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -195,35 +154,7 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="Document.Касса_ОткрытиеСмены.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="ExternalDataSource.СУП_ККМ.Table.КонтрольныеПоказатели.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="InformationRegister.Марки.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="Catalog.Товары.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="InformationRegister.ДействующиеРасписания.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="InformationRegister.НомерЧекаНФР.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-			<Placement>Manual</Placement>
-		</Command>
-		<Command name="Document.ОтчетФО.StandardCommand.OpenList">
+		<Command name="Document.Возврат.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -231,7 +162,7 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="Document.РеестрЦен.StandardCommand.OpenList">
+		<Command name="Document.Касса_ОткрытиеСмены.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -239,11 +170,19 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="Catalog.ХранилищеДополнительнойИнформации.StandardCommand.OpenList">
+		<Command name="Document.ОтчетФО.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="InformationRegister.Цены.StandardCommand.OpenList">
+		<Command name="Document.РеестрЦен.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ГруппыИнформационныхБаз.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="0:3124178e-6aa7-461d-9cd3-418f1ab537fb">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -251,7 +190,7 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="Catalog.ШаблоныЗадач.StandardCommand.OpenList">
+		<Command name="InformationRegister.ДоступностьКаталоговТоваров.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -259,7 +198,23 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="Report.ирКонсольКомпоновокДанных.StandardCommand.Open">
+		<Command name="Catalog.ХранилищеДополнительнойИнформации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ШаблоныЗадач.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Задачи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоРеализации.StandardCommand.Open">
 			<CommandGroup>ActionsPanelReports</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -267,11 +222,11 @@
 			<CommandGroup>ActionsPanelReports</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="Report.ОтчетПоРеализации.StandardCommand.Open">
+		<Command name="Report.ОтчетыФО.StandardCommand.Open">
 			<CommandGroup>ActionsPanelReports</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="Report.ОтчетыФО.StandardCommand.Open">
+		<Command name="Report.ирКонсольКомпоновокДанных.StandardCommand.Open">
 			<CommandGroup>ActionsPanelReports</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -292,4 +247,74 @@
 			<Placement>Manual</Placement>
 		</Command>
 	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.Товары.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Заказ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Возврат.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПротоколРасчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Касса_ОткрытиеСмены.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ОткрытиеСмены.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ОтчетФО.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.РеестрЦен.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ГруппыИнформационныхБаз.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:3124178e-6aa7-461d-9cd3-418f1ab537fb">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ДоступностьКаталоговТоваров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ШтрихКоды.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ХранилищеДополнительнойИнформации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.ШаблоныЗадач.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.Задачи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРеализации.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоВыручке.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетыФО.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ирКонсольКомпоновокДанных.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelReports</Group>
+	</GroupsOrder>
 </CommandInterface>
