@@ -142,6 +142,7 @@
 			<Subsystem>УправлениеАкциями</Subsystem>
 			<Subsystem>КП</Subsystem>
 			<Subsystem>Администрирование</Subsystem>
+			<Subsystem>ИнструментыРазработчикаTormozit</Subsystem>
 			<StyleItem>ЦветТекста1</StyleItem>
 			<StyleItem>ЦветТекста2</StyleItem>
 			<StyleItem>ЦветТекста3</StyleItem>
@@ -330,6 +331,8 @@
 			<CommonPicture>ОтправитьСМС</CommonPicture>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
@@ -369,6 +372,8 @@
 			<CommonPicture>ирЖурнал</CommonPicture>
 			<CommonPicture>ирЗагрузитьВариантНастроек</CommonPicture>
 			<CommonPicture>ирЗагрузитьИзФайла</CommonPicture>
+			<CommonPicture>ирЗагрузка</CommonPicture>
+			<CommonPicture>ирЗакомментировать</CommonPicture>
 			<CommonPicture>ирЗаменитьТаблицу</CommonPicture>
 			<CommonPicture>ирЗамер</CommonPicture>
 			<CommonPicture>ирЗаполнить</CommonPicture>
@@ -395,8 +400,9 @@
 			<CommonPicture>ирКопировать</CommonPicture>
 			<CommonPicture>ирКопировать2</CommonPicture>
 			<CommonPicture>ирКотекстныйСинтаксПомощник</CommonPicture>
-			<CommonPicture>ирЛоготипБольшой</CommonPicture>
-			<CommonPicture>ирЛоготипМаленький</CommonPicture>
+			<CommonPicture>ирЛоготип16х16</CommonPicture>
+			<CommonPicture>ирЛоготип24х24</CommonPicture>
+			<CommonPicture>ирЛоготип48х48</CommonPicture>
 			<CommonPicture>ирМенеджерТабличногоПоля</CommonPicture>
 			<CommonPicture>ирНаборыДанныхСхемыКомпоновки</CommonPicture>
 			<CommonPicture>ирНадпись</CommonPicture>
@@ -431,6 +437,7 @@
 			<CommonPicture>ирПереключитьИнтерфейс</CommonPicture>
 			<CommonPicture>ирПерерасчет</CommonPicture>
 			<CommonPicture>ирПовторить</CommonPicture>
+			<CommonPicture>ирПоискДанных</CommonPicture>
 			<CommonPicture>ирПоискИЗаменаДублей</CommonPicture>
 			<CommonPicture>ирПоискСсылокНаОбъект</CommonPicture>
 			<CommonPicture>ирПолеHtmlДокумента</CommonPicture>
@@ -449,6 +456,7 @@
 			<CommonPicture>ирПусто</CommonPicture>
 			<CommonPicture>ирРазвернутьВсе</CommonPicture>
 			<CommonPicture>ирРазличия</CommonPicture>
+			<CommonPicture>ирРаскомментировать</CommonPicture>
 			<CommonPicture>ирРедактироватьОбъектБД</CommonPicture>
 			<CommonPicture>ирРедакторСтроковогоЛитерала</CommonPicture>
 			<CommonPicture>ирРеквизит</CommonPicture>
@@ -487,19 +495,12 @@
 			<CommonPicture>ирТонкийКлиент</CommonPicture>
 			<CommonPicture>ирУдалениеТипов</CommonPicture>
 			<CommonPicture>ирУдалитьСКонтролемСсылок</CommonPicture>
-			<CommonPicture>ирУникальныйИдентификатор</CommonPicture>
-			<CommonPicture>ирУровниЖурналаРегистрации</CommonPicture>
-			<CommonPicture>ирФлажок</CommonPicture>
-			<CommonPicture>ирФорма</CommonPicture>
-			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
-			<CommonPicture>ирЧасы</CommonPicture>
-			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>БезКартинки</CommonPicture>
 			<CommonPicture>ЛогоКуулКлевер</CommonPicture>
 			<CommonPicture>ДляЗакладокМеню</CommonPicture>
 			<CommonPicture>ОбновлениеКонфигурацииБД</CommonPicture>
-			<CommonPicture>ирЗакомментировать</CommonPicture>
-			<CommonPicture>ирРаскомментировать</CommonPicture>
+			<CommonPicture>ирУникальныйИдентификатор</CommonPicture>
+			<CommonPicture>ирУровниЖурналаРегистрации</CommonPicture>
 			<CommonPicture>ДлительнаяОперация48</CommonPicture>
 			<CommonPicture>Рука</CommonPicture>
 			<CommonPicture>ЧасыЗачеркнутые</CommonPicture>
@@ -569,16 +570,19 @@
 			<CommonPicture>Картинки</CommonPicture>
 			<CommonPicture>Клевер</CommonPicture>
 			<CommonPicture>ЭкранноеМеню</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
-			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирУстановитьЗначениеВКолонке</CommonPicture>
+			<CommonPicture>ирФлажок</CommonPicture>
+			<CommonPicture>ирФорма</CommonPicture>
+			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
+			<CommonPicture>ирЧасы</CommonPicture>
+			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>ирСтрокаТаблицы</CommonPicture>
 			<CommonPicture>ирПоследниеВыбранные</CommonPicture>
-			<CommonPicture>ирЗагрузка</CommonPicture>
 			<Interface>Администратор</Interface>
 			<Interface>РабочееМесто</Interface>
 			<Interface>ирРазработчик</Interface>
 			<Interface>Ресторан</Interface>
+			<Interface>ирРазработчик_</Interface>
 			<SessionParameter>Версия</SessionParameter>
 			<SessionParameter>ТекущаяИБ</SessionParameter>
 			<SessionParameter>ПараметрыРИБ</SessionParameter>
@@ -615,6 +619,7 @@
 			<CommonTemplate>ТабДокЛояльность</CommonTemplate>
 			<CommonTemplate>ИтогиФормыРМ</CommonTemplate>
 			<CommonTemplate>ИД_Лояльность361х1024</CommonTemplate>
+			<CommonTemplate>ирШаблонРасширения</CommonTemplate>
 			<FilterCriterion>ШтрихкодыТовара</FilterCriterion>
 			<CommonModule>SQL</CommonModule>
 			<CommonModule>АвтообменДанными</CommonModule>
@@ -717,6 +722,7 @@
 			<CommonCommand>ОткрытьНастройкиМеню</CommonCommand>
 			<CommonCommand>ОткрытьФормуОчередиВыгрузкиПоОбъекту</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
+			<CommonCommand>ирСохранитьНастройкиПользователя</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
 			<CommandGroup>Задачи</CommandGroup>
@@ -805,7 +811,7 @@
 			<CommonForm>ФормаВыбораИзСписка</CommonForm>
 			<CommonForm>ХодВыполненияОбработкиДанных</CommonForm>
 			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>
-			<CommonForm>ирВыпускПортативногоВарианта</CommonForm>
+			<CommonForm>ирВыпускВариантаПортативный</CommonForm>
 			<CommonForm>ФормаКонстант</CommonForm>
 			<CommonForm>СписокТоваровСУП</CommonForm>
 			<CommonForm>ПечатьОтчетаРМ</CommonForm>
@@ -1161,6 +1167,10 @@
 			<DataProcessor>ирИмитаторКонстантаМенеджер</DataProcessor>
 			<DataProcessor>ирИмитаторСсылочныйОбъект</DataProcessor>
 			<DataProcessor>ирСлужебный</DataProcessor>
+			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
+			<DataProcessor>ирПоискДанных</DataProcessor>
+			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
+			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
 			<InformationRegister>Акции</InformationRegister>
 			<InformationRegister>БлокировкиЗаказов</InformationRegister>

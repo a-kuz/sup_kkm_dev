@@ -6,11 +6,11 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Исследовать</v8:content>
+					<v8:content>Исследовать источник (ИР)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Group>FormNavigationPanelSeeAlso</Group>
+			<Group>CommandGroup.ирКоманднаяПанельФормы</Group>
 			<Representation>Auto</Representation>
 			<ToolTip>
 				<v8:item>
@@ -25,7 +25,9 @@
 			<Shortcut/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<CommandParameterType>
-				<v8:TypeSet>cfg:DefinedType.ТипыДляИР</v8:TypeSet>
+				<v8:Type>cfg:CatalogRef.ирКомандаРедактироватьОбъект</v8:Type>
+				<v8:Type>cfg:CatalogRef.ирОбъектыДляОтладки</v8:Type>
+				<v8:Type>cfg:CatalogRef.ирАлгоритмы</v8:Type>
 			</CommandParameterType>
 			<ParameterUseMode>Single</ParameterUseMode>
 			<ModifiesData>false</ModifiesData>
