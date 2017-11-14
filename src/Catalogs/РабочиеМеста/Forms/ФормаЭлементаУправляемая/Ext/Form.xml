@@ -66,6 +66,16 @@
 							<ContextMenu name="ТипКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="15"/>
 						</InputField>
+						<InputField name="Хост" id="37">
+							<DataPath>Объект.Хост</DataPath>
+							<ContextMenu name="ХостКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ХостРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="НаборПейджеров" id="40">
+							<DataPath>Объект.НаборПейджеров</DataPath>
+							<ContextMenu name="НаборПейджеровКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="НаборПейджеровРасширеннаяПодсказка" id="42"/>
+						</InputField>
 						<InputField name="ПрофильВхода" id="7">
 							<DataPath>Объект.ПрофильВхода</DataPath>
 							<EditMode>EnterOnInput</EditMode>
