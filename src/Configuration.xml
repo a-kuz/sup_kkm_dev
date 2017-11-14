@@ -569,6 +569,12 @@
 			<CommonPicture>Картинки</CommonPicture>
 			<CommonPicture>Клевер</CommonPicture>
 			<CommonPicture>ЭкранноеМеню</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирExcel</CommonPicture>
+			<CommonPicture>ирУстановитьЗначениеВКолонке</CommonPicture>
+			<CommonPicture>ирСтрокаТаблицы</CommonPicture>
+			<CommonPicture>ирПоследниеВыбранные</CommonPicture>
+			<CommonPicture>ирЗагрузка</CommonPicture>
 			<Interface>Администратор</Interface>
 			<Interface>РабочееМесто</Interface>
 			<Interface>ирРазработчик</Interface>
@@ -620,12 +626,12 @@
 			<CommonModule>ИнтерфейсРМ</CommonModule>
 			<CommonModule>ИнтерфейсРМЛояльность</CommonModule>
 			<CommonModule>ирГлобальный</CommonModule>
+			<CommonModule>ирИнтерфейсДляВстраивания</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
-			<CommonModule>ирОбщий</CommonModule>
 			<CommonModule>ирОбщийКлиент</CommonModule>
+			<CommonModule>ирОбщий</CommonModule>
 			<CommonModule>ирПортативный</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
-			<CommonModule>ирСервер</CommonModule>
 			<CommonModule>киКонтактнаяИнформация</CommonModule>
 			<CommonModule>ксТрактир</CommonModule>
 			<CommonModule>Лояльность</CommonModule>
@@ -656,6 +662,7 @@
 			<CommonModule>СУПУП</CommonModule>
 			<CommonModule>ЖурналРегистрации</CommonModule>
 			<CommonModule>КонтрольныеПоказатели</CommonModule>
+			<CommonModule>ирСервер</CommonModule>
 			<ExchangePlan>Основной</ExchangePlan>
 			<XDTOPackage>Меню</XDTOPackage>
 			<XDTOPackage>Mobile</XDTOPackage>
@@ -698,8 +705,8 @@
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
+			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
-			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommonCommand>СоздатьЗадачиПоШаблону</CommonCommand>
 			<CommonCommand>DameWare</CommonCommand>
 			<CommonCommand>DameWareOST</CommonCommand>
@@ -709,9 +716,12 @@
 			<CommonCommand>КонсольЗаданий</CommonCommand>
 			<CommonCommand>ОткрытьНастройкиМеню</CommonCommand>
 			<CommonCommand>ОткрытьФормуОчередиВыгрузкиПоОбъекту</CommonCommand>
+			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
 			<CommandGroup>Задачи</CommandGroup>
+			<CommandGroup>ирРазработка</CommandGroup>
+			<CommandGroup>ирАдминистрирование</CommandGroup>
 			<Constant>АвтообменИспользовать</Constant>
 			<Constant>АвтообменПериодПроверкиЗагрузки</Constant>
 			<Constant>АвтообменПравилаВыгрузки</Constant>
@@ -786,19 +796,22 @@
 			<Constant>Лояльность_РежимОффлайн</Constant>
 			<Constant>ГлубинаАрхива</Constant>
 			<Constant>КМ</Constant>
-			<CommonForm>ХодВыполненияОбработкиДанных</CommonForm>
+			<CommonForm>ирАдаптацияРасширения</CommonForm>
 			<CommonForm>ФормаВыбораПечатныхФорм</CommonForm>
 			<CommonForm>ФормаВыполненияОбменаДанными</CommonForm>
 			<CommonForm>ДиалогРегламентногоЗадания</CommonForm>
 			<CommonForm>ВыборПрофиля</CommonForm>
 			<CommonForm>НаличиеВПродаже</CommonForm>
 			<CommonForm>ФормаВыбораИзСписка</CommonForm>
-			<CommonForm>ирВыпускПортативногоВарианта</CommonForm>
+			<CommonForm>ХодВыполненияОбработкиДанных</CommonForm>
 			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>
-			<CommonForm>ирОтладкаВнешнихОбработокБСП</CommonForm>
+			<CommonForm>ирВыпускПортативногоВарианта</CommonForm>
 			<CommonForm>ФормаКонстант</CommonForm>
 			<CommonForm>СписокТоваровСУП</CommonForm>
 			<CommonForm>ПечатьОтчетаРМ</CommonForm>
+			<CommonForm>ирВыпускВариантаРасширение</CommonForm>
+			<CommonForm>ирОбновлениеОписанияПлатформы</CommonForm>
+			<CommonForm>ирОтладкаВнешнихОбработокБСП</CommonForm>
 			<Catalog>АгентыДоставки</Catalog>
 			<Catalog>АдресныеСокращения</Catalog>
 			<Catalog>БригадыСотрудников</Catalog>
@@ -982,11 +995,11 @@
 			<Report>ирКонсольКомпоновокДанных</Report>
 			<Report>ОтчетыФО</Report>
 			<Report>ОтчетПоРеализации</Report>
-			<DataProcessor>АвтоОбменДанными</DataProcessor>
+			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
+			<DataProcessor>ВводВремени</DataProcessor>
 			<DataProcessor>Авторизация</DataProcessor>
 			<DataProcessor>Браузер</DataProcessor>
 			<DataProcessor>ВводQRКода</DataProcessor>
-			<DataProcessor>ВводВремени</DataProcessor>
 			<DataProcessor>ВводДаты</DataProcessor>
 			<DataProcessor>ВводКартинки</DataProcessor>
 			<DataProcessor>ВводКартыКлиента</DataProcessor>
@@ -1027,7 +1040,6 @@
 			<DataProcessor>ИнициализацияВнешнихПечатныхФорм</DataProcessor>
 			<DataProcessor>ИнформацияДляКлиента</DataProcessor>
 			<DataProcessor>ИнформацияОтоваре</DataProcessor>
-			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
@@ -1059,6 +1071,7 @@
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
+			<DataProcessor>АвтоОбменДанными</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
@@ -1143,6 +1156,11 @@
 			<DataProcessor>ФормированиеНачислений</DataProcessor>
 			<DataProcessor>ФормированиеОтчетовФО</DataProcessor>
 			<DataProcessor>ЭмуляторСканера</DataProcessor>
+			<DataProcessor>ирИмитаторАлгоритмОбъект</DataProcessor>
+			<DataProcessor>ирИмитаторНаборЗаписей</DataProcessor>
+			<DataProcessor>ирИмитаторКонстантаМенеджер</DataProcessor>
+			<DataProcessor>ирИмитаторСсылочныйОбъект</DataProcessor>
+			<DataProcessor>ирСлужебный</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
 			<InformationRegister>Акции</InformationRegister>
 			<InformationRegister>БлокировкиЗаказов</InformationRegister>

@@ -171,6 +171,11 @@
 										<CommandName>Form.Command.Инструкция</CommandName>
 										<ExtendedTooltip name="ПереносимыеОбъектыИнструкцияРасширеннаяПодсказка" id="91"/>
 									</Button>
+									<Button name="ПереносимыеОбъектыПодбор" id="94">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Подбор</CommandName>
+										<ExtendedTooltip name="ПереносимыеОбъектыПодборРасширеннаяПодсказка" id="95"/>
+									</Button>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ПереносимыеОбъектыРасширеннаяПодсказка" id="51"/>
@@ -546,6 +551,21 @@
 			</Picture>
 			<Action>Инструкция</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Подбор" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подбор</Action>
 		</Command>
 	</Commands>
 </Form>
