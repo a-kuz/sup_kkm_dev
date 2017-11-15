@@ -76,6 +76,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Catalog.Номерки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Document.ОтчетФО.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -220,6 +225,10 @@
 			<Placement>Manual</Placement>
 		</Command>
 		<Command name="InformationRegister.НомерЧекаНФР.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Номерки.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
