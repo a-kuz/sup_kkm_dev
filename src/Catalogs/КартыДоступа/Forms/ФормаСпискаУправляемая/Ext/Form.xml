@@ -15,6 +15,7 @@
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
 		<Table name="Список" id="3">
+			<CommandBarLocation>None</CommandBarLocation>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -119,7 +120,7 @@
 					<ExtendedTooltip name="ЭтоШаблонРасширеннаяПодсказка" id="42"/>
 				</CheckBoxField>
 				<CheckBoxField name="ОдноразовоеИспользование" id="43">
-					<DataPath>Список.ОдноразовоеИспользование</DataPath>
+					<DataPath>~Список.ОдноразовоеИспользование</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ОдноразовоеИспользованиеКонтекстноеМеню" id="44"/>
 					<ExtendedTooltip name="ОдноразовоеИспользованиеРасширеннаяПодсказка" id="45"/>
@@ -139,6 +140,12 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
+				<CheckBoxField name="СлужебныйБейдж" id="61">
+					<DataPath>Список.СлужебныйБейдж</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СлужебныйБейджКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="СлужебныйБейджРасширеннаяПодсказка" id="63"/>
+				</CheckBoxField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
