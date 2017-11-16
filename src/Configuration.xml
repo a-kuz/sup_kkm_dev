@@ -142,7 +142,6 @@
 			<Subsystem>УправлениеАкциями</Subsystem>
 			<Subsystem>КП</Subsystem>
 			<Subsystem>Администрирование</Subsystem>
-			<Subsystem>ИнструментыРазработчикаTormozit</Subsystem>
 			<StyleItem>ЦветТекста1</StyleItem>
 			<StyleItem>ЦветТекста2</StyleItem>
 			<StyleItem>ЦветТекста3</StyleItem>
@@ -932,14 +931,14 @@
 			<Document>РасчетыПоТарифу</Document>
 			<Document>РегистрацияСобытия</Document>
 			<Document>РеестрЦен</Document>
+			<Document>РецептГостя</Document>
 			<Document>СменаКартДоступа</Document>
 			<Document>СтопЛист</Document>
 			<Document>ТранзакцияПлатежнойСистемы</Document>
+			<Document>ТТКдляПовара</Document>
 			<Document>Удаление</Document>
 			<Document>УР_ПриказОКадровомИзменении</Document>
 			<Document>ФактическаяВыработка</Document>
-			<Document>ТТКдляПовара</Document>
-			<Document>РецептГостя</Document>
 			<DocumentNumerator>ЗаказыИвозвраты</DocumentNumerator>
 			<Enum>ВариантыНаличияВПродаже</Enum>
 			<Enum>ВидыАвтоматическогоОбменаДанными</Enum>
@@ -1002,11 +1001,11 @@
 			<Report>ирКонсольКомпоновокДанных</Report>
 			<Report>ОтчетыФО</Report>
 			<Report>ОтчетПоРеализации</Report>
-			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
-			<DataProcessor>ВводВремени</DataProcessor>
+			<DataProcessor>АвтоОбменДанными</DataProcessor>
 			<DataProcessor>Авторизация</DataProcessor>
 			<DataProcessor>Браузер</DataProcessor>
 			<DataProcessor>ВводQRКода</DataProcessor>
+			<DataProcessor>ВводВремени</DataProcessor>
 			<DataProcessor>ВводДаты</DataProcessor>
 			<DataProcessor>ВводКартинки</DataProcessor>
 			<DataProcessor>ВводКартыКлиента</DataProcessor>
@@ -1047,10 +1046,16 @@
 			<DataProcessor>ИнициализацияВнешнихПечатныхФорм</DataProcessor>
 			<DataProcessor>ИнформацияДляКлиента</DataProcessor>
 			<DataProcessor>ИнформацияОтоваре</DataProcessor>
+			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
+			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
+			<DataProcessor>ирИмитаторАлгоритмОбъект</DataProcessor>
+			<DataProcessor>ирИмитаторКонстантаМенеджер</DataProcessor>
+			<DataProcessor>ирИмитаторНаборЗаписей</DataProcessor>
+			<DataProcessor>ирИмитаторСсылочныйОбъект</DataProcessor>
 			<DataProcessor>ирИнтерфейснаяПанель</DataProcessor>
 			<DataProcessor>ирИсследовательОбъектов</DataProcessor>
 			<DataProcessor>ирКлсПолеТабличногоДокументаСГруппировками</DataProcessor>
@@ -1066,6 +1071,7 @@
 			<DataProcessor>ирПодборИОбработкаОбъектов</DataProcessor>
 			<DataProcessor>ирПодготовкаКИзменениюСтруктурыБД</DataProcessor>
 			<DataProcessor>ирПоискБитыхСсылок</DataProcessor>
+			<DataProcessor>ирПоискДанных</DataProcessor>
 			<DataProcessor>ирПоискДублейИЗаменаСсылок</DataProcessor>
 			<DataProcessor>ирПортативный</DataProcessor>
 			<DataProcessor>ирПортативныйСервер</DataProcessor>
@@ -1078,10 +1084,12 @@
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
-			<DataProcessor>АвтоОбменДанными</DataProcessor>
+			<DataProcessor>ирСлужебный</DataProcessor>
+			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
+			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
 			<DataProcessor>КартинкиОбъектов</DataProcessor>
@@ -1163,15 +1171,6 @@
 			<DataProcessor>ФормированиеНачислений</DataProcessor>
 			<DataProcessor>ФормированиеОтчетовФО</DataProcessor>
 			<DataProcessor>ЭмуляторСканера</DataProcessor>
-			<DataProcessor>ирИмитаторАлгоритмОбъект</DataProcessor>
-			<DataProcessor>ирИмитаторНаборЗаписей</DataProcessor>
-			<DataProcessor>ирИмитаторКонстантаМенеджер</DataProcessor>
-			<DataProcessor>ирИмитаторСсылочныйОбъект</DataProcessor>
-			<DataProcessor>ирСлужебный</DataProcessor>
-			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
-			<DataProcessor>ирПоискДанных</DataProcessor>
-			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
-			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<InformationRegister>АдресныйКлассификатор</InformationRegister>
 			<InformationRegister>Акции</InformationRegister>
 			<InformationRegister>БлокировкиЗаказов</InformationRegister>

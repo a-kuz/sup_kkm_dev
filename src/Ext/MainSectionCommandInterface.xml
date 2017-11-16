@@ -151,6 +151,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.ирЗагрузкаТабличныхДанных.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="CommonCommand.ирЗапуститьОбычноеПриложение">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -159,6 +164,21 @@
 		<Command name="CommonCommand.КонсольЗапросов">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПоискДанных.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирСтруктураХраненияБД.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеCOMКлассами1С.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="CommonForm.ФормаКонстант.StandardCommand.Open">
@@ -288,11 +308,27 @@
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
+		<Command name="DataProcessor.ирЗагрузкаТабличныхДанных.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
 		<Command name="CommonCommand.ирЗапуститьОбычноеПриложение">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
 		<Command name="CommonCommand.КонсольЗапросов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПоискДанных.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ирСтруктураХраненияБД.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеCOMКлассами1С.StandardCommand.Open">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
