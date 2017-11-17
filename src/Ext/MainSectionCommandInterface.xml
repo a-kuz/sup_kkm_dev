@@ -46,6 +46,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Catalog.КартыДоступа.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Document.Касса_ОткрытиеСмены.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -97,6 +102,11 @@
 			</Visibility>
 		</Command>
 		<Command name="Document.ОткрытиеСмены.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Фирмы.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -168,7 +178,7 @@
 		</Command>
 		<Command name="DataProcessor.ирПоискДанных.StandardCommand.Open">
 			<Visibility>
-				<xr:Common>false</xr:Common>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ирСтруктураХраненияБД.StandardCommand.Open">
@@ -178,7 +188,7 @@
 		</Command>
 		<Command name="DataProcessor.ирУправлениеCOMКлассами1С.StandardCommand.Open">
 			<Visibility>
-				<xr:Common>false</xr:Common>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="CommonForm.ФормаКонстант.StandardCommand.Open">
@@ -224,6 +234,10 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
+		<Command name="Catalog.КартыДоступа.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
 		<Command name="Document.Касса_ОткрытиеСмены.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
@@ -265,6 +279,10 @@
 			<Placement>Manual</Placement>
 		</Command>
 		<Command name="Document.ОткрытиеСмены.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Фирмы.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
