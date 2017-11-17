@@ -122,7 +122,7 @@
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Double</v8ui:style>
 	</line>
 	<line width="1" gap="false">
-		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Dotted</v8ui:style>
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">ThinDashed</v8ui:style>
 	</line>
 	<font faceName="Segoe UI" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Segoe UI" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
@@ -161,6 +161,7 @@
 	</format>
 	<format>
 		<bottomBorder>1</bottomBorder>
+		<borderColor>#787878</borderColor>
 		<verticalAlignment>Top</verticalAlignment>
 		<fillType>Parameter</fillType>
 		<picHorizontalAlignment>Right</picHorizontalAlignment>
