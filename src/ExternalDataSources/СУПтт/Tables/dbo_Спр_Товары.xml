@@ -33,7 +33,12 @@
 		</InternalInfo>
 		<Properties>
 			<Name>dbo_Спр_Товары</Name>
-			<Synonym/>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары СУП</v8:content>
+				</v8:item>
+			</Synonym>
 			<Comment/>
 			<TableType>Table</TableType>
 			<NameInDataSource>dbo.Спр_Товары</NameInDataSource>
@@ -59,8 +64,13 @@
 			<DefaultObjectForm/>
 			<DefaultRecordForm/>
 			<DefaultListForm>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Form.ФормаСписка</DefaultChoiceForm>
-			<ObjectPresentation/>
+			<DefaultChoiceForm>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Form.ФормаВыбора</DefaultChoiceForm>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товар СУП</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
 			<RecordPresentation/>
 			<ExtendedRecordPresentation/>
@@ -1512,6 +1522,7 @@
 				</Properties>
 			</Field>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаВыбора</Form>
 		</ChildObjects>
 	</Table>
 </MetaDataObject>
