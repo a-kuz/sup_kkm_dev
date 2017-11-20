@@ -97,6 +97,16 @@
 					<ContextMenu name="ПротоколРасчетовКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ПротоколРасчетовРасширеннаяПодсказка" id="30"/>
 				</LabelField>
+				<LabelField name="Номерок" id="31">
+					<DataPath>Список.Номерок</DataPath>
+					<ContextMenu name="НомерокКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="НомерокРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="ДатаАвторизации" id="34">
+					<DataPath>Список.ДатаАвторизации</DataPath>
+					<ContextMenu name="ДатаАвторизацииКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДатаАвторизацииРасширеннаяПодсказка" id="36"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

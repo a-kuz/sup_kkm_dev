@@ -26,9 +26,23 @@
 			<DataPath>Запись.ИнформационнаяБаза</DataPath>
 			<ContextMenu name="ИнформационнаяБазаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ИнформационнаяБазаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ИнформационнаяБазаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТоварСУПцентр" id="19">
+			<DataPath>ТоварСУПцентр</DataPath>
+			<ContextMenu name="ТоварСУПцентрКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТоварСУПцентрРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="OnChange">ТоварСУПцентрПриИзменении</Event>
+			</Events>
 		</InputField>
 		<InputField name="Товар_КодСУП" id="4">
 			<DataPath>Запись.Товар_КодСУП</DataPath>
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
 			<Width>19</Width>
 			<ChoiceButton>true</ChoiceButton>
 			<ContextMenu name="Товар_КодСУПКонтекстноеМеню" id="5"/>
@@ -82,6 +96,17 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Специфики</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТоварСУПцентр" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товар</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExternalDataSourceTableRef.СУПтт.dbo_Спр_Товары</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
