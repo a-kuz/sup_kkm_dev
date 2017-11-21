@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Width>3400</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalSpacing>OneAndHalf</VerticalSpacing>
+	<ScalingMode>Compact</ScalingMode>
+	<Scale>90</Scale>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="дРабочиеМестаСправочникРабочиеМестаМастерСозданияРМ" id="163">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<CommandName>Catalog.РабочиеМеста.Command.МастерСозданияРМ</CommandName>
+				<DataPath>Объект.Ref</DataPath>
+				<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+				<ExtendedTooltip name="дРабочиеМестаСправочникРабочиеМестаМастерСозданияРМРасширеннаяПодсказка" id="164"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="31">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<InputField name="Код" id="5">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="7"/>
+								</InputField>
+								<CheckBoxField name="ТолькоМяснов" id="28">
+									<DataPath>Объект.ТолькоМяснов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТолькоМясновКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ТолькоМясновРасширеннаяПодсказка" id="30"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="СерверХост" id="22">
+							<DataPath>Объект.СерверХост</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СерверХостКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СерверХостРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<InputField name="Наименование" id="8">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="10"/>
+						</InputField>
+						<InputField name="СерверIp" id="25">
+							<DataPath>Объект.СерверIp</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СерверIpКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СерверIpРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="СуперПраваяКолонка" id="161">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Супер правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Супер правая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СуперПраваяКолонкаРасширеннаяПодсказка" id="162"/>
+					<ChildItems>
+						<RadioButtonField name="Регион" id="19">
+							<DataPath>Объект.Регион</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ItemWidth>8</ItemWidth>
+							<EqualColumnsWidth>true</EqualColumnsWidth>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>52</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Catalog.Регионы.Р52</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>77</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Catalog.Регионы.Р77</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<Font height="12" kind="AutoFont"/>
+							<ContextMenu name="РегионКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="21"/>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ПанельЗакладок" id="106">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель закладок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель закладок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>409</Width>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ExtendedTooltip name="ПанельЗакладокРасширеннаяПодсказка" id="107"/>
+			<ChildItems>
+				<Page name="Фирмы" id="108">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фирмы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фирмы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ФирмыРасширеннаяПодсказка" id="109"/>
+					<ChildItems>
+						<Table name="дФирмы" id="33">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>дФирмы</DataPath>
+							<RowPictureDataPath>дФирмы.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="дФирмыКонтекстноеМеню" id="34"/>
+							<AutoCommandBar name="дФирмыКоманднаяПанель" id="35"/>
+							<ExtendedTooltip name="дФирмыРасширеннаяПодсказка" id="36"/>
+							<SearchStringAddition name="дФирмыСтрокаПоиска" id="37">
+								<AdditionSource>
+									<Item>дФирмы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дФирмыСтрокаПоискаКонтекстноеМеню" id="38"/>
+								<ExtendedTooltip name="дФирмыСтрокаПоискаРасширеннаяПодсказка" id="39"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="дФирмыСостояниеПросмотра" id="40">
+								<AdditionSource>
+									<Item>дФирмы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дФирмыСостояниеПросмотраКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="дФирмыСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="дФирмыУправлениеПоиском" id="43">
+								<AdditionSource>
+									<Item>дФирмы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="дФирмыУправлениеПоискомКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="дФирмыУправлениеПоискомРасширеннаяПодсказка" id="45"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="дФирмыНаименование" id="46">
+									<DataPath>дФирмы.Description</DataPath>
+									<ContextMenu name="дФирмыНаименованиеКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="дФирмыНаименованиеРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+								<LabelField name="дФирмыКод" id="49">
+									<DataPath>дФирмы.Code</DataPath>
+									<ContextMenu name="дФирмыКодКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="дФирмыКодРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+								<LabelField name="дФирмыПрефикс" id="52">
+									<DataPath>дФирмы.Префикс</DataPath>
+									<ContextMenu name="дФирмыПрефиксКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="дФирмыПрефиксРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+								<LabelField name="дФирмыИНН" id="55">
+									<DataPath>дФирмы.ИНН</DataPath>
+									<ContextMenu name="дФирмыИННКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="дФирмыИННРасширеннаяПодсказка" id="57"/>
+								</LabelField>
+								<LabelField name="дФирмыОГРН" id="58">
+									<DataPath>дФирмы.ОГРН</DataPath>
+									<ContextMenu name="дФирмыОГРНКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="дФирмыОГРНРасширеннаяПодсказка" id="60"/>
+								</LabelField>
+								<LabelField name="дФирмыКодПоОКПО" id="61">
+									<DataPath>дФирмы.КодПоОКПО</DataPath>
+									<ContextMenu name="дФирмыКодПоОКПОКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="дФирмыКодПоОКПОРасширеннаяПодсказка" id="63"/>
+								</LabelField>
+								<LabelField name="дФирмыИФНС" id="64">
+									<DataPath>дФирмы.ИФНС</DataPath>
+									<ContextMenu name="дФирмыИФНСКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="дФирмыИФНСРасширеннаяПодсказка" id="66"/>
+								</LabelField>
+								<LabelField name="дФирмыОКАТО" id="67">
+									<DataPath>дФирмы.ОКАТО</DataPath>
+									<ContextMenu name="дФирмыОКАТОКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="дФирмыОКАТОРасширеннаяПодсказка" id="69"/>
+								</LabelField>
+								<LabelField name="дФирмыСайт" id="70">
+									<DataPath>дФирмы.Сайт</DataPath>
+									<ContextMenu name="дФирмыСайтКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="дФирмыСайтРасширеннаяПодсказка" id="72"/>
+								</LabelField>
+								<LabelField name="дФирмыЭлектроннаяПочта" id="73">
+									<DataPath>дФирмы.ЭлектроннаяПочта</DataPath>
+									<ContextMenu name="дФирмыЭлектроннаяПочтаКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="дФирмыЭлектроннаяПочтаРасширеннаяПодсказка" id="75"/>
+								</LabelField>
+								<LabelField name="дФирмыКомментарий" id="76">
+									<DataPath>дФирмы.Комментарий</DataPath>
+									<ContextMenu name="дФирмыКомментарийКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="дФирмыКомментарийРасширеннаяПодсказка" id="78"/>
+								</LabelField>
+								<LabelField name="дФирмыКПП" id="79">
+									<DataPath>дФирмы.КПП</DataPath>
+									<ContextMenu name="дФирмыКППКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="дФирмыКППРасширеннаяПодсказка" id="81"/>
+								</LabelField>
+								<LabelField name="дФирмыАдрес" id="82">
+									<DataPath>дФирмы.Адрес</DataPath>
+									<ContextMenu name="дФирмыАдресКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="дФирмыАдресРасширеннаяПодсказка" id="84"/>
+								</LabelField>
+								<LabelField name="дФирмыИнформационнаяБаза" id="85">
+									<DataPath>дФирмы.ИнформационнаяБаза</DataPath>
+									<ContextMenu name="дФирмыИнформационнаяБазаКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="дФирмыИнформационнаяБазаРасширеннаяПодсказка" id="87"/>
+								</LabelField>
+								<LabelField name="дФирмыМестоРеализации" id="88">
+									<DataPath>дФирмы.МестоРеализации</DataPath>
+									<ContextMenu name="дФирмыМестоРеализацииКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="дФирмыМестоРеализацииРасширеннаяПодсказка" id="90"/>
+								</LabelField>
+								<LabelField name="дФирмыКодТТ" id="91">
+									<DataPath>дФирмы.КодТТ</DataPath>
+									<ContextMenu name="дФирмыКодТТКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="дФирмыКодТТРасширеннаяПодсказка" id="93"/>
+								</LabelField>
+								<LabelField name="дФирмыНаименованиеЮридическогоЛица" id="94">
+									<DataPath>дФирмы.НаименованиеЮридическогоЛица</DataPath>
+									<ContextMenu name="дФирмыНаименованиеЮридическогоЛицаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="дФирмыНаименованиеЮридическогоЛицаРасширеннаяПодсказка" id="96"/>
+								</LabelField>
+								<LabelField name="дФирмыАдресДляЕГАИС" id="97">
+									<DataPath>дФирмы.АдресДляЕГАИС</DataPath>
+									<ContextMenu name="дФирмыАдресДляЕГАИСКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="дФирмыАдресДляЕГАИСРасширеннаяПодсказка" id="99"/>
+								</LabelField>
+								<LabelField name="дФирмыМерчант" id="100">
+									<DataPath>дФирмы.Мерчант</DataPath>
+									<ContextMenu name="дФирмыМерчантКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="дФирмыМерчантРасширеннаяПодсказка" id="102"/>
+								</LabelField>
+								<LabelField name="дФирмыТипТТ" id="103">
+									<DataPath>дФирмы.ТипТТ</DataPath>
+									<ContextMenu name="дФирмыТипТТКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="дФирмыТипТТРасширеннаяПодсказка" id="105"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="РабочиеМеста" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочие места</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочие места</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="РабочиеМестаРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<Table name="дРабочиеМеста" id="112">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>дРабочиеМеста</DataPath>
+							<RowPictureDataPath>дРабочиеМеста.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="дРабочиеМестаКонтекстноеМеню" id="113"/>
+							<AutoCommandBar name="дРабочиеМестаКоманднаяПанель" id="114"/>
+							<ExtendedTooltip name="дРабочиеМестаРасширеннаяПодсказка" id="115"/>
+							<SearchStringAddition name="дРабочиеМестаСтрокаПоиска" id="116">
+								<AdditionSource>
+									<Item>дРабочиеМеста</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дРабочиеМестаСтрокаПоискаКонтекстноеМеню" id="117"/>
+								<ExtendedTooltip name="дРабочиеМестаСтрокаПоискаРасширеннаяПодсказка" id="118"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="дРабочиеМестаСостояниеПросмотра" id="119">
+								<AdditionSource>
+									<Item>дРабочиеМеста</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дРабочиеМестаСостояниеПросмотраКонтекстноеМеню" id="120"/>
+								<ExtendedTooltip name="дРабочиеМестаСостояниеПросмотраРасширеннаяПодсказка" id="121"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="дРабочиеМестаУправлениеПоиском" id="122">
+								<AdditionSource>
+									<Item>дРабочиеМеста</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="дРабочиеМестаУправлениеПоискомКонтекстноеМеню" id="123"/>
+								<ExtendedTooltip name="дРабочиеМестаУправлениеПоискомРасширеннаяПодсказка" id="124"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="дРабочиеМестаНаименование" id="125">
+									<DataPath>дРабочиеМеста.Description</DataPath>
+									<ContextMenu name="дРабочиеМестаНаименованиеКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="дРабочиеМестаНаименованиеРасширеннаяПодсказка" id="127"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаПрофильВхода" id="128">
+									<DataPath>дРабочиеМеста.ПрофильВхода</DataPath>
+									<ContextMenu name="дРабочиеМестаПрофильВходаКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="дРабочиеМестаПрофильВходаРасширеннаяПодсказка" id="130"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаПараметрыРМ" id="131">
+									<DataPath>дРабочиеМеста.ПараметрыРМ</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="дРабочиеМестаПараметрыРМКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="дРабочиеМестаПараметрыРМРасширеннаяПодсказка" id="133"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаМестоРеализации" id="134">
+									<DataPath>дРабочиеМеста.МестоРеализации</DataPath>
+									<ContextMenu name="дРабочиеМестаМестоРеализацииКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="дРабочиеМестаМестоРеализацииРасширеннаяПодсказка" id="136"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаСтанция" id="140">
+									<DataPath>дРабочиеМеста.Станция</DataPath>
+									<ContextMenu name="дРабочиеМестаСтанцияКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="дРабочиеМестаСтанцияРасширеннаяПодсказка" id="142"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаИнформационнаяБаза" id="143">
+									<DataPath>дРабочиеМеста.ИнформационнаяБаза</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="дРабочиеМестаИнформационнаяБазаКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="дРабочиеМестаИнформационнаяБазаРасширеннаяПодсказка" id="145"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаНомерККМ" id="152">
+									<DataPath>дРабочиеМеста.НомерККМ</DataPath>
+									<ContextMenu name="дРабочиеМестаНомерККМКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="дРабочиеМестаНомерККМРасширеннаяПодсказка" id="154"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаФирма" id="146">
+									<DataPath>дРабочиеМеста.Фирма</DataPath>
+									<ContextMenu name="дРабочиеМестаФирмаКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="дРабочиеМестаФирмаРасширеннаяПодсказка" id="148"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаТип" id="137">
+									<DataPath>дРабочиеМеста.Тип</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="дРабочиеМестаТипКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="дРабочиеМестаТипРасширеннаяПодсказка" id="139"/>
+								</LabelField>
+								<CheckBoxField name="дРабочиеМестаТест" id="149">
+									<DataPath>дРабочиеМеста.Тест</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="дРабочиеМестаТестКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="дРабочиеМестаТестРасширеннаяПодсказка" id="151"/>
+								</CheckBoxField>
+								<LabelField name="дРабочиеМестаХост" id="155">
+									<DataPath>дРабочиеМеста.Хост</DataPath>
+									<ContextMenu name="дРабочиеМестаХостКонтекстноеМеню" id="156"/>
+									<ExtendedTooltip name="дРабочиеМестаХостРасширеннаяПодсказка" id="157"/>
+								</LabelField>
+								<LabelField name="дРабочиеМестаНаборПейджеров" id="158">
+									<DataPath>дРабочиеМеста.НаборПейджеров</DataPath>
+									<ContextMenu name="дРабочиеМестаНаборПейджеровКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="дРабочиеМестаНаборПейджеровРасширеннаяПодсказка" id="160"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИнформационныеБазы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="дФирмы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фирмы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Фирмы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="дРабочиеМеста" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочие места</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.РабочиеМеста</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Тип</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

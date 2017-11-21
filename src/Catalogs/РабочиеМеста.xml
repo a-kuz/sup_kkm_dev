@@ -53,7 +53,10 @@
 			<EditType>InList</EditType>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
-			<InputByString/>
+			<InputByString>
+				<xr:Field>Catalog.РабочиеМеста.Attribute.ПрофильВхода</xr:Field>
+				<xr:Field>Catalog.РабочиеМеста.Attribute.НомерККМ</xr:Field>
+			</InputByString>
 			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>Use</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Background</ChoiceDataGetModeOnInputByString>
@@ -553,6 +556,33 @@
 						<xr:Ref>StdPicture.OpenFile</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="1a86e015-404f-4829-8440-7d1b03f6d070">
+				<Properties>
+					<Name>МастерСозданияРМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>рабочие места</Comment>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Text</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мастер создания РМ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
 					<Shortcut/>
 				</Properties>
 			</Command>

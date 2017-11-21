@@ -2,37 +2,37 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<Table uuid="feffab66-1e64-47d3-8c1d-befb9ce50a86">
 		<InternalInfo>
-			<xr:GeneratedType name="ExternalDataSourceTableManager.СУПтт.dbo_Спр_Товары" category="Manager">
+			<xr:GeneratedType name="ExternalDataSourceTableManager.СУП_Центр.Спр_Товары" category="Manager">
 				<xr:TypeId>9d74f4ee-5bd9-4c21-8046-0abdf75dc710</xr:TypeId>
 				<xr:ValueId>0922114c-8efd-4a42-8e24-34ef95cd304e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ExternalDataSourceTableObject.СУПтт.dbo_Спр_Товары" category="Object">
+			<xr:GeneratedType name="ExternalDataSourceTableObject.СУП_Центр.Спр_Товары" category="Object">
 				<xr:TypeId>37b4d0c3-f4a4-4d14-b55f-390d3d989088</xr:TypeId>
 				<xr:ValueId>79d8d7b1-d1a4-4db6-8a19-f6dc6ece33da</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ExternalDataSourceTableRef.СУПтт.dbo_Спр_Товары" category="Ref">
+			<xr:GeneratedType name="ExternalDataSourceTableRef.СУП_Центр.Спр_Товары" category="Ref">
 				<xr:TypeId>9bd832fc-9e8c-485f-aa1e-95a1733cb006</xr:TypeId>
 				<xr:ValueId>dbe308dd-67a2-4bfd-84ea-ec874091d59d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ExternalDataSourceTableList.СУПтт.dbo_Спр_Товары" category="List">
+			<xr:GeneratedType name="ExternalDataSourceTableList.СУП_Центр.Спр_Товары" category="List">
 				<xr:TypeId>f41edd95-bdd8-49a0-9d95-66368fcd15d8</xr:TypeId>
 				<xr:ValueId>a361a4f9-b6cd-46aa-a0ff-83455ee022d4</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ExternalDataSourceTableRecordSet.СУПтт.dbo_Спр_Товары" category="RecordSet">
+			<xr:GeneratedType name="ExternalDataSourceTableRecordSet.СУП_Центр.Спр_Товары" category="RecordSet">
 				<xr:TypeId>ae245aa3-6d65-4bce-b940-781ae2942cc1</xr:TypeId>
 				<xr:ValueId>333ba99a-2648-4efd-8030-946a55868698</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ExternalDataSourceTableRecordKey.СУПтт.dbo_Спр_Товары" category="RecordKey">
+			<xr:GeneratedType name="ExternalDataSourceTableRecordKey.СУП_Центр.Спр_Товары" category="RecordKey">
 				<xr:TypeId>54330af4-668c-4565-92dd-11b9fbde0c7b</xr:TypeId>
 				<xr:ValueId>d038daee-ee50-4e44-aacc-8e93445f43cc</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ExternalDataSourceTableRecordManager.СУПтт.dbo_Спр_Товары" category="RecordManager">
+			<xr:GeneratedType name="ExternalDataSourceTableRecordManager.СУП_Центр.Спр_Товары" category="RecordManager">
 				<xr:TypeId>0b8d5be3-f01b-43d2-9f21-d74113d56472</xr:TypeId>
 				<xr:ValueId>eb1414e0-2ebb-4615-9665-107cfdbf4366</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>dbo_Спр_Товары</Name>
+			<Name>Спр_Товары</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -45,17 +45,17 @@
 			<ExpressionInDataSource/>
 			<TableDataType>ObjectData</TableDataType>
 			<KeyFields>
-				<xr:Field>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Field.id</xr:Field>
+				<xr:Field>ExternalDataSource.СУП_Центр.Table.Спр_Товары.Field.id</xr:Field>
 			</KeyFields>
-			<PresentationField>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Field.descr</PresentationField>
+			<PresentationField>ExternalDataSource.СУП_Центр.Table.Спр_Товары.Field.descr</PresentationField>
 			<ParentField/>
 			<UnfilledParentValue xsi:nil="true"/>
 			<Characteristics/>
 			<UseStandardCommands>false</UseStandardCommands>
 			<QuickChoice>false</QuickChoice>
 			<InputByString>
-				<xr:Field>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Field.descr</xr:Field>
-				<xr:Field>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Field.КодГрПгрПрд</xr:Field>
+				<xr:Field>ExternalDataSource.СУП_Центр.Table.Спр_Товары.Field.descr</xr:Field>
+				<xr:Field>ExternalDataSource.СУП_Центр.Table.Спр_Товары.Field.КодГрПгрПрд</xr:Field>
 			</InputByString>
 			<CreateOnInput>Auto</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
@@ -63,8 +63,8 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 			<DefaultObjectForm/>
 			<DefaultRecordForm/>
-			<DefaultListForm>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm>ExternalDataSource.СУПтт.Table.dbo_Спр_Товары.Form.ФормаВыбора</DefaultChoiceForm>
+			<DefaultListForm>ExternalDataSource.СУП_Центр.Table.Спр_Товары.Form.ФормаСписка</DefaultListForm>
+			<DefaultChoiceForm>ExternalDataSource.СУП_Центр.Table.Спр_Товары.Form.ФормаВыбора</DefaultChoiceForm>
 			<ObjectPresentation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
