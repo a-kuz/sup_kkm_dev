@@ -35,11 +35,13 @@
 			<ChildItems>
 				<InputField name="НетВозможностиОплатить" id="7">
 					<DataPath>НетВозможностиОплатить</DataPath>
+					<Enabled>false</Enabled>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<Width>75</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
 					<HorizontalStretch>true</HorizontalStretch>
 					<BorderColor>style:FieldBackColor</BorderColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
@@ -72,6 +74,7 @@
 			<ExtendedTooltip name="ГруппаНадписей2РасширеннаяПодсказка" id="6"/>
 			<ChildItems>
 				<LabelDecoration name="ДекорацияОплатаМР" id="10">
+					<Enabled>false</Enabled>
 					<Width>100</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<HorizontalStretch>true</HorizontalStretch>
@@ -90,11 +93,13 @@
 				</LabelDecoration>
 				<InputField name="ОплатаМР1" id="13">
 					<DataPath>ОплатаМР1</DataPath>
+					<Enabled>false</Enabled>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<Width>75</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
 					<HorizontalStretch>true</HorizontalStretch>
 					<BorderColor>style:FieldBackColor</BorderColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
@@ -103,11 +108,13 @@
 				</InputField>
 				<InputField name="ОплатаМР2" id="16">
 					<DataPath>ОплатаМР2</DataPath>
+					<Enabled>false</Enabled>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<Width>75</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
 					<HorizontalStretch>true</HorizontalStretch>
 					<BorderColor>style:FieldBackColor</BorderColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
