@@ -662,12 +662,6 @@
 					<parameter>Сумма0</parameter>
 				</c>
 			</c>
-			<c>
-				<c>
-					<f>53</f>
-					<parameter>денег0</parameter>
-				</c>
-			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -677,7 +671,7 @@
 			<formatIndex>14</formatIndex>
 			<c>
 				<c>
-					<f>54</f>
+					<f>53</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -692,12 +686,6 @@
 					<parameter>Сумма1</parameter>
 				</c>
 			</c>
-			<c>
-				<c>
-					<f>53</f>
-					<parameter>денег1</parameter>
-				</c>
-			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -707,7 +695,7 @@
 			<formatIndex>14</formatIndex>
 			<c>
 				<c>
-					<f>55</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -718,14 +706,8 @@
 			</c>
 			<c>
 				<c>
-					<f>56</f>
+					<f>55</f>
 					<parameter>Сумма</parameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>57</f>
-					<parameter>денег</parameter>
 				</c>
 			</c>
 		</row>
@@ -737,7 +719,7 @@
 			<formatIndex>14</formatIndex>
 			<c>
 				<c>
-					<f>55</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -748,22 +730,11 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>999 999</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>59</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>,99 P</v8:content>
+							<v8:content>999 999,99 Р</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -771,7 +742,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>60</defaultFormatIndex>
+	<defaultFormatIndex>57</defaultFormatIndex>
 	<height>30</height>
 	<vgRows>30</vgRows>
 	<merge>
@@ -813,6 +784,26 @@
 		<r>22</r>
 		<c>0</c>
 		<w>3</w>
+	</merge>
+	<merge>
+		<r>25</r>
+		<c>1</c>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>26</r>
+		<c>1</c>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>27</r>
+		<c>1</c>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>29</r>
+		<c>1</c>
+		<w>1</w>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>КОплате</name>
@@ -1293,19 +1284,6 @@
 	<format>
 		<font>2</font>
 		<height>90</height>
-		<width>71</width>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Parameter</fillType>
-		<textOrientation>0</textOrientation>
-		<bySelectedColumns>false</bySelectedColumns>
-		<indent>0</indent>
-		<autoIndent>0</autoIndent>
-		<textPosition>Auto</textPosition>
-	</format>
-	<format>
-		<font>2</font>
-		<height>90</height>
 		<width>242</width>
 		<horizontalAlignment>Right</horizontalAlignment>
 		<fillType>Template</fillType>
@@ -1330,20 +1308,6 @@
 		<autoIndent>0</autoIndent>
 	</format>
 	<format>
-		<font>2</font>
-		<height>90</height>
-		<width>71</width>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<textColor>style:SpecialTextColor</textColor>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Parameter</fillType>
-		<textOrientation>0</textOrientation>
-		<bySelectedColumns>false</bySelectedColumns>
-		<indent>0</indent>
-		<autoIndent>0</autoIndent>
-		<textPosition>Auto</textPosition>
-	</format>
-	<format>
 		<font>0</font>
 		<height>90</height>
 		<width>160</width>
@@ -1356,20 +1320,6 @@
 		<bySelectedColumns>false</bySelectedColumns>
 		<indent>0</indent>
 		<autoIndent>0</autoIndent>
-	</format>
-	<format>
-		<font>2</font>
-		<height>90</height>
-		<width>71</width>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<textColor>style:SpecialTextColor</textColor>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Text</fillType>
-		<textOrientation>0</textOrientation>
-		<bySelectedColumns>false</bySelectedColumns>
-		<indent>0</indent>
-		<autoIndent>0</autoIndent>
-		<textPosition>Auto</textPosition>
 	</format>
 	<format>
 		<width>72</width>
