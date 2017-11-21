@@ -282,11 +282,10 @@
 			<ExtendedTooltip name="ГруппаНадписей2РасширеннаяПодсказка" id="6"/>
 			<ChildItems>
 				<LabelDecoration name="ДекорацияОплатаМР" id="10">
-					<Enabled>false</Enabled>
 					<Width>100</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<HorizontalStretch>true</HorizontalStretch>
-					<TextColor>style:SpecialTextColor</TextColor>
+					<TextColor>#F58026</TextColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
 					<Title formatted="true">
 						<v8:item>
@@ -391,12 +390,6 @@
 			<BackColor>style:ЦветТемы</BackColor>
 			<BorderColor>style:ЦветТемы</BorderColor>
 			<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>ОК</v8:content>
-				</v8:item>
-			</Title>
 			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="2"/>
 		</Button>
@@ -470,7 +463,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>ОК</v8:content>
+					<v8:content>ПРОДОЛЖИТЬ</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
