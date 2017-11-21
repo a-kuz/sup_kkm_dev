@@ -660,31 +660,63 @@
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<SpreadSheetDocumentField name="СписокОплаты" id="145">
-					<DataPath>СписокОплаты</DataPath>
-					<Enabled>false</Enabled>
-					<ReadOnly>true</ReadOnly>
-					<SkipOnInput>true</SkipOnInput>
-					<TitleLocation>None</TitleLocation>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
-					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-					<Width>65</Width>
-					<Height>5</Height>
-					<HorizontalStretch>false</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<VerticalScrollBar>false</VerticalScrollBar>
-					<HorizontalScrollBar>false</HorizontalScrollBar>
-					<Protection>true</Protection>
-					<SelectionShowMode>DontShow</SelectionShowMode>
-					<ShowGroups>false</ShowGroups>
-					<EnableStartDrag>false</EnableStartDrag>
-					<EnableDrag>false</EnableDrag>
-					<BorderColor>style:FormBackColor</BorderColor>
-					<ViewScalingMode>Normal</ViewScalingMode>
-					<ContextMenu name="СписокОплатыКонтекстноеМеню" id="146"/>
-					<ExtendedTooltip name="СписокОплатыРасширеннаяПодсказка" id="147"/>
-				</SpreadSheetDocumentField>
+				<UsualGroup name="ГруппаСписокОплаты" id="148">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список оплаты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список оплаты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСписокОплатыРасширеннаяПодсказка" id="149"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="СписокОплаты" id="145">
+							<DataPath>СписокОплаты</DataPath>
+							<Enabled>false</Enabled>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<Width>65</Width>
+							<Height>5</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<VerticalScrollBar>false</VerticalScrollBar>
+							<HorizontalScrollBar>false</HorizontalScrollBar>
+							<Protection>true</Protection>
+							<SelectionShowMode>DontShow</SelectionShowMode>
+							<ShowGroups>false</ShowGroups>
+							<EnableStartDrag>false</EnableStartDrag>
+							<EnableDrag>false</EnableDrag>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ViewScalingMode>Normal</ViewScalingMode>
+							<ContextMenu name="СписокОплатыКонтекстноеМеню" id="146"/>
+							<ExtendedTooltip name="СписокОплатыРасширеннаяПодсказка" id="147"/>
+						</SpreadSheetDocumentField>
+						<LabelField name="КОплате" id="150">
+							<DataPath>КОплате</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<VerticalAlign>Top</VerticalAlign>
+							<Width>19</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Font ref="style:АК_ШрифтНадписи" kind="StyleItem"/>
+							<ContextMenu name="КОплатеКонтекстноеМеню" id="151"/>
+							<ExtendedTooltip name="КОплатеРасширеннаяПодсказка" id="152"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
 				<LabelDecoration name="НадписьСписокКОплате" id="136">
 					<Visible>false</Visible>
 					<AutoMaxWidth>false</AutoMaxWidth>
