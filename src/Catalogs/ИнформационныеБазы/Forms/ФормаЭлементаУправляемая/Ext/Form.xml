@@ -8,14 +8,13 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="дРабочиеМестаСправочникРабочиеМестаМастерСозданияРМ" id="163">
-				<Type>CommandBarButton</Type>
-				<OnlyInAllActions>true</OnlyInAllActions>
-				<CommandName>Catalog.РабочиеМеста.Command.МастерСозданияРМ</CommandName>
-				<DataPath>Объект.Ref</DataPath>
-				<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-				<ExtendedTooltip name="дРабочиеМестаСправочникРабочиеМестаМастерСозданияРМРасширеннаяПодсказка" id="164"/>
-			</Button>
+			<ButtonGroup name="ФормаГруппа1" id="165">
+				<Width>50</Width>
+				<HorizontalStretch>true</HorizontalStretch>
+				<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+				<Representation>Usual</Representation>
+				<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="166"/>
+			</ButtonGroup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -377,7 +376,78 @@
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
 							<ContextMenu name="дРабочиеМестаКонтекстноеМеню" id="113"/>
-							<AutoCommandBar name="дРабочиеМестаКоманднаяПанель" id="114"/>
+							<AutoCommandBar name="дРабочиеМестаКоманднаяПанель" id="114">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="дРабочиеМестаНастройкаСписка" id="175">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.дРабочиеМеста.StandardCommand.ListSettings</CommandName>
+										<ExtendedTooltip name="дРабочиеМестаНастройкаСпискаРасширеннаяПодсказка" id="176"/>
+									</Button>
+									<Button name="дРабочиеМестаСправочникРабочиеМестаМастерСозданияРМ" id="163">
+										<Type>CommandBarButton</Type>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<Width>18</Width>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>17</MaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<CommandName>Catalog.РабочиеМеста.Command.МастерСозданияРМ</CommandName>
+										<DataPath>Объект.Ref</DataPath>
+										<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>  Мастер создания РМ</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+										<Shape>Oval</Shape>
+										<ExtendedTooltip name="дРабочиеМестаСправочникРабочиеМестаМастерСозданияРМРасширеннаяПодсказка" id="164"/>
+									</Button>
+									<Button name="дРабочиеМестаСтандартныеНастройкиДинамическогоСписка" id="173">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.дРабочиеМеста.StandardCommand.DynamicListStandardSettings</CommandName>
+										<ExtendedTooltip name="дРабочиеМестаСтандартныеНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="174"/>
+									</Button>
+									<Button name="дРабочиеМестаВывестиСписок" id="171">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.дРабочиеМеста.StandardCommand.OutputList</CommandName>
+										<ExtendedTooltip name="дРабочиеМестаВывестиСписокРасширеннаяПодсказка" id="172"/>
+									</Button>
+									<Button name="дРабочиеМестаСписок" id="169">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.дРабочиеМеста.StandardCommand.List</CommandName>
+										<ExtendedTooltip name="дРабочиеМестаСписокРасширеннаяПодсказка" id="170"/>
+									</Button>
+									<Button name="дРабочиеМестаСоздать" id="167">
+										<Type>CommandBarButton</Type>
+										<OnlyInAllActions>false</OnlyInAllActions>
+										<CommandName>Form.Item.дРабочиеМеста.StandardCommand.Create</CommandName>
+										<ExtendedTooltip name="дРабочиеМестаСоздатьРасширеннаяПодсказка" id="168"/>
+									</Button>
+									<Button name="дРабочиеМестаДерево" id="177">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.дРабочиеМеста.StandardCommand.Tree</CommandName>
+										<ExtendedTooltip name="дРабочиеМестаДеревоРасширеннаяПодсказка" id="178"/>
+									</Button>
+									<Button name="дРабочиеМестаСправочникРабочиеМестаПроводник" id="206">
+										<Type>CommandBarButton</Type>
+										<Representation>Text</Representation>
+										<CommandName>Catalog.РабочиеМеста.Command.Проводник</CommandName>
+										<DataPath>Items.дРабочиеМеста.CurrentData.Ref</DataPath>
+										<TextColor>#AA5F00</TextColor>
+										<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content></v8:content>
+											</v8:item>
+										</Title>
+										<ToolTipRepresentation>Button</ToolTipRepresentation>
+										<ExtendedTooltip name="дРабочиеМестаСправочникРабочиеМестаПроводникРасширеннаяПодсказка" id="207"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
 							<ExtendedTooltip name="дРабочиеМестаРасширеннаяПодсказка" id="115"/>
 							<SearchStringAddition name="дРабочиеМестаСтрокаПоиска" id="116">
 								<AdditionSource>
@@ -478,6 +548,91 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="СТраницаДопСвойства" id="179">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные свойства</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>С траница доп свойства</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СТраницаДопСвойстваРасширеннаяПодсказка" id="180"/>
+					<ChildItems>
+						<Table name="дДополнительныеСвойства" id="181">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>дДополнительныеСвойства</DataPath>
+							<RowPictureDataPath>дДополнительныеСвойства.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="дДополнительныеСвойстваКонтекстноеМеню" id="182"/>
+							<AutoCommandBar name="дДополнительныеСвойстваКоманднаяПанель" id="183"/>
+							<ExtendedTooltip name="дДополнительныеСвойстваРасширеннаяПодсказка" id="184"/>
+							<SearchStringAddition name="дДополнительныеСвойстваСтрокаПоиска" id="185">
+								<AdditionSource>
+									<Item>дДополнительныеСвойства</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дДополнительныеСвойстваСтрокаПоискаКонтекстноеМеню" id="186"/>
+								<ExtendedTooltip name="дДополнительныеСвойстваСтрокаПоискаРасширеннаяПодсказка" id="187"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="дДополнительныеСвойстваСостояниеПросмотра" id="188">
+								<AdditionSource>
+									<Item>дДополнительныеСвойства</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дДополнительныеСвойстваСостояниеПросмотраКонтекстноеМеню" id="189"/>
+								<ExtendedTooltip name="дДополнительныеСвойстваСостояниеПросмотраРасширеннаяПодсказка" id="190"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="дДополнительныеСвойстваУправлениеПоиском" id="191">
+								<AdditionSource>
+									<Item>дДополнительныеСвойства</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="дДополнительныеСвойстваУправлениеПоискомКонтекстноеМеню" id="192"/>
+								<ExtendedTooltip name="дДополнительныеСвойстваУправлениеПоискомРасширеннаяПодсказка" id="193"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="дДополнительныеСвойстваИнформационнаяБаза" id="194">
+									<DataPath>дДополнительныеСвойства.ИнформационнаяБаза</DataPath>
+									<ContextMenu name="дДополнительныеСвойстваИнформационнаяБазаКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="дДополнительныеСвойстваИнформационнаяБазаРасширеннаяПодсказка" id="196"/>
+								</LabelField>
+								<LabelField name="дДополнительныеСвойстваОбъект" id="197">
+									<DataPath>дДополнительныеСвойства.Объект</DataPath>
+									<ContextMenu name="дДополнительныеСвойстваОбъектКонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="дДополнительныеСвойстваОбъектРасширеннаяПодсказка" id="199"/>
+								</LabelField>
+								<LabelField name="дДополнительныеСвойстваСвойство" id="200">
+									<DataPath>дДополнительныеСвойства.Свойство</DataPath>
+									<ContextMenu name="дДополнительныеСвойстваСвойствоКонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="дДополнительныеСвойстваСвойствоРасширеннаяПодсказка" id="202"/>
+								</LabelField>
+								<LabelField name="дДополнительныеСвойстваЗначение" id="203">
+									<DataPath>дДополнительныеСвойства.Значение</DataPath>
+									<ContextMenu name="дДополнительныеСвойстваЗначениеКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="дДополнительныеСвойстваЗначениеРасширеннаяПодсказка" id="205"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -559,6 +714,38 @@
 							</dcsset:item>
 						</dcsset:groupItems>
 					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="дДополнительныеСвойства" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Д дополнительные свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ДополнительныеСвойства</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
 					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>

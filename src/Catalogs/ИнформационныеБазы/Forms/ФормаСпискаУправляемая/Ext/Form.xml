@@ -39,18 +39,10 @@
 				<CommandName>Form.Item.Список.StandardCommand.ListSettings</CommandName>
 				<ExtendedTooltip name="СписокНастройкаСпискаРасширеннаяПодсказка" id="174"/>
 			</Button>
-			<Button name="ФормаСправочникРабочиеМестаМастерСозданияРМ" id="218">
-				<Type>CommandBarButton</Type>
-				<CommandName>Catalog.РабочиеМеста.Command.МастерСозданияРМ</CommandName>
-				<DataPath>Items.РабочиеМеста.CurrentData.ИнформационнаяБаза</DataPath>
-				<Font faceName="FontAwesome" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-				<ExtendedTooltip name="ФормаСправочникРабочиеМестаМастерСозданияРМРасширеннаяПодсказка" id="219"/>
-			</Button>
 			<Button name="ФормаИзменитьФорму" id="86">
 				<Type>CommandBarButton</Type>
 				<OnlyInAllActions>true</OnlyInAllActions>
 				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-				<Font ref="style:TextFont" kind="StyleItem"/>
 				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="87"/>
 			</Button>
 		</ChildItems>
