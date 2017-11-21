@@ -219,7 +219,7 @@
 			<c>
 				<c>
 					<f>28</f>
-					<parameter>Текст</parameter>
+					<parameter>ТекстГостя</parameter>
 				</c>
 			</c>
 			<c>
@@ -242,7 +242,7 @@
 			<c>
 				<c>
 					<f>31</f>
-					<parameter>Текст</parameter>
+					<parameter>ТекстГостя</parameter>
 				</c>
 			</c>
 			<c>
@@ -265,7 +265,7 @@
 			<c>
 				<c>
 					<f>31</f>
-					<parameter>Текст</parameter>
+					<parameter>ТекстГостя</parameter>
 				</c>
 			</c>
 			<c>
@@ -303,7 +303,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>15</index>
+		<index>14</index>
 		<row>
 			<formatIndex>23</formatIndex>
 			<c>
@@ -314,12 +314,7 @@
 			<c>
 				<c>
 					<f>37</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Расчет КеГЛей по всему заказу - у продавца</v8:content>
-						</v8:item>
-					</tl>
+					<parameter>ТекстГостя</parameter>
 				</c>
 			</c>
 		</row>
@@ -344,11 +339,6 @@
 					</tl>
 				</c>
 			</c>
-			<c>
-				<c>
-					<f>39</f>
-				</c>
-			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -362,21 +352,48 @@
 			</c>
 			<c>
 				<c>
-					<f>38</f>
-					<tl/>
+					<f>39</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчет КеГЛей по всему заказу - у продавца</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>40</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>21</index>
+		<row>
+			<formatIndex>23</formatIndex>
+			<c>
+				<c>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>39</f>
+					<tl/>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>40</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>40</defaultFormatIndex>
-	<height>20</height>
-	<vgRows>20</vgRows>
+	<defaultFormatIndex>41</defaultFormatIndex>
+	<height>22</height>
+	<vgRows>22</vgRows>
 	<merge>
 		<r>0</r>
 		<c>1</c>
@@ -413,7 +430,7 @@
 		<w>1</w>
 	</merge>
 	<merge>
-		<r>15</r>
+		<r>14</r>
 		<c>1</c>
 		<w>1</w>
 	</merge>
@@ -424,6 +441,11 @@
 	</merge>
 	<merge>
 		<r>19</r>
+		<c>1</c>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>21</r>
 		<c>1</c>
 		<w>1</w>
 	</merge>
@@ -453,6 +475,16 @@
 			<type>Rows</type>
 			<beginRow>10</beginRow>
 			<endRow>10</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ИтогиПороги</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>14</beginRow>
+			<endRow>14</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -531,8 +563,8 @@
 		<name>ПодвалБезКарты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>17</beginRow>
-			<endRow>17</endRow>
+			<beginRow>19</beginRow>
+			<endRow>19</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -541,8 +573,8 @@
 		<name>ПодвалСКартой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>15</beginRow>
-			<endRow>15</endRow>
+			<beginRow>17</beginRow>
+			<endRow>17</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -551,8 +583,8 @@
 		<name>ПодвалСКартойПусто</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>19</beginRow>
-			<endRow>19</endRow>
+			<beginRow>21</beginRow>
+			<endRow>21</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -582,6 +614,7 @@
 	<font faceName="Arial" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Segoe UI" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Segoe UI" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<leftBorder>0</leftBorder>
 		<rightBorder>0</rightBorder>
@@ -833,6 +866,13 @@
 		<horizontalAlignment>Right</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#343434</textColor>
+	</format>
+	<format>
+		<font>6</font>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#343434</textColor>
+		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<font>4</font>
