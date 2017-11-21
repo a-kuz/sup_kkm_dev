@@ -304,7 +304,7 @@
 					<ExtendedTooltip name="ДекорацияОплатаМРРасширеннаяПодсказка" id="12"/>
 				</LabelDecoration>
 				<SpreadSheetDocumentField name="ПодвалПредупреждение" id="55">
-					<DataPath>ПодвалКеглиРубли</DataPath>
+					<DataPath>ПодвалПредупреждение</DataPath>
 					<Enabled>false</Enabled>
 					<TitleLocation>None</TitleLocation>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -448,11 +448,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПодвалКеглиРубли" id="5">
+		<Attribute name="ПодвалПредупреждение" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подвал кегли рубли</v8:content>
+					<v8:content>Подвал предупреждение</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
