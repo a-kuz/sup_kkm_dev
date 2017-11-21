@@ -715,8 +715,7 @@ by credit card</v8:content>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Вы хотите продолжить покупки в
-МясновЪ и Отдохни?</v8:content>
+									<v8:content>Вы хотите продолжить покупки?</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -774,6 +773,25 @@ by credit card</v8:content>
 									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<ExtendedTooltip name="ЗавершитьОбслуживаниеРасширеннаяПодсказка" id="478"/>
+								</Button>
+								<Button name="ПродолжитьПокупки1" id="567">
+									<Type>UsualButton</Type>
+									<Width>35</Width>
+									<Height>3</Height>
+									<CommandName>Form.Command.ПродолжитьПокупки</CommandName>
+									<TextColor>style:FormBackColor</TextColor>
+									<BackColor>style:ЦветТемы</BackColor>
+									<BorderColor>style:ЦветТемы</BorderColor>
+									<Font ref="style:АК_ШрифтКнопки" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЗАВЕРШИТЬ
+оплату на автокассе</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="ПродолжитьПокупки1РасширеннаяПодсказка" id="568"/>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
