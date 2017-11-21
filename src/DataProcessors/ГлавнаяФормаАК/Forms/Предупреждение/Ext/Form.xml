@@ -237,7 +237,7 @@
 					<Height>1</Height>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
-					<CommandName>Form.Command.ОК</CommandName>
+					<CommandName>Form.Command.Назад</CommandName>
 					<TextColor>style:FormBackColor</TextColor>
 					<BackColor>web:DarkGray</BackColor>
 					<BorderColor>web:DarkGray</BorderColor>
@@ -288,12 +288,14 @@
 					<HorizontalStretch>true</HorizontalStretch>
 					<TextColor>style:SpecialTextColor</TextColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
-					<Title formatted="false">
+					<Title formatted="true">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВНИМАНИЕ!
+							<v8:content>&lt;font Segoe UI&gt;&lt;fontsize 20&gt;&lt;fontsize 22&gt;&lt;fontsize 24&gt;&lt;b&gt;ВНИМАНИЕ!
 
-Вам нужно применить банковскую карту 2 раза :</v8:content>
+Вам нужно применить банковскую карту 2 раза:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;
+&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Segoe UI&gt;&lt;fontsize 20&gt;&lt;b&gt;при оплате заказа МясновЪ,
+при оплате заказа Кухни Полли!&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -301,40 +303,27 @@
 					<ContextMenu name="ДекорацияОплатаМРКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ДекорацияОплатаМРРасширеннаяПодсказка" id="12"/>
 				</LabelDecoration>
-				<InputField name="ОплатаМР1" id="13">
-					<DataPath>ОплатаМР1</DataPath>
+				<SpreadSheetDocumentField name="ПодвалПредупреждение" id="55">
+					<DataPath>ПодвалКеглиРубли</DataPath>
 					<Enabled>false</Enabled>
-					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<HorizontalAlign>Center</HorizontalAlign>
-					<Width>75</Width>
+					<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<Width>45</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<HorizontalStretch>true</HorizontalStretch>
-					<TextColor>style:SpecialTextColor</TextColor>
+					<Height>5</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<VerticalScrollBar>false</VerticalScrollBar>
+					<HorizontalScrollBar>false</HorizontalScrollBar>
+					<SelectionShowMode>DontShow</SelectionShowMode>
+					<EnableStartDrag>false</EnableStartDrag>
+					<EnableDrag>false</EnableDrag>
 					<BorderColor>style:FieldBackColor</BorderColor>
-					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
-					<ContextMenu name="ОплатаМР1КонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="ОплатаМР1РасширеннаяПодсказка" id="15"/>
-				</InputField>
-				<InputField name="ОплатаМР2" id="16">
-					<DataPath>ОплатаМР2</DataPath>
-					<Enabled>false</Enabled>
-					<ReadOnly>true</ReadOnly>
-					<TitleLocation>None</TitleLocation>
-					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<HorizontalAlign>Center</HorizontalAlign>
-					<Width>75</Width>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<HorizontalStretch>true</HorizontalStretch>
-					<TextColor>style:SpecialTextColor</TextColor>
-					<BorderColor>style:FieldBackColor</BorderColor>
-					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
-					<ContextMenu name="ОплатаМР2КонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ОплатаМР2РасширеннаяПодсказка" id="18"/>
-				</InputField>
+					<ContextMenu name="ПодвалПредупреждениеКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПодвалПредупреждениеРасширеннаяПодсказка" id="57"/>
+				</SpreadSheetDocumentField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНадписей1" id="3">
@@ -353,7 +342,7 @@
 			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<HorizontalStretch>true</HorizontalStretch>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 			<Group>Horizontal</Group>
 			<HorizontalAlign>Center</HorizontalAlign>
 			<VerticalAlign>Center</VerticalAlign>
@@ -379,6 +368,7 @@
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<HorizontalStretch>true</HorizontalStretch>
+					<MultiLine>true</MultiLine>
 					<BorderColor>style:FieldBackColor</BorderColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
 					<ContextMenu name="НетВозможностиОплатитьКонтекстноеМеню" id="8"/>
@@ -458,6 +448,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ПодвалКеглиРубли" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал кегли рубли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОК" id="1">
@@ -474,6 +475,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОК</Action>
+		</Command>
+		<Command name="Назад" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НАЗАД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СтрелкаВлевоУголок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Назад</Action>
 		</Command>
 	</Commands>
 	<Parameters>
@@ -502,6 +522,11 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ПодвалПредупреждение">
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Parameter>
 	</Parameters>
