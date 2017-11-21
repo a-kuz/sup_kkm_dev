@@ -104,6 +104,11 @@
 				<CommandName>Form.Command.НовоеОкно</CommandName>
 				<ExtendedTooltip name="ФормаНовоеОкноРасширеннаяПодсказка" id="26"/>
 			</Button>
+			<Button name="ФормаСтруктураФормы" id="79">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СтруктураФормы</CommandName>
+				<ExtendedTooltip name="ФормаСтруктураФормыРасширеннаяПодсказка" id="80"/>
+			</Button>
 			<Button name="ФормаОПодсистеме" id="27">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОПодсистеме</CommandName>
@@ -112,6 +117,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -174,8 +180,10 @@
 		<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="58">
 			<CommandBarLocation>None</CommandBarLocation>
 			<Autofill>true</Autofill>
-			<Height>4</Height>
-			<VerticalStretch>false</VerticalStretch>
+			<Height>2</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<MaxHeight>4</MaxHeight>
+			<MaxRowsCount>4</MaxRowsCount>
 			<DataPath>ДинамическийСписок.SettingsComposer.UserSettings</DataPath>
 			<CommandSet>
 				<ExcludedCommand>HierarchicalList</ExcludedCommand>
@@ -626,6 +634,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоследниеВыбранныеНажатие</Action>
+		</Command>
+		<Command name="СтруктураФормы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать структуру формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирДеревоФормы</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтруктураФормы</Action>
 		</Command>
 	</Commands>
 	<Parameters>
