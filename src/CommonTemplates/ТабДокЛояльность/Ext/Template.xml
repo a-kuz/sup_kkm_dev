@@ -69,10 +69,26 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>2</index>
+		<row>
+			<c>
+				<c>
+					<f>8</f>
+					<parameter>Текст</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>8</defaultFormatIndex>
-	<height>2</height>
-	<vgRows>2</vgRows>
+	<defaultFormatIndex>9</defaultFormatIndex>
+	<height>3</height>
+	<vgRows>3</vgRows>
+	<merge>
+		<r>2</r>
+		<c>0</c>
+		<w>1</w>
+	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>СтрокаИТОГО</name>
 		<area>
@@ -89,6 +105,16 @@
 			<type>Rows</type>
 			<beginRow>0</beginRow>
 			<endRow>0</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>СтрокаПороги</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>2</beginRow>
+			<endRow>2</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -128,6 +154,10 @@
 		<horizontalAlignment>Right</horizontalAlignment>
 		<textColor>#068A3F</textColor>
 		<backColor>#9B9B9B</backColor>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<font>0</font>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
