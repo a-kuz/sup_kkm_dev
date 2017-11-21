@@ -11,43 +11,250 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаНадписей1" id="3">
+		<UsualGroup name="ШапкаФормы" id="19">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа надписей1</v8:content>
+					<v8:content>Шапка формы</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа надписей1</v8:content>
+					<v8:content>Шапка формы</v8:content>
 				</v8:item>
 			</ToolTip>
 			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<HorizontalStretch>true</HorizontalStretch>
-			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-			<GroupVerticalAlign>Center</GroupVerticalAlign>
-			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalStretch>false</VerticalStretch>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаНадписей1РасширеннаяПодсказка" id="4"/>
+			<ExtendedTooltip name="ШапкаФормыРасширеннаяПодсказка" id="20"/>
 			<ChildItems>
-				<InputField name="НетВозможностиОплатить" id="7">
-					<DataPath>НетВозможностиОплатить</DataPath>
-					<Enabled>false</Enabled>
-					<ReadOnly>true</ReadOnly>
-					<TitleLocation>None</TitleLocation>
+				<PictureDecoration name="ЛогоККГурмэ" id="21">
+					<Width>19</Width>
+					<Height>2</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лого ККГурмэ</v8:content>
+						</v8:item>
+					</Title>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
-					<Width>75</Width>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.ЛогоКуулКлевер77</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ЛогоККГурмэКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ЛогоККГурмэРасширеннаяПодсказка" id="23"/>
+				</PictureDecoration>
+				<UsualGroup name="ГруппаСтрокаСостояния" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строка состояния</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строка состояния</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<HorizontalStretch>true</HorizontalStretch>
-					<BorderColor>style:FieldBackColor</BorderColor>
-					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
-					<ContextMenu name="НетВозможностиОплатитьКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="НетВозможностиОплатитьРасширеннаяПодсказка" id="9"/>
-				</InputField>
+					<Group>Horizontal</Group>
+					<HorizontalSpacing>None</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтрокаСостоянияРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<LabelDecoration name="СС_1" id="26">
+							<Width>5</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:FormBackColor</TextColor>
+							<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> 1</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<BackColor>style:ЦветТемы</BackColor>
+							<ContextMenu name="СС_1КонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СС_1РасширеннаяПодсказка" id="28"/>
+						</LabelDecoration>
+						<LabelDecoration name="СС_1ш" id="29">
+							<Width>11</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>15</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:FormBackColor</TextColor>
+							<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбор способа
+оплаты</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<BackColor>style:ЦветТемы</BackColor>
+							<ContextMenu name="СС_1шКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="СС_1шРасширеннаяПодсказка" id="31"/>
+						</LabelDecoration>
+						<LabelDecoration name="СС_2" id="32">
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:НеактивныйЭлемент</TextColor>
+							<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> 2</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<BackColor>web:HoneyDew</BackColor>
+							<ContextMenu name="СС_2КонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СС_2РасширеннаяПодсказка" id="34"/>
+						</LabelDecoration>
+						<LabelDecoration name="СС_2ш" id="35">
+							<Width>11</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>15</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:НеактивныйЭлемент</TextColor>
+							<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбор способа
+получения чека</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<BackColor>web:HoneyDew</BackColor>
+							<ContextMenu name="СС_2шКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="СС_2шРасширеннаяПодсказка" id="37"/>
+						</LabelDecoration>
+						<LabelDecoration name="СС_3" id="38">
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:НеактивныйЭлемент</TextColor>
+							<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> 3</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<BackColor>web:HoneyDew</BackColor>
+							<ContextMenu name="СС_3КонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="СС_3РасширеннаяПодсказка" id="40"/>
+						</LabelDecoration>
+						<LabelDecoration name="СС_3ш" id="41">
+							<Width>11</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>15</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:НеактивныйЭлемент</TextColor>
+							<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оплата
+заказа</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<BackColor>web:HoneyDew</BackColor>
+							<ContextMenu name="СС_3шКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="СС_3шРасширеннаяПодсказка" id="43"/>
+						</LabelDecoration>
+						<LabelDecoration name="СС_4" id="44">
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:НеактивныйЭлемент</TextColor>
+							<Font faceName="Segoe UI" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> 4</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<BackColor>web:HoneyDew</BackColor>
+							<ContextMenu name="СС_4КонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="СС_4РасширеннаяПодсказка" id="46"/>
+						</LabelDecoration>
+						<LabelDecoration name="СС_4ш" id="47">
+							<Width>11</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>15</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<TextColor>style:НеактивныйЭлемент</TextColor>
+							<Font faceName="Segoe UI" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Завершение
+заказа</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<BackColor>web:HoneyDew</BackColor>
+							<ContextMenu name="СС_4шКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="СС_4шРасширеннаяПодсказка" id="49"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="Назад" id="50">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Height>1</Height>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.ОК</CommandName>
+					<TextColor>style:FormBackColor</TextColor>
+					<BackColor>web:DarkGray</BackColor>
+					<BorderColor>web:DarkGray</BorderColor>
+					<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
+					<Picture>
+						<xr:Ref>CommonPicture.СтрелкаВлевоУголок</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НАЗАД</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="51"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНадписей2" id="5">
@@ -68,6 +275,7 @@
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<GroupVerticalAlign>Center</GroupVerticalAlign>
 			<Group>Vertical</Group>
+			<VerticalSpacing>None</VerticalSpacing>
 			<HorizontalAlign>Center</HorizontalAlign>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -78,12 +286,14 @@
 					<Width>100</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:SpecialTextColor</TextColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Внимание!
-Оплата картой будет произведена в две транзакции:</v8:content>
+							<v8:content>ВНИМАНИЕ!
+
+Вам нужно применить банковскую карту 2 раза :</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -97,10 +307,12 @@
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<HorizontalAlign>Center</HorizontalAlign>
 					<Width>75</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:SpecialTextColor</TextColor>
 					<BorderColor>style:FieldBackColor</BorderColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
 					<ContextMenu name="ОплатаМР1КонтекстноеМеню" id="14"/>
@@ -112,14 +324,65 @@
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<Width>75</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<BorderColor>style:FieldBackColor</BorderColor>
+					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
+					<ContextMenu name="ОплатаМР2КонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ОплатаМР2РасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНадписей1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа надписей1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа надписей1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<Group>Horizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНадписей1РасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация1" id="52">
+					<Picture>
+						<xr:Ref>CommonPicture.Внимание48</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="54"/>
+				</PictureDecoration>
+				<InputField name="НетВозможностиОплатить" id="7">
+					<DataPath>НетВозможностиОплатить</DataPath>
+					<Enabled>false</Enabled>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<Width>75</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<HorizontalStretch>true</HorizontalStretch>
 					<BorderColor>style:FieldBackColor</BorderColor>
 					<Font ref="style:АК_ШрифтНадписи" height="24" kind="StyleItem"/>
-					<ContextMenu name="ОплатаМР2КонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ОплатаМР2РасширеннаяПодсказка" id="18"/>
+					<ContextMenu name="НетВозможностиОплатитьКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НетВозможностиОплатитьРасширеннаяПодсказка" id="9"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
