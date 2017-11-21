@@ -88,86 +88,176 @@
 													<v8:content>Группа шапка</v8:content>
 												</v8:item>
 											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="70"/>
 											<ChildItems>
-												<LabelField name="Ссылка" id="73">
-													<DataPath>Объект.Ref</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<HorizontalStretch>true</HorizontalStretch>
-													<Border width="1">
-														<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
-													</Border>
-													<Font ref="style:АК_ШрифтИнфо" kind="StyleItem"/>
-													<ContextMenu name="СсылкаКонтекстноеМеню" id="74"/>
-													<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="75"/>
-												</LabelField>
-												<RadioButtonField name="ТипТТ" id="76">
-													<DataPath>ТипТТ</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<VerticalAlign>Top</VerticalAlign>
-													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-													<GroupVerticalAlign>Top</GroupVerticalAlign>
-													<RadioButtonType>Tumbler</RadioButtonType>
-													<ItemWidth>12</ItemWidth>
-													<ItemHeight>1</ItemHeight>
-													<ColumnsCount>3</ColumnsCount>
-													<EqualColumnsWidth>true</EqualColumnsWidth>
-													<ChoiceList>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.Магазин</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.КМ</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.МОКП</Value>
-															</xr:Value>
-														</xr:Item>
-													</ChoiceList>
-													<Font height="12" kind="AutoFont"/>
-													<ContextMenu name="ТипТТКонтекстноеМеню" id="77"/>
-													<ExtendedTooltip name="ТипТТРасширеннаяПодсказка" id="78"/>
-												</RadioButtonField>
-												<Button name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРА" id="127">
-													<Type>UsualButton</Type>
-													<TitleHeight>1</TitleHeight>
-													<OnlyInAllActions>true</OnlyInAllActions>
-													<Width>1</Width>
-													<MaxWidth>1</MaxWidth>
-													<Height>1</Height>
-													<HorizontalStretch>true</HorizontalStretch>
-													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-													<CommandName>Form.Command.ПоказатьДанныеСУП_ЦЕНТРА</CommandName>
-													<TextColor>#1760C2</TextColor>
-													<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+												<UsualGroup name="ПодгруппаШапка" id="135">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content></v8:content>
+															<v8:content>Подгруппа шапка</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
-													<Shape>Oval</Shape>
-													<ExtendedTooltip name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРАРасширеннаяПодсказка" id="128"/>
-												</Button>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подгруппа шапка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПодгруппаШапкаРасширеннаяПодсказка" id="136"/>
+													<ChildItems>
+														<InputField name="Ссылка" id="73">
+															<DataPath>Объект.Ref</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ТТ52_77</v8:content>
+																</v8:item>
+															</ToolTip>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>12</MaxWidth>
+															<Height>1</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<HorizontalStretch>true</HorizontalStretch>
+															<DropListButton>false</DropListButton>
+															<OpenButton>false</OpenButton>
+															<BorderColor>style:FormBackColor</BorderColor>
+															<Font faceName="Segoe UI Semibold" height="18" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ТТ52_77</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="СсылкаКонтекстноеМеню" id="74"/>
+															<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="75"/>
+														</InputField>
+														<RadioButtonField name="ТипТТ" id="76">
+															<DataPath>ТипТТ</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<VerticalAlign>Top</VerticalAlign>
+															<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+															<GroupVerticalAlign>Top</GroupVerticalAlign>
+															<RadioButtonType>Tumbler</RadioButtonType>
+															<ItemWidth>12</ItemWidth>
+															<ItemHeight>1</ItemHeight>
+															<ColumnsCount>3</ColumnsCount>
+															<EqualColumnsWidth>true</EqualColumnsWidth>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.Магазин</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.КМ</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.МОКП</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<Font height="12" kind="AutoFont"/>
+															<ContextMenu name="ТипТТКонтекстноеМеню" id="77"/>
+															<ExtendedTooltip name="ТипТТРасширеннаяПодсказка" id="78"/>
+														</RadioButtonField>
+													</ChildItems>
+												</UsualGroup>
+												<Pages name="СтраницыНавигации" id="129">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы навигации</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="СтраницыНавигацииРасширеннаяПодсказка" id="130"/>
+													<ChildItems>
+														<Page name="СтраницаНавигацииОсновная" id="131">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница навигации основная</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница навигации основная</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="СтраницаНавигацииОсновнаяРасширеннаяПодсказка" id="132"/>
+															<ChildItems>
+																<Button name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРА" id="127">
+																	<Type>UsualButton</Type>
+																	<TitleHeight>1</TitleHeight>
+																	<OnlyInAllActions>true</OnlyInAllActions>
+																	<Width>13</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>1</MaxWidth>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<VerticalStretch>true</VerticalStretch>
+																	<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																	<CommandName>Form.Command.ПоказатьДанныеСУП_ЦЕНТРА</CommandName>
+																	<TextColor>#1760C2</TextColor>
+																	<BackColor>style:ЦветЗаказано</BackColor>
+																	<BorderColor>style:BorderColor</BorderColor>
+																	<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+																	<ExtendedTooltip name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРАРасширеннаяПодсказка" id="128"/>
+																</Button>
+															</ChildItems>
+														</Page>
+														<Page name="СтраницаНавигацииСтраницаНавигацииОсновнаяСУПцентр" id="133">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница навигации основная</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="СтраницаНавигацииСтраницаНавигацииОсновнаяСУПцентрРасширеннаяПодсказка" id="134"/>
+															<ChildItems>
+																<Button name="ТаблицаРМНазад" id="137">
+																	<Type>UsualButton</Type>
+																	<TitleHeight>1</TitleHeight>
+																	<OnlyInAllActions>true</OnlyInAllActions>
+																	<Width>13</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>1</MaxWidth>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<VerticalStretch>true</VerticalStretch>
+																	<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																	<CommandName>Form.Command.НазадКосновной</CommandName>
+																	<TextColor>style:ButtonTextColor</TextColor>
+																	<BackColor>style:ЦветЗаказано</BackColor>
+																	<BorderColor>style:BorderColor</BorderColor>
+																	<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+																	<ExtendedTooltip name="ТаблицаРМНазадРасширеннаяПодсказка" id="138"/>
+																</Button>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
 											</ChildItems>
 										</UsualGroup>
 										<Table name="ТаблицаРМ" id="83">
@@ -179,6 +269,7 @@
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ТаблицаРМКонтекстноеМеню" id="84"/>
 											<AutoCommandBar name="ТаблицаРМКоманднаяПанель" id="85">
+												<Autofill>false</Autofill>
 												<ChildItems>
 													<Button name="ЗаполнитьРМ" id="119">
 														<Type>CommandBarButton</Type>
@@ -729,7 +820,8 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать данные СУП центра</v8:content>
+					<v8:content>
+СУП ЦЕНТР</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -739,6 +831,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьДанныеСУП_ЦЕНТРА</Action>
+		</Command>
+		<Command name="НазадКосновной" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> НАЗАД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад косновной</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НазадКосновной</Action>
 		</Command>
 	</Commands>
 	<Parameters>
