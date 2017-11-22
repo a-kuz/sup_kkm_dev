@@ -1023,7 +1023,7 @@
 	|ExitApp");
 КонецПроцедуры
 
-Процедура ПоказатьПлашку(Заголовок = "(:-)", Знач Текст = "", НомерПлашки = 0, Таймаут = "2500", Лево = 0, Прозрачность = 255) Экспорт
+Процедура ПоказатьПлашку(Заголовок = "(:-)", Знач Текст = "", НомерПлашки = 0, Таймаут = "2500", Лево = 0, Прозрачность = 255, Ширина = 300, Высота = 100, РазмерШрифта1 = 14, РазмерШрифта2 = 9) Экспорт
 	Текст = СтрЗаменить(Текст, Символы.ПС, "`n");
 	Текст = СтрЗаменить(Текст, ";", "");
 	Текст = СтрЗаменить(Текст, """", """""");
@@ -1058,8 +1058,8 @@
 		|Global marginX := 10
 		|Global marginY := 25
 		|
-		|Global WINDOW_WIDTH := 300
-		|Global WINDOW_HEIGHT := 180	
+		|Global WINDOW_WIDTH := %Ширина%
+		|Global WINDOW_HEIGHT := %Высота%	
 		|Global WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))
 		|Global animateEffect := AW_BLEND|AW_HOR_POSITIVE
 		|
@@ -1105,7 +1105,7 @@
 		|		index := this.index
 		|		Gui,G%index%:+AlwaysOnTop -Caption +ToolWindow +LastFound -border
 		|		
-		|		Gui,G%index%: Font, s14,Segoe UI
+		|		Gui,G%index%: Font, s%РазмерШрифта1%,Segoe UI
 		|		
 		|		if (mod(index,2)==1) {
 		|			Gui,G%index%: Color, %ACCENT_COLOR%
@@ -1116,7 +1116,7 @@
 		|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
 		|		Width := WINDOW_WIDTH - 40
 		|		if (this.index <= 4) {
-		|			Gui,G%index%: Font, s9
+		|			Gui,G%index%: Font, s%РазмерШрифта2%
 		|			Gui,G%index%: Add, Text, W%Width% H200 , % this.strText
 		|		} else {
 		|			Gui,G%index%: Font, s20
@@ -1218,6 +1218,10 @@
 		|	this.hide(-1)
 		|}
 		|";
+		Скрипт = СтрЗаменить(Скрипт, "%Ширина%", Формат(Ширина,"ЧГ=0"));
+		Скрипт = СтрЗаменить(Скрипт, "%Высота%", Формат(Высота,"ЧГ=0"));
+		Скрипт = СтрЗаменить(Скрипт, "%РазмерШрифта2%", Формат(РазмерШрифта2,"ЧГ=0"));
+		Скрипт = СтрЗаменить(Скрипт, "%РазмерШрифта1%", Формат(РазмерШрифта1,"ЧГ=0"));
 		AHK_Balloon.ahktextdll(Скрипт);	
 	КонецЕсли;
 	Если ЗначениеЗаполнено(Лево) Тогда
