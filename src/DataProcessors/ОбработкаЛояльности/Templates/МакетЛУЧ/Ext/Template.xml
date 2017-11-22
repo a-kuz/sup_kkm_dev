@@ -55,7 +55,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Список Ваших любимых продуктов [ФирмаКратко]:</v8:content>
+							<v8:content>Список Ваших любимых продуктов [ФирмаКратко] по программе ЛУЧший покупатель:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -71,29 +71,29 @@
 		<index>2</index>
 		<row>
 			<columnsID>3056e30c-da17-4c62-bb73-dd397700a237</columnsID>
-			<formatIndex>4</formatIndex>
+			<formatIndex>7</formatIndex>
 			<c>
 				<c>
-					<f>7</f>
+					<f>8</f>
 					<parameter>Сч</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>8</f>
+					<f>9</f>
 					<parameter>Товар</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl/>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>10</defaultFormatIndex>
+	<defaultFormatIndex>11</defaultFormatIndex>
 	<height>3</height>
 	<vgRows>3</vgRows>
 	<namedItem xsi:type="NamedItemCells">
@@ -152,6 +152,11 @@
 		<borderColor>#787878</borderColor>
 		<verticalAlignment>Center</verticalAlignment>
 		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>0</font>
+		<height>88</height>
+		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
 		<horizontalAlignment>Center</horizontalAlignment>
