@@ -9,6 +9,191 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<UsualGroup name="ПодгруппаШапка" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подгруппа шапка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подгруппа шапка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПодгруппаШапкаРасширеннаяПодсказка" id="136"/>
+					<ChildItems>
+						<InputField name="Ссылка" id="73">
+							<DataPath>Объект.Ref</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ТТ52_77</v8:content>
+								</v8:item>
+							</ToolTip>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>12</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<DropListButton>false</DropListButton>
+							<OpenButton>false</OpenButton>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<Font faceName="Segoe UI Semibold" height="18" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ТТ52_77</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="СсылкаКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="75"/>
+						</InputField>
+						<RadioButtonField name="ТипТТ" id="76">
+							<DataPath>ТипТТ</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<VerticalAlign>Top</VerticalAlign>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ItemWidth>12</ItemWidth>
+							<ItemHeight>1</ItemHeight>
+							<ColumnsCount>3</ColumnsCount>
+							<EqualColumnsWidth>true</EqualColumnsWidth>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.Магазин</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.КМ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.МОКП</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<Font height="12" kind="AutoFont"/>
+							<ContextMenu name="ТипТТКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ТипТТРасширеннаяПодсказка" id="78"/>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="СтраницыНавигации" id="129">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы навигации</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыНавигацииРасширеннаяПодсказка" id="130"/>
+					<ChildItems>
+						<Page name="СтраницаНавигацииОсновная" id="131">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница навигации основная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница навигации основная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаНавигацииОсновнаяРасширеннаяПодсказка" id="132"/>
+							<ChildItems>
+								<Button name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРА" id="127">
+									<Type>UsualButton</Type>
+									<TitleHeight>1</TitleHeight>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<Width>13</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>1</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.ПоказатьДанныеСУП_ЦЕНТРА</CommandName>
+									<TextColor>#1760C2</TextColor>
+									<BackColor>#FEFECB</BackColor>
+									<BorderColor>style:BorderColor</BorderColor>
+									<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ExtendedTooltip name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРАРасширеннаяПодсказка" id="128"/>
+								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаНавигацииСтраницаНавигацииОсновнаяСУПцентр" id="133">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница навигации основная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаНавигацииСтраницаНавигацииОсновнаяСУПцентрРасширеннаяПодсказка" id="134"/>
+							<ChildItems>
+								<Button name="ТаблицаРМНазад" id="137">
+									<Type>UsualButton</Type>
+									<TitleHeight>1</TitleHeight>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<Width>13</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>1</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.НазадКосновной</CommandName>
+									<TextColor>style:ButtonTextColor</TextColor>
+									<BackColor>#FEFECB</BackColor>
+									<BorderColor>style:BorderColor</BorderColor>
+									<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ExtendedTooltip name="ТаблицаРМНазадРасширеннаяПодсказка" id="138"/>
+								</Button>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Колонки" id="79">
 			<Title>
 				<v8:item>
@@ -71,195 +256,11 @@
 											<v8:content>Колонка левая</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="КолонкаЛеваяРасширеннаяПодсказка" id="118"/>
 									<ChildItems>
-										<UsualGroup name="ГруппаШапка" id="69">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа шапка</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа шапка</v8:content>
-												</v8:item>
-											</ToolTip>
-											<HorizontalStretch>true</HorizontalStretch>
-											<Group>Horizontal</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="70"/>
-											<ChildItems>
-												<UsualGroup name="ПодгруппаШапка" id="135">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Подгруппа шапка</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Подгруппа шапка</v8:content>
-														</v8:item>
-													</ToolTip>
-													<Representation>None</Representation>
-													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ПодгруппаШапкаРасширеннаяПодсказка" id="136"/>
-													<ChildItems>
-														<InputField name="Ссылка" id="73">
-															<DataPath>Объект.Ref</DataPath>
-															<ReadOnly>true</ReadOnly>
-															<TitleLocation>None</TitleLocation>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>ТТ52_77</v8:content>
-																</v8:item>
-															</ToolTip>
-															<AutoMaxWidth>false</AutoMaxWidth>
-															<MaxWidth>12</MaxWidth>
-															<Height>1</Height>
-															<AutoMaxHeight>false</AutoMaxHeight>
-															<HorizontalStretch>true</HorizontalStretch>
-															<DropListButton>false</DropListButton>
-															<OpenButton>false</OpenButton>
-															<BorderColor>style:FormBackColor</BorderColor>
-															<Font faceName="Segoe UI Semibold" height="18" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-															<InputHint>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>ТТ52_77</v8:content>
-																</v8:item>
-															</InputHint>
-															<ContextMenu name="СсылкаКонтекстноеМеню" id="74"/>
-															<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="75"/>
-														</InputField>
-														<RadioButtonField name="ТипТТ" id="76">
-															<DataPath>ТипТТ</DataPath>
-															<TitleLocation>None</TitleLocation>
-															<VerticalAlign>Top</VerticalAlign>
-															<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-															<GroupVerticalAlign>Top</GroupVerticalAlign>
-															<RadioButtonType>Tumbler</RadioButtonType>
-															<ItemWidth>12</ItemWidth>
-															<ItemHeight>1</ItemHeight>
-															<ColumnsCount>3</ColumnsCount>
-															<EqualColumnsWidth>true</EqualColumnsWidth>
-															<ChoiceList>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation/>
-																		<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.Магазин</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation/>
-																		<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.КМ</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation/>
-																		<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыТТ.МОКП</Value>
-																	</xr:Value>
-																</xr:Item>
-															</ChoiceList>
-															<Font height="12" kind="AutoFont"/>
-															<ContextMenu name="ТипТТКонтекстноеМеню" id="77"/>
-															<ExtendedTooltip name="ТипТТРасширеннаяПодсказка" id="78"/>
-														</RadioButtonField>
-													</ChildItems>
-												</UsualGroup>
-												<Pages name="СтраницыНавигации" id="129">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Страницы навигации</v8:content>
-														</v8:item>
-													</Title>
-													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-													<GroupVerticalAlign>Center</GroupVerticalAlign>
-													<PagesRepresentation>None</PagesRepresentation>
-													<ExtendedTooltip name="СтраницыНавигацииРасширеннаяПодсказка" id="130"/>
-													<ChildItems>
-														<Page name="СтраницаНавигацииОсновная" id="131">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Страница навигации основная</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Страница навигации основная</v8:content>
-																</v8:item>
-															</ToolTip>
-															<ExtendedTooltip name="СтраницаНавигацииОсновнаяРасширеннаяПодсказка" id="132"/>
-															<ChildItems>
-																<Button name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРА" id="127">
-																	<Type>UsualButton</Type>
-																	<TitleHeight>1</TitleHeight>
-																	<OnlyInAllActions>true</OnlyInAllActions>
-																	<Width>13</Width>
-																	<AutoMaxWidth>false</AutoMaxWidth>
-																	<MaxWidth>1</MaxWidth>
-																	<HorizontalStretch>true</HorizontalStretch>
-																	<VerticalStretch>true</VerticalStretch>
-																	<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-																	<CommandName>Form.Command.ПоказатьДанныеСУП_ЦЕНТРА</CommandName>
-																	<TextColor>#1760C2</TextColor>
-																	<BackColor>style:ЦветЗаказано</BackColor>
-																	<BorderColor>style:BorderColor</BorderColor>
-																	<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-																	<ExtendedTooltip name="ТаблицаРМПоказатьДанныеСУП_ЦЕНТРАРасширеннаяПодсказка" id="128"/>
-																</Button>
-															</ChildItems>
-														</Page>
-														<Page name="СтраницаНавигацииСтраницаНавигацииОсновнаяСУПцентр" id="133">
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Страница навигации основная</v8:content>
-																</v8:item>
-															</ToolTip>
-															<ExtendedTooltip name="СтраницаНавигацииСтраницаНавигацииОсновнаяСУПцентрРасширеннаяПодсказка" id="134"/>
-															<ChildItems>
-																<Button name="ТаблицаРМНазад" id="137">
-																	<Type>UsualButton</Type>
-																	<TitleHeight>1</TitleHeight>
-																	<OnlyInAllActions>true</OnlyInAllActions>
-																	<Width>13</Width>
-																	<AutoMaxWidth>false</AutoMaxWidth>
-																	<MaxWidth>1</MaxWidth>
-																	<HorizontalStretch>true</HorizontalStretch>
-																	<VerticalStretch>true</VerticalStretch>
-																	<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-																	<CommandName>Form.Command.НазадКосновной</CommandName>
-																	<TextColor>style:ButtonTextColor</TextColor>
-																	<BackColor>style:ЦветЗаказано</BackColor>
-																	<BorderColor>style:BorderColor</BorderColor>
-																	<Font faceName="FontAwesome" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-																	<ExtendedTooltip name="ТаблицаРМНазадРасширеннаяПодсказка" id="138"/>
-																</Button>
-															</ChildItems>
-														</Page>
-													</ChildItems>
-												</Pages>
-											</ChildItems>
-										</UsualGroup>
 										<Table name="ТаблицаРМ" id="83">
 											<Representation>List</Representation>
 											<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -387,37 +388,20 @@
 							<ExtendedTooltip name="СтраницаСУПцентрРасширеннаяПодсказка" id="126"/>
 							<ChildItems>
 								<UsualGroup name="СУП_ЦЕНТР" id="121">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>СУП ЦЕНТР</v8:content>
-										</v8:item>
-									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>СУП ЦЕНТР</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Behavior>Collapsible</Behavior>
 									<Collapsed>true</Collapsed>
 									<ExtendedTooltip name="СУП_ЦЕНТРРасширеннаяПодсказка" id="122"/>
 									<ChildItems>
-										<Table name="Фирмы" id="21">
-											<TitleLocation>Auto</TitleLocation>
-											<CommandBarLocation>None</CommandBarLocation>
-											<AutoMaxHeight>false</AutoMaxHeight>
-											<HeightInTableRows>3</HeightInTableRows>
-											<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
-											<AutoMaxRowsCount>false</AutoMaxRowsCount>
-											<Header>false</Header>
-											<VerticalLines>false</VerticalLines>
-											<VerticalStretch>false</VerticalStretch>
+										<Table name="Фирмы" id="139">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
 											<EnableStartDrag>true</EnableStartDrag>
 											<DataPath>Фирмы</DataPath>
 											<RowPictureDataPath>Фирмы.DefaultPicture</RowPictureDataPath>
-											<SearchStringLocation>None</SearchStringLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<AutoRefresh>false</AutoRefresh>
 											<AutoRefreshPeriod>60</AutoRefreshPeriod>
 											<Period>
@@ -431,113 +415,88 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
-											<ContextMenu name="ФирмыКонтекстноеМеню" id="22"/>
-											<AutoCommandBar name="ФирмыКоманднаяПанель" id="23"/>
-											<ExtendedTooltip name="ФирмыРасширеннаяПодсказка" id="24"/>
-											<SearchStringAddition name="ФирмыСтрокаПоиска" id="25">
+											<ContextMenu name="ФирмыКонтекстноеМеню" id="140"/>
+											<AutoCommandBar name="ФирмыКоманднаяПанель" id="141"/>
+											<ExtendedTooltip name="ФирмыРасширеннаяПодсказка" id="142"/>
+											<SearchStringAddition name="ФирмыСтрокаПоиска" id="143">
 												<AdditionSource>
 													<Item>Фирмы</Item>
 													<Type>SearchStringRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ФирмыСтрокаПоискаКонтекстноеМеню" id="26"/>
-												<ExtendedTooltip name="ФирмыСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+												<ContextMenu name="ФирмыСтрокаПоискаКонтекстноеМеню" id="144"/>
+												<ExtendedTooltip name="ФирмыСтрокаПоискаРасширеннаяПодсказка" id="145"/>
 											</SearchStringAddition>
-											<ViewStatusAddition name="ФирмыСостояниеПросмотра" id="28">
+											<ViewStatusAddition name="ФирмыСостояниеПросмотра" id="146">
 												<AdditionSource>
 													<Item>Фирмы</Item>
 													<Type>ViewStatusRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ФирмыСостояниеПросмотраКонтекстноеМеню" id="29"/>
-												<ExtendedTooltip name="ФирмыСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+												<ContextMenu name="ФирмыСостояниеПросмотраКонтекстноеМеню" id="147"/>
+												<ExtendedTooltip name="ФирмыСостояниеПросмотраРасширеннаяПодсказка" id="148"/>
 											</ViewStatusAddition>
-											<SearchControlAddition name="ФирмыУправлениеПоиском" id="31">
+											<SearchControlAddition name="ФирмыУправлениеПоиском" id="149">
 												<AdditionSource>
 													<Item>Фирмы</Item>
 													<Type>SearchControl</Type>
 												</AdditionSource>
-												<ContextMenu name="ФирмыУправлениеПоискомКонтекстноеМеню" id="32"/>
-												<ExtendedTooltip name="ФирмыУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+												<ContextMenu name="ФирмыУправлениеПоискомКонтекстноеМеню" id="150"/>
+												<ExtendedTooltip name="ФирмыУправлениеПоискомРасширеннаяПодсказка" id="151"/>
 											</SearchControlAddition>
 											<ChildItems>
-												<LabelField name="Фирмыcode" id="34">
-													<DataPath>~Фирмы.code</DataPath>
-													<ContextMenu name="ФирмыcodeКонтекстноеМеню" id="35"/>
-													<ExtendedTooltip name="ФирмыcodeРасширеннаяПодсказка" id="36"/>
-												</LabelField>
-												<LabelField name="ФирмыТипТТ" id="52">
-													<DataPath>Фирмы.ТипТТ</DataPath>
-													<ContextMenu name="ФирмыТипТТКонтекстноеМеню" id="53"/>
-													<ExtendedTooltip name="ФирмыТипТТРасширеннаяПодсказка" id="54"/>
-												</LabelField>
-												<LabelField name="ФирмыКодТТ" id="43">
-													<DataPath>Фирмы.КодТТ</DataPath>
-													<UserVisible>
-														<xr:Common>false</xr:Common>
-													</UserVisible>
-													<ContextMenu name="ФирмыКодТТКонтекстноеМеню" id="44"/>
-													<ExtendedTooltip name="ФирмыКодТТРасширеннаяПодсказка" id="45"/>
-												</LabelField>
-												<LabelField name="ФирмыФирма_Наименование" id="58">
-													<DataPath>Фирмы.Фирма_Наименование</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Наименование</v8:content>
-														</v8:item>
-													</Title>
-													<ContextMenu name="ФирмыФирма_НаименованиеКонтекстноеМеню" id="59"/>
-													<ExtendedTooltip name="ФирмыФирма_НаименованиеРасширеннаяПодсказка" id="60"/>
-												</LabelField>
-												<ColumnGroup name="ФирмыГруппа1" id="67">
-													<UserVisible>
-														<xr:Common>false</xr:Common>
-													</UserVisible>
-													<Group>InCell</Group>
-													<ExtendedTooltip name="ФирмыГруппа1РасширеннаяПодсказка" id="68"/>
-													<ChildItems>
-														<LabelField name="ФирмыИНН" id="40">
-															<DataPath>Фирмы.ИНН</DataPath>
-															<ContextMenu name="ФирмыИННКонтекстноеМеню" id="41"/>
-															<ExtendedTooltip name="ФирмыИННРасширеннаяПодсказка" id="42"/>
-														</LabelField>
-														<LabelField name="ФирмыКПП" id="46">
-															<DataPath>Фирмы.КПП</DataPath>
-															<ContextMenu name="ФирмыКППКонтекстноеМеню" id="47"/>
-															<ExtendedTooltip name="ФирмыКППРасширеннаяПодсказка" id="48"/>
-														</LabelField>
-													</ChildItems>
-												</ColumnGroup>
-												<LabelField name="ФирмыАдрес" id="37">
+												<LabelField name="ФирмыАдрес" id="152">
 													<DataPath>Фирмы.Адрес</DataPath>
-													<UserVisible>
-														<xr:Common>false</xr:Common>
-													</UserVisible>
-													<ContextMenu name="ФирмыАдресКонтекстноеМеню" id="38"/>
-													<ExtendedTooltip name="ФирмыАдресРасширеннаяПодсказка" id="39"/>
+													<ContextMenu name="ФирмыАдресКонтекстноеМеню" id="153"/>
+													<ExtendedTooltip name="ФирмыАдресРасширеннаяПодсказка" id="154"/>
 												</LabelField>
-												<LabelField name="ФирмыМестоРеализации" id="49">
+												<LabelField name="ФирмыИНН" id="155">
+													<DataPath>Фирмы.ИНН</DataPath>
+													<ContextMenu name="ФирмыИННКонтекстноеМеню" id="156"/>
+													<ExtendedTooltip name="ФирмыИННРасширеннаяПодсказка" id="157"/>
+												</LabelField>
+												<LabelField name="ФирмыКодТТ" id="158">
+													<DataPath>Фирмы.КодТТ</DataPath>
+													<ContextMenu name="ФирмыКодТТКонтекстноеМеню" id="159"/>
+													<ExtendedTooltip name="ФирмыКодТТРасширеннаяПодсказка" id="160"/>
+												</LabelField>
+												<LabelField name="ФирмыКПП" id="161">
+													<DataPath>Фирмы.КПП</DataPath>
+													<ContextMenu name="ФирмыКППКонтекстноеМеню" id="162"/>
+													<ExtendedTooltip name="ФирмыКППРасширеннаяПодсказка" id="163"/>
+												</LabelField>
+												<LabelField name="ФирмыМестоРеализации" id="164">
 													<DataPath>Фирмы.МестоРеализации</DataPath>
-													<UserVisible>
-														<xr:Common>false</xr:Common>
-													</UserVisible>
-													<ContextMenu name="ФирмыМестоРеализацииКонтекстноеМеню" id="50"/>
-													<ExtendedTooltip name="ФирмыМестоРеализацииРасширеннаяПодсказка" id="51"/>
+													<ContextMenu name="ФирмыМестоРеализацииКонтекстноеМеню" id="165"/>
+													<ExtendedTooltip name="ФирмыМестоРеализацииРасширеннаяПодсказка" id="166"/>
 												</LabelField>
-												<LabelField name="ФирмыТТ" id="55">
+												<LabelField name="ФирмыТипТТ" id="167">
+													<DataPath>Фирмы.ТипТТ</DataPath>
+													<ContextMenu name="ФирмыТипТТКонтекстноеМеню" id="168"/>
+													<ExtendedTooltip name="ФирмыТипТТРасширеннаяПодсказка" id="169"/>
+												</LabelField>
+												<LabelField name="ФирмыТипТТ_Код" id="170">
+													<DataPath>Фирмы.ТипТТ_Код</DataPath>
+													<ContextMenu name="ФирмыТипТТ_КодКонтекстноеМеню" id="171"/>
+													<ExtendedTooltip name="ФирмыТипТТ_КодРасширеннаяПодсказка" id="172"/>
+												</LabelField>
+												<LabelField name="ФирмыТТ" id="173">
 													<DataPath>Фирмы.ТТ</DataPath>
-													<UserVisible>
-														<xr:Common>false</xr:Common>
-													</UserVisible>
-													<ContextMenu name="ФирмыТТКонтекстноеМеню" id="56"/>
-													<ExtendedTooltip name="ФирмыТТРасширеннаяПодсказка" id="57"/>
+													<ContextMenu name="ФирмыТТКонтекстноеМеню" id="174"/>
+													<ExtendedTooltip name="ФирмыТТРасширеннаяПодсказка" id="175"/>
 												</LabelField>
-												<LabelField name="ФирмыФирма_НаименованиеЮридическогоЛица" id="61">
+												<LabelField name="ФирмыФирма_Наименование" id="176">
+													<DataPath>Фирмы.Фирма_Наименование</DataPath>
+													<ContextMenu name="ФирмыФирма_НаименованиеКонтекстноеМеню" id="177"/>
+													<ExtendedTooltip name="ФирмыФирма_НаименованиеРасширеннаяПодсказка" id="178"/>
+												</LabelField>
+												<LabelField name="ФирмыФирма_НаименованиеЮридическогоЛица" id="179">
 													<DataPath>Фирмы.Фирма_НаименованиеЮридическогоЛица</DataPath>
-													<UserVisible>
-														<xr:Common>false</xr:Common>
-													</UserVisible>
-													<ContextMenu name="ФирмыФирма_НаименованиеЮридическогоЛицаКонтекстноеМеню" id="62"/>
-													<ExtendedTooltip name="ФирмыФирма_НаименованиеЮридическогоЛицаРасширеннаяПодсказка" id="63"/>
+													<ContextMenu name="ФирмыФирма_НаименованиеЮридическогоЛицаКонтекстноеМеню" id="180"/>
+													<ExtendedTooltip name="ФирмыФирма_НаименованиеЮридическогоЛицаРасширеннаяПодсказка" id="181"/>
+												</LabelField>
+												<LabelField name="ФирмыСтандартнаяКартинка" id="182">
+													<DataPath>Фирмы.DefaultPicture</DataPath>
+													<ContextMenu name="ФирмыСтандартнаяКартинкаКонтекстноеМеню" id="183"/>
+													<ExtendedTooltip name="ФирмыСтандартнаяКартинкаРасширеннаяПодсказка" id="184"/>
 												</LabelField>
 											</ChildItems>
 										</Table>
