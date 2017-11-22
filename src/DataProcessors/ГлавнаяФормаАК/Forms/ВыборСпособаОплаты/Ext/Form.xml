@@ -1645,9 +1645,10 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаНедоплаченнойСтроки</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаОплаченнойСтроки</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">style:FieldBackColor</dcscor:value>
 					</dcscor:item>
