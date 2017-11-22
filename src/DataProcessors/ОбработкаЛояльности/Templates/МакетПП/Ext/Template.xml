@@ -71,6 +71,28 @@
 			</column>
 		</columnsItem>
 	</columns>
+	<columns>
+		<id>ad03f248-9d52-4135-b525-87b3ca486613</id>
+		<size>3</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>1</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>2</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
 	<rowsItem>
 		<index>0</index>
 		<row>
@@ -227,10 +249,24 @@
 			<empty>true</empty>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>21</index>
+		<row>
+			<columnsID>ad03f248-9d52-4135-b525-87b3ca486613</columnsID>
+			<formatIndex>11</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>12</f>
+					<parameter>Заголовок</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>11</defaultFormatIndex>
-	<height>18</height>
-	<vgRows>18</vgRows>
+	<defaultFormatIndex>13</defaultFormatIndex>
+	<height>22</height>
+	<vgRows>22</vgRows>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ВидимаяОбласть</name>
 		<area>
@@ -301,10 +337,21 @@
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>21</beginRow>
+			<endRow>21</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
 	<line width="1" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Double</v8ui:style>
 	</line>
 	<font faceName="Segoe UI" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Segoe UI" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>8</width>
 		<widthWeightFactor>5</widthWeightFactor>
@@ -355,6 +402,16 @@
 	</format>
 	<format>
 		<height>384</height>
+	</format>
+	<format>
+		<height>176</height>
+	</format>
+	<format>
+		<font>1</font>
+		<bottomBorder>0</bottomBorder>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<width>72</width>
