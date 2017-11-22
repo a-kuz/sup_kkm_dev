@@ -1023,7 +1023,7 @@
 	|ExitApp");
 КонецПроцедуры
 
-Процедура ПоказатьПлашку(Заголовок = "(:-)", Знач Текст = "", НомерПлашки = 0, Таймаут = "2500", Лево = 0, Прозрачность = 255, Ширина = 300, Высота = 100, РазмерШрифта1 = 14, РазмерШрифта2 = 9) Экспорт
+Процедура ПоказатьПлашку(Заголовок = "(:-)", Знач Текст = "", НомерПлашки = 0, Таймаут = "2500", Лево = 0, Прозрачность = 255, Ширина = 300, Высота = 180, РазмерШрифта1 = 14, РазмерШрифта2 = 9, Отладка = Ложь) Экспорт
 	Текст = СтрЗаменить(Текст, Символы.ПС, "`n");
 	Текст = СтрЗаменить(Текст, ";", "");
 	Текст = СтрЗаменить(Текст, """", """""");
@@ -1057,6 +1057,8 @@
 		|
 		|Global marginX := 10
 		|Global marginY := 25
+		|Global fontSize1 := %РазмерШрифта1%
+		|Global fontSize2 := %РазмерШрифта2%
 		|
 		|Global WINDOW_WIDTH := %Ширина%
 		|Global WINDOW_HEIGHT := %Высота%	
@@ -1105,7 +1107,7 @@
 		|		index := this.index
 		|		Gui,G%index%:+AlwaysOnTop -Caption +ToolWindow +LastFound -border
 		|		
-		|		Gui,G%index%: Font, s%РазмерШрифта1%,Segoe UI
+		|		Gui,G%index%: Font, s%fontSize1%,Segoe UI
 		|		
 		|		if (mod(index,2)==1) {
 		|			Gui,G%index%: Color, %ACCENT_COLOR%
@@ -1116,7 +1118,7 @@
 		|		Gui,G%index%: Add, Text,  W1000, % this.strCaption
 		|		Width := WINDOW_WIDTH - 40
 		|		if (this.index <= 4) {
-		|			Gui,G%index%: Font, s%РазмерШрифта2%
+		|			Gui,G%index%: Font, s%fontSize2%
 		|			Gui,G%index%: Add, Text, W%Width% H200 , % this.strText
 		|		} else {
 		|			Gui,G%index%: Font, s20
@@ -1201,7 +1203,7 @@
 		|}
 		|
 		|
-		|Global curCaption, curText, curIndex, curTimeout, curtrans
+		|Global curCaption, curText, curIndex, curTimeout, curTrans
 		|
 		|ShowMessage() {
 		|	w%curIndex% := new MessageWindow(curIndex,curCaption, curText, curTimeout)
@@ -1222,6 +1224,9 @@
 		Скрипт = СтрЗаменить(Скрипт, "%Высота%", Формат(Высота,"ЧГ=0"));
 		Скрипт = СтрЗаменить(Скрипт, "%РазмерШрифта2%", Формат(РазмерШрифта2,"ЧГ=0"));
 		Скрипт = СтрЗаменить(Скрипт, "%РазмерШрифта1%", Формат(РазмерШрифта1,"ЧГ=0"));
+		Если Отладка Тогда
+			Скрипт = СтрЗаменить(Скрипт, "#NoTrayIcon", "");
+		КонецЕсли;
 		AHK_Balloon.ahktextdll(Скрипт);	
 	КонецЕсли;
 	Если ЗначениеЗаполнено(Лево) Тогда
@@ -1237,9 +1242,12 @@
 	|curText := ""%3""
 	|curTimeout := %4
 	|curTrans := %5
-	|
+	|WINDOW_WIDTH := %6
+	|WINDOW_HEIGHT := %7
+	|fontSize1 := %8
+	|fontSize2 := %9
 	|ShowMessage()",
-	НомерПлашки, Заголовок, Текст, Таймаут, Прозрачность)
+	НомерПлашки, Заголовок, Текст, Формат(Таймаут,"ЧГ=0"), Прозрачность,Ширина,Высота,РазмерШрифта1, РазмерШрифта2)
 	, 2); 
 	
 КонецПроцедуры
