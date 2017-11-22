@@ -289,7 +289,7 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	Т.Ссылка КАК Ссылка,
+	ЕСТЬNULL(Т.Ссылка, "") КАК Ссылка,
 	Т.Узел.ИнформационнаяБаза КАК ИБ,
 	Т.Узел КАК Узел,
 	Т.Тип КАК Тип,
@@ -899,8 +899,7 @@
 		NULL,
 		НастройкаУслугПоПриготовлениюИзменения.Товар_КодСУП
 	ИЗ
-		РегистрСведений.НастройкаУслугПоПриготовлению.Изменения КАК НастройкаУслугПоПриготовлениюИзменения) КАК Т
-	</QueryText>
+		РегистрСведений.НастройкаУслугПоПриготовлению.Изменения КАК НастройкаУслугПоПриготовлениюИзменения) КАК Т</QueryText>
 				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
