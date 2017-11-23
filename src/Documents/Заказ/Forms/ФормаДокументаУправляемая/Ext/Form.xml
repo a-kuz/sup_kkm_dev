@@ -379,7 +379,7 @@
 								<InputField name="ТоварыСуммаРеализации" id="83">
 									<DataPath>Объект.Товары.СуммаРеализации</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<FooterDataPath>Items.Товары.CurrentData.СуммаРеализации</FooterDataPath>
+									<FooterDataPath>Объект.Товары.TotalСуммаРеализации</FooterDataPath>
 									<ContextMenu name="ТоварыСуммаРеализацииКонтекстноеМеню" id="84"/>
 									<ExtendedTooltip name="ТоварыСуммаРеализацииРасширеннаяПодсказка" id="85"/>
 								</InputField>
