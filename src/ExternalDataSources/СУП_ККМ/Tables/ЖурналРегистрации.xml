@@ -53,13 +53,11 @@
 			<Characteristics/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<QuickChoice>false</QuickChoice>
-			<InputByString>
-				<xr:Field>ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации.Field.Событие</xr:Field>
-			</InputByString>
+			<InputByString/>
 			<CreateOnInput>Auto</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 			<DefaultObjectForm>ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации.Form.ФормаЗаписи</DefaultObjectForm>
 			<DefaultRecordForm/>
 			<DefaultListForm>ExternalDataSource.СУП_ККМ.Table.ЖурналРегистрации.Form.ФормаСписка</DefaultListForm>
@@ -73,12 +71,12 @@
 			<Explanation/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ReadOnly>false</ReadOnly>
-			<TransactionsIsolationLevel>Auto</TransactionsIsolationLevel>
+			<TransactionsIsolationLevel>ReadUncommitted</TransactionsIsolationLevel>
 			<DataVersionField/>
 			<EditType>InDialog</EditType>
 			<BasedOn/>
 			<DataLockFields/>
-			<DataLockControlMode>Automatic</DataLockControlMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
 		</Properties>
 		<ChildObjects>
 			<Field uuid="71f6a9f0-4f9f-488f-9983-652547de968e">

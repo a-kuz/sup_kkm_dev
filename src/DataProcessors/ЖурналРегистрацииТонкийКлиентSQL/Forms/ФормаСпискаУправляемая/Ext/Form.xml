@@ -240,19 +240,25 @@
 				</ColumnGroup>
 				<LabelField name="СписокДанные_Ссылка" id="17">
 					<DataPath>Список.Данные_Ссылка</DataPath>
-					<Visible>false</Visible>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<ContextMenu name="СписокДанные_СсылкаКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="СписокДанные_СсылкаРасширеннаяПодсказка" id="19"/>
 				</LabelField>
 				<LabelField name="СписокДанные_ТипСсылки" id="20">
 					<DataPath>Список.Данные_ТипСсылки</DataPath>
-					<Visible>false</Visible>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<ContextMenu name="СписокДанные_ТипСсылкиКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="СписокДанные_ТипСсылкиРасширеннаяПодсказка" id="22"/>
 				</LabelField>
 				<LabelField name="СписокУровень" id="38">
 					<DataPath>Список.Уровень</DataPath>
-					<Visible>false</Visible>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<ContextMenu name="СписокУровеньКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="СписокУровеньРасширеннаяПодсказка" id="40"/>
 				</LabelField>
@@ -279,16 +285,19 @@
 			<UseAlways>
 				<Field>Список.Уровень</Field>
 				<Field>Список.Событие</Field>
+				<Field>Список.Пользователь</Field>
 				<Field>Список.НомерИконки</Field>
+				<Field>Список.Компьютер</Field>
 				<Field>Список.Комментарий</Field>
 				<Field>Список.Ид</Field>
 				<Field>Список.Дата</Field>
 				<Field>Список.Данные_ТипСсылки</Field>
 				<Field>Список.Данные_Ссылка</Field>
+				<Field>Список.Данные_Представление</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЖурналРегистрации.Ид КАК Ид,
 	ЖурналРегистрации.Дата КАК Дата,
@@ -352,12 +361,14 @@
 							<dcsset:left xsi:type="dcscor:Field">Компьютер</dcsset:left>
 							<dcsset:comparisonType>Contains</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string"/>
+							<dcsset:userSettingID>8400f9c7-8aeb-4b87-8c99-28844b2d5267</dcsset:userSettingID>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:use>false</dcsset:use>
 							<dcsset:left xsi:type="dcscor:Field">Уровень</dcsset:left>
 							<dcsset:comparisonType>Contains</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string"/>
+							<dcsset:userSettingID>687b280d-af09-4caf-be36-5e77f917db49</dcsset:userSettingID>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:use>false</dcsset:use>
@@ -387,16 +398,28 @@
 								</dcsset:item>
 							</dcsset:selection>
 							<dcsset:filter>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">Уровень</dcsset:left>
-									<dcsset:comparisonType>Equal</dcsset:comparisonType>
-									<dcsset:right xsi:type="xs:string">Ошибка</dcsset:right>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">Уровень</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:string">Ошибка</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">Событие</dcsset:left>
+										<dcsset:comparisonType>Contains</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:string">Ошибка</dcsset:right>
+									</dcsset:item>
 								</dcsset:item>
 							</dcsset:filter>
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>ЦветТекста</dcscor:parameter>
 									<dcscor:value xsi:type="v8ui:Color">web:Brown</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
