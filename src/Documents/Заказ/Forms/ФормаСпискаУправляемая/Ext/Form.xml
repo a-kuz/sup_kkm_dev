@@ -422,6 +422,9 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Статус</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
@@ -475,10 +478,10 @@
 	идТранзакцииПлатежнойСистемы}
 ИЗ
 	Документ.Заказ КАК ДокументЗаказ
-		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаказДопИнф КАК ЗаказДопИнф
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаказДопИнф КАК ЗаказДопИнф
 			{ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПротоколРасчетов КАК докПротокол
 			ПО ЗаказДопИнф.ПротоколРасчетов = докПротокол.Ссылка}
-		ПО (ЗаказДопИнф.Заказ = ДокументЗаказ.Ссылка)}</QueryText>
+		ПО (ЗаказДопИнф.Заказ = ДокументЗаказ.Ссылка)</QueryText>
 				<MainTable>Document.Заказ</MainTable>
 				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
