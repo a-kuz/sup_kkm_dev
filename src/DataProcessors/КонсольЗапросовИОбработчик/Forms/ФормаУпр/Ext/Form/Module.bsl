@@ -46,7 +46,9 @@
 	УстановитьАктивностьПерехватаКлавиш();
 	
 	ahk = Новый COMОбъект("Autohotkey.script");
-	ahk.ahkTextDll("#persistent
+	ahk.ahkTextDll("
+	|#NoTrayIcon
+	|#persistent
 	|global CheckingKey
 	|GKS() {
 	|	GetKeyState, state, %CheckingKey%
