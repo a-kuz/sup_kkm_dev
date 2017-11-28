@@ -120,7 +120,7 @@
 											<Type>CommandBarButton</Type>
 											<OnlyInAllActions>true</OnlyInAllActions>
 											<CommandName>Document.Заказ.Command.ОтправитьВлояльность</CommandName>
-											<DataPath>~Items.Список.CurrentData.Ссылка</DataPath>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="ДокументЗаказОтправитьВлояльностьРасширеннаяПодсказка" id="126"/>
 										</Button>
 										<Button name="ОбщаяКомандаDameWare" id="129">
@@ -144,7 +144,7 @@
 											<Type>CommandBarButton</Type>
 											<OnlyInAllActions>true</OnlyInAllActions>
 											<CommandName>CommonCommand.ирРедактироватьОбъект</CommandName>
-											<DataPath>~Items.Список.CurrentData.Ссылка</DataPath>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="ОбщаяКомандаирРедактироватьОбъектРасширеннаяПодсказка" id="132"/>
 										</Button>
 										<Button name="ДокументЗаказОткрытьПротоколРасчетов1" id="127">
@@ -152,14 +152,14 @@
 											<Representation>PictureAndText</Representation>
 											<OnlyInAllActions>false</OnlyInAllActions>
 											<CommandName>Document.Заказ.Command.ОткрытьПротоколРасчетов</CommandName>
-											<DataPath>~Items.Список.CurrentData.Ссылка</DataPath>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ShapeRepresentation>Always</ShapeRepresentation>
 											<ExtendedTooltip name="ДокументЗаказОткрытьПротоколРасчетов1РасширеннаяПодсказка" id="128"/>
 										</Button>
 										<Button name="ОбщаяКомандаЖурналРегистрацииПоОбъекту" id="135">
 											<Type>CommandBarButton</Type>
 											<CommandName>CommonCommand.ЖурналРегистрацииПоОбъекту</CommandName>
-											<DataPath>~Items.Список.CurrentData.Ссылка</DataPath>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="ОбщаяКомандаЖурналРегистрацииПоОбъектуРасширеннаяПодсказка" id="136"/>
 										</Button>
 									</ChildItems>
@@ -206,13 +206,13 @@
 									<Button name="СписокКонтекстноеМенюДокументЗаказОткрытьПротоколРасчетов" id="102">
 										<Type>CommandBarButton</Type>
 										<CommandName>Document.Заказ.Command.ОткрытьПротоколРасчетов</CommandName>
-										<DataPath>~Items.Список.CurrentData.Ссылка</DataPath>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокКонтекстноеМенюДокументЗаказОткрытьПротоколРасчетовРасширеннаяПодсказка" id="103"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюОбщаяКомандаЖурналРегистрацииПоОбъекту" id="106">
 										<Type>CommandBarButton</Type>
 										<CommandName>CommonCommand.ЖурналРегистрацииПоОбъекту</CommandName>
-										<DataPath>~Items.Список.CurrentData.Ссылка</DataPath>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокКонтекстноеМенюОбщаяКомандаЖурналРегистрацииПоОбъектуРасширеннаяПодсказка" id="107"/>
 									</Button>
 									<Button name="ФормаНастройкаСписка1" id="116">
@@ -254,7 +254,7 @@
 							</SearchControlAddition>
 							<ChildItems>
 								<LabelField name="Дата" id="16">
-									<DataPath>~Список.Дата</DataPath>
+									<DataPath>Список.Дата</DataPath>
 									<DefaultItem>true</DefaultItem>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
 									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
@@ -749,58 +749,12 @@
 	ДокументЗаказ.КартаДоступа.Идентификатор2 КАК КартаДоступаИдентификатор2,
 	ДокументЗаказ.ОтказОтКартыЛояльности КАК ОтказОтКартыЛояльности,
 	ДокументЗаказ.ИмяГостя КАК ИмяГостя
-{ВЫБРАТЬ
-	Статус,
-	ДатаОткрытия,
-	ДатаЗакрытия,
-	ПротоколРасчетов.*,
-	Фискализирован,
-	ККМ,
-	ИтогСуммаФакт,
-	ИдентификаторЗапросаЕГАИС,
-	ИдентификаторЗапросаЕГАИС_Отмена,
-	ДобавленыЗаписиВexcise,
-	НеУдалосьОтправитьОтменуВегаис,
-	идТранзакцииПлатежнойСистемы}
 ИЗ
 	Документ.Заказ КАК ДокументЗаказ
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаказДопИнф КАК ЗаказДопИнф
-			{ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПротоколРасчетов КАК докПротокол
-			ПО ЗаказДопИнф.ПротоколРасчетов = докПротокол.Ссылка}
-		ПО (ЗаказДопИнф.Заказ = ДокументЗаказ.Ссылка)
-{ГДЕ
-	ЗаказДопИнф.Статус.*,
-	ДокументЗаказ.Ссылка.*,
-	ДокументЗаказ.ПометкаУдаления,
-	ДокументЗаказ.НомерЧека,
-	ДокументЗаказ.НомерСмены,
-	ДокументЗаказ.Дата,
-	ДокументЗаказ.Проведен,
-	ДокументЗаказ.Автор.*,
-	ДокументЗаказ.МестоРеализации.*,
-	ДокументЗаказ.Смена.*,
-	ДокументЗаказ.ИтоговаяСумма,
-	ДокументЗаказ.НомерКартыЛояльности,
-	ДокументЗаказ.ОбработанСистемойЛояльности,
-	ДокументЗаказ.ТипЧекаЛояльность,
-	ДокументЗаказ.ИтогоСумма,
-	ДокументЗаказ.РабочееМесто.*,
-	ДокументЗаказ.КассоваяСмена.*,
-	ЗаказДопИнф.Статус.*,
-	ЗаказДопИнф.ДатаОткрытия,
-	ЗаказДопИнф.ДатаЗакрытия,
-	докПротокол.Ссылка.*,
-	докПротокол.Фискализирован,
-	ДокументЗаказ.Заблокирован,
-	докПротокол.ККМ.*,
-	докПротокол.ИтогСуммаФакт,
-	докПротокол.ИдентификаторЗапросаЕГАИС,
-	докПротокол.ИдентификаторЗапросаЕГАИС_Отмена,
-	докПротокол.ДобавленыЗаписиВexcise,
-	докПротокол.НеУдалосьОтправитьОтменуВегаис,
-	докПротокол.идТранзакцииПлатежнойСистемы,
-	ДокументЗаказ.КартаДоступа.*,
-	ДокументЗаказ.КартаДоступа.Идентификатор2}</QueryText>
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПротоколРасчетов КАК докПротокол
+			ПО ЗаказДопИнф.ПротоколРасчетов = докПротокол.Ссылка
+		ПО (ЗаказДопИнф.Заказ = ДокументЗаказ.Ссылка)</QueryText>
 				<MainTable>Document.Заказ</MainTable>
 				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
