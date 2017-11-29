@@ -1276,12 +1276,12 @@
 		AHK_Balloon.ahktextdll(Скрипт);	
 	КонецЕсли;
 	Если ЗначениеЗаполнено(Лево) Тогда
-		AHK_Balloon.ahkassign("Window_X", формат(Лево,"чг=0"));	
+		AHK_Balloon.ahkassign("Window_X", Формат(Лево,"ЧГ=0"));	
 	Иначе
 		AHK_Balloon.addScript("WINDOW_X := (A_ScreenWidth - (WINDOW_WIDTH + marginX))",2);	
 	КонецЕсли;
 	
-	AHK_Balloon.ahkassign("WINDOW_Y",?(ЗначениеЗаполнено(Верх), формат(Верх,"чг=0"), 0));
+	AHK_Balloon.ahkassign("WINDOW_Y",?(ЗначениеЗаполнено(Верх), Формат(Верх,"ЧГ=0"), 0));
 		
 	Скрипт = СтрШаблон(
 	"curIndex := %1

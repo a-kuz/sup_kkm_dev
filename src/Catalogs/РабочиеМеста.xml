@@ -50,16 +50,17 @@
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<Characteristics/>
 			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
-			<EditType>InList</EditType>
+			<EditType>BothWays</EditType>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
 				<xr:Field>Catalog.РабочиеМеста.Attribute.ПрофильВхода</xr:Field>
 				<xr:Field>Catalog.РабочиеМеста.Attribute.НомерККМ</xr:Field>
+				<xr:Field>Catalog.РабочиеМеста.StandardAttribute.Description</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>Use</FullTextSearchOnInputByString>
-			<ChoiceDataGetModeOnInputByString>Background</ChoiceDataGetModeOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm/>
 			<DefaultFolderForm/>
 			<DefaultListForm>Catalog.РабочиеМеста.Form.НастройкаРМ</DefaultListForm>
@@ -70,11 +71,11 @@
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
 			<AuxiliaryFolderChoiceForm/>
-			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<BasedOn/>
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
-			<FullTextSearch>DontUse</FullTextSearch>
+			<FullTextSearch>Use</FullTextSearch>
 			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>

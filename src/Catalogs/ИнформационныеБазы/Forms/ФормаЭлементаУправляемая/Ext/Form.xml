@@ -23,6 +23,8 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -45,6 +47,7 @@
 							<v8:content>Левая колонка</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
@@ -84,6 +87,7 @@
 							<v8:content>Правая колонка</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
 					<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -181,171 +185,6 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<ExtendedTooltip name="ПанельЗакладокРасширеннаяПодсказка" id="107"/>
 			<ChildItems>
-				<Page name="Фирмы" id="108">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Фирмы</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Фирмы</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ExtendedTooltip name="ФирмыРасширеннаяПодсказка" id="109"/>
-					<ChildItems>
-						<Table name="дФирмы" id="33">
-							<UseAlternationRowColor>true</UseAlternationRowColor>
-							<EnableStartDrag>true</EnableStartDrag>
-							<DataPath>дФирмы</DataPath>
-							<RowPictureDataPath>дФирмы.DefaultPicture</RowPictureDataPath>
-							<AutoRefresh>false</AutoRefresh>
-							<AutoRefreshPeriod>60</AutoRefreshPeriod>
-							<Period>
-								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-							</Period>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<RestoreCurrentRow>false</RestoreCurrentRow>
-							<TopLevelParent xsi:nil="true"/>
-							<ShowRoot>true</ShowRoot>
-							<AllowRootChoice>false</AllowRootChoice>
-							<UpdateOnDataChange>Auto</UpdateOnDataChange>
-							<ContextMenu name="дФирмыКонтекстноеМеню" id="34"/>
-							<AutoCommandBar name="дФирмыКоманднаяПанель" id="35"/>
-							<ExtendedTooltip name="дФирмыРасширеннаяПодсказка" id="36"/>
-							<SearchStringAddition name="дФирмыСтрокаПоиска" id="37">
-								<AdditionSource>
-									<Item>дФирмы</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="дФирмыСтрокаПоискаКонтекстноеМеню" id="38"/>
-								<ExtendedTooltip name="дФирмыСтрокаПоискаРасширеннаяПодсказка" id="39"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="дФирмыСостояниеПросмотра" id="40">
-								<AdditionSource>
-									<Item>дФирмы</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="дФирмыСостояниеПросмотраКонтекстноеМеню" id="41"/>
-								<ExtendedTooltip name="дФирмыСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="дФирмыУправлениеПоиском" id="43">
-								<AdditionSource>
-									<Item>дФирмы</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="дФирмыУправлениеПоискомКонтекстноеМеню" id="44"/>
-								<ExtendedTooltip name="дФирмыУправлениеПоискомРасширеннаяПодсказка" id="45"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<LabelField name="дФирмыНаименование" id="46">
-									<DataPath>дФирмы.Description</DataPath>
-									<ContextMenu name="дФирмыНаименованиеКонтекстноеМеню" id="47"/>
-									<ExtendedTooltip name="дФирмыНаименованиеРасширеннаяПодсказка" id="48"/>
-								</LabelField>
-								<LabelField name="дФирмыКод" id="49">
-									<DataPath>дФирмы.Code</DataPath>
-									<ContextMenu name="дФирмыКодКонтекстноеМеню" id="50"/>
-									<ExtendedTooltip name="дФирмыКодРасширеннаяПодсказка" id="51"/>
-								</LabelField>
-								<LabelField name="дФирмыПрефикс" id="52">
-									<DataPath>дФирмы.Префикс</DataPath>
-									<ContextMenu name="дФирмыПрефиксКонтекстноеМеню" id="53"/>
-									<ExtendedTooltip name="дФирмыПрефиксРасширеннаяПодсказка" id="54"/>
-								</LabelField>
-								<LabelField name="дФирмыИНН" id="55">
-									<DataPath>дФирмы.ИНН</DataPath>
-									<ContextMenu name="дФирмыИННКонтекстноеМеню" id="56"/>
-									<ExtendedTooltip name="дФирмыИННРасширеннаяПодсказка" id="57"/>
-								</LabelField>
-								<LabelField name="дФирмыОГРН" id="58">
-									<DataPath>дФирмы.ОГРН</DataPath>
-									<ContextMenu name="дФирмыОГРНКонтекстноеМеню" id="59"/>
-									<ExtendedTooltip name="дФирмыОГРНРасширеннаяПодсказка" id="60"/>
-								</LabelField>
-								<LabelField name="дФирмыКодПоОКПО" id="61">
-									<DataPath>дФирмы.КодПоОКПО</DataPath>
-									<ContextMenu name="дФирмыКодПоОКПОКонтекстноеМеню" id="62"/>
-									<ExtendedTooltip name="дФирмыКодПоОКПОРасширеннаяПодсказка" id="63"/>
-								</LabelField>
-								<LabelField name="дФирмыИФНС" id="64">
-									<DataPath>дФирмы.ИФНС</DataPath>
-									<ContextMenu name="дФирмыИФНСКонтекстноеМеню" id="65"/>
-									<ExtendedTooltip name="дФирмыИФНСРасширеннаяПодсказка" id="66"/>
-								</LabelField>
-								<LabelField name="дФирмыОКАТО" id="67">
-									<DataPath>дФирмы.ОКАТО</DataPath>
-									<ContextMenu name="дФирмыОКАТОКонтекстноеМеню" id="68"/>
-									<ExtendedTooltip name="дФирмыОКАТОРасширеннаяПодсказка" id="69"/>
-								</LabelField>
-								<LabelField name="дФирмыСайт" id="70">
-									<DataPath>дФирмы.Сайт</DataPath>
-									<ContextMenu name="дФирмыСайтКонтекстноеМеню" id="71"/>
-									<ExtendedTooltip name="дФирмыСайтРасширеннаяПодсказка" id="72"/>
-								</LabelField>
-								<LabelField name="дФирмыЭлектроннаяПочта" id="73">
-									<DataPath>дФирмы.ЭлектроннаяПочта</DataPath>
-									<ContextMenu name="дФирмыЭлектроннаяПочтаКонтекстноеМеню" id="74"/>
-									<ExtendedTooltip name="дФирмыЭлектроннаяПочтаРасширеннаяПодсказка" id="75"/>
-								</LabelField>
-								<LabelField name="дФирмыКомментарий" id="76">
-									<DataPath>дФирмы.Комментарий</DataPath>
-									<ContextMenu name="дФирмыКомментарийКонтекстноеМеню" id="77"/>
-									<ExtendedTooltip name="дФирмыКомментарийРасширеннаяПодсказка" id="78"/>
-								</LabelField>
-								<LabelField name="дФирмыКПП" id="79">
-									<DataPath>дФирмы.КПП</DataPath>
-									<ContextMenu name="дФирмыКППКонтекстноеМеню" id="80"/>
-									<ExtendedTooltip name="дФирмыКППРасширеннаяПодсказка" id="81"/>
-								</LabelField>
-								<LabelField name="дФирмыАдрес" id="82">
-									<DataPath>дФирмы.Адрес</DataPath>
-									<ContextMenu name="дФирмыАдресКонтекстноеМеню" id="83"/>
-									<ExtendedTooltip name="дФирмыАдресРасширеннаяПодсказка" id="84"/>
-								</LabelField>
-								<LabelField name="дФирмыИнформационнаяБаза" id="85">
-									<DataPath>дФирмы.ИнформационнаяБаза</DataPath>
-									<ContextMenu name="дФирмыИнформационнаяБазаКонтекстноеМеню" id="86"/>
-									<ExtendedTooltip name="дФирмыИнформационнаяБазаРасширеннаяПодсказка" id="87"/>
-								</LabelField>
-								<LabelField name="дФирмыМестоРеализации" id="88">
-									<DataPath>дФирмы.МестоРеализации</DataPath>
-									<ContextMenu name="дФирмыМестоРеализацииКонтекстноеМеню" id="89"/>
-									<ExtendedTooltip name="дФирмыМестоРеализацииРасширеннаяПодсказка" id="90"/>
-								</LabelField>
-								<LabelField name="дФирмыКодТТ" id="91">
-									<DataPath>дФирмы.КодТТ</DataPath>
-									<ContextMenu name="дФирмыКодТТКонтекстноеМеню" id="92"/>
-									<ExtendedTooltip name="дФирмыКодТТРасширеннаяПодсказка" id="93"/>
-								</LabelField>
-								<LabelField name="дФирмыНаименованиеЮридическогоЛица" id="94">
-									<DataPath>дФирмы.НаименованиеЮридическогоЛица</DataPath>
-									<ContextMenu name="дФирмыНаименованиеЮридическогоЛицаКонтекстноеМеню" id="95"/>
-									<ExtendedTooltip name="дФирмыНаименованиеЮридическогоЛицаРасширеннаяПодсказка" id="96"/>
-								</LabelField>
-								<LabelField name="дФирмыАдресДляЕГАИС" id="97">
-									<DataPath>дФирмы.АдресДляЕГАИС</DataPath>
-									<ContextMenu name="дФирмыАдресДляЕГАИСКонтекстноеМеню" id="98"/>
-									<ExtendedTooltip name="дФирмыАдресДляЕГАИСРасширеннаяПодсказка" id="99"/>
-								</LabelField>
-								<LabelField name="дФирмыМерчант" id="100">
-									<DataPath>дФирмы.Мерчант</DataPath>
-									<ContextMenu name="дФирмыМерчантКонтекстноеМеню" id="101"/>
-									<ExtendedTooltip name="дФирмыМерчантРасширеннаяПодсказка" id="102"/>
-								</LabelField>
-								<LabelField name="дФирмыТипТТ" id="103">
-									<DataPath>дФирмы.ТипТТ</DataPath>
-									<ContextMenu name="дФирмыТипТТКонтекстноеМеню" id="104"/>
-									<ExtendedTooltip name="дФирмыТипТТРасширеннаяПодсказка" id="105"/>
-								</LabelField>
-							</ChildItems>
-						</Table>
-					</ChildItems>
-				</Page>
 				<Page name="РабочиеМеста" id="110">
 					<Title>
 						<v8:item>
@@ -707,6 +546,171 @@
 								</Table>
 							</ChildItems>
 						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Фирмы" id="108">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фирмы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фирмы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ФирмыРасширеннаяПодсказка" id="109"/>
+					<ChildItems>
+						<Table name="дФирмы" id="33">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>дФирмы</DataPath>
+							<RowPictureDataPath>дФирмы.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="дФирмыКонтекстноеМеню" id="34"/>
+							<AutoCommandBar name="дФирмыКоманднаяПанель" id="35"/>
+							<ExtendedTooltip name="дФирмыРасширеннаяПодсказка" id="36"/>
+							<SearchStringAddition name="дФирмыСтрокаПоиска" id="37">
+								<AdditionSource>
+									<Item>дФирмы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дФирмыСтрокаПоискаКонтекстноеМеню" id="38"/>
+								<ExtendedTooltip name="дФирмыСтрокаПоискаРасширеннаяПодсказка" id="39"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="дФирмыСостояниеПросмотра" id="40">
+								<AdditionSource>
+									<Item>дФирмы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="дФирмыСостояниеПросмотраКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="дФирмыСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="дФирмыУправлениеПоиском" id="43">
+								<AdditionSource>
+									<Item>дФирмы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="дФирмыУправлениеПоискомКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="дФирмыУправлениеПоискомРасширеннаяПодсказка" id="45"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="дФирмыНаименование" id="46">
+									<DataPath>дФирмы.Description</DataPath>
+									<ContextMenu name="дФирмыНаименованиеКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="дФирмыНаименованиеРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+								<LabelField name="дФирмыКод" id="49">
+									<DataPath>дФирмы.Code</DataPath>
+									<ContextMenu name="дФирмыКодКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="дФирмыКодРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+								<LabelField name="дФирмыПрефикс" id="52">
+									<DataPath>дФирмы.Префикс</DataPath>
+									<ContextMenu name="дФирмыПрефиксКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="дФирмыПрефиксРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+								<LabelField name="дФирмыИНН" id="55">
+									<DataPath>дФирмы.ИНН</DataPath>
+									<ContextMenu name="дФирмыИННКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="дФирмыИННРасширеннаяПодсказка" id="57"/>
+								</LabelField>
+								<LabelField name="дФирмыОГРН" id="58">
+									<DataPath>дФирмы.ОГРН</DataPath>
+									<ContextMenu name="дФирмыОГРНКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="дФирмыОГРНРасширеннаяПодсказка" id="60"/>
+								</LabelField>
+								<LabelField name="дФирмыКодПоОКПО" id="61">
+									<DataPath>дФирмы.КодПоОКПО</DataPath>
+									<ContextMenu name="дФирмыКодПоОКПОКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="дФирмыКодПоОКПОРасширеннаяПодсказка" id="63"/>
+								</LabelField>
+								<LabelField name="дФирмыИФНС" id="64">
+									<DataPath>дФирмы.ИФНС</DataPath>
+									<ContextMenu name="дФирмыИФНСКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="дФирмыИФНСРасширеннаяПодсказка" id="66"/>
+								</LabelField>
+								<LabelField name="дФирмыОКАТО" id="67">
+									<DataPath>дФирмы.ОКАТО</DataPath>
+									<ContextMenu name="дФирмыОКАТОКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="дФирмыОКАТОРасширеннаяПодсказка" id="69"/>
+								</LabelField>
+								<LabelField name="дФирмыСайт" id="70">
+									<DataPath>дФирмы.Сайт</DataPath>
+									<ContextMenu name="дФирмыСайтКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="дФирмыСайтРасширеннаяПодсказка" id="72"/>
+								</LabelField>
+								<LabelField name="дФирмыЭлектроннаяПочта" id="73">
+									<DataPath>дФирмы.ЭлектроннаяПочта</DataPath>
+									<ContextMenu name="дФирмыЭлектроннаяПочтаКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="дФирмыЭлектроннаяПочтаРасширеннаяПодсказка" id="75"/>
+								</LabelField>
+								<LabelField name="дФирмыКомментарий" id="76">
+									<DataPath>дФирмы.Комментарий</DataPath>
+									<ContextMenu name="дФирмыКомментарийКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="дФирмыКомментарийРасширеннаяПодсказка" id="78"/>
+								</LabelField>
+								<LabelField name="дФирмыКПП" id="79">
+									<DataPath>дФирмы.КПП</DataPath>
+									<ContextMenu name="дФирмыКППКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="дФирмыКППРасширеннаяПодсказка" id="81"/>
+								</LabelField>
+								<LabelField name="дФирмыАдрес" id="82">
+									<DataPath>дФирмы.Адрес</DataPath>
+									<ContextMenu name="дФирмыАдресКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="дФирмыАдресРасширеннаяПодсказка" id="84"/>
+								</LabelField>
+								<LabelField name="дФирмыИнформационнаяБаза" id="85">
+									<DataPath>дФирмы.ИнформационнаяБаза</DataPath>
+									<ContextMenu name="дФирмыИнформационнаяБазаКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="дФирмыИнформационнаяБазаРасширеннаяПодсказка" id="87"/>
+								</LabelField>
+								<LabelField name="дФирмыМестоРеализации" id="88">
+									<DataPath>дФирмы.МестоРеализации</DataPath>
+									<ContextMenu name="дФирмыМестоРеализацииКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="дФирмыМестоРеализацииРасширеннаяПодсказка" id="90"/>
+								</LabelField>
+								<LabelField name="дФирмыКодТТ" id="91">
+									<DataPath>дФирмы.КодТТ</DataPath>
+									<ContextMenu name="дФирмыКодТТКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="дФирмыКодТТРасширеннаяПодсказка" id="93"/>
+								</LabelField>
+								<LabelField name="дФирмыНаименованиеЮридическогоЛица" id="94">
+									<DataPath>дФирмы.НаименованиеЮридическогоЛица</DataPath>
+									<ContextMenu name="дФирмыНаименованиеЮридическогоЛицаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="дФирмыНаименованиеЮридическогоЛицаРасширеннаяПодсказка" id="96"/>
+								</LabelField>
+								<LabelField name="дФирмыАдресДляЕГАИС" id="97">
+									<DataPath>дФирмы.АдресДляЕГАИС</DataPath>
+									<ContextMenu name="дФирмыАдресДляЕГАИСКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="дФирмыАдресДляЕГАИСРасширеннаяПодсказка" id="99"/>
+								</LabelField>
+								<LabelField name="дФирмыМерчант" id="100">
+									<DataPath>дФирмы.Мерчант</DataPath>
+									<ContextMenu name="дФирмыМерчантКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="дФирмыМерчантРасширеннаяПодсказка" id="102"/>
+								</LabelField>
+								<LabelField name="дФирмыТипТТ" id="103">
+									<DataPath>дФирмы.ТипТТ</DataPath>
+									<ContextMenu name="дФирмыТипТТКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="дФирмыТипТТРасширеннаяПодсказка" id="105"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаДопСвойства" id="179">
